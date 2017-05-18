@@ -1,0 +1,28 @@
+/* social icons*/
+
+.social-icons {
+  .fa {
+    color: #000;
+  }
+
+  .fa-github,
+  .fa-github-alt,
+  .fa-github-square {
+    color: $github-color;
+  }
+
+  .fa-linkedin,
+  .fa-linkedin-square {
+    color: $linkedin-color;
+  }
+
+  .fa-rss,
+  .fa-rss-square {
+    color: $rss-color;
+  }
+
+  .fa-twitter,
+  .fa-twitter-square {
+    color: $twitter-color;
+  }
+}

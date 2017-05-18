@@ -1,0 +1,78 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "From A to B"
+email: jan.r.christel@gmail.com
+name: &name "Jan Christel" # &name is a YAML anchor which can be *referenced later
+description: &description "This is an attempt in finding an easy and visualy appealing way of documenting the project design process."
+url: "https://jchristel.github.io"
+baseurl: "/good-idea" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter_username: &twitter jan_christel
+github_username:  jchristel
+linkedin_username: "jan-christel-868a0621"
+
+# Build settings
+markdown: kramdown
+
+# Reading Files
+include:
+  - _pages
+  - _docs
+exclude:
+  - LICENSE
+  - README
+#theme: minima
+
+#source: .
+#destination: ./_site
+
+#posts will be in this sub directory
+permalink: /:categories/:title
+#pagination stuff
+paginate: 8
+paginate_path: /page:num/ #i.e /page2/ for all website hosting links to posts 9 - 16 (if 8 fit on page)
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+  # Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
+

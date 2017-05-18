@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Documenting the design decision process or A good idea at the time.."
+description: This is our first post. Hello World!
+header: Hello World
+date:   2017-02-01 20:56:14 +1100
+categories: dataViz
+tags:
+  - problem
+---
+# A good idea at the time...
+
+## The problem:
+
+Quite often our documentation describes the outcome / solution to a particular challenge but not why we chose that particular solution over another. We also tend to not record the constraints present at that point in time influencing the decision making process. 
+
+When trying to understand decisions made in the past on a project, as a team member new to a job or as a project review team, one has multiple options available:
+
+### Email  
+
+Our main mean of information exchange today is email. Whilst this is a very fast and flexible way to exchange information it is also unstructured which makes it difficult finding email's relating to a particular topic.
+Current filing solutions rely on content indexing to search a project email folder. This requires the team member to ask the right question to get the answer one is after. Which is not that easy...
+
+### People
+
+The make up of a project team very often changes over the lifetime of a project. Sometimes a teams staff turnover can be 100%. This is a major problem since a lot of history of decision made on a project gets lost in the change over.
+
+## A solution
+
+This project is an attempt to record and visualize decisions made during all stages of a project. 
+
+## Visualization
+
+Visualization is meant to show decisions made / events occurred over the lifetime of a project in a hierarchical structure so it is easy to:
+
+* Determine historical context: When was a decision made? What where the constraints at the time?
+* Identify outcome: What was decided to be the best action to take
+* See the relation ship to other events: What knock on effects did this have. What other items where influencing this decision
+* Find out who was involved. 
+* Search for particular events relating to objects in our documentation: Why do we have a setback of 7m on level 2?
+
+## Recording
+
+Recording what we do on a day to day basis is not something we are particular good at. Most often it is considered  as a chore rather than something of value.
+
+There for a recording solution must be:
+* Very, very easy to use
+* Minimal user input with maximal recorded output
+* Provide direct feedback via visualization to user 
+* Available on many platforms: phone, desktop, offline ...

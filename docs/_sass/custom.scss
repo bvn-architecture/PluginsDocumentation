@@ -1,0 +1,44 @@
+/*- Custom style -*/
+
+// -- Put custom style under this point -- //
+
+/**
+ * Tables
+ *
+ */
+table {
+	margin-bottom:1em;
+	width:100%;
+	font-family:-apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+	font-size:.75em;
+	border-collapse:collapse;
+	border:1px solid #bdc1c4
+}
+thead {
+	background-color:#f2f3f3;
+	border-bottom:1px solid #bdc1c4
+}
+th {
+	padding:0.5em;
+	font-weight:bold;
+	text-align:left;
+	border-right:1px solid #bdc1c4
+}
+td {
+	padding:0.5em;
+	border-bottom:1px solid #bdc1c4;
+	border-right:1px solid #bdc1c4
+}
+tr,td,th {
+	vertical-align:middle
+}
+
+/* div containing posts
+i want to be more narrow
+*/
+
+.contentPost {
+ max-width: 1000px;
+ margin: 0 auto;
+ padding: 0 10px;
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+/*
+   Default button
+   ========================================================================== */
+
+.btn {
+
+  /* social buttons */
+
+  $social:
+  (twitter, $twitter-color),
+  (linkedin, $linkedin-color);
+
+  @each $socialnetwork, $color in $social {
+    &--#{$socialnetwork} {
+      background-color: $color;
+      &:hover {
+        background-color: mix(#000, $color, 20%);
+      }
+    }
+  }
+}
