@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-BVN in house development team.
+By the BVN in house development team.
