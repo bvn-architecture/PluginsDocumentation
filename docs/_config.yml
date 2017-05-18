@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "From A to B"
+title: "BVN Software Development"
 email: jan.r.christel@gmail.com
 name: &name "Jan Christel" # &name is a YAML anchor which can be *referenced later
-description: &description "This is an attempt in finding an easy and visualy appealing way of documenting the project design process."
-url: "https://jchristel.github.io"
-baseurl: "/good-idea" # the subpath of your site, e.g. /blog
+description: &description "These are documentation sample pages."
+url: "https://bvn-architecture.github.io"
+baseurl: "/PluginsDocumentation" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: &twitter jan_christel
