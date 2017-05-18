@@ -4,7 +4,7 @@ date:   2017-04-28 19:00:00 +1100
 permalink: #/docs/2017-04-28-PushIt
 excerpt: "demo push it docs"
 modified:
-layout: 
+layout: "sample"
 ---
 
 # Summary
