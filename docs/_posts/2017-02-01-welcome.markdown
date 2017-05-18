@@ -10,4 +10,4 @@ tags:
 ---
 # A good idea at the time...
 
-Leads to a software add in which inevitable needs some documentation for either teaching purposes or just to keep track of why problems have been approached in a certain way.
+Leads to software which, inevitable, needs some documentation for either teaching purposes or just to keep track of why problems have been approached in a certain way.
