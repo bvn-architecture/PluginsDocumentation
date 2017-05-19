@@ -291,9 +291,9 @@ Area calculations themselves can done in Excel in form of data links to schedule
 
 ## Push It (Real Good)! Revit App
 
-[TODO: insert image of Push It Revit button]
+![Push It button under the Revit BVN Tools tab]({{ site.baseurl }}\assets\Pushit\Tab-SpatialPlanning.png){:class="img-responsive"}{: height="400px" width="600px"}
 
-Push It Real Good is a Revit add-in developed in-house to manage, track and synchronize Schedule of Accommodation data between an Excel (or CSV file) and one or more Revit models. (Trivia: its name derives from the Salt 'n Pepa hit single and the idea that its all about "pushing" data into the Revit model.)
+Push It Real Good is a Revit add-in developed in-house to manage, track and synchronize Schedule of Accommodation data between an Excel (or CSV file) and one or more Revit models. (Trivia: its name derives from the Salt 'n Pepa hit single and the idea that it's all about "pushing" data into the Revit model.)
 
 
 
