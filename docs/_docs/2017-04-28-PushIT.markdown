@@ -299,6 +299,8 @@ Traditionally, Schedule of Accommodation (SOA) information has been managed in a
 
 It should be noted that relatively recently, the Drofus software tool has entered the market to solve this problem by enabling bi-directional synchronization of SOA data between an online database (with a web UI front end) and one or more Revit models. Unfortunately, Drofus (as of May 2017) doesn't support synchronizing this data to Revit model elements other than Rooms. So although Drofus solves most of the problem that Push It solves (and solves additional problems), it falls short fitting into the Spatial Planning workflow outlined in this document.
 
+![The main window of Push It Real Good!]({{ site.baseurl }}\assets\Pushit\PushIt-Window.png){:class="img-responsive"}{: height="790px" width="1136px"}
+
 ORDER TO COVER THINGS IN (THESE ARE NOT THE HEADINGS):
 - Describe the window (meaning of SOA colours, text, columns) NOT THE BUTTONS YET.
 - Load.
@@ -321,7 +323,7 @@ ORDER TO COVER THINGS IN (THESE ARE NOT THE HEADINGS):
 
 ## Get A Room (Revit Add-in)
 
-![Get A Room button under the Revit BVN Tools tab]({{ site.baseurl }}\assets\Pushit\PushIt-Window.png){:class="img-responsive"}{: height="790px" width="1136px"}
+![Get A Room button under the Revit BVN Tools tab]({{ site.baseurl }}\assets\Pushit\Tab-SpatialPlanning.png){:class="img-responsive"}{: height="95px" width="152px"}
 
 Get A Room is a Revit add-in developed in-house that is designed to work alongside the Push It addin. Its purpose is to create custom Room family shapes similar to the standard configurations of families described earlier in this document, but with a somewhat more limited set of functionality (e.g. such custom Room families are not resizable).
 
