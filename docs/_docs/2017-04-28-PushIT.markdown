@@ -295,7 +295,7 @@ Area calculations themselves can done in Excel in form of data links to schedule
 
 Push It Real Good is a Revit add-in developed in-house to manage, track and synchronize Schedule of Accommodation data between an Excel (or CSV file) and one or more Revit models. (Trivia: its name derives from the Salt 'n Pepa hit single and the idea that it's all about "pushing" data into the Revit model.)
 
-Traditionally, Schedule of Accommodation (SOA) information has been managed in a fairly unstructured manner using Excel. Users would visually inspect the SOA spreadsheet and manually enter the room data into corresponding Revit Room's parameters in the Revit model. This of course leads to wasted effort ensuring that the data in the SOA and in the Revit model are in sync in terms of briefed areas.
+Traditionally, Schedule of Accommodation (SOA) information has been managed in a fairly unstructured manner using Excel. Users would visually inspect the SOA spreadsheet and manually enter the room data into corresponding Revit Room's parameters in the Revit model. This of course leads to wasted effort ensuring that the data in the SOA and in the Revit model are in sync in terms of briefed Room data and areas.
 
 It should be noted that relatively recently, the Drofus software tool has entered the market to solve this problem by enabling bi-directional synchronization of SOA data between an online database (with a web UI front end) and one or more Revit models. Unfortunately, Drofus (as of May 2017) doesn't support synchronizing this data to Revit model elements other than Rooms. So although Drofus solves most of the problem that Push It solves (and solves additional problems), it falls short fitting into the Spatial Planning workflow outlined in this document.
 
