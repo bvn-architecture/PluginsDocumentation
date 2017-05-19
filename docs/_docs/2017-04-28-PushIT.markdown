@@ -289,12 +289,39 @@ Each option requires an element to be modelled, and updated with any layout chan
 Area calculations themselves can done in Excel in form of data links to schedules exported from Revit.
 
 
-## Push It (Real Good)! Revit App
+## Push It (Real Good)! (Revit Add-in)
 
 ![Push It button under the Revit BVN Tools tab]({{ site.baseurl }}\assets\Pushit\Tab-SpatialPlanning.png){:class="img-responsive"}{: height="95px" width="152px"}
 
 Push It Real Good is a Revit add-in developed in-house to manage, track and synchronize Schedule of Accommodation data between an Excel (or CSV file) and one or more Revit models. (Trivia: its name derives from the Salt 'n Pepa hit single and the idea that it's all about "pushing" data into the Revit model.)
 
+Traditionally, Schedule of Accommodation (SOA) information has been managed in a fairly unstructured manner using Excel. Users would visually inspect the SOA spreadsheet and manually enter the room data into corresponding Revit Room's parameters in the Revit model. This of course leads to wasted effort ensuring that the data in the SOA and in the Revit model are in sync in terms of briefed areas.
 
+It should be noted that relatively recently, the Drofus software tool has entered the market to solve this problem by enabling bi-directional synchronization of SOA data between an online database (with a web UI front end) and one or more Revit models. Unfortunately, Drofus (as of May 2017) doesn't support synchronizing this data to Revit model elements other than Rooms. So although Drofus solves most of the problem that Push It solves (and solves additional problems), it falls short fitting into the Spatial Planning workflow outlined in this document.
 
+ORDER TO COVER THINGS IN (THESE ARE NOT THE HEADINGS):
+- Describe the window (meaning of SOA colours, text, columns) NOT THE BUTTONS YET.
+- Load.
+- How to push.
+- Filtering.
+- Clear.
+- Extra details about pushing (e.g. view with design option / phase required, duplicates, pushing and one comes back, etc.)
+- Refresh
+- Push Revised
+- Audit
+- SOA file structure. (including STATUS feature, guids, etc.)
+- SOA extraction process(es).
+- Details about Design option handling.
+- Room for improvements (boy are there many)
+  - Show designed area in the interface (read from Room data on refresh).
+  - Push revised - have some output (txt or log etc) showing what has been changed.
+  - Link file support
+  - Database backend
+  - DataGridView is too slow for large amount of rows. Possibly look at better performing GUI component.
+
+## Get A Room (Revit Add-in)
+
+![Get A Room button under the Revit BVN Tools tab]({{ site.baseurl }}\assets\Pushit\PushIt-Window.png){:class="img-responsive"}{: height="790px" width="1136px"}
+
+Get A Room is a Revit add-in developed in-house that is designed to work alongside the Push It addin. Its purpose is to create custom Room family shapes similar to the standard configurations of families described earlier in this document, but with a somewhat more limited set of functionality (e.g. such custom Room families are not resizable).
 
