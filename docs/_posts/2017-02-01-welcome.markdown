@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Documenting varies software plug ins developed at BVN"
+title:  "Documenting various software plug-ins developed at BVN"
 description: This is our first post. Hello World!
 header: Hello World
 date:   2017-05-19 20:56:14 +1100
@@ -10,4 +10,4 @@ tags:
 ---
 # A good idea at the time...
 
-Leads to software which, inevitable, needs some documentation for either teaching purposes or just to keep track of why problems have been approached in a certain way.
+Problems lead to ideas which lead to software solutions which, inevitably, needs some documentation for either teaching purposes or just to keep track of why solutions to these problems have been approached in a certain way.

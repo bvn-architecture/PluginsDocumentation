@@ -71,19 +71,19 @@ These families come in varies shapes and use cases:
 
 * Base Shapes (Revit Category Column):
 	* SP-Room-Rectangle-Double-Door_8.rfa 
-	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-RECTANGLE-DOUBLE_DOOR.svg){:class="img-responsive"}{: height="400px" width="600px"}
+	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-RECTANGLE-DOUBLE_DOOR.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* SP-Room-Rectangle_9.rfa 
-	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-RECTANGLE-SINGLE_DOOR.svg){:class="img-responsive"}{: height="400px" width="600px"}
+	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-RECTANGLE-SINGLE_DOOR.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* SP-Room-Rectangle_Bay_8.rfa 
-	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-RECTANGLE-BAY.svg){:class="img-responsive"}{: height="400px" width="600px"}
+	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-RECTANGLE-BAY.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* SP-Room-Circular_Bay_8.rfa (currently this displays only a fill if area designed is over briefed area) 
-	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-CIRCLE-BAY.svg){:class="img-responsive"}{: height="400px" width="600px"}
+	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-CIRCLE-BAY.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* SP-Room-LShaped_8.rfa
-	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-L.svg){:class="img-responsive"}{: height="400px" width="600px"}
+	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-L.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* SP-Room-TShaped_8.rfa
-	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-T.svg){:class="img-responsive"}{: height="400px" width="600px"}
+	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-T.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* SP-Room-Angled_8.rfa
-	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-ANGLED.svg){:class="img-responsive"}{: height="400px" width="600px"}
+	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-ANGLED.svg){:class="img-responsive"}{: height="400px" width="600px"}
 
 Multiple rectangle families are available to reduce number of formulas otherwise required in a single Family. Tests have shown that this keeps Revit as responsive as possible.
 
@@ -95,29 +95,29 @@ Multiple rectangle families are available to reduce number of formulas otherwise
 		* SP-Room-Dialysis Chair_9.rfa
 	* Bed Rooms
 		* SP-Room-Bed-CutOut_7
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-BED-STANDARD WITH CUTOUT.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-STANDARD WITH CUTOUT.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-Bed-CutOut_Ens_Square_7
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-BED-WITH RECTANGLE ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-WITH RECTANGLE ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-Bed-Rectangle_7
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-BED-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-Bed-Two_ENS_7
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-BED-TWO ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-TWO ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-Bed_7
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-BED-STANDARD.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-STANDARD.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-Bed_Ens_Square_7
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-BED-WITH RECTANGLE ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-WITH RECTANGLE ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* En Suites
 		* SP-Room-ENS-Square_8.rfa
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOMS-ENS-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOMS-ENS-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-ENS_8.rfa
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-ENS-STANDARD.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-ENS-STANDARD.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-ENS_Double_8.rfa
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ROOM-ENS-DOUBLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-ENS-DOUBLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* WC's
 		* SP-Room-Patient-Toilet_Instance_Double.rfa
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/WC-DOUBLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/WC-DOUBLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-Patient-Toilet_Instance_Single.rfa
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/WC-SINGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/WC-SINGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* Multi Storey
 		* SP-Room-Lift_8.rfa
 		* SP-Room-Riser_8.rfa
@@ -166,7 +166,7 @@ If no filter is applied, colour coding indicates how the designed area compares 
 	* blue is over area
 	* green is on area (within 1 % range)
 
-![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/_docs/20170516_Pushit_demo/ColourByArea.svg){:class="img-responsive"}{: height="600px" width="900px"}
+![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ColourByArea.svg){:class="img-responsive"}{: height="600px" width="900px"}
 
 The family instance property SP_Area_Designed shows the area of the 'room' to centre line of wall. Its value is calculated on the fly.
 
@@ -291,7 +291,10 @@ Area calculations themselves can done in Excel in form of data links to schedule
 
 ## Push It (Real Good)! Revit App
 
-(Dan's Stuff here)
+[TODO: insert image of Push It Revit button]
+
+Push It Real Good is a Revit add-in developed in-house to manage, track and synchronize Schedule of Accommodation data between an Excel (or CSV file) and one or more Revit models. (Trivia: its name derives from the Salt 'n Pepa hit single and the idea that its all about "pushing" data into the Revit model.)
+
 
 
 
