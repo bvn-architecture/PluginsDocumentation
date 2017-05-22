@@ -321,11 +321,16 @@ To see the model element(s) corresponding to a pushed SOA item, double-click the
 
 When switching Revit views, click the 'Refresh' button in the SOA window to ensure that Push It is comparing the SOA against the latest data in the model with respect to the active view. This is required because Push It filters model elements by the active view's Phase and Design Option configuration.
 
+It's likely that the SOA will change over the lifetime of the Schematic Design phase of a project. In order to accommodate this, once the  updated SOA txt file has been loaded into the Push It window, you can click the 'Push Revised' button to synchronize the SOA data to the Revit model. This process works by finding all model elements whose IDs (e.g. room number) match the SOA's item IDs (but whose other data does not) and pushing the corresponding SOA item's data into the model element bringing the model into alignment with the SOA once again.
+
+NOTE: it is STRONGLY advised never to change the unique ID of an SOA item once chosen, nor re-use an ID for another SOA item. Doing so will destroy the integrity of the SOA / model data comparison. 
+
 THINGS STILL TO BE COVERED (NOTE: THESE ARE BY NO MEANS HEADINGS):
 - Push Revised
 - Audit
 - SOA file structure. (including STATUS feature, guids, itemizing, etc.)
 - SOA extraction process(es).
+  - Gotchas: txt file format is tab-delimited; if any tab or newline characters (e.g. multiline text) occur in the excel cell values, this breaks the SOA data format. Ensure that no tab or newline characters exist in the cell values before exporting to txt file.
 - Details about Design option handling.
 - Room for improvements (boy are there many)
   - Show designed area in the interface (read from Room data on refresh).
