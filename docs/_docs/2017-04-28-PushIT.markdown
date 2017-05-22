@@ -293,6 +293,8 @@ Area calculations themselves can done in Excel in form of data links to schedule
 
 ![Push It button under the Revit BVN Tools tab]({{ site.baseurl }}\assets\Pushit\Tab-SpatialPlanning.png){:class="img-responsive"}{: height="95px" width="152px"}
 
+### Synopsis
+
 Push It Real Good is a Revit add-in developed in-house to manage, track and synchronize Schedule of Accommodation data between an Excel (or CSV file) and one or more Revit models. (Trivia: its name derives from the Salt 'n Pepa hit single and the idea that it's all about "pushing" data into the Revit model.)
 
 Traditionally, Schedule of Accommodation (SOA) information has been managed in a fairly unstructured manner using Excel. Users would visually inspect the SOA spreadsheet and manually enter the room data into corresponding Revit Room's parameters in the Revit model. This of course leads to wasted effort ensuring that the data in the SOA and in the Revit model are in sync in terms of briefed Room data and areas.
@@ -301,32 +303,49 @@ It should be noted that relatively recently, the Drofus software tool has entere
 
 ![The main window of Push It Real Good!]({{ site.baseurl }}\assets\Pushit\PushIt-Window.png){:class="img-responsive"}{: height="790px" width="1136px"}
 
+### Main window - the SOA list
+
 The main Push It window displays a list of SOA items. Each row describes the set of values corresponding to an SOA item. When an SOA item is 'pushed' to a model element these values are populated into the model element's parameters. Each column's heading (other than the two rightmost columns) describes the name of the Revit parameter it corresponds to. The leftmost column serves as the unique ID for the SOA items. This column would typically represent SOA item room numbers. Note that Push It will not load an SOA whose item IDs are not unique. Regarding the two rightmost columns, the 'Placed' column indicates the number of model elements whose parameter data matches that SOA item exactly. The 'Status' column indicates whether an SOA item is still a part of the project SOA / brief (ACTIVE) or if it has been removed (DELETED).
 
 The current state of each SOA item in terms of whether it exists in the Revit model is also indicated by the color of its row. A white row indicates that item does NOT yet exist in the model (at least in the current phase and design option configuration, see further below for details). A grey row indicates that the item occurs in the model exactly once. A red row indicates that the item occurs more than once in the model, which is considered to be an error. A line / strike-through appearing across a row indicates that this item is no longer active in the SOA (i.e. it is DELETED).
 
+### Loading the SOA
+
 As a first step to using Push It in the active Revit project, the SOA data must first be loaded into the UI. Before doing this, select a Revit category from the 'Element Category' dropdown in the lower lefthand corner. Revit will consider model element instances of the selected category when comparing the SOA and populating the model. Next click the 'Load SOA...' button in the lower lefthand corner to open up a dialog for browsing to the desired SOA data txt file. (The steps to prepare this SOA txt file are described later on.) Once this file is chosen, Push It loads the data into the UI and compares this data against the Revit model data to see what SOA items exist in the model already. As Push It is loading the data, it will check that the item IDs (first column) are unique and that the data in each row is of the appropriate form for the corresponding Revit parameter. It will show an error message if either of these requirements are not met.
 
-NOTE: If the currently active view is a drafting view or schedule, Push It cannot compare the SOA to the model due to the lack of Phasing and Design Option information in such views. To resolve this issue, switch to a plan view and click the 'Refresh' button to refresh the SOA comparison with the model.
+*NOTE: If the currently active view is a drafting view or schedule, Push It cannot compare the SOA to the model due to the lack of Phasing and Design Option information in such views. To resolve this issue, switch to a plan view and click the 'Refresh' button to refresh the SOA comparison with the model.*
+
+### 'Pushing' SOA items into the model
 
 To 'push' an SOA item into a model element of the chosen category, first select the SOA item's row in the Push It window, then select an instance of the desired model element in the active Revit view. Click the 'Push It' button to populate the chosen model element with the SOA item data. If successful, the SOA item row will change color from white to grey and the 'Placed' column will indicate the new number of instances of that item placed in the model. If this operation fails, an error is displayed. Typical reasons for failing includes the SOA item having already been 'pushed', the model element not existing in the current view's phase and / or Design option(s), or the model element being of the wrong category.
 
-NOTE: when pushing an SOA item into a model element, this overwrites any existing SOA parameter data on that model element. If the target model element already contains / matches another SOA item, that other SOA item will have its 'Placed' count reduced by 1, potentially becoming 'unpushed' again as a result.
+*NOTE: when pushing an SOA item into a model element, this overwrites any existing SOA parameter data on that model element. If the target model element already contains / matches another SOA item, that other SOA item will have its 'Placed' count reduced by 1, potentially becoming 'unpushed' again as a result.*
+
+### Clearing SOA items from the model
 
 To clear an SOA item from the model, either select its row in the Push It window OR select the model element in a view, click the 'Clear...' button. In the dialog box that appears, choose either to clear the SOA item based on the selected row in the SOA window or based on the selected model element in the active view. Note that when clearing an SOA item by the selected row, this will clear all model elements' data that matches that SOA item. By contrast, when clearing an SOA item by the selected model element, this will only clear that model element's SOA data. Note that in the latter case, if the corresponding SOA item still has other matching model elements, it will still appear 'pushed' and have a placed count larger than 0.
 
+### Filtering the SOA list
+
 In order to help manage a large SOA data set, Push It is able to filter the SOA list by any of the columns' values. To do this, select a column name from the 'Filter by' dropdown in the lower righthand corner. Then to filter by a specific value, choose from the list of values in the second dropdown (to the right of the first). Depending on the size of the SOA, it may take a few moments to filter the SOA list down to just those elements matching the filtering criteria.
+
+### Finding an existing (pushed) SOA item in the model
 
 To see the model element(s) corresponding to a pushed SOA item, double-click the SOA item row. This will show and select the Revit model element(s) in a suitable view.
 
+### Switching the active Revit view - refreshing the SOA list 
+
 When switching Revit views, click the 'Refresh' button in the SOA window to ensure that Push It is comparing the SOA against the latest data in the model with respect to the active view. This is required because Push It filters model elements by the active view's Phase and Design Option configuration.
 
-It's likely that the SOA will change over the lifetime of the Schematic Design phase of a project. In order to accommodate this, once the  updated SOA txt file has been loaded into the Push It window, you can click the 'Push Revised' button to synchronize the SOA data to the Revit model. This process works by finding all model elements whose IDs (e.g. room number) match the SOA's item IDs (but whose other data does not) and pushing the corresponding SOA item's data into the model element bringing the model into alignment with the SOA once again.
+### Synchronizing updated SOA data with the model
 
-NOTE: it is STRONGLY advised never to change the unique ID of an SOA item once chosen, nor re-use an ID for another SOA item. Doing so will destroy the integrity of the SOA / model data comparison. 
+It's likely that the SOA will change over the lifetime of the Schematic Design phase of a project. In order to accommodate this, once the  updated SOA txt file has been loaded into the Push It window, you can click the 'Push Revised' button to synchronize the SOA data to the Revit model. This process works by finding all model elements whose IDs (e.g. room number) match the SOA's item IDs (but whose other data does not) and pushing the corresponding SOA item's data into the model element bringing the model into alignment with the SOA once again. If any errors occur during this process, Push It will prompt to save a csv/txt file with information about the failing SOA items / model elements. This file can be imported into Excel for inspection via Excel's text import wizard.
+
+*NOTE: it is STRONGLY advised never to change the unique ID of an SOA item once chosen, nor re-use an ID for another SOA item. Doing so will destroy the integrity of the SOA / model data comparison.*
+
+
 
 THINGS STILL TO BE COVERED (NOTE: THESE ARE BY NO MEANS HEADINGS):
-- Push Revised
 - Audit
 - SOA file structure. (including STATUS feature, guids, itemizing, etc.)
 - SOA extraction process(es).
