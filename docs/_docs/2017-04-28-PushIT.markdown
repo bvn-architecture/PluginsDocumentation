@@ -363,7 +363,22 @@ It's likely that the SOA will change over the lifetime of the Schematic Design p
 - Push revised - have some output (txt or log etc) showing what has been changed.
 - Link file support
 - Database backend
-- DataGridView is too slow for large amount of rows. Possibly look at better performing GUI component.
+  - Pros:
+    - Single source of Truth - ensures everyone is working with up-to-date data.
+	- Data integrity.
+	- Web-accessible (if used in conjunction with a developed Web frontend)
+  - Cons:
+    - Significant development / reworking of source code required:
+	  - Database setup
+	  - Database Schemas
+	  - Database Permissions
+	  - Code interfacing logic
+	  - User Interface logic (Web frontend?)
+- DataGridView is too slow for large amount of rows. Look at better performing GUI component (WPF?).
+
+### Background - code development
+
+Push It was developed quite rapidly as a software tool over the course of several HI projects in SD phase several years ago. Its current state is the result of gradual improvements to what began as a prototype developed under the fairly tight time-constraints of these projects. The basic idea was to have a way to quickly and visually populate Revit model elements with data coming from an SOA brief, which traditionally (and up until recently) came in the form of a manually managed Excel spreadsheet. If we were to start over again for such a software solution, we would use a database to house the SOA data instead of an Excel txt file export. Also, it would probably have a nicer UI written in WPF instead of Windows Forms. However, now that database-backed online solutions exist on the market (Drofus), its only real advantage is the ability to work with Revit elements other than rooms (and specificially with the custom Spatial Planning families described earlier) and the fact that, conceptually, its a fairly simple tool. C'est la vie!
 
 ## Get A Room (Revit Add-in)
 
