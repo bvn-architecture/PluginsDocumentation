@@ -301,6 +301,12 @@ It should be noted that relatively recently, the Drofus software tool has entere
 
 ![The main window of Push It Real Good!]({{ site.baseurl }}\assets\Pushit\PushIt-Window.png){:class="img-responsive"}{: height="790px" width="1136px"}
 
+The main Push It window displays a list of SOA items. Each row describes the set of values corresponding to an SOA item. When an SOA item is 'pushed' to a model element (via a process described shortly) these values are populated into the model element's parameters. Each column's heading (other than the two rightmost columns) describes the name of the Revit parameter it corresponds to. The leftmost column serves as the unique ID for the SOA items. This column would typically represent SOA item room numbers. Note that Push It will not load an SOA whose item IDs are not unique. Regarding the two rightmost columns, the 'Placed' column indicates the number of model elements whose parameter data matches that SOA item exactly. The 'Status' column indicates whether an SOA item is still a part of the project SOA / brief (ACTIVE) or if it has been removed (DELETED).
+
+The current state of each SOA item in terms of whether it exists in the Revit model is also indicated by the color of its row. A white row indicates that item does NOT yet exist in the model (at least in the current phase and design option configuration, see further below for details). A grey row indicates that the item occurs in the model exactly once. A red row indicates that the item occurs more than once in the model, which is considered to be an error. A line / strike-through appearing across a row indicates that this item is no longer active in the project SOA (i.e. it is DELETED).
+
+As a first step to using Push It for a Revit model, the SOA data must first be loaded into the UI. Clicking the 'Load SOA...' button in the lower lefthand corner opens up a dialog for browsing to the desired SOA data txt file. (Preparing this SOA txt file is described later on.) Once this file is chosen, Push It loads the data into the UI and checks this against the Revit model data to see what SOA items exist in the model already. As Push It is loading the data, it will check that the item IDs (first column) are unique and that the data in each row is of the appropriate form for the corresponding Revit parameter. It will show an error message if either of these requirements are not met.
+
 ORDER TO COVER THINGS IN (THESE ARE NOT THE HEADINGS):
 - Describe the window (meaning of SOA colours, text, columns) NOT THE BUTTONS YET.
 - Load.
@@ -311,7 +317,7 @@ ORDER TO COVER THINGS IN (THESE ARE NOT THE HEADINGS):
 - Refresh
 - Push Revised
 - Audit
-- SOA file structure. (including STATUS feature, guids, etc.)
+- SOA file structure. (including STATUS feature, guids, itemizing, etc.)
 - SOA extraction process(es).
 - Details about Design option handling.
 - Room for improvements (boy are there many)
