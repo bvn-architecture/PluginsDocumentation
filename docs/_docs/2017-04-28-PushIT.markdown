@@ -388,3 +388,9 @@ Push It was developed quite rapidly as a software tool over the course of severa
 
 Get A Room is a Revit add-in developed in-house that is designed to work alongside the Push It addin. Its purpose is to create custom Room family shapes similar to the standard configurations of families described earlier in this document, but with a somewhat more limited set of functionality (e.g. such custom Room families are not resizable).
 
+![Filled Region tool]({{ site.baseurl }}\assets\Pushit\GetARoom-Filled-Region.png){:class="img-responsive"}{: height="137px" width="347px"}
+
+![Drawn Filled Region shape]({{ site.baseurl }}\assets\Pushit\GetARoom-Filled-Region-Shape.png){:class="img-responsive"}{: height="397px" width="671px"}
+
+
+
