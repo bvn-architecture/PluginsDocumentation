@@ -305,15 +305,19 @@ The main Push It window displays a list of SOA items. Each row describes the set
 
 The current state of each SOA item in terms of whether it exists in the Revit model is also indicated by the color of its row. A white row indicates that item does NOT yet exist in the model (at least in the current phase and design option configuration, see further below for details). A grey row indicates that the item occurs in the model exactly once. A red row indicates that the item occurs more than once in the model, which is considered to be an error. A line / strike-through appearing across a row indicates that this item is no longer active in the project SOA (i.e. it is DELETED).
 
-As a first step to using Push It for a Revit model, the SOA data must first be loaded into the UI. Clicking the 'Load SOA...' button in the lower lefthand corner opens up a dialog for browsing to the desired SOA data txt file. (Preparing this SOA txt file is described later on.) Once this file is chosen, Push It loads the data into the UI and checks this against the Revit model data to see what SOA items exist in the model already. As Push It is loading the data, it will check that the item IDs (first column) are unique and that the data in each row is of the appropriate form for the corresponding Revit parameter. It will show an error message if either of these requirements are not met.
+As a first step to using Push It for a Revit model, the SOA data must first be loaded into the UI. Before doing this, select a Revit category from the 'Element Category' dropdown in the lower lefthand corner. Revit will consider model element instances of the selected category when comparing the SOA and populating the model. Next click the 'Load SOA...' button in the lower lefthand corner to open up a dialog for browsing to the desired SOA data txt file. (Steps to prepare this SOA txt file is described later on.) Once this file is chosen, Push It loads the data into the UI and compares this data against the Revit model data to see what SOA items exist in the model already. As Push It is loading the data, it will check that the item IDs (first column) are unique and that the data in each row is of the appropriate form for the corresponding Revit parameter. It will show an error message if either of these requirements are not met.
+
+NOTE: If the currently active view is a drafting view or schedule, Push It cannot compare the SOA to the model due to the lack of Phasing and Design Option information in such views. To resolve this issue, switch to a plan view and click the 'Refresh' button to refresh the SOA comparison with the model.
+
+To 'push' an SOA item into a model element of the chosen category, first select the SOA item's row in the Push It window, then select an instance of the desired model element in the active Revit view. Click the 'Push It' button to populate the chosen model element with the SOA item data. If successful, the SOA item row will change color from white to grey and the 'Placed' column will indicate the new number of instances of that item placed in the model. If this operation fails, an error is displayed. Typical reasons for failing includes the SOA item having already been 'pushed', the model element not existing in the current view's phase and / or Design option(s), or the model element being of the wrong category.
+
+To clear an SOA item from the model, either select its row in the Push It window OR select the model element in a view, click the 'Clear...' button, and in the dialog box that appears, choose either to clear the SOA item based on the selected row in the SOA window or based on the selected model element in the active view. Note that when clearing an SOA item by the selected row, this will clear all model elements' data that matches that SOA item. By contrast, when clearing an SOA item by the selected model element, this will only clear that model element's SOA data. If the corresponding SOA item still has other matching model elements, it will still appear 'pushed' and have a placed count larger than 0.
 
 ORDER TO COVER THINGS IN (THESE ARE NOT THE HEADINGS):
-- Describe the window (meaning of SOA colours, text, columns) NOT THE BUTTONS YET.
-- Load.
 - How to push.
 - Filtering.
 - Clear.
-- Extra details about pushing (e.g. view with design option / phase required, duplicates, pushing and one comes back, etc.)
+- Extra details about pushing (e.g. double-click to go to SOA item's model elements(s) view with design option / phase required, duplicates, pushing and one comes back, etc.)
 - Refresh
 - Push Revised
 - Audit
