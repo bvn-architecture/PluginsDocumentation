@@ -315,15 +315,17 @@ As a first step to using Push It in the active Revit project, the SOA data must 
 
 *NOTE: If the currently active view is a drafting view or schedule, Push It cannot compare the SOA to the model due to the lack of Phasing and Design Option information in such views. To resolve this issue, switch to a plan view and click the 'Refresh' button to refresh the SOA comparison with the model.*
 
+*NOTE: it is STRONGLY advised never to change the unique ID of an SOA item once chosen, nor re-use an ID for another SOA item. Doing so will destroy the integrity of the SOA / model data comparison.*
+
 ### 'Pushing' SOA items into the model
 
-To 'push' an SOA item into a model element of the chosen category, first select the SOA item's row in the Push It window, then select an instance of the desired model element in the active Revit view. Click the 'Push It' button to populate the chosen model element with the SOA item data. If successful, the SOA item row will change color from white to grey and the 'Placed' column will indicate the new number of instances of that item placed in the model. If this operation fails, an error is displayed. Typical reasons for failing includes the SOA item having already been 'pushed', the model element not existing in the current view's phase and / or Design option(s), or the model element being of the wrong category.
+To push an SOA item into a model element of the chosen category, first select the SOA item's row in the Push It window, then select an instance of the desired model element in the active Revit view. Click the 'Push It' button to populate the chosen model element with the SOA item data. If successful, the SOA item row will change color from white to grey and the 'Placed' column will indicate the new number of instances of that item placed in the model. If this operation fails, an error is displayed. Typical reasons for failing includes the SOA item having already been pushed, the model element not existing in the current view's phase and / or Design option(s), or the model element being of the wrong category.
 
 *NOTE: when pushing an SOA item into a model element, this overwrites any existing SOA parameter data on that model element. If the target model element already contains / matches another SOA item, that other SOA item will have its 'Placed' count reduced by 1, potentially becoming 'unpushed' again as a result.*
 
 ### Clearing SOA items from the model
 
-To clear an SOA item from the model, either select its row in the Push It window OR select the model element in a view, click the 'Clear...' button. In the dialog box that appears, choose either to clear the SOA item based on the selected row in the SOA window or based on the selected model element in the active view. Note that when clearing an SOA item by the selected row, this will clear all model elements' data that matches that SOA item. By contrast, when clearing an SOA item by the selected model element, this will only clear that model element's SOA data. Note that in the latter case, if the corresponding SOA item still has other matching model elements, it will still appear 'pushed' and have a placed count larger than 0.
+To clear an SOA item from the model, either select its row in the Push It window OR select the model element in a view, click the 'Clear...' button. In the dialog box that appears, choose either to clear the SOA item based on the selected row in the SOA window or based on the selected model element in the active view. Note that when clearing an SOA item by the selected row, this will clear all model elements' data that matches that SOA item. By contrast, when clearing an SOA item by the selected model element, this will only clear that model element's SOA data. Note that in the latter case, if the corresponding SOA item still has other matching model elements, it will still appear pushed and have a placed count larger than 0.
 
 ### Filtering the SOA list
 
@@ -339,28 +341,35 @@ When switching Revit views, click the 'Refresh' button in the SOA window to ensu
 
 ### Synchronizing updated SOA data with the model
 
-It's likely that the SOA will change over the lifetime of the Schematic Design phase of a project. In order to accommodate this, once the  updated SOA txt file has been loaded into the Push It window, you can click the 'Push Revised' button to synchronize the SOA data to the Revit model. This process works by finding all model elements whose IDs (e.g. room number) match the SOA's item IDs (but whose other data does not) and pushing the corresponding SOA item's data into the model element bringing the model into alignment with the SOA once again. If any errors occur during this process, Push It will prompt to save a csv/txt file with information about the failing SOA items / model elements. This file can be imported into Excel for inspection via Excel's text import wizard.
+It's likely that the SOA will change over the lifetime of the Schematic Design phase of a project. In order to accommodate this, once the  updated SOA txt file has been loaded into the Push It window, you can click the 'Push Revised' button to synchronize the SOA data to the Revit model. This process works by finding all model elements whose IDs (e.g. room number) match the SOA's item IDs (but whose other data does not) and pushing the corresponding SOA item's data into the model element bringing the model into alignment with the SOA once again. If any errors occur during this process, Push It will prompt you to save a csv/txt file with information about the failing SOA items / model elements. This file can be imported into Excel for inspection via Excel's text import wizard.
 
-*NOTE: it is STRONGLY advised never to change the unique ID of an SOA item once chosen, nor re-use an ID for another SOA item. Doing so will destroy the integrity of the SOA / model data comparison.*
+## THINGS STILL TO BE COVERED:
 
-
-
-THINGS STILL TO BE COVERED (NOTE: THESE ARE BY NO MEANS HEADINGS):
-- Audit
-- SOA file structure. (including STATUS feature, guids, itemizing, etc.)
+### SOA data file preparation
+- including STATUS feature, guids, itemizing, etc.)
 - SOA extraction process(es).
-  - Gotchas: txt file format is tab-delimited; if any tab or newline characters (e.g. multiline text) occur in the excel cell values, this breaks the SOA data format. Ensure that no tab or newline characters exist in the cell values before exporting to txt file.
-- Details about Design option handling.
-- Room for improvements (boy are there many)
-  - Show designed area in the interface (read from Room data on refresh).
-  - Push revised - have some output (txt or log etc) showing what has been changed.
-  - Link file support
-  - Database backend
-  - DataGridView is too slow for large amount of rows. Possibly look at better performing GUI component.
+- Gotchas: txt file format is tab-delimited; if any tab or newline characters (e.g. multiline text) occur in the excel cell values, this breaks the SOA data format. Ensure that no tab or newline characters exist in the cell values before exporting to txt file.
+
+### Push It behaviour and Design Options / Sets
+
+- describe how Push It filters model elements by Design option / sets. Note limitations on this.
+
+### ADVANCED - Auditing the model
+
+- describe the Audit process and resulting information.
+
+### Room for improvement
+- Show designed area in the interface (read from Room data on refresh).
+- Push revised - have some output (txt or log etc) showing what has been changed.
+- Link file support
+- Database backend
+- DataGridView is too slow for large amount of rows. Possibly look at better performing GUI component.
 
 ## Get A Room (Revit Add-in)
 
 ![Get A Room button under the Revit BVN Tools tab]({{ site.baseurl }}\assets\Pushit\Tab-SpatialPlanning.png){:class="img-responsive"}{: height="95px" width="152px"}
+
+### Synopsis
 
 Get A Room is a Revit add-in developed in-house that is designed to work alongside the Push It addin. Its purpose is to create custom Room family shapes similar to the standard configurations of families described earlier in this document, but with a somewhat more limited set of functionality (e.g. such custom Room families are not resizable).
 
