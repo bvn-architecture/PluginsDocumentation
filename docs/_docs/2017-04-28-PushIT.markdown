@@ -386,12 +386,30 @@ Push It was developed quite rapidly as a software tool over the course of severa
 
 ### Synopsis
 
-Get A Room is a Revit add-in developed in-house that is designed to work alongside the Push It addin. Its purpose is to create custom Room family shapes similar to the standard configurations of families described earlier in this document, but with a somewhat more limited set of functionality (e.g. such custom Room families are not resizable).
+Get A Room is a Revit add-in developed in-house that is designed to work alongside the Push It add-in. Its purpose is to create custom Room family shapes similar to the standard configurations of families described earlier in this document, but with a somewhat more limited set of functionality (e.g. such custom Room families are not resizable).
+
+### Creating custom-shaped Room families
+
+To create a custom-shaped Room family using Get A Room, you must first define the shape of the walls of the room. This is done using Revit's Filled Region tool under the Annotate tab.
 
 ![Filled Region tool]({{ site.baseurl }}\assets\Pushit\GetARoom-Filled-Region.png){:class="img-responsive"}{: height="137px" width="347px"}
 
+Select the Filled Region tool and define the desired shape of the custom Room family. Get A Room requires that you define both the interior and exterior wall boundary (i.e. inner and outer boundary loops). To make life a bit easier drawing the Filled Region shape, you can use the Offset tool on the Modify panel after drawing one of the Filled Region boundary loops to create the other boundary loop offset from it by a particular amount to give the wall shape a particular thickness. 
+
 ![Drawn Filled Region shape]({{ site.baseurl }}\assets\Pushit\GetARoom-Filled-Region-Shape.png){:class="img-responsive"}{: height="397px" width="671px"}
+
+Once you've created the Filled Region by finishing Edit mode, select the Filled Region and click the Get A Room button on the Spatial Planning panel located under the BVN Tools tab. This will create and place an instance of a new custom-shaped Room family with the shape of the selected Filled Region.
 
 ![Newly Created room]({{ site.baseurl }}\assets\Pushit\GetARoom-New-Room.png){:class="img-responsive"}{: height="394px" width="679px"}
 
+You may delete the Filled Region once the Room family is created. Note that the name of the new family incorporates the current User's username and the creation timestamp. This is done primarily so that the Family has a unique name that won't clash with existing families in the project. Of course, the same family shape can be re-used and placed again if so desired. Simply note the family name, browse to the family in the Project Browser and click and drag the family type into the current view to place another instance.
+
 ![Newly Created room Family naming]({{ site.baseurl }}\assets\Pushit\GetARoom-Room-Family-Naming.png){:class="img-responsive"}{: height="124px" width="410px"}
+
+### Limitations
+
+These custom-shaped Room families are not resizable in any dimension. This is because the shape is arbitrary and hence it cannot be parameterized.
+
+(More?)
+
+
