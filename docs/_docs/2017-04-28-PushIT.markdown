@@ -343,8 +343,6 @@ When switching Revit views, click the 'Refresh' button in the SOA window to ensu
 
 It's likely that the SOA will change over the lifetime of the Schematic Design phase of a project. In order to accommodate this, once the updated SOA txt file has been loaded into the Push It window, you can click the 'Push Revised' button to synchronize the SOA data to the Revit model. This process works by finding all model elements whose IDs (e.g. room number) match the SOA's item IDs (but whose other data does not) and pushing the corresponding SOA item's data into the model element bringing the model into alignment with the SOA once again. If any errors occur during this process, Push It will prompt you to save a csv/txt file with information about the failing SOA items / model elements. This file can be imported into Excel for inspection via Excel's text import wizard.
 
-## THINGS STILL TO BE COVERED:
-
 ### SOA data txt file preparation
 
 Push It requires the SOA data to be in a particular format. This format is a tab-delimited txt file that can be prepared and exported from Excel.
@@ -357,6 +355,7 @@ The remaining rows describe each SOA item's data. Note that the first column of 
 
 To allow for marking an SOA item as having been removed from the project brief, the SOA may contain an additional column which indicates whether a particular SOA item is considered active or deleted. This column must be the last column and must NOT contain a parameter GUID (leave that cell blank). The column header can be named anything (e.g. 'STATUS' although the name is not important). If an SOA item contains the value "DELETED" in this column, then Push It will mark it as deleted in the main window and this item will not be able to be pushed into the model. Any other value in this column will be ignored and the SOA item will be considered active.
 
+## THINGS STILL TO BE COVERED:
 
 - itemizing, etc.
 - SOA extraction process(es).
