@@ -7,7 +7,7 @@ modified:
 layout: "sample"
 ---
 
-# Summary
+## Summary
 
 Push it is meant to streamline the process of rapid plan layout development in Revit.
 Revit has issues with:
@@ -343,23 +343,33 @@ When switching Revit views, click the 'Refresh' button in the SOA window to ensu
 
 It's likely that the SOA will change over the lifetime of the Schematic Design phase of a project. In order to accommodate this, once the updated SOA txt file has been loaded into the Push It window, you can click the 'Push Revised' button to synchronize the SOA data to the Revit model. This process works by finding all model elements whose IDs (e.g. room number) match the SOA's item IDs (but whose other data does not) and pushing the corresponding SOA item's data into the model element bringing the model into alignment with the SOA once again. If any errors occur during this process, Push It will prompt you to save a csv/txt file with information about the failing SOA items / model elements. This file can be imported into Excel for inspection via Excel's text import wizard.
 
-### SOA data txt file preparation
+### SOA data preparation in Excel
 
 Push It requires the SOA data to be in a particular format. This format is a tab-delimited txt file that can be prepared and exported from Excel.
 
-The first row is for the column header. These can contain any descriptive name for each column. Since each column of data corresponds to a Revit parameter it's probably best to name them similar to the corresponding Revit parameter.
+![Sample SOA Excel file for Push It]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Excel-File-Sample.png){:class="img-responsive"}{: height="244px" width="1013px"}
 
-The second row indicates the unique IDs (GUID) of the corresponding Revit shared parameter for each column of data. These can be obtained by inspecting the Revit project's shared parameter txt file and copying across the appropriate IDs for the target parameters. This information tells Push It which Revit parameter on the Room family instance receives the 'pushed' value indicated in each cell.
+The first row is for the column header. This can contain any descriptive name for each column. Since each column of data corresponds to a Revit parameter it's probably best to name them similar to the corresponding Revit parameter.
+
+The second row indicates the unique IDs (GUID) of the corresponding Revit shared parameter for each column of data. These can be obtained by inspecting the Revit project's shared parameter txt file and copying across the appropriate IDs for the target parameters. This information tells Push It which Revit parameter on the Room family instance receives the 'pushed' value contained in each cell.
 
 The remaining rows describe each SOA item's data. Note that the first column of data must represent the unique identifier for the SOA items. You may designate any Revit shared parameter for this identifier. The only constraint is that the identifiers must be unique. Push It will not load an SOA file containing duplicate identifiers.
 
 To allow for marking an SOA item as having been removed from the project brief, the SOA may contain an additional column which indicates whether a particular SOA item is considered active or deleted. This column must be the last column and must NOT contain a parameter GUID (leave that cell blank). The column header can be named anything (e.g. 'STATUS' although the name is not important). If an SOA item contains the value "DELETED" in this column, then Push It will mark it as deleted in the main window and this item will not be able to be pushed into the model. Any other value in this column will be ignored and the SOA item will be considered active.
 
+### SOA data txt file Export
+
+Once the SOA data has been prepared, export the data to a tab-delimited txt file. This is done via the **File -> Export** menu. Select the file type *Text (Tab delimited) (\*.txt)* under the 'Change File Type' menu and click Save As to save the SOA txt file to a location where the team has access.
+
+*NOTE: Because the exported file format is a tab-delimited txt file, if any tab or newline characters (e.g. multi-line text) occur in the excel cell values, this will break the SOA data format. To avoid this, ensure that no tab or newline characters exist in the cell values before exporting to txt file.*
+
+![Export to tab-delimited txt file]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-txt-File-Export.png){:class="img-responsive"}{: height="389px" width="593px"}
+
 ## THINGS STILL TO BE COVERED:
 
 - itemizing, etc.
 - SOA extraction process(es).
-- Gotchas: txt file format is tab-delimited; if any tab or newline characters (e.g. multiline text) occur in the excel cell values, this breaks the SOA data format. Ensure that no tab or newline characters exist in the cell values before exporting to txt file.
+- Gotchas: 
 
 ### Push It behaviour and Design Options / Sets
 
