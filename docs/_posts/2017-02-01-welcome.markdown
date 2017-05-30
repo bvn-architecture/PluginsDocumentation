@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Documenting various software plug-ins developed at BVN"
-description: This is our first post. Hello World!
-header: Hello World
+title:  "BVN in-house Plugins Documentation"
+description: Work-in-progress documentation for in-house plugins developed and used at BVN
+header: BVN in-house Plugins Documentation
 date:   2017-05-19 20:56:14 +1100
 categories: Software Documentation
 tags:
   - docs
 ---
-# A good idea at the time...
+# Seems like a good idea at the time...
 
-Problems lead to ideas which lead to software solutions which, inevitably, needs some documentation for either teaching purposes or just to keep track of why solutions to these problems have been approached in a certain way.
+problems lead to ideas which lead to software solutions which, invariably, need some documentation for user instruction and for simply keeping track of why the solutions have developed the way they have over time.
