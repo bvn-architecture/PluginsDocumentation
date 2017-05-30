@@ -371,6 +371,8 @@ Once the SOA data has been prepared, export the data to a tab-delimited txt file
 
 It's likely that the project's SOA Excel file contains additional information and formatting that is useful for other purposes (e.g. department headers, summary information, etc.) that will interfere with the expected Excel structure described above. To accommodate this scenario a simple tool 'ExtractPushItSOA' was developed to export the SOA data txt file from an Excel file. It allows for multiple spreadsheets containing extra columns and rows of data unrelated to the Push It-specific SOA data. It works by inspecting a designated 'row classification' column (specified in the config file, see below) on each worksheet, extracting only those rows that have a value of 'ITEM' in that column's cell. Additionally, it extracts only a specific set of columns (also specified in the config file, see below) ignoring all other columns.
 
+![Advanced sample SOA Excel file for Push It]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Excel-File-Sample-Advanced.png){:class="img-responsive"}{: height="639px" width="1577px"}
+
 ![Push It SOA Exporter config file]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Exporter-Config.png){:class="img-responsive"}{: height="940px" width="676px"}
 
 [TODO: note that the config file also specifies the Revit parameter GUIDs for the columns so that the GUID row can be ommitted from the Excel file.]
