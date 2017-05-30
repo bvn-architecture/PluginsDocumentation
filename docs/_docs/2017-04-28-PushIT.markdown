@@ -355,6 +355,8 @@ The second row indicates the unique IDs (GUID) of the corresponding Revit shared
 
 The remaining rows describe each SOA item's data. Note that the first column of data must represent the unique identifier for the SOA items. You may designate any Revit shared parameter for this identifier. The only constraint is that the identifiers must be unique. Push It will not load an SOA file containing duplicate identifiers.
 
+Note that the SOA must be itemized down to individual rooms / spaces. This means that if the original SOA brief indicates the number of units for each of its briefed rooms, then you must first duplicate this information by the number of units and ensure that each of these items has a unique ID. A custom script may be used to perform this itemization process for a large SOA data set.
+
 To allow for marking an SOA item as having been removed from the project brief, the SOA may contain an additional column which indicates whether a particular SOA item is considered active or deleted. This column must be the last column and must NOT contain a parameter GUID (leave that cell blank). The column header can be named anything (e.g. 'STATUS' although the name is not important). If an SOA item contains the value "DELETED" in this column, then Push It will mark it as deleted in the main window and this item will not be able to be pushed into the model. Any other value in this column will be ignored and the SOA item will be considered active.
 
 ### SOA data txt file Export
@@ -365,9 +367,16 @@ Once the SOA data has been prepared, export the data to a tab-delimited txt file
 
 ![Export to tab-delimited txt file]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-txt-File-Export.png){:class="img-responsive"}{: height="389px" width="593px"}
 
+### SOA data txt file Export - Advanced
+
+It's likely that the project's SOA Excel file contains additional information and formatting that is useful for other purposes (e.g. department headers, summary information, etc.) that will interfere with the expected Excel structure described above. To accommodate this scenario a simple tool 'ExtractPushItSOA' was developed to export the SOA data txt file from an Excel file. It allows for multiple spreadsheets containing extra columns and rows of data unrelated to the Push It-specific SOA data. It works by inspecting a designated 'row classification' column (specified in the config file, see below) on each worksheet, extracting only those rows that have a value of 'ITEM' in that column's cell. Additionally, it extracts only a specific set of columns (also specified in the config file, see below) ignoring all other columns.
+
+![Push It SOA Exporter config file]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Exporter-Config.png){:class="img-responsive"}{: height="940px" width="676px"}
+
+[TODO: note that the config file also specifies the Revit parameter GUIDs for the columns so that the GUID row can be ommitted from the Excel file.]
+
 ## THINGS STILL TO BE COVERED:
 
-- itemizing, etc.
 - SOA extraction process(es).
 - Gotchas: 
 
