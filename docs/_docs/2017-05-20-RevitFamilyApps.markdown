@@ -1,8 +1,8 @@
 ---
 title:  "Revit Family Apps"
 date:   2017-05-18 19:00:00 +1100
-permalink: #/docs/2017-04-28-PushIt
-excerpt: "Varies Revit Apps centering around family management"
+permalink: #/docs/2017-05-20-RevitFamilyApps
+excerpt: "Various Revit Apps centering around family management"
 modified:
 layout: "sample"
 ---

@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-By the BVN in-house Development Team.
+Plugins Documentation by the BVN in-house Development Team.

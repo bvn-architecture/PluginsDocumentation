@@ -1,8 +1,8 @@
 ---
-title:  "Push It"
+title:  "Push It / Get a Room"
 date:   2017-04-28 19:00:00 +1100
 permalink: #/docs/2017-04-28-PushIt
-excerpt: "demo push it docs"
+excerpt: "Spatial planning workflow documentation"
 modified:
 layout: "sample"
 ---
