@@ -371,8 +371,6 @@ Once the SOA data has been prepared, export the data to a tab-delimited txt file
 
 It's likely that the project's SOA Excel file contains additional information and formatting that is useful for other purposes (e.g. department headers, summary information, etc.) that will interfere with the expected Excel structure described above. To accommodate this scenario a simple tool 'ExtractPushItSOA' was developed to export the SOA data txt file from an Excel file. It allows for multiple spreadsheets containing extra columns and rows of data unrelated to the Push It-specific SOA data. It works by inspecting a designated 'row classification' column on each worksheet, extracting only those rows that have a particular value in that column's cell (e.g. 'ITEM'). Additionally, it extracts only a specific set of columns ignoring all other columns. Each of these, along with the column GUIDs, are specified in the config file (described below).
 
-![Advanced sample SOA Excel file for Push It]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Excel-File-Sample-Advanced.png){:class="img-responsive"}{: height="639px" width="1577px"}
-
 #### Push It SOA Exporter config file
 
 To configure the extractor tool open up the config file '*SOA\_export\_config.json*' (located in the same folder as the '*ExtractPushItSOA.exe*' executable) in a text editor (e.g. Notepad). The config file format is a standard JSON object with the following properties:
@@ -387,9 +385,68 @@ To configure the extractor tool open up the config file '*SOA\_export\_config.js
 
 Example config file ('*SOA\_export\_config.json*'):
 
-![Push It SOA Exporter config file]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Exporter-Config.png){:class="img-responsive"}{: height="940px" width="676px"}
+```json
+{
+    "ExcelSoaRowClassificationColumn": "ROW_CLASSIFICATION",
+    "ExcelSoaItemRowClassification": "ITEM",
+    "ExcelSoaColumns": [
+        "ROW_CLASSIFICATION",
+        "DEPARTMENT",
+        "SUBDEPARTMENT",
+        "FUCTIONAL_GROUP",
+        "BUILDING_LOCATION",
+        "ROOM_NUMBER",
+        "ROOM_LABEL",
+        "ITEM_NUMBER",
+        "ROOM_NAME",
+        "NUMBER_OF_PERSONS",
+        "NUMBER_OF_ROOMS",
+        "UNIT_AREA",
+        "ROOM_SIZE",
+        "TOTAL_AREA_CELLULAR",
+        "TOTAL_AREA_OPENPLAN",
+        "DESIGNED_AREA",
+        "DELTA_AREA",
+        "DEPARTMENT_TOTAL_AREA",
+        "AC_REQUIRED",
+        "REMARKS",
+        "STATUS"
+    ],
+    "PushItSoaColumns": [
+        "ROOM_NUMBER",
+        "DEPARTMENT",
+        "SUBDEPARTMENT",
+        "FUCTIONAL_GROUP",
+        "BUILDING_LOCATION",
+        "ROOM_LABEL",
+        "ROOM_NAME",
+        "ROOM_SIZE",
+        "ITEM_NUMBER",
+        "REMARKS",
+        "STATUS"
+    ],
+    "PushItSoaColumnGuids": {
+        "ROOM_NUMBER": "9469de6d-f1b5-4ca8-91c6-dfeb2bdefb88",
+        "DEPARTMENT": "ab063eac-3f67-403c-9ab2-7b3a68ae976d",
+        "SUBDEPARTMENT": "afac4144-67d3-4454-b324-74b93953bb48",
+        "FUCTIONAL_GROUP": "337ab49f-9bfd-441e-9508-203194223dfd",
+        "BUILDING_LOCATION" : "c94fb6a3-ccf7-4ff0-a3df-40112ce36506",
+        "ROOM_LABEL": "7b118e21-ef5b-42bd-8d70-61bc6c78b7ff",
+        "ROOM_NAME": "32298a1e-ef2a-4d9a-90e7-3c51627c2f8b",
+        "ROOM_SIZE": "c1465816-66b9-426b-9300-33dff4141487",
+        "ITEM_NUMBER": "8bc86927-d27f-45b2-a63a-058c67fcebdb",
+        "REMARKS": "376b5d3b-88bf-4dd5-845b-0e82bcb3cb6a",
+        "STATUS": ""
+    }
+}
+```
 
-[TODO: note that the config file also specifies the Revit parameter GUIDs for the columns so that the GUID row can be ommitted from the Excel file.]
+[//]: # (NOTE: this is a comment)
+[//]: # (![Push It SOA Exporter config file]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Exporter-Config.png){:class="img-responsive"}{: height="940px" width="676px"})
+
+Example of a complex Excel SOA spreadsheet format:
+
+![Advanced sample SOA Excel file for Push It]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Excel-File-Sample-Advanced.png){:class="img-responsive"}{: height="639px" width="1577px"}
 
 ## THINGS STILL TO BE COVERED:
 
