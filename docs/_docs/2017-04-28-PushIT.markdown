@@ -369,9 +369,23 @@ Once the SOA data has been prepared, export the data to a tab-delimited txt file
 
 ### SOA data txt file Export - Advanced
 
-It's likely that the project's SOA Excel file contains additional information and formatting that is useful for other purposes (e.g. department headers, summary information, etc.) that will interfere with the expected Excel structure described above. To accommodate this scenario a simple tool 'ExtractPushItSOA' was developed to export the SOA data txt file from an Excel file. It allows for multiple spreadsheets containing extra columns and rows of data unrelated to the Push It-specific SOA data. It works by inspecting a designated 'row classification' column (specified in the config file, see below) on each worksheet, extracting only those rows that have a value of 'ITEM' in that column's cell. Additionally, it extracts only a specific set of columns (also specified in the config file, see below) ignoring all other columns.
+It's likely that the project's SOA Excel file contains additional information and formatting that is useful for other purposes (e.g. department headers, summary information, etc.) that will interfere with the expected Excel structure described above. To accommodate this scenario a simple tool 'ExtractPushItSOA' was developed to export the SOA data txt file from an Excel file. It allows for multiple spreadsheets containing extra columns and rows of data unrelated to the Push It-specific SOA data. It works by inspecting a designated 'row classification' column on each worksheet, extracting only those rows that have a particular value in that column's cell (e.g. 'ITEM'). Additionally, it extracts only a specific set of columns ignoring all other columns. Each of these, along with the column GUIDs, are specified in the config file (described below).
 
 ![Advanced sample SOA Excel file for Push It]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Excel-File-Sample-Advanced.png){:class="img-responsive"}{: height="639px" width="1577px"}
+
+#### Push It SOA Exporter config file
+
+To configure the extractor tool open up the config file '*SOA\_export\_config.json*' (located in the same folder as the '*ExtractPushItSOA.exe*' executable) in a text editor (e.g. Notepad). The config file format is a standard JSON object with the following properties:
+
+| Property | Description | Example value |
+| --- | --- | --- |
+| **ExcelSoaRowClassificationColumn** | Specifies the *name of the column* that holds the value indicating whether an Excel row is an SOA item row or not | "ROW_CLASSIFICATION" |
+| **ExcelSoaItemRowClassificationColumn** | Specifies the row classification *value* that indicates that a row is an SOA item row to be exported | "ITEM" |
+| **ExcelSoaColumns** | An ordered list of names of *all* columns in the Excel file | \[ "ROW_CLASSIFICATION", "ROOM_NUMBER", "DEPARTMENT", "REMARKS", "STATUS" \] |
+| **PushItSoaColumns** | An ordered list of names of columns to be included in the export | \[ "ROOM_NUMBER", "DEPARTMENT", "STATUS" \] |
+| **PushItSoaColumnGuids** | An object describing the relationship between exported column names and Revit Shared Parameter GUIDs  | {<br>"ROOM_NUMBER": "9469de6d-f1b5-4ca8-91c6-dfeb2bdefb88",<br>"DEPARTMENT": "ab063eac-3f67-403c-9ab2-7b3a68ae976d",<br>"STATUS": ""<br>} |
+
+Example config file ('*SOA\_export\_config.json*'):
 
 ![Push It SOA Exporter config file]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Exporter-Config.png){:class="img-responsive"}{: height="940px" width="676px"}
 
