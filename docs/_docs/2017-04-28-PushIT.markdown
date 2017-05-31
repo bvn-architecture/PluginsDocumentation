@@ -450,8 +450,7 @@ Example of a complex Excel SOA spreadsheet format:
 
 ## THINGS STILL TO BE COVERED:
 
-- SOA extraction process(es).
-- Gotchas: 
+- Gotchas / Limitations
 
 ### Push It behaviour and Design Options / Sets
 
