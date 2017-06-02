@@ -29,3 +29,4 @@ Thumbs.db
 
 #jekyll
 _site
+.sass-cache
