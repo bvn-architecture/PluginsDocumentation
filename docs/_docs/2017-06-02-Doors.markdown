@@ -153,10 +153,92 @@ Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leav
 {:.NoHorizontalLines}
 | Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
 |---------------------------------|
-| Double door – Non-fire rated, 40 thick leaves (min. 1400 clear if NRF) | 1590 nom (1580 hinged/ 1588 FR pivot actual) | 955 + 540 (minimal NRF hinged leaf widths to give 1400) | FYI: 1320 transom closer pivot, (869 primary opening but 1588 set) | BCA cl. D1.6 (f)( i )(A) re 1200 clear for doorway in patient care area through which patients would normally be transported in beds off corridor less than 2200 clear. Primary opening to be min. 800 clear. HFG RDS/ RLS for rms requiring 1400 clear. | Non-compliance if pivot, transom pivot or FR hinged door configurations or if door leaves thicker then 45mm. | RNSH: NB. Bariatric bed is 1130 wide (add 100 for side rails ie 1230 wide) – check corridor width needed to suit turning circle. See email 10:27am on 24.11.08 JW to NL 1.07 – is a 1601 clear opening needed? |
-| (D230 is preferred due to compliance as hinged FR or if thicker leaves) | | | FYI: 1388 hinged FD, (899 primary opening; 1580 set) |
-| Horizontal exit  in a patient care area under BCA min. 1250 clear |
-| access for hoists and shower trolleys |
-| access for stretchers, large trolleys, large equipment, beds but check std and bariatric beds esp. if off 1800 clear corridor |
-| patient bed rooms, patient assisted bathrooms |
-| bed accessible rooms eg imaging rooms |
+| Double door (min. 1400 clear)| 1605 nom | 990 + 520 | 1335 transom closer pivot, (904 primary opening) | BCA cl. D1.6 (f)( i )(A) re 1200 clear for doorway in patient care area through which patients would normally be transported in beds off corridor less than 2200 clear. Primary opening to be min. 800 clear. | HFG RDS/ RLS for rms requiring 1400 clear. Non-compliance if transom closer configuration which is unlikely in these contexts. | RNSH: NB. Bariatric bed is 1130 wide (add 100 for side rails ie 1230 wide) – check corridor width needed to suit turning circle. See email 10:27am on 24.11.08 JW to NL 1.07 – is a 1601 clear opening needed? |
+| Horizontal exit  in a patient care area under BCA min. 1250 clear | (1595 hinged/ 1603  FR pivot actual) | | 1403 hinged FD, (934 primary opening) | BCA cl. D1.6 (f)(ii) re min. 1250 clear horizontal exit | | Min. 450 secondary leaf required for slide arm closers. Wider leaf may be required for concealed closers that would probably be used in Mental Health for anti-ligature (540 for Dorma ITS 69) – check closer constraints for various types incl. RTS, ITS and TS and auto incl. sequencers. |
+| access for hoists and shower trolleys | | | 1419 NFR hinged, (946 primary opening) | BCA cl.D3.2(e) re min.850 primary opening | | Min. 720w leaf to fit transom closer, shear lock and reed switch (though achieved 620w on RNSH for door 07/1064) |
+| access for stretchers, large trolleys, large equipment, beds but check std and bariatric beds esp. if off 1800 clear corr | | | | HFG cl. 710.25.00 re min. 1200 clear to inpatient bed rooms | | Min. 725w leaves to fit auto swing door operator but may need to add additional width for EMLs. |
+| patient bed rooms, patient assisted bathrooms | | | | HFG cl. 710.27.00 re 1000 for hoists and shower trolleys | | RNSH: had to use min.800+920 leaves to fit ITS closers and NE latches to PEC doors |
+| bed accessible rooms eg imaging rooms | | | | HFG RDS/ RLS for rms requiring 1400 clear with 910 primary clear opening, except if transom closers used | | Min. WL of 530 where D = 900 in AS1428.1 requires min. 389w secondary leaf if hinged configuration assuming 100 nib, but this is too narrow for closer |
+| NBH: consult, birthing rooms, disposal, general xray rm, equipment stores, ultrasound | | | | | | If sequencer is required, it will need to be integral with closers due to width of secondary leaf |
+| | | | | | | | Review for MCR: Unlikely to suit bariatric beds |
+
+* D250
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+|EDB Cupboards | 1735 nom | 820+820 x 2140h | 1465 transom closer pivot, (834 primary opening) |
+| | (1725 hinged/ 1733 FR pivot actual) | | 1533 hinged FD, (768 primary opening)|
+| | | 1549 NFR hinged, (776 primary opening) |
+
+
+* D260 a
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+| Double door (min. 1500 clear) | 1785 nom | 970 + 720 | 1515 transom closer pivot, (884 primary opening) | BCA cl.D3.2(e) re min.850 primary opening | 910 primary clear opening is required in certain HFG RDS/ RLS but transom closers unlikely in room contexts | 910 primary clear opening not achieved for transom pivot configuration for 970w leaf. |
+| Suitable for use as door across 1800 clear corridor but will have 82.5mm nibs | (1775 hinged/ 1783 FR pivot actual) | | 1583 hinged FD, (918 primary opening) | | | (910 primary clear opening is required in certain HFG RDS/ RLS but transom closers unlikely in room contexts.)|
+| Large Procedure Rms eg 20 sqm, ORs, Anaes, CT Scanning Procedure Rms | | | 1599 NFR hinged, (926 primary opening) | | | 970 leaf is also used in D270 below |
+| | | | | | | Min. 720w leaf to fit transom closer, shear lock and reed switch (though achieved 620w on RNSH for door 07/1064) |
+| | | | | | | Min. 725w leaves to fit auto swing door operator but may need to add additional width for EMLs. |
+
+* D265 h
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+| Double door (min. 1500 clear) | 1815 nom | 860 + 860 | 1545 transom closer pivot, (774 primary opening) | HFG RDS/ RLS  for Large Procedure Rms eg 20 sqm, ORs, Anaes, CT Scanning Procedure Rms  | 910 primary clear opening is required in certain HFG RDS | 
+| Can only be use where exempt from BCA/ AS 1428.1 re 850 clear for accessibility unless door is automatic | (1805 hinged/ 1813 FR pivot actual) |  | 1613 hinged FD, (808 primary opening) |  | BCA cl.D3.2(e) re min.850 primary opening | Refer to BCA cl. D3.2(e)  re automatic/ power operation may alleviate AS 1428.1 non-compliance. |
+| NBH: OR, Sterile Stock Stores |  |  | 1629 NFR hinged, (816 primary opening) |
+
+* D266 a, b
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+| NBH RDS nominates 920 + 920 for Procedure Rm, Endoscopy (achieves min. 1650 clear)  | 1935 nom | 920 + 920 | 1664 transom closer pivot, (834 primary opening) |  | 910 primary clear opening is required in certain HFG RDS |
+| NBH: Procedure Rm, Endoscopy | (1925 hinged/ 1933 FR pivot actual) |  | 1733 hinged FD, (868 primary opening) |  | BCA cl.D3.2(e) re min.850 primary opening for transom pivot |
+| ITV Sterile Stock  |  |  | 1749 NFR hinged, (876 primary opening) |  |  |
+| option for linen bays |  |  |  |  |  |
+
+* D270 a, b , c, d
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+| Double door (min. 1765 clear) | 2035 nom | 970 + 970 | 1765 transom closer pivot, (884 primary opening) | HFG RDS/ RLS  for Catheter Lab Procedure Rms and Angio Procedure Rms – check  other specialist rms requiring 1600 clear | 910 primary clear opening is required in certain HFG RDS/ RLS but transom closers unlikely in room contexts | 
+| Suitable for use as door across 2100 clear corridor | (2025 hinged/ 2033 FR pivot actual) |  | 1833 hinged FD, (918 primary opening) | BCA cl.D3.2(e) re min.850 primary opening |  | Review for MCR: Does this suit bariatric beds? |
+| linen bays (preferred) |  |  | 1849 NFR hinged, (926 primary opening) |  |  | |
+| HFG RDS/ RLS  for Catheter Lab Procedure Rms and Angio Procedure Rms – check  other specialist rms requiring 1600 clear |  |  |  |  |  | Would need 990w primary leaf to achieve 910 clear for transom pivot |
+|  |  |  |  |  |  | 910 primary clear opening not achieved for transom pivot configuration for 970w leaf. |
+|  |  |  |  |  |  | (910 primary clear opening is required in certain HFG RDS/ RLS but transom closers unlikely in room contexts.) |
+|  |  |  |  |  |  | Min. 720w leaf to fit transom closer, shear lock and reed switch (though achieved 620w on RNSH for door 07/1064) |
+|  |  |  |  |  |  | Min. 725w leaves to fit auto swing door operator but may need to add additional width for EMLs. |
+
+* D278
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+| Double door (min. 1900 clear) | 2175 nom | 1040 + 1040 | 1905 transom closer pivot, (914 primary opening) | BCA cl.D3.2(e) re min.850 primary opening | 910 primary clear opening is required in certain HFG RDS/ RLS  | |
+| For Link Bridge for max clear opening on esp. hold open doors | (2165 hinged/ 2173 FR pivot actual) |  | 1973 hinged FD, (988 primary opening) |  |  |  |
+|  |  |  | 1989 NFR hinged, (996 primary opening) |  |  | 
+
+* D280 
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+| Double door  | 2335 nom | 1120 + 1120 | 2065 transom closer pivot, (994 primary opening) | BCA cl.D3.2(e) re min.850 primary opening |  | |
+| for major corridors | (2325 hinged/ 2333 FR pivot actual) |  | 2133 hinged FD, (1068 primary opening) |  |  | |
+| |  |  | 2149 NFR hinged, (1076 primary opening) |  |  |
+
+* D285
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+| Double door (for max. 1200 leaves) | 2495 nom | 1200 + 1200 | 2225 transom closer pivot, (1074 primary opening) | BCA cl.D3.2(e) re min.850 primary opening |  | Min 45 thick to minimise bowing |
+| for major corridors | (2485 hinged/ 2493 FR pivot actual) |  | 2293 hinged FD, (1148 primary opening) |  |  |  |
+| |  |  | 2299 based on 45 thick NFR hinged, (1151 primary opening) |  |  | |
