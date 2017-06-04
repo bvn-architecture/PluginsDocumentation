@@ -147,3 +147,16 @@ Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leav
 | to bariatric and ICU Ensuites as per HFG RDS/ RLS | | | | BCA cl.D3.2(e) re min.850 primary opening | BCA cl. D1.6 (f)(ii) re min. 1250 clear horizontal exit | Min. 450 secondary leaf required for slide arm closers. Wider leaf may be required for concealed closers that would probably be used in Mental Health for anti-ligature (540 for Dorma ITS 69) – check closer constraints for various types incl. RTS, ITS and TS and auto incl. sequencers.|
 | consult rms | | | | HFG cl. 710.25.00 re min. 1200 clear to inpatient bed rooms | | RNSH: had to use min.800+920 leaves to fit ITS closers and NE latches to PEC doors |
 | | | | | HFG cl. 710.27.00 re 1000 for hoists and shower trolleys | | Min. WL of 530 where D = 900 in AS1428.1 requires min. 389w secondary leaf if hinged configuration assuming 100 nib, but this is too narrow for closer If sequencer is required, it will need to be integral with closers due to width of secondary leaf |
+
+* D220a,b
+
+{:.NoHorizontalLines}
+| Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
+|---------------------------------|
+| Double door – Non-fire rated, 40 thick leaves (min. 1400 clear if NRF) | 1590 nom (1580 hinged/ 1588 FR pivot actual) | 955 + 540 (minimal NRF hinged leaf widths to give 1400) | FYI: 1320 transom closer pivot, (869 primary opening but 1588 set) | BCA cl. D1.6 (f)( i )(A) re 1200 clear for doorway in patient care area through which patients would normally be transported in beds off corridor less than 2200 clear. Primary opening to be min. 800 clear. HFG RDS/ RLS for rms requiring 1400 clear. | Non-compliance if pivot, transom pivot or FR hinged door configurations or if door leaves thicker then 45mm. | RNSH: NB. Bariatric bed is 1130 wide (add 100 for side rails ie 1230 wide) – check corridor width needed to suit turning circle. See email 10:27am on 24.11.08 JW to NL 1.07 – is a 1601 clear opening needed? |
+| (D230 is preferred due to compliance as hinged FR or if thicker leaves) | | | FYI: 1388 hinged FD, (899 primary opening; 1580 set) |
+| Horizontal exit  in a patient care area under BCA min. 1250 clear |
+| access for hoists and shower trolleys |
+| access for stretchers, large trolleys, large equipment, beds but check std and bariatric beds esp. if off 1800 clear corridor |
+| patient bed rooms, patient assisted bathrooms |
+| bed accessible rooms eg imaging rooms |
