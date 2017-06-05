@@ -42,24 +42,21 @@ The following rooms will be captured:
 ### Room Properties
 
 The following room properties are used when creating Room Layout Sheets (RLS) either to donate a finish or use and briefed vs designed area:
-
-| Area | The designed area of a room measured to centre line walls |
-| Base Finish | TBC |
-| Ceiling Finish | TBC |
-| Ceiling Height | TBC |
-| Comments | TBC |
-| Department | TBC |
-| Department Code | TBC |
-| FF_1 | TBC |
-| FF_Specific 1 | TBC |
-| FFETemplateMatch | TBC |
-| Floor Finish | TBC |
-| Name | The briefed name of the room. |
-| Number | The briefed code of the room. |
-| Sub-Department  | TBC |
-| TemplateMatch | TBC |
-| Unique Id | TBC |
-| Wall Finish | TBC |
+| Name | Type | Usage |
+| Area | build in | The designed area of a room measured to centre line walls |
+| Base Finish | build in | not used |
+| Ceiling Finish | build in | not used |
+| Ceiling Height | TBC | Populated by dRofus to check against the modelled |
+| Comments | build in  | not used |
+| Department | build in | not used at generics |
+| Department Code | TBC | not used at generics |
+| FFETemplateMatch |  | Indicates whether a room matches a generic room exactly in terms of FFE |
+| Floor Finish | build in | Used to show the floor finish via a room tag (Room Finishes Tag_ANN.rfa) |
+| Name | build in | The briefed name of the room. |
+| Number | build in | The briefed code of the room. |
+| Sub-Department  | | TBC |
+| Unique Id | | TBC |
+| Wall Finish | build in | not used |
 
 ## Room Layout Sheets
 
