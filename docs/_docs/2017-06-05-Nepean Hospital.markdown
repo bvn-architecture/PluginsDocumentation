@@ -11,6 +11,7 @@ layout: "sample"
 
 ## Site set-out
 
+TBC
 
 # New Acute Services Building
 
@@ -73,8 +74,7 @@ The areas have the following properties:
 | AREA_COLOUR_BVN  | acac3c63-7165-4dd9-b648-c086e0ddde48 | Area colour fill scheme uses this property to colour in areas |
 | AREA_COMPARTMENT_GROUP_BVN  | 4955f5a0-86fb-4fee-8184-7ae85716bebe| Used when a fire department spreads across multiple levels and therefore requires a number of areas to be drawn to capture its full extent. |
 | | | Fire compartment schedule filters all area instance with the same fire compartment group number |
-| AREA_TYPE_BVN  | 1bcf8295-93ea-4c10-85ce-40b879fd31d5 | Can be used to differentiate between 'Patient Care and Treatment' vs 'Ancillary' areas. |
-| | | This parameter is more flexible than the build in 'Area Type' which only has a fixed non changeable number of values | 
+| AREA_TYPE_BVN  | 1bcf8295-93ea-4c10-85ce-40b879fd31d5 | Can be used to differentiate between 'Patient Care and Treatment' vs 'Ancillary' areas. This parameter is more flexible than the build in 'Area Type' which only has a fixed non changeable number of values |
 | Name | build in |type of department: e.g. SMOKE |
 | Number | build in | Fire compartment number: e.g. AXX-2a-L1|
 
@@ -98,21 +98,21 @@ Schedules which are placed on sheets call up the following properties:
 
 The schedule name contains the area type e.g. 'Patient Care and Treatment'
 
-![Typical Door Jamb Detail_A]({{ site.baseurl }}/assets/s1607004_inh/FireDepartmentSchedule.svg){:class="img-responsive"}{: height="400px" width="600px"}
+![Typical Door Jamb Detail_A]({{ site.baseurl }}/assets/s1607004_inh/FireDepartmentSchedule.svg){:class="img-responsive"}{: height="200px" width="300px"}
 
 ### Tags
 
 | Purpose | Family | Image |
 |--------------------------|
 | Area Tag | 083 - Fire Area Tag.rfa | |
-| FH/ FHR New | 0831 - FHR FH Tag - NEW.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_NEW.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| FH New | 0831 - FH Tag - NEW.rfa | ![FH NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_NEW.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| FHR New | 0832 - FHR Tag - NEW.rfa | ![FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FHR_NEW.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| FH/ FHR Existing | 0831 - FHR FH Tag - EX.rfa | ![FH FHR EX]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| FH Existing | 0831 - FH Tag - EX.rfa |  ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_EX.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| FHR Existing | 0832 - FHR Tag - EX.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s1607004_inh/083_RequiredExit.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s1607004_inh/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| FH/ FHR New | 0831 - FHR FH Tag - NEW.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FH New | 0831 - FH Tag - NEW.rfa | ![FH NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FHR New | 0832 - FHR Tag - NEW.rfa | ![FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FHR_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FH/ FHR Existing | 0831 - FHR FH Tag - EX.rfa | ![FH FHR EX]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FH Existing | 0831 - FH Tag - EX.rfa |  ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FHR Existing | 0832 - FHR Tag - EX.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s1607004_inh/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s1607004_inh/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 
 
 
