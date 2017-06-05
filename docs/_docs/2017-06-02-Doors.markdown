@@ -97,6 +97,52 @@ If “_p” is also added, the door is pivot action eg D150a_p is a solid 990w l
 
 Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leaves/ 2400h set.
 
+## Typical Door Details
+
+### Typical Door Type Elevations
+
+![Typical Door Type Elevations]({{ site.baseurl }}/assets/Doors/TypicalDoorElevation.svg){:class="img-responsive"}{: height="400px" width="600px"}
+
+### Typical Door Frame Details
+
+![Typical Door Frame Details]({{ site.baseurl }}/assets/Doors/TypicalDoorFrameDetails.svg){:class="img-responsive"}{: height="400px" width="600px"}
+
+### Typical Door Jamb Details
+
+* Dry Wall
+![Typical Door Jamb Detail_Dry Wall]({{ site.baseurl }}/assets/Doors/TypicalDoorDryWallJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+
+* Detail A
+![Typical Door Jamb Detail_A]({{ site.baseurl }}/assets/Doors/TypicalDoorAJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail B
+![Typical Door Jamb Detail_B]({{ site.baseurl }}/assets/Doors/TypicalDoorBJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail C
+![Typical Door Jamb Detail_C]({{ site.baseurl }}/assets/Doors/TypicalDoorCJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail D
+![Typical Door Jamb Detail_D]({{ site.baseurl }}/assets/Doors/TypicalDoorDJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail E
+![Typical Door Jamb Detail_E]({{ site.baseurl }}/assets/Doors/TypicalDoorEJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+
+### Typical Door Meeting Style Details
+
+* Detail 1
+![Typical Door Meeting Style Detail_01]({{ site.baseurl }}/assets/Doors/TypicalDoor01MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail 2
+![Typical Door Meeting Style Detail_02]({{ site.baseurl }}/assets/Doors/TypicalDoor02MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail 3
+![Typical Door Meeting Style Detail_03]({{ site.baseurl }}/assets/Doors/TypicalDoor03MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail 4
+![Typical Door Meeting Style Detail_04]({{ site.baseurl }}/assets/Doors/TypicalDoor04MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail 5
+![Typical Door Meeting Style Detail_05]({{ site.baseurl }}/assets/Doors/TypicalDoor05MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail 6
+![Typical Door Meeting Style Detail_06]({{ site.baseurl }}/assets/Doors/TypicalDoor06MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail 7
+![Typical Door Meeting Style Detail_07]({{ site.baseurl }}/assets/Doors/TypicalDoor07MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+* Detail 8
+![Typical Door Meeting Style Detail_08]({{ site.baseurl }}/assets/Doors/TypicalDoor08MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+
+
 ## Commonly used door sizes
 ### Single Doors
 * D120a,b,c,a-p
