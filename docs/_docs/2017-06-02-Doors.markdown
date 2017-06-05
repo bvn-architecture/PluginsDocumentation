@@ -101,7 +101,7 @@ Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leav
 
 ### Typical Door Type Elevations
 
-![Typical Door Type Elevations]({{ site.baseurl }}/assets/Doors/TypicalDoorElevation.svg){:class="img-responsive"}{: height="800px" width="1200px"}
+![Typical Door Type Elevations]({{ site.baseurl }}/assets/Doors/TypicalDoorElevation.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
 
 ### Typical Door Frame Details
 
@@ -110,7 +110,7 @@ Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leav
 ### Typical Door Jamb Details
 
 * Dry Wall
-![Typical Door Jamb Detail_Dry Wall]({{ site.baseurl }}/assets/Doors/TypicalDoorDryWallJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
+![Typical Door Jamb Detail_Dry Wall]({{ site.baseurl }}/assets/Doors/TypicalDoorDryWallJambDetail.svg){:class="img-responsive"}{: height="800px" width="1200px"}
 
 * Detail A
 ![Typical Door Jamb Detail_A]({{ site.baseurl }}/assets/Doors/TypicalDoorAJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
