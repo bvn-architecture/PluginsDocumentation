@@ -39,7 +39,9 @@ The following rooms will be captured:
 | WCST | Toilet - Staff |
 | EN-ST-AS | Ensuite ( Toilet and shower patient - Not ensuited to room) |
 
-Room properties and their use:
+### Room Properties
+
+The following room properties are used when creating Room Layout Sheets (RLS) either to donate a finish or use and briefed vs designed area:
 
 | Area | The designed area of a room measured to centre line walls |
 | Base Finish | TBC |
@@ -59,14 +61,56 @@ Room properties and their use:
 | Unique Id | TBC |
 | Wall Finish | TBC |
 
+## Room Layout Sheets
+
+Room layout sheets show the arrangement of equipment and fixtures within a room. They comprise of:
+
+* Floor plan
+* Reflective ceiling plan
+* Elevations of all walls
+* 3D Axo to convey the layout in 3D
+* FFE schedule
+
+All plans and elevations are in scale 1 to 50. Ideally all room layout sheets are on the same size sheets (A3). This might require 2 or more sheets for larger rooms.
+
+### Tagging
+
+Tag family to be used: 
+
+Tagged in floor plan:
+
+* Room name and Number (tag family)
+* Beds
+* loose furniture
+
+Tagged in Elevations
+
+* Services items placed on walls
+
+
+Tagged in RCP
+
+*
+
 
 ## Fire Compartment Drawings
 
-The Fire Compartment drawings are done as Area Plans of type: 'FIRE COMPARTMENT'.
+Fire Compartment drawings show smoke and fire compartmentation of a building floor by floor. They inform:
+
+* Fire / smoke compartment sizes across a single floor or spanning multiple floors
+* Which stairs are fire egress stairs
+* location of smoke rated lobbies to fire egress stairs
+* Which walls require a smoke or fire rating
+* Which ceilings require a smoke or fire rating
+* Which doors require a smoke or fire rating
+* Which direction egress doors have to swing
+* Where internal or external drenchers are required
+
+In Revit the Fire Compartment drawings are done as Area Plans of type: 'FIRE COMPARTMENT'. This allows to draw areas indicating compartments on top of the proposed or existing layouts. These areas, in turn, can be coloured in to show clearly the extent of a compartment as well as tagged and scheduled out.
 
 ### Custom shared parameter properties
 
-The areas have the following properties:
+The following table shows the usage of Revit's build in area properties as well as the following custom properties (shared parameters).
 
 | Property | GUID | use |
 |-----|
@@ -80,27 +124,31 @@ The areas have the following properties:
 
 ### Fire compartment numbering
 
+For ease of identification the following numbering scheme has been applied to the fire / smoke compartments.
+
 | Building | - | Level | - | seq Number |
 |-----------------------------------|
 | 50 | - | 01 | - | 1 |
-| 50 | - | XX (multistorey department) | - | 2a (sub compartment 'a' of compartment '2') | 
+| 50 | - | XX (multi storey department) | - | 2a (sub compartment 'a' of compartment '2') |
 
 
-### Schedules
+### Compartment Schedules
 
-Schedules which are placed on sheets call up the following properties:
+In order to show the overall size of a fire compartment, which can be made up of multiple smoke departments on the same floor or spanning multiple floors, schedules have been placed summarizing the compartment area. These schedules call up the following properties:
 
 | Property | Formatting | Comments|
 |-------------------|
 | AREA_COMPARTMENT_GROUP_BVN  | Hidden field | used for filtering areas belonging to a particular fire department only|
 | Number | as is | - |
-| Area | 0 decimal places| calculate totals |
+| Area | 0 decimal places| calculate totals enabled|
 
-The schedule name contains the area type e.g. 'Patient Care and Treatment'
+The schedule name contains the area type e.g. 'Patient Care and Treatment'. This is important since different area types allow for different maximum compartment area.
 
 ![Typical Door Jamb Detail_A]({{ site.baseurl }}/assets/s1607004_inh/FireDepartmentSchedule.svg){:class="img-responsive"}{: height="200px" width="300px"}
 
 ### Tags
+
+The following tags are used to indicate location of fire fighting equipment as well as required fire egress and egress direction.
 
 | Purpose | Family | Image |
 |--------------------------|
