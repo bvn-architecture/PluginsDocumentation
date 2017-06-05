@@ -22,17 +22,17 @@ The following rooms will be captured:
 
 | Room Code | Room Name |
 |-----|
-| BMEQ-4 | Bay- Mobile Equiment  4m² |
-| BMEQ-6 | Bay- Mobile Equiment  6m² |
+| BMEQ-4 | Bay- Mobile Equiment  4sqm |
+| BMEQ-6 | Bay- Mobile Equiment  6sqm |
 | BHWS-A | Bay - Handwash Basin Type A |
 | BHWS-B | Bay - Handwash Basin Type B |
 | BHWS-PPE | Bay - Handwash Basin & PPE |
-| BS-1 | Bay - Storage 1m² |
+| BS-1 | Bay - Storage 1sqm |
 | BPTS | Bay - Pneumatique Tube |
 | BLIN | Bay - Linen |
 | BRES | Bay - Resus Trolley |
 | BMT-4 | Bay - Meal Trolley |
-| WCPU-3 | Toilet - Public  3m² |
+| WCPU-3 | Toilet - Public  3sqm |
 | WCAC | Toilet - Accessible |
 | WCPT | Toilet - Patient |
 | WCST | Toilet - Staff |
@@ -61,7 +61,7 @@ Room properties and their use:
 
 ## Fire Compartment Drawings
 
-The Fire Compartment drawings are done as Area Plans of type: 'FIRE COMPARTMENT'. 
+The Fire Compartment drawings are done as Area Plans of type: 'FIRE COMPARTMENT'.
 
 ### Custom shared parameter properties
 
@@ -83,7 +83,7 @@ The areas have the following properties:
 | Building | - | Level | - | seq Number |
 |-----------------------------------|
 | 50 | - | 01 | - | 1 |
-| 50 | - | XX (multistorey department) | - | 2a (sub campartment 'a' of compartment '2') | 
+| 50 | - | XX (multistorey department) | - | 2a (sub compartment 'a' of compartment '2') | 
 
 
 ### Schedules
@@ -92,7 +92,7 @@ Schedules which are placed on sheets call up the following properties:
 
 | Property | Formatting | Comments|
 |-------------------|
-| AREA_COMPARTMENT_GROUP_BVN  | Hidden fild | used for filtering areas belonging to a particular fire department only|
+| AREA_COMPARTMENT_GROUP_BVN  | Hidden field | used for filtering areas belonging to a particular fire department only|
 | Number | as is | - |
 | Area | 0 decimal places| calculate totals |
 
