@@ -7,15 +7,16 @@ modified:
 layout: "sample"
 ---
 
-# Existing Cancer Center refurbishment Works
 
-## Site set-out
 
+# Site set-out
+
+## Existing Cancer Center refurbishment Works
 TBC
 
-# New Acute Services Building
+## New Acute Services Building
 
-## Generic Rooms
+# Generic Rooms
 
 Generic Rooms for the Schematic Design stage are located in s1607004-AR-INH-GENRIC.rvt Revit file.
 
@@ -39,7 +40,7 @@ The following rooms will be captured:
 | WCST | Toilet - Staff |
 | EN-ST-AS | Ensuite ( Toilet and shower patient - Not ensuited to room) |
 
-### Room Properties
+## Room Properties
 
 The following room properties are used when creating Room Layout Sheets (RLS) either to donate a finish or use and briefed vs designed area:
 
@@ -109,7 +110,7 @@ There are 3 types available:
 * 2700mm High Ceiling
 * 3000mm High Ceiling
 
-## Fire Compartment Drawings
+# Fire Compartment Drawings
 
 Fire Compartment drawings show smoke and fire compartmentation of a building floor by floor. They inform:
 
@@ -124,7 +125,7 @@ Fire Compartment drawings show smoke and fire compartmentation of a building flo
 
 In Revit the Fire Compartment drawings are done as Area Plans of type: 'FIRE COMPARTMENT'. This allows to draw areas indicating compartments on top of the proposed or existing layouts. These areas, in turn, can be coloured in to show clearly the extent of a compartment as well as tagged and scheduled out.
 
-### Custom shared parameter properties
+## Custom shared parameter properties
 
 The following table shows the usage of Revit's build in area properties as well as the following custom properties (shared parameters).
 
@@ -138,7 +139,7 @@ The following table shows the usage of Revit's build in area properties as well 
 | Name | build in |type of department: e.g. SMOKE |
 | Number | build in | Fire compartment number: e.g. AXX-2a-L1|
 
-### Fire compartment numbering
+## Fire compartment numbering
 
 For ease of identification the following numbering scheme has been applied to the fire / smoke compartments.
 
@@ -148,7 +149,7 @@ For ease of identification the following numbering scheme has been applied to th
 | 50 | - | XX (multi storey department) | - | 2a (sub compartment 'a' of compartment '2') |
 
 
-### Compartment Schedules
+## Compartment Schedules
 
 In order to show the overall size of a fire compartment, which can be made up of multiple smoke departments on the same floor or spanning multiple floors, schedules have been placed summarizing the compartment area. These schedules call up the following properties:
 
@@ -162,7 +163,7 @@ The schedule name contains the area type e.g. 'Patient Care and Treatment'. This
 
 ![Typical Door Jamb Detail_A]({{ site.baseurl }}/assets/s1607004_inh/FireDepartmentSchedule.svg){:class="img-responsive"}{: height="200px" width="300px"}
 
-### Tags
+## Tags
 
 The following tags are used to indicate location of fire fighting equipment as well as required fire egress and egress direction.
 
@@ -178,9 +179,13 @@ The following tags are used to indicate location of fire fighting equipment as w
 | Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s1607004_inh/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 | Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s1607004_inh/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 
-## Doors
+# Doors
 
-### Door numbering
+## Door Types and Sizes
+
+For a more in depth explanation of the varies door types ans sizes available refer to this [post]
+
+## Door numbering
 
 Doors numbers are made up of two parts: the number of a room a doors belongs to and an instance counter of doors placed in a room.
 
@@ -197,7 +202,7 @@ One questions raised from time to time is: why do we show the room number in a b
 * To avoid ambiguity in situations like doors opening into corridors (refer to door numbering exceptions above)
 * To avoid the requirement to re-code a door if the swing direction changes after the door schedule has been issued for the first time.
 
-### Door Families
+## Door Families
 
 The following Revit door families are used:
 
@@ -215,19 +220,24 @@ Revit door properties used to number a door:
 | Room reference | | the number of the room the door belongs to.  |
 | Door Instance By Room | | instance counter of doors placed in a room. e.g. D01 |
 
-### AS 1428
+## AS 1428
 
-The door family (single) has approach clearances as per AS 1428 build in. These are accessible via the xxx property:
+The door family (single leaf) has approach clearances as per AS 1428 build in. These are accessible via the xxx property:
 
 | Property | approach |
 |------------------|
 | 1 | |
+| 2 | |
+| 3 | |
+| 4 | |
+| 5 | |
+| 6 | |
+| 7 | |
+| 8 | |
 
+## Door Tag
 
-
-### Door Tag
-
-Revit door tag: 
+Revit door tag:
 
 This tag has a couple of types:
 
@@ -235,3 +245,12 @@ This tag has a couple of types:
 |-----------|
 | internal | for internal doors | |
 | external | for external doors usually covered in a separate schedule | |
+
+## Existing Door Family Properties
+
+The existing door families have some extra properties to allow to indicate that they
+
+* require painting
+* require to be re-hang
+* require additional door protection
+
