@@ -182,4 +182,56 @@ The following tags are used to indicate location of fire fighting equipment as w
 
 ### Door numbering
 
-Door 
+Doors numbers are made up of two parts: the number of a room a doors belongs to and an instance counter of doors placed in a room.
+
+Sample: 1234-D01 refers to a door belonging to room 1234 with instance counter of D01 (door number one).
+
+In general a door belongs to the room it opens into. There are however a few exceptions of this rule:
+
+* External doors opening outwards
+* Doors to EDB's or similar in corridors
+* Doors to en-suites opening into the bed room
+
+One questions raised from time to time is: why do we show the room number in a big space consuming door tag if there is a room tag showing the same information adjacent? Two reasons:
+
+* To avoid ambiguity in situations like doors opening into corridors (refer to door numbering exceptions above)
+* To avoid the requirement to re-code a door if the swing direction changes after the door schedule has been issued for the first time.
+
+### Door Families
+
+The following Revit door families are used:
+
+| Door family name | Use | Graphic |
+|---------------------------|
+| single | single leaf internal door | |
+| double | double leaf (equal and un-equal size) | |
+| single existing | single leaf existing door | |
+| double existing | double leaf existing door | |
+
+Revit door properties used to number a door:
+
+| Property | GUID | Use |
+|----------------------|
+| Room reference | | the number of the room the door belongs to.  |
+| Door Instance By Room | | instance counter of doors placed in a room. e.g. D01 |
+
+### AS 1428
+
+The door family (single) has approach clearances as per AS 1428 build in. These are accessible via the xxx property:
+
+| Property | approach |
+|------------------|
+| 1 | |
+
+
+
+### Door Tag
+
+Revit door tag: 
+
+This tag has a couple of types:
+
+| Type | use | graphics |
+|-----------|
+| internal | for internal doors | |
+| external | for external doors usually covered in a separate schedule | |
