@@ -42,7 +42,9 @@ The following rooms will be captured:
 ### Room Properties
 
 The following room properties are used when creating Room Layout Sheets (RLS) either to donate a finish or use and briefed vs designed area:
+
 | Name | Type | Usage |
+|---------|
 | Area | build in | The designed area of a room measured to centre line walls |
 | Base Finish | build in | not used |
 | Ceiling Finish | build in | not used |
@@ -62,16 +64,27 @@ The following room properties are used when creating Room Layout Sheets (RLS) ei
 
 Room layout sheets show the arrangement of equipment and fixtures within a room. They comprise of:
 
-* Floor plan (does not show wall finishes, but shows corner guards and crash rails)
-* Elevations of all walls (with the exception of loose furnitures (chairs)) -> work out a filter system to switch them off
+* Floor plan 
+	* does not show wall finishes (e.g. wall vinyl)
+	* shows corner guards and crash rails
+* Elevations of all walls 
+	* does not show  loose furnitures (chairs) -> work out a filter system to switch them off
 * 3D Axo to convey the layout in 3D during the user group process
 * FFE schedule
+	* Sorted by DetailedCategory Parameter
+	* Shows:
+		* Item Code
+		* Item Description
+		* Item Quantity
+		* Wall protection with quantity for the time being (check against dRofus briefed quantity)
+	* Does not show yet
+		* Item Group -> might not be know at this point or not required by client (tbc)
 
 All plans and elevations are in scale 1 to 50. Ideally all room layout sheets are on the same size sheets (A3). This might require 2 or more sheets for larger rooms.
 
 ### Tagging
 
-Tag family to be used: 
+Tag family to be used: FF&E Tag_ANN.rfa
 
 Tagged in floor plan:
 
@@ -80,30 +93,21 @@ Tagged in floor plan:
 * Assemblies (Bed heads or wash hand basins)
 * Corner Guards (but not crash rails)
 
-Tagged in Elevations
+Tagged in Elevations:
 
 * Services items placed on walls
-* and same items as floor plans
-* wall finishes if modelled
-* wall protection
+* Same items as floor plans
+* Wall finishes if modelled
+* Wall protection
 
-As a separate item a 300 x 300 set out grid is to be placed onm all elevations. Revit Family: there are 3 types available:
+### Additional Graphics
 
+As a separate item a 300 x 300 set out grid is to be placed on all elevations. Revit Family: Elevation_Setout_Grid_ANN.rfa 
+There are 3 types available:
 
-
-## FFE Schedule
-
-Sorted by DetailedCategory Parameter
-Shows:
-
-* Item Code
-* Item Description
-* Item Quantity
-* wall protection with quantity for the time being (check against dRofus briefed quantity)
-
-Does not show yet
-
-* Item Group -> might not be know at this point or not required by client (tbc)
+* 2400mm High Ceiling
+* 2700mm High Ceiling
+* 3000mm High Ceiling
 
 ## Fire Compartment Drawings
 
