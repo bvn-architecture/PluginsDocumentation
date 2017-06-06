@@ -36,12 +36,23 @@ tr,td,th {
 table.NoHorizontalLines td{
 	border-bottom: 0px;
 }
-/* div containing posts
+
+/* use arial narrow fonts in svg graphics */
+
+svg.SVGFontArialNarrow {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+}
+
+    /* div containing posts
 i want to be more narrow
 */
-
-.contentPost {
- max-width: 1000px;
- margin: 0 auto;
- padding: 0 10px;
-}
+    .contentPost {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }

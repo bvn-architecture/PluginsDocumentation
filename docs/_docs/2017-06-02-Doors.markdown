@@ -101,7 +101,7 @@ Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leav
 
 ### Typical Door Type Elevations
 
-![Typical Door Type Elevations]({{ site.baseurl }}/assets/Doors/TypicalDoorElevation.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+![Typical Door Type Elevations]({{ site.baseurl }}/assets/Doors/TypicalDoorElevation.svg){:class="img-responsive"}{: height="1200px" width="1800px"}{:.SVGFontArialNarrow}
 
 ### Typical Door Frame Details
 
