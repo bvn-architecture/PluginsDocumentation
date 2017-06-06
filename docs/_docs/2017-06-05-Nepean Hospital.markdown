@@ -46,26 +46,25 @@ The following room properties are used when creating Room Layout Sheets (RLS) ei
 | Area | build in | The designed area of a room measured to centre line walls |
 | Base Finish | build in | not used |
 | Ceiling Finish | build in | not used |
-| Ceiling Height | TBC | Populated by dRofus to check against the modelled |
+| Ceiling Height | 7edd1d61-613f-4f38-a458-4a23e2b48624 | Populated by dRofus to check against the modelled |
 | Comments | build in  | not used |
 | Department | build in | not used at generics |
-| Department Code | TBC | not used at generics |
-| FFETemplateMatch |  | Indicates whether a room matches a generic room exactly in terms of FFE |
+| Department Code | bb1df597-4d80-4530-8a20-b4c13c2bcd28 | not used at generics |
+| FFETemplateMatch | ceaa812a-d84c-4f5d-a40c-6b13ffc6ff77 | Indicates whether a room matches a generic room exactly in terms of FFE |
 | Floor Finish | build in | Used to show the floor finish via a room tag (Room Finishes Tag_ANN.rfa) |
 | Name | build in | The briefed name of the room. |
 | Number | build in | The briefed code of the room. |
-| Sub-Department  | | TBC |
-| Unique Id | | TBC |
+| Sub-Department  | d2222bf6-3335-4ba5-9856-7ea6506002d6 | TBC |
+| Flux Id | | not used |
 | Wall Finish | build in | not used |
 
 ## Room Layout Sheets
 
 Room layout sheets show the arrangement of equipment and fixtures within a room. They comprise of:
 
-* Floor plan
-* Reflective ceiling plan
-* Elevations of all walls
-* 3D Axo to convey the layout in 3D
+* Floor plan (does not show wall finishes, but shows corner guards and crash rails)
+* Elevations of all walls (with the exception of loose furnitures (chairs)) -> work out a filter system to switch them off
+* 3D Axo to convey the layout in 3D during the user group process
 * FFE schedule
 
 All plans and elevations are in scale 1 to 50. Ideally all room layout sheets are on the same size sheets (A3). This might require 2 or more sheets for larger rooms.
@@ -76,19 +75,35 @@ Tag family to be used:
 
 Tagged in floor plan:
 
-* Room name and Number (tag family)
-* Beds
-* loose furniture
+* Floor Finish
+* Loose furniture & Joinery
+* Assemblies (Bed heads or wash hand basins)
+* Corner Guards (but not crash rails)
 
 Tagged in Elevations
 
 * Services items placed on walls
+* and same items as floor plans
+* wall finishes if modelled
+* wall protection
+
+As a separate item a 300 x 300 set out grid is to be placed onm all elevations. Revit Family: there are 3 types available:
 
 
-Tagged in RCP
 
-*
+## FFE Schedule
 
+Sorted by DetailedCategory Parameter
+Shows:
+
+* Item Code
+* Item Description
+* Item Quantity
+* wall protection with quantity for the time being (check against dRofus briefed quantity)
+
+Does not show yet
+
+* Item Group -> might not be know at this point or not required by client (tbc)
 
 ## Fire Compartment Drawings
 
