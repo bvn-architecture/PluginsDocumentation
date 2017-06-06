@@ -105,7 +105,7 @@ Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leav
 
 ### Typical Door Frame Details
 
-![Typical Door Frame Details]({{ site.baseurl }}/assets/Doors/TypicalDoorFrameDetails.svg){:class="img-responsive"}{: height="400px" width="600px"}
+![Typical Door Frame Details]({{ site.baseurl }}/assets/Doors/TypicalDoorFrameDetails.svg){:class="img-responsive"}{: height="400px" width="600px"}{:.SVGFontArialNarrow}
 
 ### Typical Door Jamb Details
 
