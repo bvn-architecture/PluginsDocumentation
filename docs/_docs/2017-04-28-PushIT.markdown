@@ -59,10 +59,11 @@ Push it! aims at addressing the above issues in a two pronged approach:
 
 ## Custom 'Room' families
 
-The approach outlined below has been successfully implemented on: 
-- Northern Beaches Hospital - Competition with approx 2970 rooms in single Revit model placed
-- Uni of South Australia Health Innovation Building - approx 750 rooms in single Revit model placed 
-- Kai Tak Hospital Hong Kong - SD stage with a total of approx 8900 rooms modelled (distributed across 3 separate building models: 1265/1255/6380 )
+The approach outlined below has been successfully implemented on:
+
+* Northern Beaches Hospital - Competition with approx 2970 rooms in single Revit model placed
+* Uni of South Australia Health Innovation Building - approx 750 rooms in single Revit model placed 
+* Kai Tak Hospital Hong Kong - SD stage with a total of approx 8900 rooms modelled (distributed across 3 separate building models: 1265/1255/6380 )
 
 
 ### Shapes
@@ -70,109 +71,117 @@ The approach outlined below has been successfully implemented on:
 These families come in varies shapes and use cases:
 
 * Base Shapes (Revit Category Column):
-	* SP-Room-Rectangle-Double-Door_8.rfa 
+	* SP-Room-Rectangle-Double-Door_10
 	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-RECTANGLE-DOUBLE_DOOR.svg){:class="img-responsive"}{: height="400px" width="600px"}
-	* SP-Room-Rectangle_9.rfa 
+	* SP-Room-Rectangle_10
 	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-RECTANGLE-SINGLE_DOOR.svg){:class="img-responsive"}{: height="400px" width="600px"}
-	* SP-Room-Rectangle_Bay_8.rfa 
+	* SP-Room-Rectangle_Bay_10
 	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-RECTANGLE-BAY.svg){:class="img-responsive"}{: height="400px" width="600px"}
-	* SP-Room-Circular_Bay_8.rfa (currently this displays only a fill if area designed is over briefed area) 
+	* SP-Room-Circular_Bay_10 (currently this displays only a fill if area designed is over briefed area) 
 	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-CIRCLE-BAY.svg){:class="img-responsive"}{: height="400px" width="600px"}
-	* SP-Room-LShaped_8.rfa
+	* SP-Room-LShaped_10
 	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-L.svg){:class="img-responsive"}{: height="400px" width="600px"}
-	* SP-Room-TShaped_8.rfa
+	* SP-Room-TShaped_10
 	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-T.svg){:class="img-responsive"}{: height="400px" width="600px"}
-	* SP-Room-Angled_8.rfa
+	* SP-Room-Angled_10
 	![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-ANGLED.svg){:class="img-responsive"}{: height="400px" width="600px"}
 
 Multiple rectangle families are available to reduce number of formulas otherwise required in a single Family. Tests have shown that this keeps Revit as responsive as possible.
 
 * Specialty Rooms (Revit Category Column)
 	* Bays
-		* SP-Room-Bed-Bay-Chamfered_8.rfa
-		* SP-Room-Bed-Bay-flex.rfa
-		* SP-Room-Bed-Bay_8.rfa
-		* SP-Room-Dialysis Chair_9.rfa
+		* SP-Room-Bed-Bay-Chamfered_10
+		* SP-Room-Bed-Bay-flex
+		* SP-Room-Bed-Bay_10
+		* SP-Room-Dialysis Chair_10
 	* Bed Rooms
-		* SP-Room-Bed-CutOut_7
+		* SP-Room-Bed-CutOut_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-STANDARD WITH CUTOUT.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed-CutOut_Ens_Square_7
+		* SP-Room-Bed-CutOut_Ens_Square_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-WITH RECTANGLE ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed-Rectangle_7
+		* SP-Room-Bed-Rectangle_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed-Two_ENS_7
+		* SP-Room-Bed-Two_ENS_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-TWO ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed_7
+		* SP-Room-Bed_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-STANDARD.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed_Ens_Square_7
+		* SP-Room-Bed_Ens_Square_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-WITH RECTANGLE ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* En Suites
-		* SP-Room-ENS-Square_8.rfa
+		* SP-Room-ENS-Square_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOMS-ENS-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-ENS_8.rfa
+		* SP-Room-ENS_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-ENS-STANDARD.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-ENS_Double_8.rfa
+		* SP-Room-ENS_Double_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-ENS-DOUBLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* WC's
-		* SP-Room-Patient-Toilet_Instance_Double.rfa
+		* SP-Room-Patient-Toilet_Instance_Double
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/WC-DOUBLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Patient-Toilet_Instance_Single.rfa
+		* SP-Room-Patient-Toilet_Instance_Single
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/WC-SINGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* Multi Storey
-		* SP-Room-Lift_8.rfa
-		* SP-Room-Riser_8.rfa
-		* SP-Room-Stair_8.rfa
-		* SP-Room-Stair_Nodeged_8.rfa
+		* SP-Room-Lift_10
+		* SP-Room-Riser_10
+		* SP-Room-Stair_10
+		* SP-Room-Stair_Nodged_10
 	* Other
-		* SP-Room-Fire_8.rfa
+		* SP-Room-Fire_10
 
 * Misc Items (Revit Category Generic Model)
-	* SP-Door-Double-Half_8.rfa
-	* SP-Door-Double_8.rfa
-	* SP-Door-Lift_8.rfa
-	* SP-Door-Opening_8.rfa
-	* SP-Door-Single_8.rfa
-	* SP-Door-Sliding_8.rfa
-	* SP-Door-Sliding_Single_8.rfa
-	* SP-Window_8.rfa
+	* SP-Door-Double-Half_10
+	* SP-Door-Double_10rfa
+	* SP-Door-Lift_10
+	* SP-Door-Opening_10
+	* SP-Door-Single_10
+	* SP-Door-Sliding_10
+	* SP-Door-Sliding_Single_10
+	* SP-Window_10
 
 Note: the number at the end refers to the version of the family. Ideally a project should use always families of the same version.
 
 ### Family Set-up
 
-Initially these families started of as Generic Model families. Later on during the development of this system, they where changes to column families in order for them to be room bounding and therefore usable with proper Revit rooms if so required.
-A side effect of this is that, with the exception of the families listed as multi storey families above, these families do not have a base or top level property but just a level property. Therefore when trying to schedule these families via a standard
-Revit column schedule, no level data for base or top level will be shown. However if a multi-category schedule is used instead, the simple level property is available and contains data.
+Initially these families started of as Generic Model families. Later on during the development of this system, they where changed to column families in order for them to be room bounding and therefore usable with proper Revit rooms if so required.
+A side effect of this is that, with the exception of the families listed as multi storey families above, these families do not have a base or top level property but just a level property. Therefore when trying to schedule these families via a standard Revit column schedule, no level data for base or top level will be shown. However if a multi-category schedule is used instead, the simple level property is available and contains data.
 
 Proper column families where only used for lifts and risers for instance. Here the capability to define a top and bottom level is important to show a consistent core location across multiple floors.
 
-Another initial goal was to set up the families in a way so they can display a simple line graphic with no wall thickness as well as a wall thickness. This was attempted via the Revit detail level of specific elements and nesting of multiple families within each column family set to show at certain detail levels only.
-Each family contains two nested families:
-	* Generic Model (visible in medium and fine detail) and modelled to inside face of walls
-	* Detail Item (visible in coarse detail only) and modelled to centre line of wall
+Another initial goal was to set up the families in a way so they can display a simple line graphic with no wall thickness as well as a wall thickness. This was attempted via the Revit detail level of specific elements and nesting of multiple families within each column family set to show at certain detail levels only. This approach was abandoned with version 10 of the families due to lack of use.
 
-This was done to allow for colouring of rooms via filters. These filters can operate on the following properties:
-	* SP_Department, 
-	* SP_Subdepartment, 
-	* Functional Group
+Each family contains a nested family:
 
-When colouring rooms in views set to coarse detail level, the filter will need to be applied to columns.
+* Generic Model modelled to inside face of walls
 
-However when colouring rooms in medium and fine detail level rather than colouring the column families itself, the filter should target the nested and shared Generic Model family instead. This allows to colour the background of a room and leaves items placed in a room, e.g. beds
-white and not effected by the filter.
+This was done to allow for colouring of room backgrounds via filters. These filters can operate on the following properties:
 
-If no filter is applied, colour coding indicates how the designed area compares to briefed area:
-	* red is under area
-	* blue is over area
-	* green is on area (within 1 % range)
+| Property | use |
+|----|---|
+| SP_Department | Colour all rooms of the same department | 
+| SP_Subdepartment | Colour all rooms of the same sub department |
+| SP_Functional Group | Colour all rooms of the same functional grouping |
+| SP_Area Comparison CentreLine | Colour rooms by design performance in terms of briefed vs designed area to centre line wall. (refer note below)|
+| SP_Area Comparison Inside Face | Colour rooms by design performance in terms of briefed vs designed area to inside face of wall. (refer note below)|
+
+Note (area performance based colouring):
+
+* Values smaller then 0 indicate area designed is smaller then area required
+* Values larger then 0 indicate area designed is greater then area required
+* In absolute terms: 0 to 100 percent are expressed as values ranging from 0 to 1
+* The comparison values are not clamped to a range from 0 to 1 (in absolute terms) and can exceed this range
+* if no area required is provided a value of 1 (100% over) is assigned
+
+Rather than colouring the column families itself, the filter should target the nested and shared Generic Model family instead. This allows to colour the background of a room and leaves items placed in a room, e.g. beds, white and not effected by the filter.
+
+If no filter is applied, a green colour room background is shown. Which in turn means, assuming that green means on area, one requires only two filters in total to show rooms which are under area and rooms which are above area with different colour backgrounds. Standard colours are red for under and blue for above area.
 
 ![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ColourByArea.svg){:class="img-responsive"}{: height="600px" width="900px"}
 
-The family instance property SP_Area_Designed shows the area of the 'room' to centre line of wall. Its value is calculated on the fly.
+The family instance property SP_Area_Designed_Centre shows the area of the 'room' to centre line of wall. 
+The family instance property SP_Area_Designed_insideFace shows the area of the 'room' calculated to inside face of wall. Their values are calculated on the fly.
 
 In general, shared parameters are used to drive size and SOA properties. This is to allow for swapping out of family shapes but maintaining, at the same time, size and other properties, e.g. room name for instance.
 
-The build in label is meant to be used for modelling support only. On plot views, a separate tag should be used and the build in label be switched off via a filter. 
+The build in label is meant to be used for modelling support only. On plot views, a separate tag should be used and the build in label be switched off via a filter.
 
 The following Revit categories are used:
 
@@ -182,80 +191,78 @@ The following Revit categories are used:
 |----------------------|----------------------------------------------------------------------|
 | SP-Room-Separation   | Bay families or other families where walls can be switched on or off |
 | SP-Walls             | Category of the wall extrusion                                       |
-| SP-Walls-Centre-Line | Detail lines representing the centre of walls                        |
 
 * Detail Items
 
 | Category         | Use                                                                                        |
 |------------------|--------------------------------------------------------------------------------------------|
 | SP-Area-Outline  | Filled region Boundary.Only visible in Coarse detail.                                      |
-| SP-Door-Detailed | Shows Leaf thickness. Used in nested detail component of Single door,                       |
-| SP-Door-Simple   | Shows simplified door ( no leaf thickness). Used in nested detail component of Single door |
-| SP-Lift          | Detail lines of lift car graphic                                                                                    |
+| SP-Door-Detailed | Shows Leaf thickness. Used in nested detail component of Single door,                      |
+| SP-Lift          | Detail lines of lift car graphic                                                           |
 | SP-Stair-Outline | Detail lines of stair detail family used in Stair family                                   |
 | SP-Stair-Tread   | Detail lines of stair detail family used in Stair family                                   |
 
 * Generic Models
 
-| Category             | Use                                                                                                                                                 |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Category             | Use         |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | SP-Area-Outline      | Category of extrusions modeled to inside face of walls. Used to show above ,below, match of briefed area vs designed area in medium and fine detail |
-| SP-Door-Detailed     | Shows detail of door in generic model not using a nested detail for this purpose. (e.g.Lift door)                                                   |
-| SP-Door-Infill       | Category of extrusion used to show opening in wall where door is                                                                                    |
-| SP-Door-Simple       | Shows detail of door in generic model not using a nested detail for this purpose. (e.g.Lift door)                                                   |
-| SP-FFE-CURTAIN       | ???                                                                                                                                                 |
-| SP-FFE-Outlines      | Used in some of the nested equipment (e.g. wash hand basins to show outline of equipment at coarse detail level)                                     |
-| SP-Walls             | ???                                                                                                                                                 |
-| SP-Walls-Centre Line | Used in door family required to be rotated only (En-suite with chamfer)                                                                             |
-| SP-Windows-Simple    | Symbolic lines used in window family.                                                                                                               |
+| SP-Door-Detailed     | Shows detail of door in generic model not using a nested detail for this purpose. (e.g.Lift door) |
+| SP-Door-Infill       | Category of extrusion used to show opening in wall where door is |
+| SP-FFE-CURTAIN       | ???                                                                        |
+| SP-FFE-Outlines      | Used in some of the nested equipment (e.g. wash hand basins to show outline of equipment at coarse detail level) |
+| SP-Walls             | ???      |
+| SP-Walls-Centre Line | Used in door family required to be rotated only (En-suite with chamfer) |
+| SP-Windows-Simple    | Symbolic lines used in window family.      |
 
 The following shared parameters are used:
 
-| UID                                  | NAME                        | DATATYPE | DESCRIPTION                                                                                | 
-|--------------------------------------|-----------------------------|----------|--------------------------------------------------------------------------------------------| 
-| c1465816-66b9-426b-9300-33dff4141487 | Area_Briefed                | AREA     | The area briefed for this room.                                                            | 
-| acac3c63-7165-4dd9-b648-c086e0ddde48 | AREA_COLOUR_BVN             | TEXT     | Used to colour Revit areas or mass floors independent of their department value.           | 
-| f67bfc53-300b-4f74-a3ed-4f0b6b128a31 | DEPTH_MASS                  | LENGTH   | Depth of department mass family.                                                           | 
-| 7eee1367-20d8-4699-aa60-edc3ccf67a38 | DISTANCE FROM EDGE 1        | LENGTH   |                                                                                            | 
-| 66e7576f-f992-41cd-b895-4ef064cb5481 | DISTANCE FROM EDGE 2        | LENGTH   |                                                                                            | 
-| 7a4c7a78-509e-4b3b-b08c-34793cc52bb2 | DISTANCE FROM EDGE 3        | LENGTH   |                                                                                            | 
-| 337ab49f-9bfd-441e-9508-203194223dfd | Functional_Group            | TEXT     | 3rd level of room grouping                                                                 | 
-| eb9e31cc-2f0f-4330-bdec-b2013b9a6662 | HEIGHT_MASS                 | LENGTH   | Height of department mass family.                                                          | 
-| b14b54da-4d40-444c-9e7a-98097ee78356 | Room_Ceiling_Height_HFBS    | LENGTH   | Height of Push It rooms                                                                    | 
-| 7b118e21-ef5b-42bd-8d70-61bc6c78b7ff | Room_Label                  | TEXT     | Shortened room name. For 1 to 200 drawings.                                                | 
-| d05960b3-e08e-4ad3-99b7-0c3d8377adad | SP_Area_Designed            | AREA     | The actual designed (modelled) area of a room.                                             | 
-| 698eb307-bb37-4d54-90d5-0f4ae0bc819a | SP_Brief_Status             | TEXT     | Add 'added' if room is not in SOA otherwise leave blank.                                   | 
-| e4c6fd5c-49f6-4314-9964-d9396185b410 | SP_Ceiling_Height           | LENGTH   | Height of Push It rooms                                                                    | 
-| 376b5d3b-88bf-4dd5-845b-0e82bcb3cb6a | SP_Comments                 | TEXT     | Any comments made in SOA. (Could be 'Added by client' etc)                                 | 
-| ab063eac-3f67-403c-9ab2-7b3a68ae976d | SP_Department               | TEXT     | 1st level of room grouping.                                                                | 
-| 878cd562-2038-453a-9d23-29fc3e039ba4 | SP_Depth                    | LENGTH   | The depth of a room.                                                                       | 
-| 94a309f1-485b-4730-95a6-e16e053b0f7f | SP_Door_1                   | YESNO    | Door 1 on or off switch                                                                    | 
-| 1fdee2b2-6e8f-4ff2-a92e-1e177bac75d4 | SP_Door_1_In_To_Room        | YESNO    | If checked Door 1 opens into the room. Otherswise it will open out of the room           | 
-| d10f2602-07b5-4fa1-ba53-898830a89f42 | SP_Door_1_Offset_Hinge_Side | LENGTH   | Offset of the door hinge side from the nearest wall centre.                                | 
-| 6aed92c9-f867-4e5e-8e3a-062caba29075 | SP_Door_3                   | YESNO    | Door 3 on or off switch                                                                    | 
-| f6596632-40bd-4274-b4cd-1c95317b34ab | SP_Door_3_In_To_Room        | YESNO    | If checked Door 3 opens into the room. Otherswise it will open out of the room           | 
-| a29ddde9-af49-4f0f-aae8-67b0187e9cc7 | SP_Door_3_Offset_Hinge_Side | LENGTH   | Offset of the door hinge side from the nearest wall centre.                                | 
-| 1b8eaff9-380c-4229-aee5-a09a188e3eff | SP_Material_Walls           | MATERIAL | Material applied to wall extrusion.                                                        | 
-| 32298a1e-ef2a-4d9a-90e7-3c51627c2f8b | Sp_Room_Name                | TEXT     | The room name.                                                                             | 
-| 9469de6d-f1b5-4ca8-91c6-dfeb2bdefb88 | SP_Room_Number              | TEXT     | The room number.                                                                           | 
-| 8bc86927-d27f-45b2-a63a-058c67fcebdb | SP_Room_Number_Parent       | TEXT     | The room number as briefed (if different to the room number used in model)                 | 
-| afac4144-67d3-4454-b324-74b93953bb48 | SP_Subdepartment            | TEXT     | 2nd level of room grouping                                                                 | 
-| 31b47f22-8de5-4360-9e70-5554762cedd7 | SP_Subdepartment_Label      | TEXT     | Editable label of a sub department. Used for drawing annotation                            | 
-| 5e103884-1425-4596-b985-7b609565b9d3 | Sp_Unique_Id                | TEXT     | The unique identifier of a room element. (not required if Sp_Room_Number is always unique) | 
-| 5002fb59-c053-49bf-801e-bbc7dfd8ab23 | SP_Width                    | LENGTH   | The width of a room                                                                        | 
-| c94fb6a3-ccf7-4ff0-a3df-40112ce36506 | SP_Zone                     | TEXT     | Location (Building / campus) of a room.                                                    | 
-| 2d5fcb72-ae86-443e-b217-e08deb07d046 | Subdepartment(depreceated)  | TEXT     | Replaced by SP_Department parameter. Still in use in 'Get a room template')                | 
-| d1cc1691-633f-448e-b4c3-e07e23a24b72 | WIDTH_MASS                  | LENGTH   | Width of department mass family.                                                           | 
+| UID                                  | NAME                        | DATATYPE | DESCRIPTION  |
+|--------------------------------------|-----------------------------|----------|-------------------------------------------------------------------------| 
+| c1465816-66b9-426b-9300-33dff4141487 | Area_Briefed                | AREA     | The area briefed for this room. |
+| acac3c63-7165-4dd9-b648-c086e0ddde48 | AREA_COLOUR_BVN             | TEXT     | Used to colour Revit areas or mass floors independent of their department value. |
+| f67bfc53-300b-4f74-a3ed-4f0b6b128a31 | DEPTH_MASS                  | LENGTH   | Depth of department mass family. |
+| 7eee1367-20d8-4699-aa60-edc3ccf67a38 | DISTANCE FROM EDGE 1        | LENGTH   | |
+| 66e7576f-f992-41cd-b895-4ef064cb5481 | DISTANCE FROM EDGE 2        | LENGTH   | |
+| 7a4c7a78-509e-4b3b-b08c-34793cc52bb2 | DISTANCE FROM EDGE 3        | LENGTH   | |
+| 337ab49f-9bfd-441e-9508-203194223dfd | Functional_Group            | TEXT     | 3rd level of room grouping |
+| eb9e31cc-2f0f-4330-bdec-b2013b9a6662 | HEIGHT_MASS                 | LENGTH   | Height of department mass family. |
+| b14b54da-4d40-444c-9e7a-98097ee78356 | Room_Ceiling_Height_HFBS    | LENGTH   | Height of Push It rooms |
+| 7b118e21-ef5b-42bd-8d70-61bc6c78b7ff | Room_Label                  | TEXT     | Shortened room name. For 1 to 200 drawings. |
+| d05960b3-e08e-4ad3-99b7-0c3d8377adad | SP_Area_Designed            | AREA     | The actual designed (modelled) area of a room. |
+| 698eb307-bb37-4d54-90d5-0f4ae0bc819a | SP_Brief_Status             | TEXT     | Add 'added' if room is not in SOA otherwise leave blank. |
+| e4c6fd5c-49f6-4314-9964-d9396185b410 | SP_Ceiling_Height           | LENGTH   | Height of Push It rooms |
+| 376b5d3b-88bf-4dd5-845b-0e82bcb3cb6a | SP_Comments                 | TEXT     | Any comments made in SOA. (Could be 'Added by client' etc) |
+| ab063eac-3f67-403c-9ab2-7b3a68ae976d | SP_Department               | TEXT     | 1st level of room grouping.|
+| 878cd562-2038-453a-9d23-29fc3e039ba4 | SP_Depth                    | LENGTH   | The depth of a room.|
+| 94a309f1-485b-4730-95a6-e16e053b0f7f | SP_Door_1                   | YES/NO   | Door 1 on or off switch |
+| 1fdee2b2-6e8f-4ff2-a92e-1e177bac75d4 | SP_Door_1_In_To_Room        | YES/NO   | If checked Door 1 opens into the room. Otherwise it will open out of the room |
+| d10f2602-07b5-4fa1-ba53-898830a89f42 | SP_Door_1_Offset_Hinge_Side | LENGTH   | Offset of the door hinge side from the nearest wall centre. |
+| 6aed92c9-f867-4e5e-8e3a-062caba29075 | SP_Door_3                   | YES/NO   | Door 3 on or off switch |
+| f6596632-40bd-4274-b4cd-1c95317b34ab | SP_Door_3_In_To_Room        | YES/NO   | If checked Door 3 opens into the room. Otherwise it will open out of the room |
+| a29ddde9-af49-4f0f-aae8-67b0187e9cc7 | SP_Door_3_Offset_Hinge_Side | LENGTH   | Offset of the door hinge side from the nearest wall centre. |
+| 1b8eaff9-380c-4229-aee5-a09a188e3eff | SP_Material_Walls           | MATERIAL | Material applied to wall extrusion. |
+| 32298a1e-ef2a-4d9a-90e7-3c51627c2f8b | Sp_Room_Name                | TEXT     | The room name. |
+| 9469de6d-f1b5-4ca8-91c6-dfeb2bdefb88 | SP_Room_Number              | TEXT     | The room number. |
+| 8bc86927-d27f-45b2-a63a-058c67fcebdb | SP_Room_Number_Parent       | TEXT     | The room number as briefed (if different to the room number used in model) |
+| afac4144-67d3-4454-b324-74b93953bb48 | SP_Subdepartment            | TEXT     | 2nd level of room grouping | 
+| 31b47f22-8de5-4360-9e70-5554762cedd7 | SP_Subdepartment_Label      | TEXT     | Editable label of a sub department. Used for drawing annotation | 
+| 5e103884-1425-4596-b985-7b609565b9d3 | Sp_Unique_Id                | TEXT     | The unique identifier of a room element. (not required if Sp_Room_Number is always unique) |
+| 5002fb59-c053-49bf-801e-bbc7dfd8ab23 | SP_Width                    | LENGTH   | The width of a room |
+| c94fb6a3-ccf7-4ff0-a3df-40112ce36506 | SP_Zone                     | TEXT     | Location (Building / campus) of a room.|
+| 2d5fcb72-ae86-443e-b217-e08deb07d046 | Subdepartment(deprecated)  | TEXT     | Replaced by SP_Department parameter. Still in use in 'Get a room template')|
+| d1cc1691-633f-448e-b4c3-e07e23a24b72 | WIDTH_MASS                  | LENGTH   | Width of department mass family. |
 
 
 ### Family manipulation
 
 The size of a room can be manipulated by either:
-	* entering values into Sp_Width or SP_Depth parameters
-	* aligning the centre line of wall to stretch a room ( Revit glitch: sometimes these rooms start to stretch AND move at the same time. This behaviour starts and stops without any apparent reason )
-	* aligning the outer or inner face of wall to change room location ( exception of risers where the aligning to inner face of wall will stretch the family)
-	* selecting the level property to move rooms up and down the building (note: if host is not a Revit Level then host need to be changed to a Revit level via 'pick new host' command)
-	* Ceiling height property drives the height of all the SP_Room families but the multi storey ones listed above
+
+* Entering values into Sp_Width or SP_Depth parameters
+* Aligning the centre line of wall to stretch a room ( Revit glitch: sometimes these rooms start to stretch AND move at the same time. This behaviour starts and stops without any apparent reason )
+* Aligning the outer or inner face of wall to change room location ( exception of risers where the aligning to inner face of wall will stretch the family)
+* Selecting the level property to move rooms up and down the building (note: if host is not a Revit Level then host need to be changed to a Revit level via 'pick new host' command)
+* Ceiling height property drives the height of all the SP_Room families but the multi storey ones listed above
 
 Most room families have doors included. Doors location along wall can be changed as well as the swing direction, which can be flipped to go in or out of room. If an additional door is required you can use of the SP-Door families
 
