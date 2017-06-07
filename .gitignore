@@ -31,3 +31,5 @@ Thumbs.db
 _site
 .sass-cache
 docs/.vs/
+docs/.vs/docs/v15/.suo
+docs/.vs/VSWorkspaceState.json
