@@ -158,7 +158,7 @@ This was done to allow for colouring of room backgrounds via filters. These filt
 |----|---|
 | SP_Department | Colour all rooms of the same department | 
 | SP_Subdepartment | Colour all rooms of the same sub department |
-| SP_Functional Group | Colour all rooms of the same functional grouping |
+| SP_Functional_Group | Colour all rooms of the same functional grouping |
 | SP_Area Comparison CentreLine | Colour rooms by design performance in terms of briefed vs designed area to centre line wall. (refer note below)|
 | SP_Area Comparison Inside Face | Colour rooms by design performance in terms of briefed vs designed area to inside face of wall. (refer note below)|
 
@@ -201,6 +201,7 @@ The following Revit categories are used:
 | SP-Lift          | Detail lines of lift car graphic                                                           |
 | SP-Stair-Outline | Detail lines of stair detail family used in Stair family                                   |
 | SP-Stair-Tread   | Detail lines of stair detail family used in Stair family                                   |
+| Stair_Clearance | Stair path of travel clearance graphic |
 
 * Generic Models
 
@@ -209,27 +210,22 @@ The following Revit categories are used:
 | SP-Area-Outline      | Category of extrusions modeled to inside face of walls. Used to show above ,below, match of briefed area vs designed area in medium and fine detail |
 | SP-Door-Detailed     | Shows detail of door in generic model not using a nested detail for this purpose. (e.g.Lift door) |
 | SP-Door-Infill       | Category of extrusion used to show opening in wall where door is |
-| SP-FFE-CURTAIN       | ???                                                                        |
+| SP-FFE-CURTAIN       | Extent of curtain in bed bay families |
 | SP-FFE-Outlines      | Used in some of the nested equipment (e.g. wash hand basins to show outline of equipment at coarse detail level) |
 | SP-Walls             | ???      |
 | SP-Walls-Centre Line | Used in door family required to be rotated only (En-suite with chamfer) |
-| SP-Windows-Simple    | Symbolic lines used in window family.      |
+| SP-Windows-Simple    | Symbolic lines used in window family. |
 
 The following shared parameters are used:
 
 | UID                                  | NAME                        | DATATYPE | DESCRIPTION  |
 |--------------------------------------|-----------------------------|----------|-------------------------------------------------------------------------| 
-| c1465816-66b9-426b-9300-33dff4141487 | Area_Briefed                | AREA     | The area briefed for this room. |
 | acac3c63-7165-4dd9-b648-c086e0ddde48 | AREA_COLOUR_BVN             | TEXT     | Used to colour Revit areas or mass floors independent of their department value. |
-| f67bfc53-300b-4f74-a3ed-4f0b6b128a31 | DEPTH_MASS                  | LENGTH   | Depth of department mass family. |
-| 7eee1367-20d8-4699-aa60-edc3ccf67a38 | DISTANCE FROM EDGE 1        | LENGTH   | |
-| 66e7576f-f992-41cd-b895-4ef064cb5481 | DISTANCE FROM EDGE 2        | LENGTH   | |
-| 7a4c7a78-509e-4b3b-b08c-34793cc52bb2 | DISTANCE FROM EDGE 3        | LENGTH   | |
-| 337ab49f-9bfd-441e-9508-203194223dfd | Functional_Group            | TEXT     | 3rd level of room grouping |
-| eb9e31cc-2f0f-4330-bdec-b2013b9a6662 | HEIGHT_MASS                 | LENGTH   | Height of department mass family. |
-| b14b54da-4d40-444c-9e7a-98097ee78356 | Room_Ceiling_Height_HFBS    | LENGTH   | Height of Push It rooms |
-| 7b118e21-ef5b-42bd-8d70-61bc6c78b7ff | Room_Label                  | TEXT     | Shortened room name. For 1 to 200 drawings. |
-| d05960b3-e08e-4ad3-99b7-0c3d8377adad | SP_Area_Designed            | AREA     | The actual designed (modelled) area of a room. |
+| 57d603ad-5ce4-44ff-97ab-859f9c722831 | SP_Area_Briefed             | AREA | The area briefed for this room. |
+| 3a61bbb9-41d7-4d19-865e-d64b125f951a | SP_Area_Comparison_CentreWall | NUMBER | Calculates difference between area briefed and area designed (centre line of wall) as a percentage. Positive value means room is smaller than briefed. Negative value means room is bigger than briefed. |
+| b0f210c1-e00e-4657-a378-65363021fb5d | SP_Area_Comparison_InsideFaceWall | NUMBER | Calculates difference between area briefed and area designed (inside face of wall) as a percentage. Positive value means room is smaller than briefed. Negative value means room is bigger than briefed. |
+| fb66307f-19e0-4b18-8dc5-3165f825c3c3 | SP_Area_Designed_CentreWall | AREA | The designed (modelled )area of a room calculated to the centre line of wall. |
+| 9fd1cdd1-2dbb-40b4-88e5-220f7ffb1fd4 | SP_Area_Designed_InsideFaceWall | AREA | The designed (modelled) area of a room calculated to the inside face of wall. |
 | 698eb307-bb37-4d54-90d5-0f4ae0bc819a | SP_Brief_Status             | TEXT     | Add 'added' if room is not in SOA otherwise leave blank. |
 | e4c6fd5c-49f6-4314-9964-d9396185b410 | SP_Ceiling_Height           | LENGTH   | Height of Push It rooms |
 | 376b5d3b-88bf-4dd5-845b-0e82bcb3cb6a | SP_Comments                 | TEXT     | Any comments made in SOA. (Could be 'Added by client' etc) |
@@ -241,7 +237,9 @@ The following shared parameters are used:
 | 6aed92c9-f867-4e5e-8e3a-062caba29075 | SP_Door_3                   | YES/NO   | Door 3 on or off switch |
 | f6596632-40bd-4274-b4cd-1c95317b34ab | SP_Door_3_In_To_Room        | YES/NO   | If checked Door 3 opens into the room. Otherwise it will open out of the room |
 | a29ddde9-af49-4f0f-aae8-67b0187e9cc7 | SP_Door_3_Offset_Hinge_Side | LENGTH   | Offset of the door hinge side from the nearest wall centre. |
+| c4b94af4-58aa-4d8e-bb1e-cd404f999a0d | SP_Functional_Group | TEXT |3rd level of room grouping |
 | 1b8eaff9-380c-4229-aee5-a09a188e3eff | SP_Material_Walls           | MATERIAL | Material applied to wall extrusion. |
+| 347b8731-4033-4963-9fc7-92232a19e7ef | SP_Room_Label | TEXT | Shortened room name. For 1 to 200 drawings. |
 | 32298a1e-ef2a-4d9a-90e7-3c51627c2f8b | Sp_Room_Name                | TEXT     | The room name. |
 | 9469de6d-f1b5-4ca8-91c6-dfeb2bdefb88 | SP_Room_Number              | TEXT     | The room number. |
 | 8bc86927-d27f-45b2-a63a-058c67fcebdb | SP_Room_Number_Parent       | TEXT     | The room number as briefed (if different to the room number used in model) |
@@ -250,8 +248,6 @@ The following shared parameters are used:
 | 5e103884-1425-4596-b985-7b609565b9d3 | Sp_Unique_Id                | TEXT     | The unique identifier of a room element. (not required if Sp_Room_Number is always unique) |
 | 5002fb59-c053-49bf-801e-bbc7dfd8ab23 | SP_Width                    | LENGTH   | The width of a room |
 | c94fb6a3-ccf7-4ff0-a3df-40112ce36506 | SP_Zone                     | TEXT     | Location (Building / campus) of a room.|
-| 2d5fcb72-ae86-443e-b217-e08deb07d046 | Subdepartment(deprecated)  | TEXT     | Replaced by SP_Department parameter. Still in use in 'Get a room template')|
-| d1cc1691-633f-448e-b4c3-e07e23a24b72 | WIDTH_MASS                  | LENGTH   | Width of department mass family. |
 
 
 ### Family manipulation
