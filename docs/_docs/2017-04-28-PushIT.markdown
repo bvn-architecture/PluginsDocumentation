@@ -240,12 +240,12 @@ The following shared parameters are used:
 | c4b94af4-58aa-4d8e-bb1e-cd404f999a0d | SP_Functional_Group | TEXT |3rd level of room grouping |
 | 1b8eaff9-380c-4229-aee5-a09a188e3eff | SP_Material_Walls           | MATERIAL | Material applied to wall extrusion. |
 | 347b8731-4033-4963-9fc7-92232a19e7ef | SP_Room_Label | TEXT | Shortened room name. For 1 to 200 drawings. |
-| 32298a1e-ef2a-4d9a-90e7-3c51627c2f8b | Sp_Room_Name                | TEXT     | The room name. |
+| 32298a1e-ef2a-4d9a-90e7-3c51627c2f8b | SP_Room_Name                | TEXT     | The room name. |
 | 9469de6d-f1b5-4ca8-91c6-dfeb2bdefb88 | SP_Room_Number              | TEXT     | The room number. |
 | 8bc86927-d27f-45b2-a63a-058c67fcebdb | SP_Room_Number_Parent       | TEXT     | The room number as briefed (if different to the room number used in model) |
 | afac4144-67d3-4454-b324-74b93953bb48 | SP_Subdepartment            | TEXT     | 2nd level of room grouping | 
 | 31b47f22-8de5-4360-9e70-5554762cedd7 | SP_Subdepartment_Label      | TEXT     | Editable label of a sub department. Used for drawing annotation | 
-| 5e103884-1425-4596-b985-7b609565b9d3 | Sp_Unique_Id                | TEXT     | The unique identifier of a room element. (not required if Sp_Room_Number is always unique) |
+| 5e103884-1425-4596-b985-7b609565b9d3 | SP_Unique_Id                | TEXT     | The unique identifier of a room element. (not required if Sp_Room_Number is always unique) |
 | 5002fb59-c053-49bf-801e-bbc7dfd8ab23 | SP_Width                    | LENGTH   | The width of a room |
 | c94fb6a3-ccf7-4ff0-a3df-40112ce36506 | SP_Zone                     | TEXT     | Location (Building / campus) of a room.|
 
