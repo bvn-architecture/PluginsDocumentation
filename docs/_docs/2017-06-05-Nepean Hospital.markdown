@@ -43,7 +43,7 @@ layout: "sample"
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Room Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G0 | - | as per dRofus |
+| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G1 | - | as per dRofus |
 
 # Site set-out
 
@@ -93,7 +93,7 @@ The following rooms will be captured:
 
 Proposal is to number rooms as follows:
 
-| Department Number | . | Sub Department Number | . | sequential Number | use | sample number |
+| Department Number | . | Sub Department Number | . | Sequential Number | Use | Sample Number |
 |-----------------------------------------------------------------| ---|-----|
 | 01 - 90 as per dRofus | . | 01-90 as per dRofus | . | 000-999 as per dRofus | standard rooms | 01.02.099 |
 | 01 - 90 as per dRofus | . | 99 | . | 000-999 as required | corridors within a department | 01.99.001 |
