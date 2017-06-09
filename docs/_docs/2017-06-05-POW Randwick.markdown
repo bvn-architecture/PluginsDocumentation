@@ -20,7 +20,7 @@ Note: The Site survey point in s1606008-AR-RCR-ED Transitional Works.rvt Revit f
 
 ## Revit File linking
 
-Consultants are to link the s1606008-AR-RCR-ED Transitional Works.rvt Revit file using the 'Auto - Origin to Origin' option and aquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
+Consultants are to link the s1606008-AR-RCR-ED Transitional Works.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
 
 * s1606008-AR-RCR-ED CAD Link File.rvt
 * s1606008-AR-RCR-Existing Building File.rvt
@@ -49,4 +49,12 @@ The areas have the following properties:
 
 
 # New Acute Services Building
+
+## Revit File linking
+
+Consultants are to link the S1606008-AR-RCR-NewBuild File.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
+
+* s1606008-AR-RCR-Site File.rvt
+
+Consultants are also to 'Copy Monitor' levels and grids from S1606008-AR-RCR-NewBuild File.rvt Revit file.
 
