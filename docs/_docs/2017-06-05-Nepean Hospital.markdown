@@ -17,21 +17,21 @@ layout: "sample"
 
 ### ZONE / BUILDING
 
-•	K - New Build
+* K - New Build
 
 ### CATEGORY / PACKAGE
 
-•	A1 - INTRODUCTORY
-•	A2 - SITE
-•	A3 - STAGING
-•	B1 - EXISTING
-•	B2 – PROPOSED 
-•	etc
+* A1 - INTRODUCTORY
+* A2 - SITE
+* A3 - STAGING
+* B1 - EXISTING
+* B2 - PROPOSED 
+* etc
 
 ### LEVEL:
 
-•	XX:  non level (Section/ Elevations/ typical details)
-•	01: Level 01 
+* XX:  non level (Section/ Elevations/ typical details)
+* 01: Level 01 
 
 ## Room Layout Sheets - Generics
 
