@@ -7,7 +7,43 @@ modified:
 layout: "sample"
 ---
 
+# Document Numbering
 
+## Standard Doc's
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | A1 | - | 01 | - | 01 |
+
+### ZONE / BUILDING
+
+•	K - New Build
+
+### CATEGORY / PACKAGE
+
+•	A1 - INTRODUCTORY
+•	A2 - SITE
+•	A3 - STAGING
+•	B1 - EXISTING
+•	B2 – PROPOSED 
+•	etc
+
+### LEVEL:
+
+•	XX:  non level (Section/ Elevations/ typical details)
+•	01: Level 01 
+
+## Room Layout Sheets - Generics
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G0 | - | 001 |
+
+## Room Layout Sheets - Specifics
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Room Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G0 | - | as per dRofus |
 
 # Site set-out
 
@@ -16,7 +52,20 @@ TBC
 
 ## New Acute Services Building
 
-# Generic Rooms
+# Levels 
+
+## Level Numbering
+
+| Level | Number |
+|------|------|
+| Basement X | Bx |
+| Ground Floor | 00 |
+| Levels 1 to 9 above ground | 01-09 |
+| Levels 10 and above | 10 - |
+
+# Rooms
+
+## Generic Rooms
 
 Generic Rooms for the Schematic Design stage are located in s1607004-AR-INH-GENRIC.rvt Revit file.
 
@@ -39,6 +88,21 @@ The following rooms will be captured:
 | WCPT | Toilet - Patient |
 | WCST | Toilet - Staff |
 | EN-ST-AS | Ensuite ( Toilet and shower patient - Not ensuited to room) |
+
+## Room Numbering
+
+Proposal is to number rooms as follows:
+
+| Department Number | . | Sub Department Number | . | sequential Number | use | sample number |
+|-----------------------------------------------------------------| ---|-----|
+| 01 - 90 as per dRofus | . | 01-90 as per dRofus | . | 000-999 as per dRofus | standard rooms | 01.02.099 |
+| 01 - 90 as per dRofus | . | 99 | . | 000-999 as required | corridors within a department | 01.99.001 |
+| 98 | . | level e.g. 07 | . | 600-699 as required | EDB's in and outside a department| 98.07.601 |
+| 98 | . | level e.g. 06 | . | 700-799 as required | FHR's in and outside a department| 98.06.701 |
+| 99 | . | level e.g. 05 | . | 000-799 as required | corridors outside a department | 99.05.001 |
+| 99 | . | level e.g. 05 | . | 800-899 as required | stairs | 99.05.801 |
+| 99 | . | level e.g. 05 | . | 900-999 as required | lifts | 99.05.901 |
+
 
 ## Room Properties
 
