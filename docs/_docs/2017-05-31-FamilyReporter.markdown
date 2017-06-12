@@ -7,7 +7,7 @@ modified:
 layout: "sample"
 ---
 
-# ⦁	Family Reporter- Preface
+# Family Reporter- Preface
 
 The ‘Family Reporter” app is used to gather a number of properties from families and their catalog files. Those log file can be opened and edited in Excel and then applied to families via the Family Updater app.
 
@@ -15,8 +15,8 @@ Summary of log files and properties they report:
 
 | Log File | Properties |
 |---------|------------|
-| Default Log | Reports: Revit Version number as well, Edited last time stamp, and whether a family uses a catalogue file
 | FamilyCategory Log | Reports the Revit Category of a family |
+| FamilyDefault Log | Reports: Revit Version number, Edited last time stamp, and whether a family uses a catalogue file |
 | FamilySubCategory Log | Reports Revit subcategories present in a family. |
 | Family Types Log | Reports all family types defined in a family file and, if present, in its associated catalogue file. |
 | Host Families Log | Reports all families which contain nested families |
@@ -28,14 +28,14 @@ Summary of log files and properties they report:
 | Reference Planes Log | Reports all reference planes present in a family and their properties |
 | Units Log | Reports units set for area, volume, angle, Number and Length |
 
-## Detailed Log filea break down
+## Detailed Log file break down
 
-Log files are available in MS Exel format. These log files are formatted to easily identify which fields can be edited and therefore used to update family properties.
+Log files are available in MS Excel format. These log files are formatted to easily identify which fields can be edited and therefore used to update family properties.
 
 * Cells with a grey back ground are read only. 
 * Cells with a white bac ground can be edited. Most reports will also have a drop down enabled to allow selection of pre-defined actions.
 
-### Default Log
+### Family Defaults Log
 
 ### Family Category Log
 
