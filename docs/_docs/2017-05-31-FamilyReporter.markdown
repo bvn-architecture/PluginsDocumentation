@@ -13,4 +13,38 @@ The ‘Family Reporter” app is used to gather a number of properties from fami
 
 Summary of log files and properties they report:
 
+| Log File | Properties |
+|---------|------------|
+| Default Log | Reports: Revit Version number as well, Edited last time stamp, and whether a family uses a catalogue file
+| FamilyCategory Log | Reports the Revit Category of a family |
+| FamilySubCategory Log | Reports Revit subcategories present in a family. |
+| Family Types Log | Reports all family types defined in a family file and, if present, in its associated catalogue file. |
+| Host Families Log | Reports all families which contain nested families |
+| Materials Log | Reports all materials defined in family file. |
+| Nested Families Log | Reports all nested families together with their host family. |
+| OmniClass Log | Reports the Omniclass of a family. |
+| Parameters Log | Reports all parameters present in a family and their properties but not values |
+| ParameterValuesByTypes Log | Reports parameter values by family type. Report includes family types defined in a catalogue files. |
+| Reference Planes Log | Reports all reference planes present in a family and their properties |
+| Units Log | Reports units set for area, volume, angle, Number and Length |
 
+## Detailed Log filea break down
+
+Log files are available in MS Exel format. These log files are formatted to easily identify which fields can be edited and therefore used to update family properties.
+
+* Cells with a grey back ground are read only. 
+* Cells with a white bac ground can be edited. Most reports will also have a drop down enabled to allow selection of pre-defined actions.
+
+### Default Log
+
+### Family Category Log
+
+| FamilyFilePath | FamilyName | Category |
+|--------|----------|-----------|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Revit category of a family. |
+
+The 'Category' field can be changed via the drop down. Please note that the following selections will result in an exception reported when attempting to update a family file:
+
+| Current Category | Selection | why? |
+| Non annotation category | Generic Annotation, tag of any type, detail component | This action is not available through the standard Revit user interface. |
+| Generic Annotation, tag of any type, detail component | any family category which may contain 3D elements | This action is not available through the standard Revit user interface. |
