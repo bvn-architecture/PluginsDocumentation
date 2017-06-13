@@ -15,8 +15,7 @@ Summary of log files and properties they report:
 
 | Log File | Properties |
 |---------|------------|
-| [FamilyCategory Log] (#FamCategoryLog) | Reports the Revit Category of a family |
-| [test] (#markdown-header-Family-Category-Log_2) |  |
+| [FamilyCategory Log](#FamCategoryLog) | Reports the Revit Category of a family |
 | FamilyDefault Log | Reports: Revit Version number, Edited last time stamp, and whether a family uses a catalogue file |
 | FamilySubCategory Log | Reports Revit subcategories present in a family. |
 | Family Types Log | Reports all family types defined in a family file and, if present, in its associated catalogue file. |
@@ -36,11 +35,7 @@ Log files are available in MS Excel format. These log files are formatted to eas
 * Cells with a grey back ground are read only. 
 * Cells with a white bac ground can be edited. Most reports will also have a drop down enabled to allow selection of pre-defined actions.
 
-### Family Defaults Log
-
-### Family Category Log_2
-
-### <h3><a id="FamCategoryLog" />Family Category Log</h3>
+### <a id="FamCategoryLog"></a> Family Category Log
 
 | FamilyFilePath | FamilyName | Category |
 |--------|----------|-----------|
