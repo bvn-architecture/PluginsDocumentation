@@ -15,7 +15,7 @@ Summary of log files and properties they report:
 
 | Log File | Properties |
 |---------|------------|
-| FamilyCategory Log | Reports the Revit Category of a family |
+| [FamilyCategory Log] (#FamCategoryLog) | Reports the Revit Category of a family |
 | FamilyDefault Log | Reports: Revit Version number, Edited last time stamp, and whether a family uses a catalogue file |
 | FamilySubCategory Log | Reports Revit subcategories present in a family. |
 | Family Types Log | Reports all family types defined in a family file and, if present, in its associated catalogue file. |
@@ -37,14 +37,15 @@ Log files are available in MS Excel format. These log files are formatted to eas
 
 ### Family Defaults Log
 
-### Family Category Log
+### <a name="FamCategoryLog"></a> Family Category Log
 
 | FamilyFilePath | FamilyName | Category |
 |--------|----------|-----------|
 | The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Revit category of a family. |
 
-The 'Category' field can be changed via the drop down. Please note that the following selections will result in an exception reported when attempting to update a family file:
+The 'Category' field can be changed via the drop down. Please note that there are some combinations of current family category and new family category selections which will result in an exception reported when attempting to update a family file:
 
 | Current Category | Selection | why? |
+|--------------|---------------|------|
 | Non annotation category | Generic Annotation, tag of any type, detail component | This action is not available through the standard Revit user interface. |
-| Generic Annotation, tag of any type, detail component | any family category which may contain 3D elements | This action is not available through the standard Revit user interface. |
+| Annotation Categery (generic annotation, tag of any type, detail component) | any family category which may contain 3D elements | This action is not available through the standard Revit user interface. |
