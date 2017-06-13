@@ -21,38 +21,37 @@ layout: "sample"
 
 ### CATEGORY / PACKAGES AVAILABLE
 
-
-| Package Number | Package Description |
-|--------------|---------------|
-| A1 - INTRODUCTORY | Introductory documents. ie. drawing lists, cover page |
-| A2 - SITE | Anything site related including site works |
-| A3 - STAGING | Anything related to staging of works | 
-| B1 - EXISTING | Plans describing the existing conditions |
-| B2 - PROPOSED | Plans describing the proposed conditions |
-| B3 - FIRE COMPARTMENT | Fire compartment drawings as required |
-| B4 - PARTITIONS | Partition plans |
-| B5 - WALL PROTECTION | Wall protection plans |
-| C1 - EXTERNAL ELEVATIONS | External elevations overall |
-| C2 - FACADE DETAILS | All details relating to the building envelope |
-| D1 - BUILDING SECTIONS | Overall building sections |
-| E1 - REFLECTED CEILING PLANS | Ceiling plans |
-| F1 - FLOOR FINISHES | Floor finishes plans |
-| F2 - WALL FINISHES | Wall finishes plans |
-| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |
-| G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room |
-| G2 - LINE OF HEIGHTS | Typical line of heights drawings |
-| J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location |
-| J2 - DOOR AND WINDOW SCHEDULE | Schedules of internal doors and windows |
-| K1 - INTERFACE DETAILS PARTITIONS | Typical internal partition details |
-| K2 - INTERFACE DETAILS - CEILINGS | Typical internal ceiling details |
-| M1 - JOINERY | Joinery scoping plans |
-| M2 - JOINERY DETAILS | Joienry details |
-| M3 - METALWORKS DETAILS | Metal works details |
-| S1 - SIGNAGE | Signage plans |
-| Q1 - MEMBRANE DRAWINGS | Membrane scoping plans |
-| U1 - DEMOLITION DRAWINGS | Demolition scoping plans |
-| V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans |
-| Z1 -SPECIFICATION | Specification sections , T-Sheet |
+| Package Number | Package Description | Links |
+|--------------|---------------|---|
+| A1 - INTRODUCTORY | Introductory documents. ie. drawing lists, cover page | |
+| A2 - SITE | Anything site related including site works | |
+| A3 - STAGING | Anything related to staging of works |  |
+| B1 - EXISTING | Plans describing the existing conditions | |
+| B2 - PROPOSED | Plans describing the proposed conditions | |
+| B3 - FIRE COMPARTMENT | Fire compartment drawings as required | |
+| B4 - PARTITIONS | Partition plans | |
+| B5 - WALL PROTECTION | Wall protection plans | |
+| C1 - EXTERNAL ELEVATIONS | External elevations overall | |
+| C2 - FACADE DETAILS | All details relating to the building envelope | |
+| D1 - BUILDING SECTIONS | Overall building sections | |
+| E1 - REFLECTED CEILING PLANS | Ceiling plans | |
+| F1 - FLOOR FINISHES | Floor finishes plans | |
+| F2 - WALL FINISHES | Wall finishes plans | |
+| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), [RLS Generic Sheet](#RLSGenerics),[RLS Sheet content](#RLSSheetContent), |
+| G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room | |
+| G2 - LINE OF HEIGHTS | Typical line of heights drawings | |
+| J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location | |
+| J2 - DOOR AND WINDOW SCHEDULE | Schedules of internal doors and windows | |
+| K1 - INTERFACE DETAILS PARTITIONS | Typical internal partition details | |
+| K2 - INTERFACE DETAILS - CEILINGS | Typical internal ceiling details | |
+| M1 - JOINERY | Joinery scoping plans | |
+| M2 - JOINERY DETAILS | Joienry details | |
+| M3 - METALWORKS DETAILS | Metal works details | |
+| S1 - SIGNAGE | Signage plans | |
+| Q1 - MEMBRANE DRAWINGS | Membrane scoping plans | |
+| U1 - DEMOLITION DRAWINGS | Demolition scoping plans | |
+| V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans | |
+| Z1 -SPECIFICATION | Specification sections , T-Sheet | |
 
 
 ### LEVEL:
@@ -60,7 +59,7 @@ layout: "sample"
 * XX:  non level (Section/ Elevations/ typical details)
 * 01: Level 01 
 
-## Room Layout Sheets - Generics
+## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -92,7 +91,7 @@ TBC
 
 # Rooms
 
-## Generic Rooms
+## <a id="RLSGenerics"></a> Generic Rooms
 
 Generic Rooms for the Schematic Design stage are located in s1607004-AR-INH-GENRIC.rvt Revit file.
 
@@ -152,7 +151,7 @@ The following room properties are used when creating Room Layout Sheets (RLS) ei
 | Flux Id | | not used |
 | Wall Finish | build in | not used |
 
-## Room Layout Sheets
+## <a id="RLSSheetContent"></a> Room Layout Sheets
 
 Room layout sheets show the arrangement of equipment and fixtures within a room. They comprise of:
 
