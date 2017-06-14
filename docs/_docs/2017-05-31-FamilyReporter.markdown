@@ -7,9 +7,13 @@ modified:
 layout: "sample"
 ---
 
-# Family Reporter- Preface
+# Family Reporter - Preface
 
 The ‘Family Reporter” app is used to gather a number of properties from families and their catalog files. Those log file can be opened and edited in Excel and then applied to families via the Family Updater app.
+
+TODO:
+
+* add workflow graphic
 
 Summary of log files and properties they report:
 
@@ -28,12 +32,22 @@ Summary of log files and properties they report:
 | Reference Planes Log | Reports all reference planes present in a family and their properties |
 | Units Log | Reports units set for area, volume, angle, Number and Length |
 
-## Detailed Log file break down
+## Log File Formats
 
-Log files are available in MS Excel format. These log files are formatted to easily identify which fields can be edited and therefore used to update family properties.
+Log files are available in MS Excel and .txt format.
+
+### MS Excel
+
+These log files are formatted to easily identify which fields can be edited and therefore used to update family properties.
 
 * Cells with a grey back ground are read only.
 * Cells with a white bac ground can be edited. Most reports will also have a drop down enabled to allow selection of pre-defined actions.
+
+### Text Files
+
+Text log files are tab separated text files. No colour coding indicating editable fields or data validation is available in these files.
+
+## Detailed Log file break down
 
 ### <a id="FamCategoryLog"></a> Family Category Log
 
