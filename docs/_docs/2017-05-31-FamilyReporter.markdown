@@ -22,8 +22,8 @@ Summary of log files and properties they report:
 | [Host Families Log](#FamHostLog) | Reports all families which contain nested families |
 | [Materials Log](#MaterialsLog) | Reports all materials defined in family file. |
 | [Nested Families Log](#FamNestedLog) | Reports all nested families together with their host family. |
-| OmniClass Log | Reports the Omniclass of a family. |
-| Parameters Log | Reports all parameters present in a family and their properties but not values |
+| [OmniClass Log](#FamOmniLog) | Reports the Omni class of a family. |
+| [Parameters Log](#FamParaLog) | Reports all parameters present in a family and their properties but not values |
 | ParameterValuesByTypes Log | Reports parameter values by family type. Report includes family types defined in a catalogue files. |
 | Reference Planes Log | Reports all reference planes present in a family and their properties |
 | Units Log | Reports units set for area, volume, angle, Number and Length |
@@ -90,8 +90,36 @@ No actions are available yet for this report type.
 
 ### <a id="FamNestedLog"></a> Nested Family Log
 
-| Host FamilyFilePath | Host FamilyName | Nested Family Name | Nested FamilyType | No of Instances | Nested Family Category | Nested Family Action | Nested Family Action Parameter One |  Nested Family Action Parameter Two | 
+| Host FamilyFilePath | Host FamilyName | Nested Family Name | Nested FamilyType | No of Instances | Nested Family Category | Nested Family Action | Nested Family Action Parameter One |  Nested Family Action Parameter Two |
 |----------------|------------|---------------------|
 | The fully qualified file path of a (host) family file containing nested families| The file name, including file extension, of a (host) family file. | The nested family name (excluding file extension). | Nested family type name | Count of how many instances of this type are placed in the host family. | The Revit category of the nested family. | Nested family action describing what to do with this nested family. | Additional information required to execute an action | Additional information required to execute an action |
 
 No actions are available yet for this report type.
+
+### <a id="FamOmniLog"></a> Omni Class Log
+
+| FamilyFilePath | FamilyName | Omni class |
+|--------|----------|-----------|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Omni class code of a family. |
+
+For a description on how to update the Omni class value in family files refer to 'Family Updater' document.
+
+### <a id="FamParaLog"></a> Parameter Log
+
+| FamilyFilePath | FamilyName | Parameter GUID | Parameter Is Determined By Formula | Parameter Is Instance | Parameter Is Reporting | Parameter Storage Type | Parameter Action | Parameter Action Parameter |
+|--------|----------|-----------|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The GUID of a parameter. This value is only set for shared parameters. | 'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. Refer table below. | Parameter action describing what to do with this parameter. | Additional information required to execute an action |
+
+No actions are available yet for this report type.
+
+| Parameter storage type | Description | Sample Parameter Type |
+|------------------------|-------------|-----------------------|
+| string | Internal data is stored as a string of characters. | Text, URL, Invalid |
+| ElementId | Data type represents an element and is stored as an Element ID. | Invalid, Text, Material, FamilyType |
+| Double | Data is stored internally as an 8-byte floating point number. | Number, Length ,Currency, Angle, Area, Volume |
+| Integer | Internal data is stored as a signed 32-bit integer. | Invalid, YesNo, Integer |
+| None | None represents an invalid storage type. For internal use only. | Invalid |
+
+TODO:
+
+* Add Parameter Type to report.
