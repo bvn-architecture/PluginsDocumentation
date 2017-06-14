@@ -106,9 +106,9 @@ For a description on how to update the Omni class value in family files refer to
 
 ### <a id="FamParaLog"></a> Parameter Log
 
-| FamilyFilePath | FamilyName | Parameter GUID | Parameter Is Determined By Formula | Parameter Is Instance | Parameter Is Reporting | Parameter Storage Type | Parameter Action | Parameter Action Parameter |
-|--------|----------|-----------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The GUID of a parameter. This value is only set for shared parameters. | 'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. Refer table below. | Parameter action describing what to do with this parameter. | Additional information required to execute an action |
+| FamilyFilePath | FamilyName | Parameter Name | Parameter GUID | Parameter Is Determined By Formula | Parameter Is Instance | Parameter Is Reporting | Parameter Storage Type | Parameter Action | Parameter Action Parameter |
+|--------|----------|-----------|----------|-------|-------|------|-----|---------|-----------|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | 'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. Refer table below. | Parameter action describing what to do with this parameter. | Additional information required to execute an action |
 
 No actions are available yet for this report type.
 
