@@ -158,9 +158,18 @@ No actions are available yet for this report type.
 
 ### <a id="FamUnitsLog"></a> Family Unites Log
 
+The family units log returns for each family the units used for the following properties:
+
+* Area
+* Angle
+* Length
+* Number
+* Volume
+
+
 | FamilyFilePath | FamilyName | Unit | Accuracy | Unit Display | Unit Symbol | Use Default | Use Digit Grouping | Use Plus Prefix | Suppress Spaces | Suppress Leading Zeros | Suppress Trailing Zeros |
 |----------------|------------|--------------------|----------------------|--------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | 
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The property of the family measured. e.g. Area or Volume | The  | The accuracy to which values will be rounded. | The units and display format 'mm' or 'n/a' if not available. | 'TRUE' uses project default format settings for this unit type. 'FALSE' custom format settings are enabled. | Indicates if digit grouping symbols should be displayed. | Indicates if a plus sign prefix should be displayed for positive and zero values. | Indicated whether spaces around the dash should be suppressed in feet and fractional inches. | Indicates if leading zeros should be suppressed in feet and fractional inches.| Indicates if trailing zeroes after the decimal point should be suppressed. |
 
 
 No actions are available yet for this report type.
