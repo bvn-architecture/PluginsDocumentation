@@ -28,9 +28,9 @@ Summary of log files and properties they report:
 | [Nested Families Log](#FamNestedLog) | Reports all nested families together with their host family. |
 | [OmniClass Log](#FamOmniLog) | Reports the Omni class of a family. |
 | [Parameters Log](#FamParaLog) | Reports all parameters present in a family and their properties but not values |
-| ParameterValuesByTypes Log | Reports parameter values by family type. Report includes family types defined in a catalogue files. |
-| Reference Planes Log | Reports all reference planes present in a family and their properties |
-| Units Log | Reports units set for area, volume, angle, Number and Length |
+| [ParameterValuesByTypes Log](#FamParaValuebyTypeLog) | Reports parameter values by family type. Report includes family types defined in a catalogue files. |
+| [Reference Planes Log] (#FamRefPlanesLog) | Reports all reference planes present in a family and their properties |
+| [Units Log](#FamUnitsLog) | Reports units set for area, volume, angle, Number and Length |
 
 ## Log File Formats
 
@@ -122,9 +122,11 @@ For a description on how to update the Omni class value in family files refer to
 
 | FamilyFilePath | FamilyName | Parameter Name | Parameter GUID | Parameter Is Determined By Formula | Parameter Is Instance | Parameter Is Reporting | Parameter Storage Type | Parameter Action | Parameter Action Parameter |
 |--------|----------|-----------|----------|-------|-------|------|-----|---------|-----------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | 'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. Refer table below. | Parameter action describing what to do with this parameter. | Additional information required to execute an action |
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | 'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. Refer [table](#StorageType) below. | Parameter action describing what to do with this parameter. | Additional information required to execute an action. |
 
 No actions are available yet for this report type.
+
+<a id="StorageType"></a> Storage Types
 
 | Parameter storage type | Description | Sample Parameter Type |
 |------------------------|-------------|-----------------------|
@@ -137,3 +139,28 @@ No actions are available yet for this report type.
 TODO:
 
 * Add Parameter Type to report.
+
+### <a id="FamParaValuebyTypeLog"></a> Parameter Value by Type Log
+
+| FamilyFilePath | FamilyName | Family Type Name | Parameter Name | Parameter GUID | Parameter Value | Parameter Is Determined By Formula | Parameter Is Instance | Parameter Is Reporting | Parameter Storage Type |
+|--------|----------|-----------|----------|-------|-------|------|-----|---------|-----------|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The family type name. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | The parameter value for this family type. |'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. Refer [table](#StorageType)|
+
+For a description on how to update the parameter values by type in family files refer to 'Family Updater' document.
+
+### <a id="FamRefPlanesLog"></a> Family Reference Planes Log
+
+| FamilyFilePath | FamilyName | Reference Plane ID | Reference Plane Name | Is Reference | Defines Origin |
+|----------------|------------|--------------------|----------------------|--------------|----------------|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Revit element ID of the reference plane. | The assigned name, otherwise 'n /a' | Type of reference: e.g. 'Weak Reference' | 'TRUE' if this reference plane defines an origin, otherwise 'FALSE' |
+
+No actions are available yet for this report type.
+
+### <a id="FamUnitsLog"></a> Family Unites Log
+
+| FamilyFilePath | FamilyName | Unit | Accuracy | Unit Display | Unit Symbol | Use Default | Use Digit Grouping | Use Plus Prefix | Suppress Spaces | Suppress Leading Zeros | Suppress Trailing Zeros |
+|----------------|------------|--------------------|----------------------|--------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | 
+
+
+No actions are available yet for this report type.
