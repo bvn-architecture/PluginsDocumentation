@@ -9,7 +9,7 @@ layout: "sample"
 
 # Family Reporter - Preface
 
-The ‘Family Reporter” app is used to gather a number of properties from families and their catalog files. Those log file can be opened and edited in Excel and then applied to families via the Family Updater app.
+The ‘Family Reporter' app is used to gather a number of properties from families and their catalog files. Those log files can either be used to [visualize](#https://annisarivera.github.io/mastercontent/) the state of your Revit content or modified in Excel and then applied to families via the Family Updater app.
 
 TODO:
 
@@ -30,7 +30,7 @@ Summary of log files and properties they report:
 | [Parameters Log](#FamParaLog) | Reports all parameters present in a family and their properties but not values |
 | [ParameterValuesByTypes Log](#FamParaValuebyTypeLog) | Reports parameter values by family type. Report includes family types defined in a catalogue files. |
 | [Reference Planes Log] (#FamRefPlanesLog) | Reports all reference planes present in a family and their properties |
-| [Units Log](#FamUnitsLog) | Reports units set for area, volume, angle, Number and Length |
+| [Units Log](#FamUnitsLog) | Reports units set for area, volume, angle, number and length |
 
 ## Log File Formats
 
@@ -170,6 +170,5 @@ The family units log returns for each family the units used for the following pr
 | FamilyFilePath | FamilyName | Unit | Accuracy | Unit Display | Unit Symbol | Use Default | Use Digit Grouping | Use Plus Prefix | Suppress Spaces | Suppress Leading Zeros | Suppress Trailing Zeros |
 |----------------|------------|--------------------|----------------------|--------------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|
 | The fully qualified file path of a family file | The file name, including file extension, of a family file. | The property of the family measured. e.g. Area or Volume | The  | The accuracy to which values will be rounded. | The units and display format 'mm' or 'n/a' if not available. | 'TRUE' uses project default format settings for this unit type. 'FALSE' custom format settings are enabled. | Indicates if digit grouping symbols should be displayed. | Indicates if a plus sign prefix should be displayed for positive and zero values. | Indicated whether spaces around the dash should be suppressed in feet and fractional inches. | Indicates if leading zeros should be suppressed in feet and fractional inches.| Indicates if trailing zeroes after the decimal point should be suppressed. |
-
 
 No actions are available yet for this report type.
