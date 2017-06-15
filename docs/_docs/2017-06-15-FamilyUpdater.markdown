@@ -103,8 +103,8 @@ Note that the actions described apply to Revit family files (.rfa) as well as ca
 |--------|----------|-----------|
 | The fully qualified file path of a family file | The file name, including file extension, of a family file. | The omni class code of a family. |
 
-For a description on omni class codes refer [here](http://www.omniclass.org/)
-To change or set the omni class code just update the cell in the omni class column with the code required.
+For a description on omni class codes refer [here](http://www.omniclass.org/). 
+To change or set the omni class code, just update the cell in the omni class column with the code required.
 
 ### <a id="FamParaValuebyTypeLog"></a> Parameter Value by Type Log
 
@@ -112,7 +112,7 @@ To change or set the omni class code just update the cell in the omni class colu
 |--------|----------|-----------|----------|-------|-------|------|-----|---------|-----------|
 | The fully qualified file path of a family file | The file name, including file extension, of a family file. | The family type name. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | The parameter value for this family type. |'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. |
 
-To change or set values simply change the value of a parameter in a specific type simply change the value in the 'parameter value' column as required. 
+To change or set parameter values in a specific family type, simply change the value in the 'parameter value' column as required.
 
 Note that this assumes that:
 
