@@ -5,11 +5,12 @@ permalink: #/docs/2017-04-28-PushIt
 excerpt: "Purpose and capabilities of the Revit Family Reporter App"
 modified:
 layout: "sample"
+categories: Revit
 ---
 
 # Family Reporter - Preface
 
-The ‘Family Reporter' app is used to gather a number of properties from families and their catalog files. Those log files can either be used to [visualize](#https://annisarivera.github.io/mastercontent/) the state of your Revit content or modified in Excel and then applied to families via the Family Updater app.
+The ‘Family Reporter' app is used to gather a number of properties from families and their catalog files. Those log files can either be used to [visualize](https://annisarivera.github.io/mastercontent/) the state of your Revit content or modified in Excel and then applied to families via the [Family Updater app]({{ site.baseurl }}/_docs/2017-06-15-FamilyUpdater/).
 
 TODO:
 
@@ -29,7 +30,7 @@ Summary of log files and properties they report:
 | [OmniClass Log](#FamOmniLog) | Reports the Omni class of a family. |
 | [Parameters Log](#FamParaLog) | Reports all parameters present in a family and their properties but not values |
 | [ParameterValuesByTypes Log](#FamParaValuebyTypeLog) | Reports parameter values by family type. Report includes family types defined in a catalogue files. |
-| [Reference Planes Log] (#FamRefPlanesLog) | Reports all reference planes present in a family and their properties |
+| [Reference Planes Log](#FamRefPlanesLog) | Reports all reference planes present in a family and their properties |
 | [Units Log](#FamUnitsLog) | Reports units set for area, volume, angle, number and length |
 
 ## Log File Formats
@@ -47,20 +48,15 @@ These log files are formatted to easily identify which fields can be edited and 
 
 Text log files are tab separated text files. No colour coding indicating editable fields or data validation is available in these files.
 
-## Detailed Log file break down
+## Detailed log file break down
 
 ### <a id="FamCategoryLog"></a> Family Category Log
 
 | FamilyFilePath | FamilyName | Category |
 |--------|----------|-----------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Revit category of a family. |
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The current Revit category of a family. |
 
-The 'Category' field can be changed via the drop down. Please note that there are some combinations of current family category and new family category selections which will result in an exception reported when attempting to update a family file:
-
-| Current Category | Selection | why? |
-|--------------|---------------|------|
-| Non annotation category | Generic Annotation, tag of any type, detail component | This action is not available through the standard Revit user interface. |
-| Annotation Category (generic annotation, tag of any type, detail component) | Any family category which may contain 3D elements | This action is not available through the standard Revit user interface. |
+For a detailed list of categories refer to [Family Updater app]({{ site.baseurl }}/_docs/2017-06-15-FamilyUpdater/) document.
 
 ### <a id="FamDefaultLog"></a> Family Default Log
 
@@ -74,17 +70,17 @@ None of the reported properties in this report can be used to update Revit famil
 
 | FamilyFilePath | FamilyName | Category | Id | Line Weight Cut | Line Weight Projection | Colour As RGB | Material Name | Line Pattern Name | SubCategory Action | SubCategory Action Parameter |
 |----------------|------------|--------------------|---------------|---------------------|--------|----------|-----------|-----------|---------|----------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Revit category the subcategory belongs to. | Line weight used for cut elements. | Line weight used for projected elements.  | The colour of a subcategory as an comma separated RGB (range 0 to 255) | The assigned material name. 'Default' if none is assigned. | The line pattern name assigned to this subcategory. | SubCategory Action describing what to do with this subcategory. | Additional information required to execute an action. |
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Revit category the subcategory belongs to. | The Revit element ID of the subcategory. | Line weight used for cut elements. | Line weight used for projected elements.  | The colour of a subcategory as an comma separated RGB (range 0 to 255) | The assigned material name. 'Default' if none is assigned. | The line pattern name assigned to this subcategory. | SubCategory Action describing what to do with this subcategory. | Additional information required to execute an action. |
 
-For a detailed list of Subcategory actions and associated Subcategory Action Parameters refer to 'Family Updater' document.
+For a detailed list of Subcategory actions and associated Subcategory Action Parameters refer to [Family Updater app]({{ site.baseurl }}/_docs/2017-06-15-FamilyUpdater/) document.
 
 ### <a id="FamTypesLog"></a> Family Types Log
 
 | FamilyFilePath | FamilyName | Family Type Name | Family Type Name Action | Family Type Name Action Parameter |
 |----------------|------------|------------------|-------------------------|-----------------------------------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | Family type name action describing what to do with this type. | Additional information required to execute an action |
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The family type name. | Family type name action describing what to do with this type. | Additional information required to execute an action |
 
-For a detailed list of Family Type actions and associated Family Type Action Parameters refer to 'Family Updater' document.
+For a detailed list of Family Type actions and associated Family Type Action Parameters refer to [Family Updater app]({{ site.baseurl }}/_docs/2017-06-15-FamilyUpdater/) document.
 
 ### <a id="FamHostLog"></a> Host Family Log
 
@@ -116,7 +112,7 @@ No actions are available yet for this report type.
 |--------|----------|-----------|
 | The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Omni class code of a family. |
 
-For a description on how to update the Omni class value in family files refer to 'Family Updater' document.
+For a description on how to update the Omni class value in family files refer to [Family Updater app]({{ site.baseurl }}/_docs/2017-06-15-FamilyUpdater/) document.
 
 ### <a id="FamParaLog"></a> Parameter Log
 
@@ -146,7 +142,7 @@ TODO:
 |--------|----------|-----------|----------|-------|-------|------|-----|---------|-----------|
 | The fully qualified file path of a family file | The file name, including file extension, of a family file. | The family type name. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | The parameter value for this family type. |'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. Refer [table](#StorageType)|
 
-For a description on how to update the parameter values by type in family files refer to 'Family Updater' document.
+For a description on how to update the parameter values by type in family files refer to [Family Updater app]({{ site.baseurl }}/_docs/2017-06-15-FamilyUpdater/) document.
 
 ### <a id="FamRefPlanesLog"></a> Family Reference Planes Log
 
