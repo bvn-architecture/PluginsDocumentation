@@ -5,6 +5,7 @@ permalink: #/docs/2017-04-28-PushIt
 excerpt: "Purpose and capabilities of the Revit Family Updater App"
 modified:
 layout: "sample"
+categories: Revit
 ---
 
 # Family Updater - Preface
@@ -13,7 +14,7 @@ The ‘Family Updater' app is used to modify your Revit library content in three
 
 * Gather family data via the [Family Reporter App]
 * Modify family properties in MS Excel
-* Apply those modifications to your families via the Family Updater App  
+* Apply those modifications to your families via the Family Updater App
 
 TODO:
 
@@ -50,7 +51,7 @@ The following common updates are available:
 | Purge Unused | Attempts to purge all unused nested families or nested family types within a family |
 | Force Change | Internally this action creates a new family type, saves the family, deletes the dummy type and finally, saves the family again. From a user point of view the family will appear unchanged. However Revit will consider this family as changed and force an update when reloading it. This can be use full when e.g. a typical details file gets migrated from one project to another. In this situation, the families loaded in the project file in the new project location still remember their file origin in the old project folder location. A simple re-load of the families from their new location at this point will not re-path the families since Revit considers them identical and will not update to the new origin. Running a 'Force Change' update prior to re-loading the families will trick Revit into updating the families and therefore their internally stored origin.
 
-## Detailed Report based updates break down
+## Detailed report based updates break down
 
 ### <a id="FamCategoryLog"></a> Family Category Log
 
@@ -69,15 +70,32 @@ The 'Category' field can be changed via the drop down. Please note that there ar
 
 | FamilyFilePath | FamilyName | Category | Id | Line Weight Cut | Line Weight Projection | Colour As RGB | Material Name | Line Pattern Name | SubCategory Action | SubCategory Action Parameter |
 |----------------|------------|--------------------|---------------|---------------------|--------|----------|-----------|-----------|---------|----------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Revit category the subcategory belongs to. | Line weight used for cut elements. | Line weight used for projected elements.  | The colour of a subcategory as an comma separated RGB (range 0 to 255) | The assigned material name. 'Default' if none is assigned. | The line pattern name assigned to this subcategory. | SubCategory Action describing what to do with this subcategory. | Additional information required to execute an action. |
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Revit category the subcategory belongs to. | The Revit element ID of the subcategory. | Line weight used for cut elements. | Line weight used for projected elements.  | The colour of a subcategory as an comma separated RGB (range 0 to 255) | The assigned material name. 'Default' if none is assigned. | The line pattern name assigned to this subcategory. | SubCategory Action describing what to do with this subcategory. | Additional information required to execute an action. |
 
-For a detailed list of Subcategory actions and associated Subcategory Action Parameters refer to 'Family Updater' document.
+Following is a table describing all possible actions and action parameters where required.
+
+| Subcategory Action | Subcategory Action Parameter | Description |
+|--------------------|------------------------------|-------------|
+| Create | n/a | Creates a new subcategory with properties specified in adjacent columns. |
+| Delete | n/a | Deletes a subcategory. |
+| Update | optional: new subcategory name | Updates subcategory properties (and name if provided) with values specified in adjacent columns. |
+| None | n/a | No action specified for this subcategory. |
 
 ### <a id="FamTypesLog"></a> Family Types Log
 
 | FamilyFilePath | FamilyName | Family Type Name | Family Type Name Action | Family Type Name Action Parameter |
 |----------------|------------|------------------|-------------------------|-----------------------------------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | Family type name action describing what to do with this type. | Additional information required to execute an action |
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The family type name. | Family type name action describing what to do with this type. | Additional information required to execute an action |
+
+Following is a table describing all possible actions and action parameters where required.
+Note that the actions described apply to Revit family files (.rfa) as well as catalogue files (.txt).
+
+| Subcategory Action | Subcategory Action Parameter | Description |
+|--------------------|------------------------------|-------------|
+| Create | n/a | Creates a new family type. Parameter values will need to be set [separately](#FamParaValuebyTypeLog). |
+| Delete | n/a | Deletes a family type. |
+| Update | requires: new type name | Updates family type name. |
+| None | n/a | No action specified for this family type. |
 
 ### <a id="FamOmniLog"></a> Omni Class Log
 
@@ -91,6 +109,6 @@ For a description on how to update the Omni class value in family files refer to
 
 | FamilyFilePath | FamilyName | Family Type Name | Parameter Name | Parameter GUID | Parameter Value | Parameter Is Determined By Formula | Parameter Is Instance | Parameter Is Reporting | Parameter Storage Type |
 |--------|----------|-----------|----------|-------|-------|------|-----|---------|-----------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The family type name. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | The parameter value for this family type. |'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. Refer [table](#StorageType)|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The family type name. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | The parameter value for this family type. |'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. |
 
 For a description on how to update the parameter values by type in family files refer to 'Family Updater' document.
