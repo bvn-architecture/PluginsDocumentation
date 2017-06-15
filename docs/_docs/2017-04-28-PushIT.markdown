@@ -5,6 +5,7 @@ permalink: #/docs/2017-04-28-PushIt
 excerpt: "Spatial planning workflow documentation"
 modified:
 layout: "sample"
+categories: Revit
 ---
 
 ## Summary

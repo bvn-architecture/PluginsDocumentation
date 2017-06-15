@@ -5,6 +5,7 @@ permalink: #/docs/2017-04-28-PushIt
 excerpt: "Everything you always wanted to know about doors"
 modified:
 layout: "sample"
+categories: Revit
 ---
 
 # Doors

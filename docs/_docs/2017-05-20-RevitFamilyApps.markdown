@@ -5,6 +5,7 @@ permalink: #/docs/2017-05-20-RevitFamilyApps
 excerpt: "Various Revit Apps centering around family management"
 modified:
 layout: "sample"
+categories: Revit
 ---
 
 # How To - Revit Family Apps
