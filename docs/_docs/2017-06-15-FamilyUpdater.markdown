@@ -101,9 +101,10 @@ Note that the actions described apply to Revit family files (.rfa) as well as ca
 
 | FamilyFilePath | FamilyName | Omni class |
 |--------|----------|-----------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The Omni class code of a family. |
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The omni class code of a family. |
 
-For a description on how to update the Omni class value in family files refer to 'Family Updater' document.
+For a description on omni class codes refer [here](http://www.omniclass.org/)
+To change or set the omni class code just update the cell in the omni class column with the code required.
 
 ### <a id="FamParaValuebyTypeLog"></a> Parameter Value by Type Log
 
@@ -111,4 +112,14 @@ For a description on how to update the Omni class value in family files refer to
 |--------|----------|-----------|----------|-------|-------|------|-----|---------|-----------|
 | The fully qualified file path of a family file | The file name, including file extension, of a family file. | The family type name. | The name of the parameter | The GUID of a parameter. This value is only set for shared parameters. | The parameter value for this family type. |'TRUE' if formula is present, otherwise 'FALSE' | 'TRUE' if parameter is instance driven. 'False' if type driven | 'TRUE' if this is a reporting parameter, otherwise 'FALSE' | The Revit internal parameter storage type. |
 
-For a description on how to update the parameter values by type in family files refer to 'Family Updater' document.
+To change or set values simply change the value of a parameter in a specific type simply change the value in the 'parameter value' column as required. 
+
+Note that this assumes that:
+
+* The parameter value is not determined by a formula.
+* The parameter is not a reporting parameter.
+* The new value you are providing fits the storage type of a parameter. E.g. a string value does not fit an integer storage type.
+* If an element ID is provided ensure that that ID is valid:
+    * It exists
+    * The element it points to matches the required element type.
+    * E.g. If the parameter expects a material ID, the ID provided must be of a material element and that material element needs to exists in the family.
