@@ -313,18 +313,18 @@ Revit door properties used to number a door:
 
 ## AS 1428
 
-The door family (single leaf) has approach clearances as per AS 1428 build in. These are accessible via the xxx property:
+The door family (single leaf) has approach clearances as per AS 1428 build in. These are accessible via the 1428_Diagram property:
 
-| Property | approach |
-|------------------|
-| 1 | |
-| 2 | |
-| 3 | |
-| 4 | |
-| 5 | |
-| 6 | |
-| 7 | |
-| 8 | |
+| Property | approach |AS 1428 Figure Code |
+|----------|----------|--------------------|
+| 1 | ![AS1428_1]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_1.svg){:class="img-responsive"}{: height="70px" width="70px"} | Figure (a) |
+| 2 | ![AS1428_2]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_2.svg){:class="img-responsive"}{: height="70px" width="70px"} | Figure (b) |
+| 3 | ![AS1428_3]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_3.svg){:class="img-responsive"}{: height="70px" width="70px"} | Figure (c) |
+| 4 | ![AS1428_4]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_4.svg){:class="img-responsive"}{: height="70px" width="70px"} | Figure (d) |
+| 5 | ![AS1428_5]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_5.svg){:class="img-responsive"}{: height="70px" width="70px"} | Figure (e) |
+| 6 | ![AS1428_6]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_6.svg){:class="img-responsive"}{: height="70px" width="70px"} | Figure (f) |
+| 7 | ![AS1428_7]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_7.svg){:class="img-responsive"}{: height="70px" width="70px"} | Figure (g) |
+| 8 | ![AS1428_8]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_8.svg){:class="img-responsive"}{: height="70px" width="70px"} | Figure (h) |
 
 ## Door Tag
 
