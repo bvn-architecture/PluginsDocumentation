@@ -459,7 +459,7 @@ Push It will detect and compare model elements to the SOA given they exist in ei
   - the current view's active Design Option.
   - a primary Design Option of any Design Option Set other than the one that the active Design Option belongs to.
 
-*NOTE: Ideally Push It would compare against the active Design Option from each Design Option Set, however this information does not appear to be available via the Revit API.
+*NOTE: Ideally Push It would compare against the active Design Option from each Design Option Set, however this information does not appear to be available via the Revit API.*
 
 ## THINGS STILL TO BE COVERED:
 
