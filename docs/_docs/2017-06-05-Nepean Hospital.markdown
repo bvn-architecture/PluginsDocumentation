@@ -38,7 +38,7 @@ categories: Revit
 | E1 - REFLECTED CEILING PLANS | Ceiling plans | |
 | F1 - FLOOR FINISHES | Floor finishes plans | |
 | F2 - WALL FINISHES | Wall finishes plans | |
-| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), [RLS Generic Sheet](#RLSGenerics),[RLS Sheet content](#RLSSheetContent), |
+| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent), |
 | G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room | |
 | G2 - LINE OF HEIGHTS | Typical line of heights drawings | |
 | J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location | |
@@ -49,6 +49,7 @@ categories: Revit
 | M2 - JOINERY DETAILS | Joienry details | |
 | M3 - METALWORKS DETAILS | Metal works details | |
 | S1 - SIGNAGE | Signage plans | |
+| T1 - LANDSCAPE | Landscape plans | |
 | Q1 - MEMBRANE DRAWINGS | Membrane scoping plans | |
 | U1 - DEMOLITION DRAWINGS | Demolition scoping plans | |
 | V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans | |
@@ -79,7 +80,7 @@ TBC
 
 ## New Acute Services Building
 
-# Levels 
+# Levels
 
 ## Level Numbering
 
@@ -129,7 +130,6 @@ Proposal is to number rooms as follows:
 | 99 | . | level e.g. 05 | . | 000-799 as required | corridors outside a department | 99.05.001 |
 | 99 | . | level e.g. 05 | . | 800-899 as required | stairs | 99.05.801 |
 | 99 | . | level e.g. 05 | . | 900-999 as required | lifts | 99.05.901 |
-
 
 ## Room Properties
 
@@ -239,7 +239,6 @@ For ease of identification the following numbering scheme has been applied to th
 | 50 | - | 01 | - | 1 |
 | 50 | - | XX (multi storey department) | - | 2a (sub compartment 'a' of compartment '2') |
 
-
 ## Compartment Schedules
 
 In order to show the overall size of a fire compartment, which can be made up of multiple smoke departments on the same floor or spanning multiple floors, schedules have been placed summarizing the compartment area. These schedules call up the following properties:
@@ -274,7 +273,7 @@ The following tags are used to indicate location of fire fighting equipment as w
 
 ## Door Types and Sizes
 
-For a more in depth explanation of the varies door types ans sizes available refer to this [post]
+For a more in depth explanation of the varies door types ans sizes available refer to this [post]({{ site.baseurl }}/_docs/2017-06-02-Doors)
 
 ## Door numbering
 
