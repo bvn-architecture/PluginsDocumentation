@@ -513,6 +513,10 @@ You may delete the Filled Region once the Room family is created. Note that the 
 
 ![Newly Created room Family naming]({{ site.baseurl }}\assets\Pushit\GetARoom-Room-Family-Naming.png){:class="img-responsive"}{: height="124px" width="410px"}
 
+### Settings
+
+Get A Room settings (such as the custom family file Save-to folder path) depend on the existence of a text-based instance parameter associated to Project Information. This parameter must be named 'GetaRoomSettings' and be of type Text. It can be a shared or project parameter. If you wish to be prompted for the custom family save file path again, clear the value of this parameter.
+
 ### Limitations
 
 These custom-shaped Room families are not resizable in any dimension. This is because the shape is arbitrary and hence it cannot be parameterized. Therefore if the shape needs to be altered, a new Room family must be created, the SOA information pushed into the new instance and the old family instance deleted.
@@ -524,4 +528,5 @@ Ideally you'd only need to draw one loop to define the Room family boundary and 
 - Room family / shape 'editing':
     - Maintain filled region shape geometry and its association with a Room family so that the shape can be edited and the associated instance recreated and repopulated with the original's SOA data.
     - Replacing with another instance (and repopulating with the original's SOA data.)
+- Settings dialogs
 
