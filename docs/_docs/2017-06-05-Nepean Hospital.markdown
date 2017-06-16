@@ -333,8 +333,8 @@ This tag has a couple of types:
 
 | Type | use | graphics |
 |-----------|-----|----|
-| internal | for internal doors | |
-| external | for external doors usually covered in a separate schedule | |
+| internal | for internal doors | ![DoorTagInternal]({{ site.baseurl }}/assets/s1607004_inh/Doors_Tag_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| external | for external doors usually covered in a separate schedule | ![DoorTagExternal]({{ site.baseurl }}/assets/s1607004_inh/Doors_Tag_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 
 ## Existing Door Family Properties
 
