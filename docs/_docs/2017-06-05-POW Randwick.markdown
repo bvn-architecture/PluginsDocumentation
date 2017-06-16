@@ -101,3 +101,7 @@ In order to incorporate the different Origin points of the Rhino files and Revit
 * done
 
 This means Base Building File and Facade file do not share the same origin and require linking using Shared Coordinates. A new revit model should be ideally be created when translating the Rhino model to Revit to allow Origin to Origin linking.
+
+### Exporting to 3DS Max
+
+There is a 3D view setup in the Facade file: EXPORT TO MAX which displayes the linked base build model and the imported Rhino model overlayed in the same location.
