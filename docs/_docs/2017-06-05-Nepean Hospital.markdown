@@ -314,7 +314,7 @@ Revit door properties used to number a door:
 
 The door family (single leaf) has approach clearances as per AS 1428 build in. These are accessible via the 1428_Diagram property:
 
-| Property | approach |AS 1428 Figure Code |
+| 1428_Diagram Property Value | Approach Graphic |AS 1428 Figure Code |
 |----------|----------|--------------------|
 | 1 | ![AS1428_1]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_1.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (a) |
 | 2 | ![AS1428_2]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_2.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (b) |
