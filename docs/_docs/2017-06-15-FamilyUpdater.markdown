@@ -31,9 +31,26 @@ The user interface comprises of a single window with 2 tabs:
 
 ![FamilyUpdaterUIReports]({{ site.baseurl }}/assets/FamilyUpdater/GUI-UpdateFamilyParameterValues-MainReports-doc.png){:class="img-responsive"}{: height="700px" width="900px"}
 
+| Item | Function |
+|------|----------|
+| 1 – Family List | The family list window displays all families contained in a list file. |
+| 2 – Selection Options | These are the standard selection options aiming to help to manage larger family lists. |
+| 3  – Open reports | Open varies report [types](#ReportsSummary)
+| 4 - Cancel | Cancels any user input and returns to Revit
+| 5 – Process Families (x) | Will start to process all highlighted families. The number of families to be processed is shown in brackets. After completion a ‘Finished’ Message will be displayed. |
+
 * General
 
 ![FamilyUpdaterUIGeneral]({{ site.baseurl }}/assets/FamilyUpdater/GUI-UpdateFamilyParameterValues-MainGenUpdates-doc.png){:class="img-responsive"}{: height="700px" width="900px"}
+
+| Item | Function |
+|------|----------|
+| 1 – Family List | The family list window displays all families contained in a specified folder. |
+| 2 – Selection Options | These are the standard selection options aiming to help to manage larger family lists. |
+| 3 - Purge Unused | See [here](#PurgeUnused) |
+| 3 - Force Change | See [here](#ForceChange) |
+| 4 - Cancel | Cancels any user input and returns to Revit. |
+| 5 – Process Families (x) | Will start to process all highlighted families. The number of families to be processed is shown in brackets. After completion a ‘Finished’ Message will be displayed. |
 
 ## Type of updates available
 
@@ -42,7 +59,7 @@ Family Reporter differentiates between two main types of updates:
 * Report based
 * Common
 
-### Report based updates
+### <a id="ReportsSummary"></a> Report based updates
 
 Report based updates require an MS Excel sheet containing the information requiring updates.
 The following report based updates are available:
@@ -63,8 +80,8 @@ The following common updates are available:
 
 | Update | Action |
 |---------|------------|
-| Purge Unused | Attempts to purge all unused nested families or nested family types within a family |
-| Force Change | Internally this action creates a new family type, saves the family, deletes the dummy type and finally, saves the family again. From a user point of view the family will appear unchanged. However Revit will consider this family as changed and force an update when reloading it. This can be use full when e.g. a typical details file gets migrated from one project to another. In this situation, the families loaded in the project file in the new project location still remember their file origin in the old project folder location. A simple re-load of the families from their new location at this point will not re-path the families since Revit considers them identical and will not update to the new origin. Running a 'Force Change' update prior to re-loading the families will trick Revit into updating the families and therefore their internally stored origin.
+| Purge Unused <a id="PurgeUnused"></a> | Attempts to purge all unused nested families or nested family types within a family |
+| Force Change <a id="ForceChange"></a> | Internally this action creates a new family type, saves the family, deletes the dummy type and finally, saves the family again. From a user point of view the family will appear unchanged. However Revit will consider this family as changed and force an update when reloading it. This can be use full when e.g. a typical details file gets migrated from one project to another. In this situation, the families loaded in the project file in the new project location still remember their file origin in the old project folder location. A simple re-load of the families from their new location at this point will not re-path the families since Revit considers them identical and will not update to the new origin. Running a 'Force Change' update prior to re-loading the families will trick Revit into updating the families and therefore their internally stored origin. Note: this will only work on a family which has as a minimum at least one family type set-up already. Otherwise it will report an exception. |
 
 ## Detailed report based updates break down
 
