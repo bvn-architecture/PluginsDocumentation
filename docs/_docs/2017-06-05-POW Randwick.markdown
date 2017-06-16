@@ -83,13 +83,21 @@ In order to incorporate the different Origin points of the Rhino files and Revit
 * Imported Rhino model using Revit 2018 Import CAD file dialogue 
 	* This will import the Rhino model using Origin to Origin
 * Select 'Generic Model' as host
-* Image:
+
+![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_01_justLinked.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+
 * Linked Base Building Revit model using 'Auto - Origin to Origin' option into Facade file.
-* image
+
+![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_02_BaseBuildLinked_NotMoved.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+
 * Moved Base Building File Revit model within the Facade file to suite location of imported Rhino model in plan and section.
-* image
+
+![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_03_BaseBuildLinked_Moved.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+
 * Acquired Coordinates from Base Building model.
-* image
+
+![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_04_BaseBuildLinked_CoordinatesAcquired.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+
 * done
 
 This means Base Building File and Facade file do not share the same origin and require linking using Shared Coordinates. A new revit model should be ideally be created when translating the Rhino model to Revit to allow Origin to Origin linking.
