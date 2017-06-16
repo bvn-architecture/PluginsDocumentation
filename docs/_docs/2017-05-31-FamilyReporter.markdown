@@ -16,7 +16,26 @@ TODO:
 
 * add workflow graphic
 
-Summary of log files and properties they report:
+## User Interface
+
+The Family Reporter is located within the BVN Tab on the Families Panel:
+![FamilyReporterIcon]({{ site.baseurl }}/assets/FamilyReporter/Icon-ReportFamilyProperties.png){:class="img-responsive"}{: height="45px" width="100px"}
+
+The user interface comprises of a single window:
+
+![FamilyReporterUI]({{ site.baseurl }}/assets/FamilyReporter/GUI-ReportFamilyProperties-Main-doc.png){:class="img-responsive"}{: height="700px" width="900px"}
+
+| Item | Function |
+|------|----------|
+| 1 Family List | The family list window displays all Revit families in a folder selected or contained in a list file. |
+| 2 – Selection Options | These are the standard selection options aiming to help to manage larger family lists. |
+| 3 / 4 – Open Options | This app can batch process 4 - all families located in a specific folder and its sub folders or 3 – families from a list file. The list file is a simple .txt file which contains a full file path per family to be processed per row and can be created by the Family Reporter App. |
+| 5 - Cancel | Cancels any user input and returns to Revit |
+| 6 – Process Families (x) | Will start to process all highlighted families. The number of families to be processed is shown in brackets. After completion a ‘Finished’ Message will be displayed. |
+
+## Summary of Log Files and Properties they Report
+
+In the moment Reporter will create all of the following reports every time it runs.
 
 | Log File | Properties |
 |---------|------------|

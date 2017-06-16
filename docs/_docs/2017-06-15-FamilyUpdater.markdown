@@ -20,6 +20,21 @@ TODO:
 
 * add workflow graphic
 
+## User Interface
+
+The Family Updater is located within the BVN Tab on the Families Panel:
+![FamilyUpdaterIcon]({{ site.baseurl }}/assets/FamilyUpdater/Icon-UpdateFamilyParameterValues.png){:class="img-responsive"}{: height="45px" width="100px"}
+
+The user interface comprises of a single window with 2 tabs:
+
+* Reports
+
+![FamilyUpdaterUIReports]({{ site.baseurl }}/assets/FamilyUpdater/GUI-UpdateFamilyParameterValues-MainReports-doc.png){:class="img-responsive"}{: height="700px" width="900px"}
+
+* General
+
+![FamilyUpdaterUIGeneral]({{ site.baseurl }}/assets/FamilyUpdater/GUI-UpdateFamilyParameterValues-MainGenUpdates-doc.png){:class="img-responsive"}{: height="700px" width="900px"}
+
 ## Type of updates available
 
 Family Reporter differentiates between two main types of updates:
