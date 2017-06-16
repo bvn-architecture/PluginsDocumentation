@@ -331,16 +331,16 @@ Revit door tag:
 
 This tag has a couple of types:
 
-| Type | use | graphics |
+| Tag Type | Usage | Graphics |
 |-----------|-----|----|
-| internal | for internal doors | ![DoorTagInternal]({{ site.baseurl }}/assets/s1607004_inh/Doors_Tag_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
-| external | for external doors usually covered in a separate schedule | ![DoorTagExternal]({{ site.baseurl }}/assets/s1607004_inh/Doors_Tag_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| Internal | For internal doors | ![DoorTagInternal]({{ site.baseurl }}/assets/s1607004_inh/Doors_Tag_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| External | For external doors, usually covered in a separate schedule | ![DoorTagExternal]({{ site.baseurl }}/assets/s1607004_inh/Doors_Tag_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 
 ## Existing Door Family Properties
 
 The existing door families have some extra properties to allow to indicate that they
 
-* require painting
-* require to be re-hang
-* require additional door protection
+* Require painting
+* Require to be re-hang
+* Require additional door protection
 
