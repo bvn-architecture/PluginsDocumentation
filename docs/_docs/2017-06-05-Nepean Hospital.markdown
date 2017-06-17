@@ -300,8 +300,8 @@ The following Revit door families are used:
 |---------------------------|
 | 045_SINGLELEAF_GENERIC | single leaf internal door | ![DoorSingle_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
 | 045_DOUBLELEAF_GENERIC | double leaf (equal and un-equal size) | ![DoorDouble_Equal]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_Double.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorDouble_UnEqual]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_DoorHalf.svg){:class="img-responsive"}{: height="90px" width="90px"} |
-| DOR-SINGLE EXISTING-L300-BVN | single leaf existing door | |
-| DOR-DOUBLE EXISTING-L300-BVN | double leaf existing door | |
+| DOR-SINGLE EXISTING-L300-BVN | single leaf existing door | single leaf internal door | ![DoorExistingSingle_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoorsExisting_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
+| DOR-DOUBLE EXISTING-L300-BVN | double leaf existing door | ![DoorExistingDoubleEq_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoorsExisting_DoubleEqual.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorExistingDoubleUnEq_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoorsExisting_Double_unequal.svg){:class="img-responsive"}{: height="90px" width="90px"}|
 
 Revit door properties used to number a door:
 
