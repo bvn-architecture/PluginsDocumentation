@@ -298,8 +298,8 @@ The following Revit door families are used:
 
 | Door family name | Use | Graphic |
 |---------------------------|
-| single | single leaf internal door | |
-| double | double leaf (equal and un-equal size) | |
+| single | single leaf internal door | ![DoorSingle_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
+| double | double leaf (equal and un-equal size) | ![DoorDouble_Equal]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_Double.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorDouble_UnEqual]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_DoorHalf.svg){:class="img-responsive"}{: height="90px" width="90px"} |
 | single existing | single leaf existing door | |
 | double existing | double leaf existing door | |
 
