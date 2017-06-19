@@ -357,15 +357,15 @@ Below is a table of our default dimension styles:
 
 | Name | Type | Description | Comments |
 |------|------|-------------|----------|
-| 45° Diagonal Line_2.0mm Text_BVN | Linear Dim style | Text size 2mm, tick mark: 45° Diagonal_BVN, no CL Symbol | Should be used as default if no CL is required |
-| BVNDH 2.0mm with CL | Linear Dim style | Text size 2mm, tick mark: 45° Diagonal_BVN, CL Symbol: Centreline_ANN : Type 1| Should be used as default if CL is required |
-| 45° Arrow_2.0mm Text_BVN | Linear Dim style | Text size 2mm, tick mark: 45° Arrow_Line_BVN, no CL Symbol | Should be used as only if extent is shown |
-| 45° Arrow_2.0mm Text_BVN | Angular Dim style | Text size 2mm, tick mark: 45° Arrow_Line_BVN, no CL Symbol | Should be used as default when arrows are required as tick mark |
-| 45° Diagonal Line_2.0mm Text_BVN | Angular Dim style | Text size 2mm, tick mark: 45° Diagonal_BVN, no CL Symbol | Should be used as default when diagonal lines are required as tick mark |
-| 45° Arrow_2.0mm Text_BVN | Radial Dim style | Text size 2mm, tick mark: 45° Arrow_Line_BVN, no CL Symbol | Should be used as default when arrows are required as tick mark |
-| 45° Diagonal Line_2.0mm Text_BVN | Radial Dim style | Text size 2mm, tick mark: 45° Diagonal_BVN, no CL Symbol | Should be used as default when diagonal lines are required as tick mark |
-| 45° Arrow_2.0mm Text_BVN |Diameter Dim style | Text size 2mm, tick mark: 45° Arrow_Line_BVN, no CL Symbol | Should be used as default when arrows are required as tick mark |
-| 45° Diagonal Line_2.0mm Text_BVN | Diameter Dim style | Text size 2mm, tick mark: 45° Diagonal_BVN, no CL Symbol | Should be used as default when diagonal lines are required as tick mark |
+| 45 Diagonal Line_2.0mm Text_BVN | Linear Dim style | Text size 2mm, tick mark: 45 Diagonal_BVN, no CL Symbol | Should be used as default if no CL is required |
+| BVNDH 2.0mm with CL | Linear Dim style | Text size 2mm, tick mark: 45 Diagonal_BVN, CL Symbol: Centreline_ANN : Type 1| Should be used as default if CL is required |
+| 45 Arrow_2.0mm Text_BVN | Linear Dim style | Text size 2mm, tick mark: 45 Arrow_Line_BVN, no CL Symbol | Should be used as only if extent is shown |
+| 45 Arrow_2.0mm Text_BVN | Angular Dim style | Text size 2mm, tick mark: 45 Arrow_Line_BVN, no CL Symbol | Should be used as default when arrows are required as tick mark |
+| 45 Diagonal Line_2.0mm Text_BVN | Angular Dim style | Text size 2mm, tick mark: 45 Diagonal_BVN, no CL Symbol | Should be used as default when diagonal lines are required as tick mark |
+| 45 Arrow_2.0mm Text_BVN | Radial Dim style | Text size 2mm, tick mark: 45 Arrow_Line_BVN, no CL Symbol | Should be used as default when arrows are required as tick mark |
+| 45 Diagonal Line_2.0mm Text_BVN | Radial Dim style | Text size 2mm, tick mark: 45 Diagonal_BVN, no CL Symbol | Should be used as default when diagonal lines are required as tick mark |
+| 45 Arrow_2.0mm Text_BVN |Diameter Dim style | Text size 2mm, tick mark: 45 Arrow_Line_BVN, no CL Symbol | Should be used as default when arrows are required as tick mark |
+| 45 Diagonal Line_2.0mm Text_BVN | Diameter Dim style | Text size 2mm, tick mark: 45 Diagonal_BVN, no CL Symbol | Should be used as default when diagonal lines are required as tick mark |
 | Spot Elevation_BVN | Spot Elevation | Text size 2mm | Default spot elevation |
 | Spot Coordinate_BVN | Spot Coordinate | Text size 2mm | Default spot coordinate |
 | Spot Slope_BVN | Spot Slope Text size 2mm | Default slope dimension |
