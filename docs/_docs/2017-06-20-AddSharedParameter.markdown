@@ -1,6 +1,6 @@
 ---
 title:  "Revit - Add Shared Parameter to Families"
-date:   2017-06-20 19:00:00 +1100
+date:   2017-06-20 09:00:00 +0100
 permalink: #/docs/2017-04-28-PushIt
 excerpt: "This describes How to add multiple shared parameters to one or multiple families in one go."
 modified:
