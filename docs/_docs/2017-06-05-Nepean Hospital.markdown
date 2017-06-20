@@ -16,7 +16,7 @@ categories: Revit
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | A1 | - | 01 | - | 01 |
 
-### ZONE / BUILDING
+### <a id="ZoneIdentifier"></a> ZONE / BUILDING
 
 * K - New Build
 
@@ -72,6 +72,15 @@ categories: Revit
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Room Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
 | XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G1 | - | as per dRofus |
+
+
+## User Group related drawings
+
+| Discipline Code | - | Document Type | - | Zone / Building | - | User group | - | Level | - | Number |
+| ----------------|---|---------------|---|-----------------|---|------------|---|-------|---|--------|
+| AR | - | SK | - | [refer here] (#ZoneIdentifier) | - | UG | - | 01 | - | 000 |
+
+Sample number : AR-SK-K-UG-01-000
 
 # Site set-out
 
