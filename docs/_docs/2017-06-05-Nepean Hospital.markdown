@@ -78,7 +78,7 @@ categories: Revit
 
 | Discipline Code | - | Document Type | - | Zone / Building | - | User group | - | Level | - | Number |
 | ----------------|---|---------------|---|-----------------|---|------------|---|-------|---|--------|
-| AR | - | SK | - | [refer here] (#ZoneIdentifier) | - | UG | - | 01 | - | 000 |
+| AR | - | SK | - | [refer here](#ZoneIdentifier) | - | UG | - | 01 | - | 000 |
 
 Sample number : AR-SK-K-UG-01-000
 
