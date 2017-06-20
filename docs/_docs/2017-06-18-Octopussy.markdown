@@ -56,17 +56,15 @@ The arms of the Octopus could be used for:
 
 The webbing between the arms is used to guide the umbilical cord from the central spine to a location above the users desk where it drops straight down. Fixing of the chord to the webbing could be via simple hooks or even cable ties.
 
-An alternative solution could be to use the arms as a guide rail for these:
-
-![RoboReel]({{ site.baseurl }}/assets/Octopussy/RoboReel.jpg){:class="img-responsive"}{: height="500px" width="500px"}
-
 ### Umbilical Chord
 
-The chord comprises of a single power and a single data cable of a maximum length yet to be determined. The plug connection at the central spine will need to be able to withstand accidental pulling. Both cables can be hold together via simple tubing.
+The chord comprises of a single power and a single data cable of a maximum length yet to be determined. The plug connection at the central spine will need to be able to withstand accidental pulling. Both cables can be hold together via simple tubing with surplus cabling either be stored in the webbing above or at the desk connection.
 
 ![Cabling_organize]({{ site.baseurl }}/assets/Octopussy/spirala-szara-organizer_3947.jpg){:class="img-responsive"}{: height="300px" width="500px"}
 
-Surplus cabling can either be stored in the webbing above or at the desk connection.
+An alternative solution could be to use the arms as a guide rail for these:
+
+![RoboReel]({{ site.baseurl }}/assets/Octopussy/RoboReel.jpg){:class="img-responsive"}{: height="500px" width="500px"}
 
 ### Layout Options
 
