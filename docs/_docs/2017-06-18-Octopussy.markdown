@@ -64,7 +64,6 @@ The chord comprises of a single power and a single data cable of a maximum lengt
 
 Surplus cabling can either be stored in the webbing above or at the desk connection.
 
-
 ### Layout Options
 
 Octopi can vary in size and shape to fit a given floor plate layout as shown below:
@@ -79,4 +78,6 @@ There are two main options to wire the Octopi to a comms location:
 |-----------|-------------------------|
 | ![wiring_NodeBased]({{ site.baseurl }}/assets/Octopussy/Wiring_NodeBased.svg){:class="img-responsive"}{: height="300px" width="500px"} | ![wiring_centralised]({{ site.baseurl }}/assets/Octopussy/Wiring_Centralised.svg){:class="img-responsive"}{: height="450px" width="650px"} |
 | Nodes to base are single fibre optics (green) with distribution to user level via copper (grey) at node | Nodes to base are copper cable (grey) with distribution to user level at central location (Nodes are just pass through points) |
-| Easy to add more users at a node at a later point in time | To allow for maximum flexibility nodes will need to incorporate future user numbers at day one (maybe a factor of 1.5 or 1.75 connections per user) | 
+| Easy to add more users at a node at a later point in time | To allow for maximum flexibility nodes will need to incorporate future user numbers at day one (maybe a factor of 1.5 or 1.75 connections per user) |
+
+### Safe User Access
