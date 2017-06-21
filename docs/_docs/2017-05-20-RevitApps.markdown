@@ -12,23 +12,23 @@ categories: Revit
 
 This page provides an overview of the custom Revit apps available at BVN.
 
-## Summary - Views Tab
+## Views Tab
 
 These add ins provide additional functionality to view placement, creation and export.
 
 | App Name | Icon | App Usage |
 | --- | --- | --- |
-| Create Dependent Views | | Creates any number of dependent views by level |
-| Place Views on Sheets | | Provides options to place views, schedules and legends on sheets based on templates. |
-| Export Schedules | | Exports any number of Revit schedules as .txt files |
-| Duplicate | | Duplicates Sheets (including views there on) or just views |
-| Align | | Aligns views placed on sheets. |
+| Create Dependent Views | ![CreateViews]({{ site.baseurl }}/assets/CreateDependantViews/Icon-CreateDependantViews.png){:class="img-responsive"}{: height="35px" width="70px"} | Creates any number of dependent views by level. |
+| Place Views on Sheets | ![PlaceViews]({{ site.baseurl }}/assets/PlaceViews/Icon-PlaceViews.png){:class="img-responsive"}{: height="35px" width="60px"} | Provides options to place views, schedules and legends on sheets based on templates. |
+| Export Schedules | ![ExportSchedules]({{ site.baseurl }}/assets/ExportSchedules/Icon-ExportSchedules.png){:class="img-responsive"}{: height="35px" width="60px"} | Exports any number of Revit schedules as .txt files |
+| Duplicate | ![DuplicateViews]({{ site.baseurl }}/assets/DuplicateViews/Icon-Duplicate.png){:class="img-responsive"}{: height="35px" width="65px"} | Duplicates Sheets (including views there on) or just views |
+| Align | ![AlignViews]({{ site.baseurl }}/assets/AlignViews/Icon-Align.png){:class="img-responsive"}{: height="35px" width="85px"} | Aligns views placed on sheets. |
 
 Within the Revit user interface the family apps can be found under the BVN Tools tab:
 
-![BVNRevitToolsTab_Views]({{ site.baseurl }}/assets/Tab-Views.png){:class="img-responsive"}{: height="100px" width="170px"}
+![BVNRevitToolsTab_Views]({{ site.baseurl }}/assets/Tab-Views.png){:class="img-responsive"}{: height="120px" width="200px"}
 
-## Summary – Families Tab
+## Families Tab
 
 The Revit Family Apps are a collection of add-ins meant to improve family management in a Revit project. The collection comprises of:
 
