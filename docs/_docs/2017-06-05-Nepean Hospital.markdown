@@ -82,6 +82,25 @@ categories: Revit
 
 Sample number : AR-SK-K-UG-01-000
 
+## Titleblocks - Room Layout sheets
+
+These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both titleblocks have proeprties adjusting the sign off bar as follows:
+
+| Property | use |
+| SignOff_HealthPlanningConsultant | Contains the name of the health planning consultant to be shown in the sign off bar. |
+| SignOff_LHD Name | Contains the name of the Local Health District to be shown in the sign off bar. |
+| Sign_Off_ProjectManager | Contains the name of the Project Manager to be shown in the sign off bar. |
+
+Families used:
+
+* Titleblock_C_SHEET_Refurb_A3-Title Block
+* Titleblock_C_SHEET_Refurb_A2-Title Block
+
+Familye type Prefixes used:
+
+* RCR - Randwick
+* NEP - Nepean
+
 # Site set-out
 
 ## Existing Cancer Center refurbishment Works
