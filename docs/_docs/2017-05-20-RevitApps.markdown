@@ -20,7 +20,7 @@ These add ins provide additional functionality to view placement, creation and e
 | --- | --- | --- |
 | Create Dependent Views | ![CreateViews]({{ site.baseurl }}/assets/CreateDependantViews/Icon-CreateDependantViews.png){:class="img-responsive"}{: height="35px" width="70px"} | Creates any number of dependent views by level. |
 | Place Views on Sheets | ![PlaceViews]({{ site.baseurl }}/assets/PlaceViews/Icon-PlaceViews.png){:class="img-responsive"}{: height="35px" width="60px"} | Provides options to place views, schedules and legends on sheets based on templates. |
-| Export Schedules | ![ExportSchedules]({{ site.baseurl }}/assets/ExportSchedules/Icon-ExportSchedules.png){:class="img-responsive"}{: height="35px" width="60px"} | Exports any number of Revit schedules as .txt files |
+| [Export Schedules]({{ site.baseurl }}/_docs/2017-06-22-ExportSchedules) | ![ExportSchedules]({{ site.baseurl }}/assets/ExportSchedules/Icon-ExportSchedules.png){:class="img-responsive"}{: height="35px" width="60px"} | Exports any number of Revit schedules as .txt files |
 | Duplicate | ![DuplicateViews]({{ site.baseurl }}/assets/DuplicateViews/Icon-Duplicate.png){:class="img-responsive"}{: height="35px" width="65px"} | Duplicates Sheets (including views there on) or just views |
 | Align | ![AlignViews]({{ site.baseurl }}/assets/AlignViews/Icon-Align.png){:class="img-responsive"}{: height="35px" width="85px"} | Aligns views placed on sheets. |
 
