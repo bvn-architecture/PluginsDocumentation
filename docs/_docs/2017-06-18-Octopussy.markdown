@@ -83,3 +83,9 @@ There are two main options to wire the Octopi to a comms location:
 | Easy to add more users at a node at a later point in time | To allow for maximum flexibility nodes will need to incorporate future user numbers at day one (maybe a factor of 1.5 or 1.75 connections per user) |
 
 ### Safe User Access
+
+Ideally the central spine is mounted with the underside at 2700 to match the lowest point of the currently installed duct work. This would allow for a fairly short vertical lift movement of approx 500mm - 700mm to get the plugs within the reach of the end user without requiring a ladder. This in turn assumes that there is sufficient cable slack at the top of the central spine. Maybe something like the below could be implemented.
+
+![CableDragChain]({{ site.baseurl }}/assets/Octopussy/WireChainProtection.jpg){:class="img-responsive"}{: height="300px" width="500px"} 
+
+Having all data cables in one cable drag chain might not work due to the amount of cables. One possible option is to have one chain per side of central spine ( 4 sides) which would reduce the number of cable down to approx 11 per chain.
