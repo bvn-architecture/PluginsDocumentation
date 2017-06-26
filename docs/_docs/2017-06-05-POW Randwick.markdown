@@ -10,6 +10,33 @@ categories: Revit
 
 # Document Numbering
 
+## Model Numbering
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | MDL | - | XX | - | XXXX |
+
+
+List of current models and their aconex docuemtn number:
+
+| Zone | - | Model | Number |
+|---------|---|----|
+| 50 | - | 0001 | New Acute Services Building - Revit Model |
+| 50 | - | 0002 | New Acute Services Building - Facade - Revit Model |
+| 50 | - | 0020 | New Acute Services Building - Site - Revit Model |
+| 50 | - | 0021 | New Acute Services Building - CAD Links - Revit Model |
+| 50 | - | 0022 | New Acute Services Building - Existing Buildings - Revit Model |
+| 07 | - | 0001 | Building 07 - Revit Model |
+| 09 | - | 0001 | Building 09 - Revit Model |
+| 15 | - | 0001 | Building 15 - Revit Model |
+| 16 | - | 0001 | Building 16 - Revit Model |
+| 17 | - | 0001 | Building 17 - Revit Model |
+| 50 | - | 0001 | Building 50 - Revit Model |
+| 50 | - | 0101 | ED Transitional Works - Revit Model |
+| 50 | - | 0201 | ED Transitional Works - CAD Links - Revit Model |
+| 51 | - | 0001 | Car Park - Revit Model |
+| 52 | - | 0001 | Temporary Building - Revit Model |
+
 ## Standard Doc's
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |

@@ -10,6 +10,12 @@ categories: Revit
 
 # Document Numbering
 
+## Model Numbering
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | MDL | - | X | - | XXXX |
+
 ## Standard Doc's
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
