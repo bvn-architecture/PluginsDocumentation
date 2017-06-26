@@ -4,9 +4,107 @@ date:   2017-05-31 19:00:00 +1100
 permalink: #/docs/2017-04-28-PushIt
 excerpt: "Everything relating to Revit on POW"
 modified:
-layout: "confidential"
+layout: "sample"
 categories: Revit
 ---
+
+# Document Numbering
+
+## Standard Doc's
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | A1 | - | 01 | - | 01 |
+
+### <a id="ZoneIdentifier"></a> ZONE / BUILDING
+
+* 07 - PARKES & CSB
+* 09 - HYPERBARIC UNIT
+* 15 - DICKINSON - Emergency Department - Transitional Works
+* 16 - CAMPUS CENTRE
+* 17 - RHW
+* 50 - NEW ACUTE SERVICES BUILDING
+* 51 - CAR PARK
+* 52 - TEMPORARY BUILDING
+
+### CATEGORY / PACKAGES AVAILABLE
+
+| Package Number | Package Description | Links |
+|--------------|---------------|---|
+| A1 - INTRODUCTORY | Introductory documents. ie. drawing lists, cover page | |
+| A2 - SITE | Anything site related including site works | |
+| A3 - STAGING | Anything related to staging of works |  |
+| B1 - EXISTING | Plans describing the existing conditions | |
+| B2 - PROPOSED | Plans describing the proposed conditions | |
+| B3 - FIRE COMPARTMENT | Fire compartment drawings as required | |
+| B4 - PARTITIONS | Partition plans | |
+| B5 - WALL PROTECTION | Wall protection plans | |
+| C1 - EXTERNAL ELEVATIONS | External elevations overall | |
+| C2 - FACADE DETAILS | All details relating to the building envelope | |
+| D1 - BUILDING SECTIONS | Overall building sections | |
+| E1 - REFLECTED CEILING PLANS | Ceiling plans | |
+| F1 - FLOOR FINISHES | Floor finishes plans | |
+| F2 - WALL FINISHES | Wall finishes plans | |
+| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent), |
+| G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room | |
+| G2 - LINE OF HEIGHTS | Typical line of heights drawings | |
+| J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location | |
+| J2 - DOOR AND WINDOW SCHEDULE | Schedules of internal doors and windows | |
+| K1 - INTERFACE DETAILS PARTITIONS | Typical internal partition details | |
+| K2 - INTERFACE DETAILS - CEILINGS | Typical internal ceiling details | |
+| M1 - JOINERY | Joinery scoping plans | |
+| M2 - JOINERY DETAILS | Joienry details | |
+| M3 - METALWORKS DETAILS | Metal works details | |
+| S1 - SIGNAGE | Signage plans | |
+| T1 - LANDSCAPE | Landscape plans | |
+| Q1 - MEMBRANE DRAWINGS | Membrane scoping plans | |
+| U1 - DEMOLITION DRAWINGS | Demolition scoping plans | |
+| V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans | |
+| Z1 -SPECIFICATION | Specification sections , T-Sheet | |
+
+### LEVEL:
+
+* XX:  non level (Section/ Elevations/ typical details)
+* 01: Level 01 
+
+## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G0 | - | 001 |
+
+## Room Layout Sheets - Specifics
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Room Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G1 | - | as per dRofus |
+
+## User Group related drawings
+
+| Discipline Code | - | Document Type | - | Zone / Building | - | User group | - | Level | - | Number |
+| ----------------|---|---------------|---|-----------------|---|------------|---|-------|---|--------|
+| AR | - | SK | - | [refer here](#ZoneIdentifier) | - | UG | - | 01 | - | 000 |
+
+Sample number : AR-SK-K-UG-01-000
+
+## Titleblocks - Room Layout sheets
+
+These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both titleblocks have proeprties adjusting the sign off bar as follows:
+
+| Property | use |
+| SignOff_HealthPlanningConsultant | Contains the name of the health planning consultant to be shown in the sign off bar. |
+| SignOff_LHD Name | Contains the name of the Local Health District to be shown in the sign off bar. |
+| Sign_Off_ProjectManager | Contains the name of the Project Manager to be shown in the sign off bar. |
+
+Families used:
+
+* Titleblock_C_SHEET_Refurb_A3-Title Block
+* Titleblock_C_SHEET_Refurb_A2-Title Block
+
+Familye type Prefixes used:
+
+* RCR - Randwick
+* NEP - Nepean
 
 # Existing Emergency Department Transitional Works
 
