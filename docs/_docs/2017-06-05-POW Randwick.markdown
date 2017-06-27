@@ -36,12 +36,11 @@ List of current models and their aconex docuemtn number:
 | 50 | - | 0022 | New Acute Services Building - Existing Buildings - Revit Model |
 | 07 | - | 0001 | Building 07 - Revit Model |
 | 09 | - | 0001 | Building 09 - Revit Model |
-| 15 | - | 0001 | Building 15 - Revit Model |
+| 15 | - | 0001 | ED Transitional Works - Revit Model |
+| 15 | - | 0001 | ED Transitional Works - CAD Links - Revit Model |
+| 15R | - | 0001 | Building 15 - Revit Model |
 | 16 | - | 0001 | Building 16 - Revit Model |
 | 17 | - | 0001 | Building 17 - Revit Model |
-| 50 | - | 0001 | Building 50 - Revit Model |
-| 50 | - | 0101 | ED Transitional Works - Revit Model |
-| 50 | - | 0201 | ED Transitional Works - CAD Links - Revit Model |
 | 51 | - | 0001 | Car Park - Revit Model |
 | 52 | - | 0001 | Temporary Building - Revit Model |
 
@@ -56,6 +55,7 @@ List of current models and their aconex docuemtn number:
 * 07 - PARKES & CSB
 * 09 - HYPERBARIC UNIT
 * 15 - DICKINSON - Emergency Department - Transitional Works
+* 15R - DICKINSON - Renal
 * 16 - CAMPUS CENTRE
 * 17 - RHW
 * 50 - NEW ACUTE SERVICES BUILDING
@@ -120,7 +120,7 @@ List of current models and their aconex docuemtn number:
 | ----------------|---|---------------|---|-----------------|---|------------|---|-------|---|--------|
 | AR | - | SK | - | [refer here](#ZoneIdentifier) | - | UG | - | 01 | - | 000 |
 
-Sample number : AR-SK-K-UG-01-000
+Sample number : AR-SK-50-UG-01-000
 
 ## Titleblocks - Room Layout sheets
 
@@ -133,13 +133,16 @@ These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one
 
 Families used:
 
-* Titleblock_C_SHEET_Refurb_A3-Title Block
-* Titleblock_C_SHEET_Refurb_A2-Title Block
+* Titleblock_C_SHEET_A3_ANN_RCR
+* Titleblock_C_SHEET_A2_ANN_RCR
+* Titleblock_Landscape_Vertical_A1_ANN_RCR
+* Titleblock_Landscape_Vertical_B1_ANN_RCR
+
+Note: These families use catalogue files to handle the different options available.
 
 Familye type Prefixes used:
 
 * RCR - Randwick
-* NEP - Nepean
 
 # Existing Emergency Department Transitional Works
 
