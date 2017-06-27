@@ -14,7 +14,15 @@ categories: Revit
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | MDL | - | XX | - | XXXX |
+| RCR | - | BVN | - | AR | - | MDL | - | XX | - | XXXX |
+
+
+Model Type:
+
+| Code | Model Type |
+|------|----------|
+| RVT | Revit model |
+| NWC | NavisWorks NWC file |
 
 
 List of current models and their aconex docuemtn number:
@@ -41,7 +49,7 @@ List of current models and their aconex docuemtn number:
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | A1 | - | 01 | - | 01 |
+| RCR | - | BVN | - | AR | - | DWG | - | YY | - | A1 | - | 01 | - | 01 |
 
 ### <a id="ZoneIdentifier"></a> ZONE / BUILDING
 
@@ -98,13 +106,13 @@ List of current models and their aconex docuemtn number:
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G0 | - | 001 |
+| RCR | - | BVN | - | AR | - | DWG | - | YY | - | G0 | - | 001 |
 
 ## Room Layout Sheets - Specifics
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Room Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G1 | - | as per dRofus |
+| RCR | - | BVN | - | AR | - | DWG | - | YY | - | G1 | - | as per dRofus |
 
 ## User Group related drawings
 
