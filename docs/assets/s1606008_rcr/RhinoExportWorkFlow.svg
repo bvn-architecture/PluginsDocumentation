@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="132.60499572753906 31.98099708557129 225.4290313720703 164.9770050048828" width="225.4290313720703" height="164.9770050048828" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <rect style="fill: rgb(216, 216, 216);" x="132.605" y="31.981" width="224.649" height="46.022" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+  <text x="163.027" y="58.502" transform="matrix(0.5316169261932373, 0, 0, 1.8642010688781738, 59.97306442260742, -28.396190643310547)" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 24px; letter-spacing: 1px; white-space: pre;"> </text>
+  <text x="138.066" y="71.763" transform="matrix(1, 0, 0, 1.0571520328521729, 3.900156021118164, -17.673717498779297)" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 13.2431px; white-space: pre;">Export Rhino geometry to DWG file</text>
+  <path d="M -237.721 -140.956 Q -233.619 -157.017 -229.518 -140.956 L -225.55 -125.42 Q -221.449 -109.359 -229.652 -109.359 L -237.587 -109.359 Q -245.79 -109.359 -241.689 -125.42 Z" transform="matrix(-0.9999989867210388, 0, 0, -1, 12.48063850402832, -18.720748901367188)" style="fill: none; stroke: rgb(218, 85, 85); stroke-width: 6;" bx:shape="triangle -245.79 -157.017 24.341 47.658 0.5 0.337 1@74a578fb"/>
+  <rect style="fill: rgb(216, 216, 216);" x="133.385" y="150.936" width="224.649" height="46.022" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+  <text x="138.066" y="71.763" transform="matrix(1, 0, 0, 1.0571520328521729, 42.90201187133789, 95.28123474121092)" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 13.2431px; white-space: pre;">Reload DWG export into</text>
+  <text x="138.066" y="71.763" transform="matrix(1, 0, 0, 1.0571520328521729, 59.8430290222168, 110.16357421874999)" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 13.2431px; white-space: pre;">Revit Facade File</text>
+</svg>

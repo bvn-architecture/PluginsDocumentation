@@ -10,50 +10,9 @@ categories: Revit
 
 # Document Numbering
 
-## Model Numbering
+## <a id="ZoneIdentifier"></a> ZONE / BUILDING
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | MDL | - | XX | - | XXXX |
-
-
-Model Type:
-
-| Code | Model Type |
-|------|----------|
-| RVT | Revit model |
-| NWC | NavisWorks NWC file |
-
-
-List of current models and their aconex docuemtn number:
-
-| Zone | - | Model | Number |
-|---------|---|----|
-| 50 | - | 0001 | New Acute Services Building - Revit Model |
-| 50 | - | 0002 | New Acute Services Building - Facade - Revit Model |
-| 50 | - | 0020 | New Acute Services Building - Site - Revit Model |
-| 50 | - | 0021 | New Acute Services Building - CAD Links - Revit Model |
-| 50 | - | 0022 | New Acute Services Building - Existing Buildings - Revit Model |
-| 07 | - | 0001 | Building 07 - Revit Model |
-| 09 | - | 0001 | Building 09 - Revit Model |
-| 15 | - | 0001 | ED Transitional Works - Revit Model |
-| 15 | - | 0002 | ED Transitional Works - CAD Links - Revit Model |
-| 15R | - | 0001 | Building 15 - Revit Model |
-| 16 | - | 0001 | Building 16 - Revit Model |
-| 17 | - | 0001 | Building 17 - Revit Model |
-| 51 | - | 0001 | Car Park - Revit Model |
-| 52 | - | 0001 | Temporary Building - Revit Model |
-
-Sample Number:
-RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revit Model
-
-## Standard Doc's
-
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | DWG | - | YY | - | A1 | - | 01 | - | 01 |
-
-### <a id="ZoneIdentifier"></a> ZONE / BUILDING
+The documentation packages are set up by building. Below is a map showing the existing campus with building number.
 
 * 07 - PARKES & CSB
 * 09 - HYPERBARIC UNIT
@@ -65,7 +24,9 @@ RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revit Model
 * 51 - CAR PARK
 * 52 - TEMPORARY BUILDING
 
-### CATEGORY / PACKAGES AVAILABLE
+## <a id="PackageIdentifier"></a> CATEGORY / PACKAGES AVAILABLE
+
+Each individual zone is than broken up in documentation packages as follows:
 
 | Package Number | Package Description | Links |
 |--------------|---------------|---|
@@ -91,7 +52,7 @@ RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revit Model
 | K1 - INTERFACE DETAILS PARTITIONS | Typical internal partition details | |
 | K2 - INTERFACE DETAILS - CEILINGS | Typical internal ceiling details | |
 | M1 - JOINERY | Joinery scoping plans | |
-| M2 - JOINERY DETAILS | Joienry details | |
+| M2 - JOINERY DETAILS | Joinery details | |
 | M3 - METALWORKS DETAILS | Metal works details | |
 | S1 - SIGNAGE | Signage plans | |
 | T1 - LANDSCAPE | Landscape plans | |
@@ -100,22 +61,59 @@ RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revit Model
 | V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans | |
 | Z1 -SPECIFICATION | Specification sections , T-Sheet | |
 
-### LEVEL:
+## Model Numbering
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| RCR | - | BVN | - | AR | - | [Model Type](#ModelType) | - | [refer here](#ZoneIdentifier) | - | XXXX |
+
+ <a id="ModelTtpe"></a> Model Type:
+
+| Code | Model Type |
+|------|----------|
+| RVT | Revit model |
+| NWC | NavisWorks NWC file |
+
+Sample model number: RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revit Model
+
+Overview of current models and their Aconex document number:
+
+![RevitFilesMap]({{ site.baseurl }}/assets/s1606008_rcr/REVIT MODELS BY ZONE.svg){:class="img-responsive"}{: height="900px" width="800px"}
+
+## Standard Doc's
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| RCR | - | BVN | - | AR | - | DWG | - | [refer here](#ZoneIdentifier) | - | [refer here](#PackageIdentifier) | - | 01 | - | 01 |
+
+### <a id="DocType"></a> DOCUMENT TYPE
+
+* DWG - Drawing
+* XXX - Schedule
+* YYY - Specification
+
+### LEVEL
 
 * XX:  non level (Section/ Elevations/ typical details)
-* 01: Level 01 
+* 01: Level 01
+
+Sample document number: RCR-BVN-AR-DWG-50-A1-XX-01 : New Acute Services Building : Introductory document : Multi Level : drawing no 1.
 
 ## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | DWG | - | YY | - | G0 | - | 001 |
+| RCR | - | BVN | - | AR | - | DWG | - | [refer here](#ZoneIdentifier) | - | G0 | - | 001 |
+
+Sample Generic Room Layout sheet number: RCR-BVN-AR-DWG-50-G0-001 :
 
 ## Room Layout Sheets - Specifics
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Room Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | DWG | - | YY | - | G1 | - | as per dRofus |
+| RCR | - | BVN | - | AR | - | DWG | - | [refer here](#ZoneIdentifier) | - | G1 | - | as per dRofus |
+
+Sample Specific Room Layout sheet number: RCR-BVN-AR-DWG-50-G1-TBC :
 
 ## User Group related drawings
 
@@ -125,11 +123,12 @@ RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revit Model
 
 Sample number : AR-SK-50-UG-01-000
 
-## Titleblocks - Room Layout sheets
+## Title blocks - Room Layout sheets
 
-These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both titleblocks have proeprties adjusting the sign off bar as follows:
+These title blocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both titleblocks have properties adjusting the sign off bar as follows:
 
 | Property | use |
+|----------|-----|
 | SignOff_HealthPlanningConsultant | Contains the name of the health planning consultant to be shown in the sign off bar. |
 | SignOff_LHD Name | Contains the name of the Local Health District to be shown in the sign off bar. |
 | Sign_Off_ProjectManager | Contains the name of the Project Manager to be shown in the sign off bar. |
@@ -143,7 +142,7 @@ Families used:
 
 Note: These families use catalogue files to handle the different options available.
 
-Familye type Prefixes used:
+Family type Prefixes used:
 
 * RCR - Randwick
 
@@ -151,7 +150,7 @@ Familye type Prefixes used:
 
 ## Site set-out
 
-The survey reference point choosen for the POW ED refurbishments works is SSM51804  as per survey cover sheet 'Randwick', refernce number 43147DT, project number 30744, dated 15/06/15.
+The survey reference point chosen for the POW ED refurbishments works is SSM51804  as per survey cover sheet 'Randwick', reference number 43147DT, project number 30744, dated 15/06/15.
 This survey point is located at (M.G.A) : North 6245643.193, East 337291.821 , R.L. 65.572 (A.H.D.) on High Street, Randwick.
 
 ![six Maps]({{ site.baseurl }}/assets/s1606008_rcr/2017-06-05 11_05_48-SIX Maps.png){:class="img-responsive"}{: height="1200px" width="1800px"}
@@ -192,7 +191,7 @@ The areas have the following properties:
 
 ## Site set-out
 
-The survey reference point choosen for the POW New Acute Services Building works is the boundary corner of the newly aquired lots indicated as the red rectangle in the the below image. The coordinates of that corner are (M.G.A) : North 6245409.520, East 337066.416 , R.L. 0.0 (A.H.D.)
+The survey reference point chosen for the POW New Acute Services Building works is the boundary corner of the newly acquired lots indicated as the red rectangle in the the below image. The coordinates of that corner are (M.G.A) : North 6245409.520, East 337066.416 , R.L. 0.0 (A.H.D.)
 
 ![Overall Site]({{ site.baseurl }}/assets/s1606008_rcr/Building50_SiteOverall.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
 
@@ -210,14 +209,14 @@ Consultants are also to 'Copy Monitor' levels and grids from S1606008-AR-RCR-New
 
 ### Facade Rhino Linking
 
-The Rhino file was set up based on the City of Sydney Rhino model with a little translation to move the origing close to Randwick:
+The Rhino file was set up based on the City of Sydney Rhino model with a little translation to move the origin close to Randwick:
 
 0,0,0 equals (M.G.A.): North: 6245509.425, East: 337284.698
 
-In order to incorporate the different Origin points of the Rhino files and Revit building file (refer above) the Revit facade file was located as follows:
+In order to incorporate the different origin points of the Rhino files and Revit building file (refer above) the Revit facade file was located as follows:
 
 * Create a new project file from BVN template
-* Cleaned Project file 
+* Cleaned Project file
 * Activate Model Management / True North View
 * Imported Rhino model using Revit 2018 Import CAD file dialogue 
 	* This will import the Rhino model using Origin to Origin
@@ -227,20 +226,26 @@ In order to incorporate the different Origin points of the Rhino files and Revit
 
 * Linked Base Building Revit model using 'Auto - Origin to Origin' option into Facade file.
 
-![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_02_BaseBuildLinked_NotMoved.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+![RhinoLinking_02]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_02_BaseBuildLinked_NotMoved.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
 
 * Moved Base Building File Revit model within the Facade file to suite location of imported Rhino model in plan and section.
 
-![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_03_BaseBuildLinked_Moved.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+![RhinoLinking_03]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_03_BaseBuildLinked_Moved.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
 
 * Acquired Coordinates from Base Building model.
 
-![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_04_BaseBuildLinked_CoordinatesAcquired.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+![RhinoLinking_04]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_04_BaseBuildLinked_CoordinatesAcquired.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
 
 * done
 
 This means Base Building File and Facade file do not share the same origin and require linking using Shared Coordinates. A new revit model should be ideally be created when translating the Rhino model to Revit to allow Origin to Origin linking.
 
+### Updating the Facade from Rhino
+
+The current Rhino facade export is located here:
+
+![RhinoExport_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoExportWorkFlow.svg){:class="img-responsive"}{: height="500px" width="600px"}
+
 ### Exporting to 3DS Max
 
-There is a 3D view setup in the Facade file: EXPORT TO MAX which displayes the linked base build model and the imported Rhino model overlayed in the same location.
+There is a 3D view setup in the Facade file: EXPORT TO MAX which displays the linked base build model and the imported Rhino model over layed in the same location.
