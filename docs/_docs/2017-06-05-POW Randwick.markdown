@@ -44,7 +44,7 @@ Each individual zone is than broken up in documentation packages as follows:
 | E1 - REFLECTED CEILING PLANS | Ceiling plans | |
 | F1 - FLOOR FINISHES | Floor finishes plans | |
 | F2 - WALL FINISHES | Wall finishes plans | |
-| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent), |
+| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), Refer also Nepean Hospital Documentation: [RLS Generic Sheet]({{ site.baseurl }}/_docs/2017-06-05-Nepean Hospital/#RLSGenerics), [RLS Sheet content]({{ site.baseurl }}/_docs/2017-06-05-Nepean Hospital/#RLSSheetContent) |
 | G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room | |
 | G2 - LINE OF HEIGHTS | Typical line of heights drawings | |
 | J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location | |
@@ -78,7 +78,7 @@ Sample model number: RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revi
 
 Overview of current models and their Aconex document number:
 
-![RevitFilesMap]({{ site.baseurl }}/assets/s1606008_rcr/REVIT MODELS BY ZONE.svg){:class="img-responsive"}{: height="900px" width="800px"}
+![RevitFilesMap]({{ site.baseurl }}/assets/s1606008_rcr/REVIT MODELS BY ZONE.svg){:class="img-responsive"}{: height="476px" width="821px"}
 
 ## Standard Doc's
 
@@ -165,27 +165,9 @@ Consultants are to link the s1606008-AR-RCR-ED Transitional Works.rvt Revit file
 * s1606008-AR-RCR-Existing Building File.rvt
 * s1606008-AR-RCR-Site File.rvt
 
-![Model Linking]({{ site.baseurl }}/assets/s1606008_rcr/ModelLinking.svg){:class="img-responsive"}{: height="800px" width="400px"}
+![Model Linking]({{ site.baseurl }}/assets/s1606008_rcr/ModelLinking.svg){:class="img-responsive"}{: height="230px" width="750px"}
 
 Consultants are also to 'Copy Monitor' levels and grids from s1606008-AR-RCR-ED Transitional Works.rvt Revit file.
-
-## Fire Compartment Drawings
-
-The Fire Compartment drawings are done as Area Plans of type: 'FIRE COMPARTMENT'. 
-
-The areas have the following properties:
-
-| Property | GUID | use |
-|-----|
-| Area Type | build in | not used |
-| AREA_COLOUR_BVN  | acac3c63-7165-4dd9-b648-c086e0ddde48 | Area colour fill scheme uses this property to colour in areas |
-| AREA_COMPARTMENT_GROUP_BVN  | 4955f5a0-86fb-4fee-8184-7ae85716bebe| Used when a fire department spreads across multiple levels and therefore requires a number of areas to be drawn to capture its full extent. |
-| | | Fire compartment schedule filters all area instance with the same fire compartment group number |
-| AREA_TYPE_BVN  | 1bcf8295-93ea-4c10-85ce-40b879fd31d5 | Can be used to differentiate between 'Patient Care and Treatment' vs 'Ancillary' areas. |
-| | | This parameter is more flexible than the build in 'Area Type' which only has a fixed non changeable number of values | 
-| Name | build in |type of department: e.g. SMOKE |
-| Number | build in | Fire compartment number: e.g. AXX-2a-L1|
-
 
 # New Acute Services Building
 
@@ -222,19 +204,19 @@ In order to incorporate the different origin points of the Rhino files and Revit
 	* This will import the Rhino model using Origin to Origin
 * Select 'Generic Model' as host
 
-![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_01_justLinked.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+![RhinoLinking_01]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_01_justLinked.svg){:class="img-responsive"}{: height="467px" width="1084px"}
 
 * Linked Base Building Revit model using 'Auto - Origin to Origin' option into Facade file.
 
-![RhinoLinking_02]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_02_BaseBuildLinked_NotMoved.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+![RhinoLinking_02]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_02_BaseBuildLinked_NotMoved.svg){:class="img-responsive"}{: height="655px" width="1084px"}
 
 * Moved Base Building File Revit model within the Facade file to suite location of imported Rhino model in plan and section.
 
-![RhinoLinking_03]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_03_BaseBuildLinked_Moved.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+![RhinoLinking_03]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_03_BaseBuildLinked_Moved.svg){:class="img-responsive"}{: height="524px" width="997px"}
 
 * Acquired Coordinates from Base Building model.
 
-![RhinoLinking_04]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_04_BaseBuildLinked_CoordinatesAcquired.svg){:class="img-responsive"}{: height="1200px" width="1800px"}
+![RhinoLinking_04]({{ site.baseurl }}/assets/s1606008_rcr/RhinoLinking_04_BaseBuildLinked_CoordinatesAcquired.svg){:class="img-responsive"}{: height="471px" width="1085px"}
 
 * done
 
@@ -249,3 +231,20 @@ The current Rhino facade export is located here:
 ### Exporting to 3DS Max
 
 There is a 3D view setup in the Facade file: EXPORT TO MAX which displays the linked base build model and the imported Rhino model over layed in the same location.
+
+## Fire Compartment Drawings
+
+The Fire Compartment drawings are done as Area Plans of type: 'FIRE COMPARTMENT'.
+
+The areas have the following properties:
+
+| Property | GUID | use |
+|-----|----|----|
+| Area Type | build in | not used |
+| AREA_COLOUR_BVN  | acac3c63-7165-4dd9-b648-c086e0ddde48 | Area colour fill scheme uses this property to colour in areas |
+| AREA_COMPARTMENT_GROUP_BVN  | 4955f5a0-86fb-4fee-8184-7ae85716bebe| Used when a fire department spreads across multiple levels and therefore requires a number of areas to be drawn to capture its full extent. |
+| | | Fire compartment schedule filters all area instance with the same fire compartment group number |
+| AREA_TYPE_BVN  | 1bcf8295-93ea-4c10-85ce-40b879fd31d5 | Can be used to differentiate between 'Patient Care and Treatment' vs 'Ancillary' areas. |
+| | | This parameter is more flexible than the build in 'Area Type' which only has a fixed non changeable number of values | 
+| Name | build in |type of department: e.g. SMOKE |
+| Number | build in | Fire compartment number: e.g. AXX-2a-L1|
