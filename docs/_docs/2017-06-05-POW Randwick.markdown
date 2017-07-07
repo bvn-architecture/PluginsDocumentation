@@ -14,15 +14,17 @@ categories: Revit
 
 The documentation packages are set up by building. Below is a map showing the existing campus with building number.
 
-* 07 - PARKES & CSB
-* 09 - HYPERBARIC UNIT
-* 15 - DICKINSON - Emergency Department - Transitional Works
-* 15R - DICKINSON - Renal
-* 16 - CAMPUS CENTRE
-* 17 - RHW
-* 50 - NEW ACUTE SERVICES BUILDING
-* 51 - CAR PARK
-* 52 - TEMPORARY BUILDING
+| Building Number | Building Description |
+|--------------|---------------|
+| 07 | PARKES & CSB |
+| 09 | HYPERBARIC UNIT |
+| 15 | DICKINSON - Emergency Department - Transitional Works |
+| 15R | DICKINSON - Renal |
+| 16 | CAMPUS CENTRE |
+| 17 | RHW |
+| 50 | NEW ACUTE SERVICES BUILDING |
+| 51 | CAR PARK |
+| 52 | TEMPORARY BUILDING |
 
 ## <a id="PackageIdentifier"></a> CATEGORY / PACKAGES AVAILABLE
 
@@ -59,7 +61,7 @@ Each individual zone is than broken up in documentation packages as follows:
 | Q1 - MEMBRANE DRAWINGS | Membrane scoping plans | |
 | U1 - DEMOLITION DRAWINGS | Demolition scoping plans | |
 | V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans | |
-| Z1 -SPECIFICATION | Specification sections , T-Sheet | |
+| Z1 - SPECIFICATION | Specification sections , T-Sheet | |
 
 ## Model Numbering
 
@@ -84,18 +86,25 @@ Overview of current models and their Aconex document number:
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | DWG | - | [refer here](#ZoneIdentifier) | - | [refer here](#PackageIdentifier) | - | 01 | - | 01 |
+| RCR | - | BVN | - | AR | - | [refer here](#DocType) | - | [refer here](#ZoneIdentifier) | - | [refer here](#PackageIdentifier) | - | [refer here](#LevelList) | - | 01 |
 
 ### <a id="DocType"></a> DOCUMENT TYPE
 
-* DWG - Drawing
-* XXX - Schedule
-* YYY - Specification
+| Code | Type |
+|------|----------|
+| DWG | Drawing |
+| XXX | Schedule |
+| YYY | Specification |
 
-### LEVEL
+### <a id="LevelList"></a> LEVEL
 
-* XX:  non level (Section/ Elevations/ typical details)
-* 01: Level 01
+| Level | Number |
+|------|------|
+| Basement X | Bx |
+| Ground Floor | 00 |
+| Levels 1 to 9 above ground | 01-09 |
+| Levels 10 and above | 10 - |
+| Non Level | XX |
 
 Sample document number: RCR-BVN-AR-DWG-50-A1-XX-01 : New Acute Services Building : Introductory document : Multi Level : drawing no 1.
 

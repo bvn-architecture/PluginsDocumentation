@@ -10,23 +10,21 @@ categories: Revit
 
 # Document Numbering
 
-## Model Numbering
+## <a id="ZoneIdentifier"></a> ZONE / BUILDING
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | MDL | - | X | - | XXXX |
+The documentation packages are set up by building. Below is a map showing the existing campus with building number.
 
-## Standard Doc's
+| Building Number | Building Description |
+|--------------|---------------|
+| A | Block A |
+| B | Block B |
+| K | New Build - Stage 1 |
+| ? | Demountable |
+| ? | Cancer Centre |
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | A1 | - | 01 | - | 01 |
+## <a id="PackageIdentifier"></a> CATEGORY / PACKAGES AVAILABLE
 
-### <a id="ZoneIdentifier"></a> ZONE / BUILDING
-
-* K - New Build
-
-### CATEGORY / PACKAGES AVAILABLE
+Each individual zone is than broken up in documentation packages as follows:
 
 | Package Number | Package Description | Links |
 |--------------|---------------|---|
@@ -44,7 +42,7 @@ categories: Revit
 | E1 - REFLECTED CEILING PLANS | Ceiling plans | |
 | F1 - FLOOR FINISHES | Floor finishes plans | |
 | F2 - WALL FINISHES | Wall finishes plans | |
-| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent), |
+| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent) |
 | G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room | |
 | G2 - LINE OF HEIGHTS | Typical line of heights drawings | |
 | J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location | |
@@ -52,33 +50,73 @@ categories: Revit
 | K1 - INTERFACE DETAILS PARTITIONS | Typical internal partition details | |
 | K2 - INTERFACE DETAILS - CEILINGS | Typical internal ceiling details | |
 | M1 - JOINERY | Joinery scoping plans | |
-| M2 - JOINERY DETAILS | Joienry details | |
+| M2 - JOINERY DETAILS | Joinery details | |
 | M3 - METALWORKS DETAILS | Metal works details | |
 | S1 - SIGNAGE | Signage plans | |
 | T1 - LANDSCAPE | Landscape plans | |
 | Q1 - MEMBRANE DRAWINGS | Membrane scoping plans | |
 | U1 - DEMOLITION DRAWINGS | Demolition scoping plans | |
 | V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans | |
-| Z1 -SPECIFICATION | Specification sections , T-Sheet | |
+| Z1 - SPECIFICATION | Specification sections , T-Sheet | |
 
+## Model Numbering
 
-### LEVEL:
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | [Model Type](#ModelType) | - | [refer here](#ZoneIdentifier) | - | XXXX |
 
-* XX:  non level (Section/ Elevations/ typical details)
-* 01: Level 01 
+<a id="ModelTtpe"></a> Model Type:
+
+| Code | Model Type |
+|------|----------|
+| RVT | Revit model |
+| NWC | NavisWorks NWC file |
+
+Sample model number: XXX-BVN-AR-RVT-K-0001 : New Building - Stage 1 - Revit Model
+
+Overview of current models and their Aconex document number:
+
+![RevitFilesMap]({{ site.baseurl }}/assets/s1607004_inh/REVIT MODELS BY ZONE_Nepean.svg){:class="img-responsive"}{: height="476px" width="821px"}
+
+## Standard Doc's
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| XXXXXX | - | BVN | - | AR | - | [refer here](#DocType) | - | [refer here](#ZoneIdentifier) | - | [refer here](#PackageIdentifier) | - | [refer here](#LevelList) | - | 01 |
+
+### <a id="DocType"></a> DOCUMENT TYPE
+
+| Code | Type |
+|------|----------|
+| DWG | Drawing |
+| XXX | Schedule |
+| YYY | Specification |
+
+### <a id="LevelList"></a> LEVEL
+
+| Level | Number |
+|------|------|
+| Basement X | Bx |
+| Ground Floor | 00 |
+| Levels 1 to 9 above ground | 01-09 |
+| Levels 10 and above | 10 - |
+| Non Level | XX |
+
+Sample document number: XXXXX-BVN-AR-DWG-K-A1-XX-01 : New Building : Introductory document : Multi Level : drawing no 1.
 
 ## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G0 | - | 001 |
+| XXXXXX | - | BVN | - | AR | - | DWG | - | [refer here](#ZoneIdentifier) | - | G0 | - | 001 |
+
+Sample Generic Room Layout sheet number: XXXX-BVN-AR-DWG-K-G0-001 :
 
 ## Room Layout Sheets - Specifics
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Room Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | DWG | - | YY | - | G1 | - | as per dRofus |
-
+| XXXXXX | - | BVN | - | AR | - | DWG | - | [refer here](#ZoneIdentifier) | - | G1 | - | as per dRofus |
 
 ## User Group related drawings
 
@@ -90,7 +128,7 @@ Sample number : AR-SK-K-UG-01-000
 
 ## Titleblocks - Room Layout sheets
 
-These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both titleblocks have proeprties adjusting the sign off bar as follows:
+These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both titleblocks have properties adjusting the sign off bar as follows:
 
 | Property | use |
 | SignOff_HealthPlanningConsultant | Contains the name of the health planning consultant to be shown in the sign off bar. |
@@ -99,31 +137,30 @@ These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one
 
 Families used:
 
-* Titleblock_C_SHEET_Refurb_A3-Title Block
-* Titleblock_C_SHEET_Refurb_A2-Title Block
+* Titleblock_C_SHEET_A3_ANN_INH
+* Titleblock_C_SHEET_A2_ANN_INH
+* Titleblock_Landscape_Vertical_A1_ANN_INH
+* Titleblock_Landscape_Vertical_B1_ANN_INH
 
-Familye type Prefixes used:
+Note: These families use catalogue files to handle the different options available.
 
-* RCR - Randwick
+Family type Prefixes used:
+
 * NEP - Nepean
 
-# Site set-out
+# Existing Cancer Center refurbishment Works
 
-## Existing Cancer Center refurbishment Works
 TBC
 
-## New Acute Services Building
+## Site set-out
 
-# Levels
+# New Acute Services Building
 
-## Level Numbering
+TBC
 
-| Level | Number |
-|------|------|
-| Basement X | Bx |
-| Ground Floor | 00 |
-| Levels 1 to 9 above ground | 01-09 |
-| Levels 10 and above | 10 - |
+## Site set-out
+
+TBC
 
 # Rooms
 
@@ -190,7 +227,7 @@ The following room properties are used when creating Room Layout Sheets (RLS) ei
 
 Room layout sheets show the arrangement of equipment and fixtures within a room. They comprise of:
 
-* Floor plan 
+* Floor plan
 	* does not show wall finishes (e.g. wall vinyl)
 	* shows corner guards and crash rails
 * Elevations of all walls 
