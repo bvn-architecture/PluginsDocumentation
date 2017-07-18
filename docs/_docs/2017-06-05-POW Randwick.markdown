@@ -65,9 +65,9 @@ Each individual zone is than broken up in documentation packages as follows:
 
 ## Model Numbering
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
+| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | [Model Type](#ModelType) | - | [refer here](#ZoneIdentifier) | - | XXXX |
+| RCR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | [Model Type](#ModelType) | - | XXXX |
 
  <a id="ModelTtpe"></a> Model Type:
 
@@ -77,7 +77,7 @@ Each individual zone is than broken up in documentation packages as follows:
 | NWC | NavisWorks NWC file |
 | IFC | Industry Foundation Class file |
 
-Sample model number: RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revit Model
+Sample model number: RCR-BVN-AR-50-RVT-0001 : New Acute Services Building - Revit Model
 
 Overview of current models and their Aconex document number:
 
@@ -85,9 +85,9 @@ Overview of current models and their Aconex document number:
 
 ## Standard Doc's
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Level | - | Sequential Number |
+| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Category / Package | - | Level | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | [refer here](#DocType) | - | [refer here](#ZoneIdentifier) | - | [refer here](#PackageIdentifier) | - | [refer here](#LevelList) | - | 01 |
+| RCR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | [refer here](#DocType) | - | [refer here](#PackageIdentifier) | - | [refer here](#LevelList) | - | 01 |
 
 ### <a id="DocType"></a> DOCUMENT TYPE
 
@@ -110,31 +110,31 @@ For further Document type codes refer to POW Redevelopment [Project Configuratio
 | Levels 10 and above | 10 - |
 | Non Level | XX |
 
-Sample document number: RCR-BVN-AR-DWG-50-A1-XX-01 : New Acute Services Building : Introductory document : Multi Level : drawing no 1.
+Sample document number: RCR-BVN-AR-50-DWG-A1-XX-01 : New Acute Services Building : Introductory document : Multi Level : drawing no 1.
 
 ## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Sequential Number |
+| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type| - | Category / Package | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | DWG | - | [refer here](#ZoneIdentifier) | - | G0 | - | 001 |
+| RCR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | DWG | - | G0 | - | 001 |
 
-Sample Generic Room Layout sheet number: RCR-BVN-AR-DWG-50-G0-001 :
+Sample Generic Room Layout sheet number: RCR-BVN-AR-50-DWG-G0-001 :
 
 ## Room Layout Sheets - Specifics
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Category / Package | - | Room Number |
+| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Category / Package | - | Room Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | DWG | - | [refer here](#ZoneIdentifier) | - | G1 | - | as per dRofus |
+| RCR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | DWG | - | G1 | - | as per dRofus |
 
-Sample Specific Room Layout sheet number: RCR-BVN-AR-DWG-50-G1-TBC :
+Sample Specific Room Layout sheet number: RCR-BVN-AR-50-DWG-G1-TBC :
 
 ## User Group related drawings
 
-| Discipline Code | - | Document Type | - | Zone / Building | - | User group | - | Level | - | Number |
+| Discipline Code | - | Zone / Building | - | Document Type | - | User group | - | Level | - | Number |
 | ----------------|---|---------------|---|-----------------|---|------------|---|-------|---|--------|
-| AR | - | SK | - | [refer here](#ZoneIdentifier) | - | UG | - | 01 | - | 000 |
+| AR | - | [refer here](#ZoneIdentifier) | - | SK | - | UG | - | 01 | - | 000 |
 
-Sample number : AR-SK-50-UG-01-000
+Sample number : AR-50-SK-UG-01-000
 
 ## Title blocks - Room Layout sheets
 
