@@ -75,6 +75,7 @@ Each individual zone is than broken up in documentation packages as follows:
 |------|----------|
 | RVT | Revit model |
 | NWC | NavisWorks NWC file |
+| IFC | Industry Foundation Class file |
 
 Sample model number: RCR-BVN-AR-RVT-50-0001 : New Acute Services Building - Revit Model
 
@@ -93,8 +94,11 @@ Overview of current models and their Aconex document number:
 | Code | Type |
 |------|----------|
 | DWG | Drawing |
-| XXX | Schedule |
-| YYY | Specification |
+| SCH | Schedule |
+| SPC | Specification |
+| RPT | Report |
+
+For further Document type codes refer to POW Redevelopment [Project Configuration Manual](https://au1.aconex.com/FileDownload?_action=downloadFile&projectId=1476398068&controlledDocumentId=949133621552704703&accessReason=IMPORTANT_DOCUMENT) on Aconex Task page.
 
 ### <a id="LevelList"></a> LEVEL
 
