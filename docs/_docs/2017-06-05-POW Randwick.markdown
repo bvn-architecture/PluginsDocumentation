@@ -110,7 +110,14 @@ For further Document type codes refer to POW Redevelopment [Project Configuratio
 | Levels 10 and above | 10 - |
 | Non Level | XX |
 
-Sample document number: RCR-BVN-AR-50-DWG-A1-XX-01 : New Acute Services Building : Introductory document : Multi Level : drawing no 1.
+List of sample document numbers:
+
+| Sample number | Document description |
+|---------------|------------|
+| RCR-BVN-AR-50-DWG-A1-XX-01 | New Acute Services Building : Introductory document : Multi Level : drawing no 1. |
+| RCR-BVN-AR-50-DWG-A1-XX-01-DWG | Autocad DWG file of RCR-BVN-AR-50-DWG-A1-00-01 pdf file |
+| RCR-BVN-AR-50-SCH-J2-00-01-XLS | Original Excel file of RCR-BVN-AR-50-SCH-J2-00-01 pdf file containing door schedule|
+| RCR-BVN-AR-50-SPC-Z1-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555| 
 
 ## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
 
@@ -135,6 +142,14 @@ Sample Specific Room Layout sheet number: RCR-BVN-AR-50-DWG-G1-TBC :
 | AR | - | [refer here](#ZoneIdentifier) | - | SK | - | UG | - | 01 | - | 000 |
 
 Sample number : AR-50-SK-UG-01-000
+
+## Revisions
+
+File names show the revisions right behind the document number in square brackets to allow for [supersede candidate](https://protect-eu.mimecast.com/s/zM1FB7zDRiZ) function to work in Aconex.
+RCR-BVN-AR-50-DWG-A1-XX-01[01] - Document Name.pdf
+
+Revisions are alphanumeric up until a document gets issued for construction. After that the revision changes to numerics.
+
 
 ## Title blocks - Room Layout sheets
 
