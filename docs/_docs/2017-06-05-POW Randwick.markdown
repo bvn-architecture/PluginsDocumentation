@@ -63,7 +63,7 @@ Each individual zone is than broken up in documentation packages as follows:
 | V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans | |
 | Z1 - SPECIFICATION | Specification sections , T-Sheet | |
 
-## Model Numbering
+## Model Numbering - Acute Service Building
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -78,6 +78,15 @@ Each individual zone is than broken up in documentation packages as follows:
 | IFC | Industry Foundation Class file |
 
 Sample model number: RCR-BVN-AR-50-RVT-0001 : New Acute Services Building - Revit Model
+
+## Model Numbering - ED Transitional Works
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| RCR | - | BVN | - | AR | - | [Model Type](#ModelType) | - | [refer here](#ZoneIdentifier)| - | XXXX |
+
+These model differ in numbering since they where issued prior to implementing a consultant wide numbering scheme. Once the that scheme was approved it was to late to go back and renumber the documents on Aconex.
+Sample model number: RCR-BVN-AR-RVT-15-0001:ED Transitional Works
 
 Overview of current models and their Aconex document number:
 
