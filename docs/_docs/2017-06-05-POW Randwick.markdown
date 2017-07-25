@@ -46,7 +46,7 @@ Each individual zone is than broken up in documentation packages as follows:
 | E1 - REFLECTED CEILING PLANS | Ceiling plans | |
 | F1 - FLOOR FINISHES | Floor finishes plans | |
 | F2 - WALL FINISHES | Wall finishes plans | |
-| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), Refer also Nepean Hospital Documentation: [RLS Generic Sheet]({{ site.baseurl }}/_docs/2017-06-05-Nepean Hospital/#RLSGenerics), [RLS Sheet content]({{ site.baseurl }}/_docs/2017-06-05-Nepean Hospital/#RLSSheetContent) |
+| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), Refer also Nepean Hospital Documentation: [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent) |
 | G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room | |
 | G2 - LINE OF HEIGHTS | Typical line of heights drawings | |
 | J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location | |
