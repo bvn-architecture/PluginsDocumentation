@@ -159,6 +159,8 @@ RCR-BVN-AR-50-DWG-A1-XX-01[01] - Document Name.pdf
 
 Revisions are alphanumeric up until a document gets issued for construction. After that the revision changes to numerics.
 
+Drawings are only clouded once they have been issued for construction.
+
 
 ## Title blocks - Room Layout sheets
 
