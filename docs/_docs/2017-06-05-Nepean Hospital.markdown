@@ -166,19 +166,23 @@ Family type Prefixes used:
 
 * NEP - Nepean
 
+# Site set-out
+
+The survey reference point chosen for the Nepean Hospital redevelopment works is SSM14758  as per survey cover sheet 'Nepean Hospital - Detail Survey', reference number 118117502, rev 3, dated 24/11/2016.
+This survey point is located at (M.G.A) : North 6262211.157, East 288023.511 , R.L. 51.585 (A.H.D.) on Parker St, Nepean.
+
+![six Maps]({{ site.baseurl }}/assets/s1607004_inh/2017-07-26 18_15_56-SIX Maps.png){:class="img-responsive"}{: height="1200px" width="1800px"}
+
+
 # Existing Cancer Center refurbishment Works
 
 TBC
 
-## Site set-out
 
 # New Acute Services Building
 
 TBC
 
-## Site set-out
-
-TBC
 
 # Rooms
 
