@@ -63,7 +63,7 @@ Each individual zone is than broken up in documentation packages as follows:
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - |  [refer here](#ZoneIdentifier) | - | [Model Type](#ModelType)| - | XXXX |
+| NHR | - | BVN | - | AR | - |  [refer here](#ZoneIdentifier) | - | [Model Type](#ModelType)| - | XXXX |
 
 <a id="ModelTtpe"></a> Model Type:
 
@@ -73,7 +73,7 @@ Each individual zone is than broken up in documentation packages as follows:
 | NWC | NavisWorks NWC file |
 | IFC | Industry Foundation Class file |
 
-Sample model number: XXX-BVN-AR-K-RVT-0001 : New Building - Stage 1 - Revit Model
+Sample model number: NHR-BVN-AR-K-RVT-0001 : New Building - Stage 1 - Revit Model
 
 Overview of current models and their Aconex document number:
 
@@ -83,7 +83,7 @@ Overview of current models and their Aconex document number:
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Category / Package | - | Level | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | [refer here](#DocType) | - | [refer here](#PackageIdentifier) | - | [refer here](#LevelList) | - | 01 |
+| NHR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | [refer here](#DocType) | - | [refer here](#PackageIdentifier) | - | [refer here](#LevelList) | - | 01 |
 
 ### <a id="DocType"></a> DOCUMENT TYPE
 
@@ -108,16 +108,16 @@ List of sample document numbers:
 
 | Sample number | Document description |
 |---------------|------------|
-| RCR-BVN-AR-K-DWG-A1-XX-01 | New Acute Services Building : Introductory document : Multi Level : drawing no 1. |
-| RCR-BVN-AR-K-DWG-A1-XX-01-DWG | Autocad DWG file of RCR-BVN-AR-50-DWG-A1-00-01 pdf file |
-| RCR-BVN-AR-K-SCH-J2-00-01-XLS | Original Excel file of RCR-BVN-AR-50-SCH-J2-00-01 pdf file containing door schedule|
-| RCR-BVN-AR-K-SPC-Z1-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555| 
+| NHR-BVN-AR-K-DWG-A1-XX-01 | New Acute Services Building : Introductory document : Multi Level : drawing no 1. |
+| NHR-BVN-AR-K-DWG-A1-XX-01-DWG | Autocad DWG file of RCR-BVN-AR-50-DWG-A1-00-01 pdf file |
+| NHR-BVN-AR-K-SCH-J2-00-01-XLS | Original Excel file of RCR-BVN-AR-50-SCH-J2-00-01 pdf file containing door schedule|
+| NHR-BVN-AR-K-SPC-Z1-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555| 
 
 ## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type| - | Category / Package | - | Sequential Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | DWG | - | G0 | - | 001 |
+| NHR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | DWG | - | G0 | - | 001 |
 
 Sample Generic Room Layout sheet number: XXXX-BVN-AR-K-DWG-G0-001 :
 
@@ -125,7 +125,7 @@ Sample Generic Room Layout sheet number: XXXX-BVN-AR-K-DWG-G0-001 :
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type| - | Category / Package | - | Room Number |
 | -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| XXXXXX | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | DWG | - | G1 | - | as per dRofus |
+| NHR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | DWG | - | G1 | - | as per dRofus |
 
 ## User Group related drawings
 
@@ -138,7 +138,7 @@ Sample number : AR-SK-K-UG-01-000
 ## Revisions
 
 File names show the revisions right behind the document number in square brackets to allow for [supersede candidate](https://protect-eu.mimecast.com/s/zM1FB7zDRiZ) function to work in Aconex.
-RCR-BVN-AR-K-DWG-A1-XX-01[01] - Document Name.pdf
+NHR-BVN-AR-K-DWG-A1-XX-01[01] - Document Name.pdf
 
 Revisions are alphanumeric up until a document gets issued for construction. After that the revision changes to numerics.
 
