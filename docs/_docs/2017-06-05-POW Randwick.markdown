@@ -14,6 +14,8 @@ categories: Revit
 
 The documentation packages are set up by building. Below is a map showing the existing campus with building number.
 
+![KeyMap]({{ site.baseurl }}/assets/s1606008_rcr/KeyPlan.svg){:class="img-responsive"}{: height="182px" width="103px"}
+
 | Building Number | Building Description |
 |--------------|---------------|
 | 07 | PARKES & CSB |
