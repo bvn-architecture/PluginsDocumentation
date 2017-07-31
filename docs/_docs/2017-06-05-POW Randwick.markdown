@@ -166,7 +166,7 @@ Drawings are only clouded once they have been issued for construction.
 
 ## Title blocks - Room Layout sheets
 
-These title blocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both titleblocks have properties adjusting the sign off bar as follows:
+These title blocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both title blocks have properties adjusting the sign off bar as follows:
 
 | Property | use |
 |----------|-----|
@@ -187,9 +187,9 @@ Type naming:
 
 | Project Prefix | Building | Sheet Size | Description | Note |
 |----------------|----------|------------|-------------|------|
-| RCR | 50 | B1 | no privilige no sign off| privilege: displays "CONFIDENTIAL & COMMERCIAL-IN-CONFIDENCE", Sign Off shows a sign off bar for user group consultation. |
+| RCR | 50 | B1 | no privilege no sign off| privilege: displays "CONFIDENTIAL & COMMERCIAL-IN-CONFIDENCE", Sign Off shows a sign off bar for user group consultation. |
 
-Sample: RCR - 50 - B1 no privilige no sign off:  Randwick Hospital, Buildings 50 (new acute services building), B1 sheet size, no privileges shown, no sign off bar shown. 
+Sample: RCR - 50 - B1 no privilege no sign off:  Randwick Hospital, Buildings 50 (new acute services building), B1 sheet size, no privileges shown, no sign off bar shown.
 
 # Existing Emergency Department Transitional Works
 
@@ -200,19 +200,19 @@ This survey point is located at (M.G.A) : North 6245643.193, East 337291.821 , R
 
 ![six Maps]({{ site.baseurl }}/assets/s1606008_rcr/2017-06-05 11_05_48-SIX Maps.png){:class="img-responsive"}{: height="1200px" width="1800px"}
 
-Note: The Site survey point in s1606008-AR-RCR-ED Transitional Works.rvt Revit file is not pinned! Revit moves the point to  North 6245643.193, East 337291.8231  when attempting to pin it...
+Note: The Site survey point in RCR-BVN-AR-RVT-15-0001 - ED Transitional Works.rvt Revit file is not pinned! Revit moves the point to  North 6245643.193, East 337291.8231  when attempting to pin it...
 
 ## Revit File linking
 
-Consultants are to link the s1606008-AR-RCR-ED Transitional Works.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
+Consultants are to link the RCR-BVN-AR-RVT-15-0001 - ED Transitional Works.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
 
-* s1606008-AR-RCR-ED CAD Link File.rvt
-* s1606008-AR-RCR-Existing Building File.rvt
-* s1606008-AR-RCR-Site File.rvt
+* RCR-BVN-AR-RVT-15-0022 - ED CAD Link File.rvt
+* RCR-BVN-AR-RVT-15-0021 - ED Existing Building File.rvt
+* RCR-BVN-AR-00-RVT-0001 - Site File.rvt
 
 ![Model Linking]({{ site.baseurl }}/assets/s1606008_rcr/ModelLinking.svg){:class="img-responsive"}{: height="230px" width="750px"}
 
-Consultants are also to 'Copy Monitor' levels and grids from s1606008-AR-RCR-ED Transitional Works.rvt Revit file.
+Consultants are also to 'Copy Monitor' levels and grids from RCR-BVN-AR-RVT-15-0001 - ED Transitional Works.rvt Revit file.
 
 # New Acute Services Building
 
@@ -228,11 +228,13 @@ The closest grid intersection is located relative to the above point as per imag
 
 ## Revit File linking
 
-Consultants are to link the S1606008-AR-RCR-NewBuild File.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
+Consultants are to link the RCR-BVN-AR-50-RVT-0001 - New Acute Services Building.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
 
-* s1606008-AR-RCR-Site File.rvt
+* RCR-BVN-AR-50-RVT-0002 - Facade.rvt
+* RCR-BVN-AR-50-RVT-0021 - Existing Buildings.rvt
+* RCR-BVN-AR-50-RVT-0022 - CAD Links.rvt
 
-Consultants are also to 'Copy Monitor' levels and grids from S1606008-AR-RCR-NewBuild File.rvt Revit file.
+Consultants are also to 'Copy Monitor' levels and grids from RCR-BVN-AR-50-RVT-0001 - New Acute Services Building.rvt Revit file.
 
 ### Facade Rhino Linking
 
