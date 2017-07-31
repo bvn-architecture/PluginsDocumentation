@@ -398,6 +398,27 @@ A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibra
 
 ![Unifi_workflow]({{ site.baseurl }}/assets/s160x00x_common/Unifi_process.svg){:class="img-responsive"}{: height="644px" width="1394px"}
 
+## dRofus
+
+### Team structure
+
+### Technical issues
+In the moment there is technical limitations to dRofus:
+To make our work as easy as possible, BVN uses what is called Items with sub items in dRofus. An example would be a TV (the item) with a power point and data outlet (both sub items):
+
+![drofus_subItems]({{ site.baseurl }}/assets/s160x00x_common/Drofus_Item_SubItem.svg){:class="img-responsive"}{: height="237px" width="171px"}
+
+Where blue belongs to architecture and orange to services in terms of responsibility. The catch is that dRofus currently does not allow a split like the above without some work around. They are working on it to fix it but have not committed to a time frame.
+
+### dRofus - New Build workflow
+
+Nepean and Randwick SD phase (new builds -> generic rooms only)
+
+* BVN will take control and therefore responsibility of all items (including services). 
+* Services consultants however will be asked to export Services to Excel and furnish BVN with the completed Excel document which we will import back into dRofus. As per the below diagram. Again blue is BVN and orange the consultants.
+
+![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="328px" width="1387px"}
+
 # Fire Compartment Drawings
 
 Fire Compartment drawings show smoke and fire compartmentation of a building floor by floor. They inform:
