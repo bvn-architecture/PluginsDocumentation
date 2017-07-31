@@ -79,7 +79,7 @@ Sample model number: NHR-BVN-AR-K-RVT-0001 : New Building - Stage 1 - Revit Mode
 
 Overview of current models and their Aconex document number:
 
-![RevitFilesMap]({{ site.baseurl }}/assets/s1607004_inh/REVIT MODELS BY ZONE_Nepean.svg){:class="img-responsive"}{: height="476px" width="821px"}
+![RevitFilesMap]({{ site.baseurl }}/assets/s1607004_inh/REVIT MODELS BY ZONE_Nepean.svg){:class="img-responsive"}{: height="397px" width="1638px"}
 
 ## Standard Doc's
 
