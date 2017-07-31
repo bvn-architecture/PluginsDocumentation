@@ -20,6 +20,11 @@ The documentation packages are set up by building. Below is a map showing the ex
 |--------------|---------------|
 | A | Block A |
 | B | Block B |
+| C | Block C |
+| D | Block D |
+| E | Block E |
+| I | Block I |
+| H | Block H |
 | K | New Build - Stage 1 |
 | Z1 | Cancer Centre |
 | Z2 | Demountable |
@@ -148,7 +153,7 @@ Drawings are only clouded once they have been issued for construction.
 
 ## Titleblocks - Room Layout sheets
 
-These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both titleblocks have properties adjusting the sign off bar as follows:
+These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both title blocks have properties adjusting the sign off bar as follows:
 
 | Property | use |
 | SignOff_HealthPlanningConsultant | Contains the name of the health planning consultant to be shown in the sign off bar. |
@@ -168,9 +173,9 @@ Type naming:
 
 | Project Prefix | Building | Sheet Size | Description | Note |
 |----------------|----------|------------|-------------|------|
-| NHR | K | B1 | no privilige no sign off| privilege: displays "CONFIDENTIAL & COMMERCIAL-IN-CONFIDENCE", Sign Off shows a sign off bar for user group consultation. |
+| NHR | K | B1 | no privilege no sign off| privilege: displays "CONFIDENTIAL & COMMERCIAL-IN-CONFIDENCE", Sign Off shows a sign off bar for user group consultation. |
 
-Sample: NHR - Z1 and Z2 - B1 no privilige DD sign off:  Nepean Hospital, Buildings Z1 (Cancer Care) and Z2 (Demountable), B1 sheet size, no privileges shown, no sign off bar shown. 
+Sample: NHR - Z1 and Z2 - B1 no privilege DD sign off:  Nepean Hospital, Buildings Z1 (Cancer Care) and Z2 (Demountable), B1 sheet size, no privileges shown, no sign off bar shown.
 
 # Site set-out
 
@@ -179,16 +184,38 @@ This survey point is located at (M.G.A) : North 6262211.157, East 288023.511 , R
 
 ![six Maps]({{ site.baseurl }}/assets/s1607004_inh/2017-07-26 18_15_56-SIX Maps.png){:class="img-responsive"}{: height="1200px" width="1800px"}
 
+# Refurbishment Works
 
-# Existing Cancer Center refurbishment Works
+The early refurbishment works comprises of
 
-TBC
+* Existing Cancer Centre building refurbishment
+* Adding a demountable to the North of the existing Cancer Centre
 
+## Refurbishment Works - Site set-out
+
+With the exception of the demountable added to the existing Cancer Centre all refurbishment works are located within the envelope of existing buildings and therefore do not require site set out.
+
+The new demountable for the Cancer centre will be set out in relative to the existing Cancer Care building.
+
+Consultants are to link the NHR-BVN-AR-Z1-RVT-0001 - Cancer Services.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
+
+* NHR-BVN-AR-0-RVT-0001 - New Acute Services Building - Site.rvt
+* NHR-BVN-AR-Z2-RVT-0001 - Demountable.rvt
 
 # New Acute Services Building
 
-TBC
+The new build comprises of a new hospital entry point linking the varies existing buildings on level (x) and a new bed tower.
 
+## New Build - Site set-out
+
+The new building is set out as per the graphic below:
+
+(TODO: add set out graphic)
+
+Consultants are to link the NHR-BVN-AR-K-RVT-0001 - New Acute Services Building.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
+
+* NHR-BVN-AR-K-RVT-0002 - New Acute Services Building - Main Entry.rvt
+* NHR-BVN-AR-Z2-RVT-0001 - Demountable.rvt
 
 # Rooms
 
@@ -199,7 +226,7 @@ Generic Rooms for the Schematic Design stage are located in s1607004-AR-INH-GENR
 The following rooms will be captured:
 
 | Room Code | Room Name |
-|-----|
+|-----|------|
 | BMEQ-4 | Bay- Mobile Equiment  4sqm |
 | BMEQ-6 | Bay- Mobile Equiment  6sqm |
 | BHWS-A | Bay - Handwash Basin Type A |
