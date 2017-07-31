@@ -299,6 +299,6 @@ The areas have the following properties:
  BVN is using [Unifi](http://unifilabs.com/) in order to avoid having to maintain multiple revit family libraries in their respective project folders.
  The following process is proposed to work with unifi:
  
-A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibrary'' is  maintained as the source for any upload to unifi. Families will be created and amended in this folder. After a family has been uploaded to Unifi it becomes available in all project files.
+A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibrary'' is  maintained as the source for any upload to unifi. Families will be created and amended in this folder. After a family has been uploaded to the Health_FF&E library on Unifi it becomes available in all project files.
 
 ![Unifi_workflow]({{ site.baseurl }}/assets/s1606008_rcr/Unifi_process.svg){:class="img-responsive"}{: height="644px" width="1394px"}
