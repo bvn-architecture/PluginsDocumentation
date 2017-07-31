@@ -293,3 +293,12 @@ The areas have the following properties:
 | | | This parameter is more flexible than the build in 'Area Type' which only has a fixed non changeable number of values | 
 | Name | build in |type of department: e.g. SMOKE |
 | Number | build in | Fire compartment number: e.g. AXX-2a-L1|
+
+# FFE Library (Unifi)
+
+ BVN is using [Unifi](http://unifilabs.com/) in order to avoid having to maintain multiple revit family libraries in their respective project folders.
+ The following process is proposed to work with unifi:
+ 
+A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibrary'' is  maintained as the source for any upload to unifi. Families will be created and amended in this folder. After a family has been uploaded to Unifi it becomes available in all project files.
+
+![Unifi_workflow]({{ site.baseurl }}/assets/s1606008_rcr/Unifi_process.svg){:class="img-responsive"}{: height="644px" width="1394px"}
