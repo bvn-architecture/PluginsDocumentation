@@ -155,16 +155,20 @@ These titleblocks come in A2 and A3 sizes and have a sign off bar for SD and one
 
 Families used:
 
-* Titleblock_C_SHEET_A3_ANN_INH
-* Titleblock_C_SHEET_A2_ANN_INH
-* Titleblock_Landscape_Vertical_A1_ANN_INH
-* Titleblock_Landscape_Vertical_B1_ANN_INH
+* Titleblock_C_SHEET_A3_ANN_NHR
+* Titleblock_C_SHEET_A2_ANN_NHR
+* Titleblock_Landscape_Vertical_A1_ANN_NHR
+* Titleblock_Landscape_Vertical_B1_ANN_NHR
 
 Note: These families use catalogue files to handle the different options available.
 
-Family type Prefixes used:
+Type naming:
 
-* NEP - Nepean
+| Project Prefix | Building | Sheet Size | Description | Note |
+|----------------|----------|------------|-------------|------|
+| NHR | K | B1 | no privilige no sign off| Privilige: displays "CONFIDENTIAL & COMMERCIAL-IN-CONFIDENCE", Sign Off shows a sign off bar for user group consultation. |
+
+Sample: NHR - Z1 and Z2 - B1 no privilige DD sign off:  Nepean Hospital, Buildings Z1 (Cancer Care) and Z2 (Demountable), B1 sheet size, no priviliges shown, no sign off bar shown. 
 
 # Site set-out
 
