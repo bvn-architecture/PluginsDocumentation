@@ -338,12 +338,22 @@ A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibra
 
 ## dRofus
 
-There will be two different workflows applied to the refurbishment and the new build part of this project:
+### Team structure
+
+
+### Technical issues
+In the moment there is technical limitations to dRofus:
+To make our work as easy as possible, BVN uses what is called Items with sub items in dRofus. An example would be a TV (the item) with a power point and data outlet (both sub items):
+ 
+Where blue belongs to architecture and orange to services in terms of responsibility. The catch is that dRofus currently does not allow a split like the above without some work around. They are working on it to fix it but have not committed to a time frame.
 
 ### dRofus - New Build workflow
 
-The below workflow seeks to minimize risk to the project by limiting user access rights within the consultant team.
- 
+Nepean and Randwick SD phase (new builds -> generic rooms only)
+
+* BVN will take control and therefore responsibility of all items (including services). 
+* Services consultants however will be asked to export Services to Excel and furnish BVN with the completed Excel document which we will import back into dRofus. As per the below diagram. Again blue is BVN and orange the consultants.
+
 ![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="328px" width="1387px"}
 
 
