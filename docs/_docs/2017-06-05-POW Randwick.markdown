@@ -183,9 +183,13 @@ Families used:
 
 Note: These families use catalogue files to handle the different options available.
 
-Family type Prefixes used:
+Type naming:
 
-* RCR - Randwick
+| Project Prefix | Building | Sheet Size | Description | Note |
+|----------------|----------|------------|-------------|------|
+| RCR | 50 | B1 | no privilige no sign off| privilege: displays "CONFIDENTIAL & COMMERCIAL-IN-CONFIDENCE", Sign Off shows a sign off bar for user group consultation. |
+
+Sample: RCR - 50 - B1 no privilige no sign off:  Randwick Hospital, Buildings 50 (new acute services building), B1 sheet size, no privileges shown, no sign off bar shown. 
 
 # Existing Emergency Department Transitional Works
 
