@@ -327,6 +327,15 @@ There are 3 types available:
 * 2700mm High Ceiling
 * 3000mm High Ceiling
 
+# FFE Library (Unifi)
+
+ BVN is using [Unifi](http://unifilabs.com/) in order to avoid having to maintain multiple revit family libraries in their respective project folders.
+ The following process is proposed to work with unifi:
+ 
+A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibrary'' is  maintained as the source for any upload to unifi. Families will be created and amended in this folder. After a family has been uploaded to the Health_FF&E library on Unifi it becomes available in all project files.
+
+![Unifi_workflow]({{ site.baseurl }}/assets/s160x00x_common/Unifi_process.svg){:class="img-responsive"}{: height="644px" width="1394px"}
+
 # Fire Compartment Drawings
 
 Fire Compartment drawings show smoke and fire compartmentation of a building floor by floor. They inform:
@@ -377,7 +386,7 @@ In order to show the overall size of a fire compartment, which can be made up of
 
 The schedule name contains the area type e.g. 'Patient Care and Treatment'. This is important since different area types allow for different maximum compartment area.
 
-![Typical Door Jamb Detail_A]({{ site.baseurl }}/assets/s1607004_inh/FireDepartmentSchedule.svg){:class="img-responsive"}{: height="200px" width="300px"}
+![Typical Fire Department Schedule]({{ site.baseurl }}/assets/s160x00x_common/FireDepartmentSchedule.svg){:class="img-responsive"}{: height="200px" width="300px"}
 
 ## Tags
 
@@ -386,14 +395,14 @@ The following tags are used to indicate location of fire fighting equipment as w
 | Purpose | Family | Image |
 |--------------------------|
 | Area Tag | 083 - Fire Area Tag.rfa | |
-| FH/ FHR New | 0831 - FHR FH Tag - NEW.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
-| FH New | 0831 - FH Tag - NEW.rfa | ![FH NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
-| FHR New | 0832 - FHR Tag - NEW.rfa | ![FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FHR_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
-| FH/ FHR Existing | 0831 - FHR FH Tag - EX.rfa | ![FH FHR EX]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
-| FH Existing | 0831 - FH Tag - EX.rfa |  ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
-| FHR Existing | 0832 - FHR Tag - EX.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s1607004_inh/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
-| Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s1607004_inh/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
-| Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s1607004_inh/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FH/ FHR New | 0831 - FHR FH Tag - NEW.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s160x00x_common/083_FH_FHR_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FH New | 0831 - FH Tag - NEW.rfa | ![FH NEW]({{ site.baseurl }}/assets/s160x00x_common/083_FH_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FHR New | 0832 - FHR Tag - NEW.rfa | ![FHR NEW]({{ site.baseurl }}/assets/s160x00x_common/083_FHR_NEW.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FH/ FHR Existing | 0831 - FHR FH Tag - EX.rfa | ![FH FHR EX]({{ site.baseurl }}/assets/s160x00x_common/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FH Existing | 0831 - FH Tag - EX.rfa |  ![FH FHR NEW]({{ site.baseurl }}/assets/s160x00x_common/083_FH_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| FHR Existing | 0832 - FHR Tag - EX.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s160x00x_common/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 
 # Doors
 
@@ -424,10 +433,10 @@ The following Revit door families are used:
 
 | Door family name | Use | Graphic |
 |---------------------------|
-| 045_SINGLELEAF_GENERIC | single leaf internal door | ![DoorSingle_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
-| 045_DOUBLELEAF_GENERIC | double leaf (equal and un-equal size) | ![DoorDouble_Equal]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_Double.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorDouble_UnEqual]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoor_DoorHalf.svg){:class="img-responsive"}{: height="90px" width="90px"} |
-| DOR-SINGLE EXISTING-L300-BVN | single leaf existing door | ![DoorExistingSingle_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoorsExisting_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
-| DOR-DOUBLE EXISTING-L300-BVN | double leaf existing door | ![DoorExistingDoubleEq_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoorsExisting_DoubleEqual.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorExistingDoubleUnEq_Graphic]({{ site.baseurl }}/assets/s1607004_inh/TypicalDoorsExisting_Double_unequal.svg){:class="img-responsive"}{: height="90px" width="90px"}|
+| 045_SINGLELEAF_GENERIC | single leaf internal door | ![DoorSingle_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
+| 045_DOUBLELEAF_GENERIC | double leaf (equal and un-equal size) | ![DoorDouble_Equal]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_Double.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorDouble_UnEqual]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_DoorHalf.svg){:class="img-responsive"}{: height="90px" width="90px"} |
+| DOR-SINGLE EXISTING-L300-BVN | single leaf existing door | ![DoorExistingSingle_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
+| DOR-DOUBLE EXISTING-L300-BVN | double leaf existing door | ![DoorExistingDoubleEq_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_DoubleEqual.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorExistingDoubleUnEq_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_Double_unequal.svg){:class="img-responsive"}{: height="90px" width="90px"}|
 
 Revit door properties used to number a door:
 
@@ -442,14 +451,14 @@ The door family (single leaf) has approach clearances as per AS 1428 build in. T
 
 | 1428_Diagram Property Value | Approach Graphic |AS 1428 Figure Code |
 |----------|----------|--------------------|
-| 1 | ![AS1428_1]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_1.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (a) |
-| 2 | ![AS1428_2]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_2.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (b) |
-| 3 | ![AS1428_3]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_3.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (c) |
-| 4 | ![AS1428_4]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_4.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (d) |
-| 5 | ![AS1428_5]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_5.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (e) |
-| 6 | ![AS1428_6]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_6.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (f) |
-| 7 | ![AS1428_7]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_7.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (g) |
-| 8 | ![AS1428_8]({{ site.baseurl }}/assets/s1607004_inh/Doors_AS1428_8.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (h) |
+| 1 | ![AS1428_1]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_1.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (a) |
+| 2 | ![AS1428_2]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_2.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (b) |
+| 3 | ![AS1428_3]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_3.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (c) |
+| 4 | ![AS1428_4]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_4.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (d) |
+| 5 | ![AS1428_5]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_5.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (e) |
+| 6 | ![AS1428_6]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_6.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (f) |
+| 7 | ![AS1428_7]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_7.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (g) |
+| 8 | ![AS1428_8]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_8.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (h) |
 
 ## Door Tag
 
@@ -459,8 +468,8 @@ This tag has a couple of types:
 
 | Tag Type | Usage | Graphics |
 |-----------|-----|----|
-| Internal | For internal doors | ![DoorTagInternal]({{ site.baseurl }}/assets/s1607004_inh/Doors_Tag_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
-| External | For external doors, usually covered in a separate schedule | ![DoorTagExternal]({{ site.baseurl }}/assets/s1607004_inh/Doors_Tag_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| Internal | For internal doors | ![DoorTagInternal]({{ site.baseurl }}/assets/s160x00x_common/Doors_Tag_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| External | For external doors, usually covered in a separate schedule | ![DoorTagExternal]({{ site.baseurl }}/assets/s160x00x_common/Doors_Tag_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 
 ## Existing Door Family Properties
 
