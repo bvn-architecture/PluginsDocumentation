@@ -327,14 +327,25 @@ There are 3 types available:
 * 2700mm High Ceiling
 * 3000mm High Ceiling
 
-# FFE Library (Unifi)
+## FFE Library (Unifi)
 
- BVN is using [Unifi](http://unifilabs.com/) in order to avoid having to maintain multiple revit family libraries in their respective project folders.
- The following process is proposed to work with unifi:
+BVN is using [Unifi](http://unifilabs.com/) in order to avoid having to maintain multiple revit family libraries in their respective project folders.
+The following process is proposed to work with unifi:
  
 A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibrary'' is  maintained as the source for any upload to unifi. Families will be created and amended in this folder. After a family has been uploaded to the Health_FF&E library on Unifi it becomes available in all project files.
 
 ![Unifi_workflow]({{ site.baseurl }}/assets/s160x00x_common/Unifi_process.svg){:class="img-responsive"}{: height="644px" width="1394px"}
+
+## dRofus
+
+There will be two different workflows applied to the refurbishment and the new build part of this project:
+
+### dRofus - New Build workflow
+
+The below workflow seeks to minimize risk to the project by limiting user access rights within the consultant team.
+ 
+![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="328px" width="1387px"}
+
 
 # Fire Compartment Drawings
 
