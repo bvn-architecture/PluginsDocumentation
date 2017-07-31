@@ -14,13 +14,15 @@ categories: Revit
 
 The documentation packages are set up by building. Below is a map showing the existing campus with building number.
 
+![KeyMap]({{ site.baseurl }}/assets/s1607004_inh/KeyPlan.svg){:class="img-responsive"}{: height="609px" width="529px"}
+
 | Building Number | Building Description |
 |--------------|---------------|
 | A | Block A |
 | B | Block B |
 | K | New Build - Stage 1 |
-| Z2 | Demountable |
 | Z1 | Cancer Centre |
+| Z2 | Demountable |
 
 ## <a id="PackageIdentifier"></a> CATEGORY / PACKAGES AVAILABLE
 
