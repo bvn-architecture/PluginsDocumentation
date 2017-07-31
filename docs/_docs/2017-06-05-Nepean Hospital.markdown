@@ -166,9 +166,9 @@ Type naming:
 
 | Project Prefix | Building | Sheet Size | Description | Note |
 |----------------|----------|------------|-------------|------|
-| NHR | K | B1 | no privilige no sign off| Privilige: displays "CONFIDENTIAL & COMMERCIAL-IN-CONFIDENCE", Sign Off shows a sign off bar for user group consultation. |
+| NHR | K | B1 | no privilige no sign off| privilege: displays "CONFIDENTIAL & COMMERCIAL-IN-CONFIDENCE", Sign Off shows a sign off bar for user group consultation. |
 
-Sample: NHR - Z1 and Z2 - B1 no privilige DD sign off:  Nepean Hospital, Buildings Z1 (Cancer Care) and Z2 (Demountable), B1 sheet size, no priviliges shown, no sign off bar shown. 
+Sample: NHR - Z1 and Z2 - B1 no privilige DD sign off:  Nepean Hospital, Buildings Z1 (Cancer Care) and Z2 (Demountable), B1 sheet size, no privileges shown, no sign off bar shown. 
 
 # Site set-out
 
