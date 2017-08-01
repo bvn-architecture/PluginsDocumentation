@@ -130,6 +130,14 @@ List of sample document numbers:
 | RCR-BVN-AR-50-SCH-J2-00-01-XLS | Original Excel file of RCR-BVN-AR-50-SCH-J2-00-01 pdf file containing door schedule|
 | RCR-BVN-AR-50-SPC-Z1-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555| 
 
+## Sketches
+
+| Project Code | - | Discipline Code | - | Document Type| - | Sequential Number |
+| -------------|---|-----------------|---|--------------|---|-------------------|
+| RCR | - | AR | - | SK | - | 001 |
+
+Sample Sketch number: RCR-AR-SK-001
+
 ## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type| - | Category / Package | - | Sequential Number |
@@ -504,8 +512,8 @@ Revit door properties used to number a door:
 
 | Property | GUID | Use |
 |----------------------|
-| Room reference | | the number of the room the door belongs to.  |
-| Door Instance By Room | | instance counter of doors placed in a room. e.g. D01 |
+| Door Room Reference | 8ede47f8-0912-46e7-a94e-276e517d887c | the number of the room the door belongs to.  |
+| Door Instance By Room | 8232f501-0c37-45a2-af93-97c8c707c928 | instance counter of doors placed in a room. e.g. D01 |
 
 ## AS 1428
 
@@ -524,7 +532,7 @@ The door family (single leaf) has approach clearances as per AS 1428 build in. T
 
 ## Door Tag
 
-Revit door tag:
+Revit door tag: Door Tag_ANN.rfa
 
 This tag has a couple of types:
 
@@ -540,6 +548,24 @@ The existing door families have some extra properties to allow to indicate that 
 * Require painting
 * Require to be re-hang
 * Require additional door protection
+
+# Internal Windows
+
+## Window numbering
+
+Window numbers are made up of two parts: the number of a room a window belongs to and an instance counter of windows placed in a room.
+
+Sample: 1234-W01 refers to a window belonging to room 1234 with instance counter of W01 (window number one).
+
+In general windows can be randomly assigned to a room if they are in between two rooms as opposed to a  window between a corridor and a room. In that situation the window belongs to the room not the corridor.
+
+| Property | GUID | Use |
+|------|-------------|------|
+| Window Comments | 7289c039-4d33-49e5-ab72-d34c5cd61599 | Any comments |
+| Window Room Reference Number| 1601011a-378c-4edd-999a-9c2ca99630af | The number of the room the window belongs to. |
+| Window Instance By Room | 0d5020a5-1c5c-4e57-a004-83b82997f7f4 | Instance counter of windows placed in a room. e.g. W01 |
+
+Revit window tag: Window Tag_ANN.rfa
 
 # Annotation
 
