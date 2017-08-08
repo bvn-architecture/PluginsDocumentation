@@ -474,6 +474,12 @@ Revit door properties used to number a door:
 |----------------------|
 | Room reference | | the number of the room the door belongs to.  |
 | Door Instance By Room | | instance counter of doors placed in a room. e.g. D01 |
+| Door Finish External | 3210bfb2-7735-4be7-bdbc-3f27cf6fe618 | Finish of door opening to side. |
+| Door Finish Internal | c72ee8d5-5681-43f5-9bb8-dddd9773f26b | Finish of door opening from side. |
+
+The two door finish properties are used (tagged) on the wall protection series of drawings. The default field (when the same finsih is to be used on both sides) is Door Finish External.
+
+There has also an additional filter been added to the F2 Wall Finishes template which will colour all doors red if there is a value in the Door Finish External field.
 
 ## AS 1428
 
@@ -500,6 +506,9 @@ This tag has a couple of types:
 |-----------|-----|----|
 | Internal | For internal doors | ![DoorTagInternal]({{ site.baseurl }}/assets/s160x00x_common/Doors_Tag_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 | External | For external doors, usually covered in a separate schedule | ![DoorTagExternal]({{ site.baseurl }}/assets/s160x00x_common/Doors_Tag_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+
+Door Finish External Tag_ANN is used to display the external door finish code.
+Door Finish Internal Tag_ANN is used to display the internal door finsih code.
 
 ## Existing Door Family Properties
 

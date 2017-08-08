@@ -555,6 +555,12 @@ Revit door properties used to number a door:
 |----------------------|
 | Door Room Reference | 8ede47f8-0912-46e7-a94e-276e517d887c | the number of the room the door belongs to.  |
 | Door Instance By Room | 8232f501-0c37-45a2-af93-97c8c707c928 | instance counter of doors placed in a room. e.g. D01 |
+| Door Finish External | 3210bfb2-7735-4be7-bdbc-3f27cf6fe618 | Finish of door opening to side. |
+| Door Finish Internal | c72ee8d5-5681-43f5-9bb8-dddd9773f26b | Finish of door opening from side. |
+
+The two door finish properties are used (tagged) on the wall protection series of drawings. The default field (when the same finsih is to be used on both sides) is Door Finish External.
+
+There has also an additional filter been added to the F2 Wall Finishes template which will colour all doors red if there is a value in the Door Finish External field.
 
 ## AS 1428
 
@@ -571,9 +577,9 @@ The door family (single leaf) has approach clearances as per AS 1428 build in. T
 | 7 | ![AS1428_7]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_7.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (g) |
 | 8 | ![AS1428_8]({{ site.baseurl }}/assets/s160x00x_common/Doors_AS1428_8.svg){:class="img-responsive"}{: height="90px" width="90px"} | Figure (h) |
 
-## Door Tag
+## Door Tags
 
-Revit door tag: Door Tag_ANN.rfa
+Revit door tag: Door Tag_ANN.rfa is used to display the door number.
 
 This tag has a couple of types:
 
@@ -581,6 +587,11 @@ This tag has a couple of types:
 |-----------|-----|----|
 | Internal | For internal doors | ![DoorTagInternal]({{ site.baseurl }}/assets/s160x00x_common/Doors_Tag_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 | External | For external doors, usually covered in a separate schedule | ![DoorTagExternal]({{ site.baseurl }}/assets/s160x00x_common/Doors_Tag_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+
+Door Finish External Tag_ANN is used to display the external door finish code.
+Door Finish Internal Tag_ANN is used to display the internal door finsih code.
+
+![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"}
 
 ## Existing Door Family Properties
 
