@@ -39,7 +39,7 @@ Each individual zone is than broken up in documentation packages as follows:
 | A3 - STAGING | Anything related to staging of works |  |
 | B1 - EXISTING | Plans describing the existing conditions | |
 | B2 - PROPOSED | Plans describing the proposed conditions | |
-| B3 - FIRE COMPARTMENT | Fire compartment drawings as required | |
+| B3 - FIRE COMPARTMENT | Fire compartment drawings as required | [Fire](#Fire Compartments) |
 | B4 - PARTITIONS | Partition plans | |
 | B5 - WALL PROTECTION | Wall protection plans | |
 | C1 - EXTERNAL ELEVATIONS | External elevations overall | |
@@ -51,7 +51,7 @@ Each individual zone is than broken up in documentation packages as follows:
 | G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), Refer also Nepean Hospital Documentation: [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent) |
 | G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room | |
 | G2 - LINE OF HEIGHTS | Typical line of heights drawings | |
-| J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location | |
+| J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location |[Doors](#DoorStuff) |
 | J2 - DOOR AND WINDOW SCHEDULE | Schedules of internal doors and windows | |
 | K1 - INTERFACE DETAILS PARTITIONS | Typical internal partition details | |
 | K2 - INTERFACE DETAILS - CEILINGS | Typical internal ceiling details | |
@@ -430,13 +430,24 @@ A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibra
 
 ### Team structure
 
+The current team structure is as follows:
+
+![drofus_TeamStructure]({{ site.baseurl }}/assets/s160x00x_common/dRofusTeamStructure.svg){:class="img-responsive"}{: height="830px" width="1249px"}
+
 ### Technical issues
+
 In the moment there is technical limitations to dRofus:
 To make our work as easy as possible, BVN uses what is called Items with sub items in dRofus. An example would be a TV (the item) with a power point and data outlet (both sub items):
 
 ![drofus_subItems]({{ site.baseurl }}/assets/s160x00x_common/Drofus_Item_SubItem.svg){:class="img-responsive"}{: height="237px" width="171px"}
 
 Where blue belongs to architecture and orange to services in terms of responsibility. The catch is that dRofus currently does not allow a split like the above without some work around. They are working on it to fix it but have not committed to a time frame.
+
+Another issue is the way Health Infrastructure has set up the actual function structure of their database. Whilst the structure itself is 3 levels deep, the actual room function number only reflects the first two of those levels and Functional Group has been excluded:
+
+![drofus_FunctionStructure]({{ site.baseurl }}/assets/s160x00x_common/dRofusFunctionStructure.svg){:class="img-responsive"}{: height="259px" width="482px"}
+
+Unfortunately this default Health infrastructure seetting can not be changed by BVN. We can, however inforce the use of two digits to identify a level.
 
 ### dRofus - New Build workflow
 
@@ -447,7 +458,7 @@ Nepean and Randwick SD phase (new builds -> generic rooms only)
 
 ![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="328px" width="1387px"}
 
-# Fire Compartment Drawings
+# <a id="Fire Compartments"></a> Fire Compartment Drawings
 
 Fire Compartment drawings show smoke and fire compartmentation of a building floor by floor. They inform:
 
@@ -515,7 +526,7 @@ The following tags are used to indicate location of fire fighting equipment as w
 | Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 | Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 
-# Doors
+# <a id="DoorStuff"></a> Doors
 
 ## Door Types and Sizes
 
