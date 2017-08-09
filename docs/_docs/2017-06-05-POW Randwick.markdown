@@ -543,15 +543,15 @@ Partition types are distributed via [unifi] (#Unifi).
 
 | Tag Family | Tag Type | Usage | Graphics | Sample |
 |-----------|-----|----|----|----|
-| Impact | TBC | Used to indicate impact resistant plasterboard lining to walls. | ![Tag_Wall_HighImpact_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_HighImpact.svg){:class="img-responsive"}{: height="188px" width="160px"} | ![Tag_Wall_HighImpact_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Impact_Sample.svg){:class="img-responsive"}{: height="188px" width="160px"} |
-| Insulation | TBC | TBC | TBC | TBC |
-| Riser | TBC | TBC | TBC |![Tag_Wall_Riser_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Riser_Sample.svg){:class="img-responsive"}{: height="48px" width="194px"}  |
-| Direct Stick | TBC | TBC | TBC | TBC |
-| Interior Finish | TBC | TBC | TBC | TBC |
-| Low Height | TBC | TBC | TBC | ![Tag_Wall_LowHeight_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_LowHeight_Sample.svg){:class="img-responsive"}{: height="180px" width="257px"} |
-| Radiation Shielding | TBC | TBC | TBC | ![Tag_Wall_Radiation_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Radiation_Sample.svg){:class="img-responsive"}{: height="275px" width="256px"} |
-| Wet Area Lining (all walls) | TBC | TBC | TBC | ![Tag_Wall_WetAreaGen_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_WetArea_Sample.svg){:class="img-responsive"}{: height="103px" width="127px"} |
-| Wet Area Lining (specific walls) | TBC | TBC | TBC | TBC |
+| Impact | TBC | High impact lining on all walls -outermost lining to be impact resistant lining (IL-106) to all walls on the side of the hatched space up to 1200AFFL only. Substitue or add in accordance with the specification. | ![Tag_Wall_HighImpact_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_HighImpact.svg){:class="img-responsive"}{: height="188px" width="160px"} | ![Tag_Wall_HighImpact_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Impact_Sample.svg){:class="img-responsive"}{: height="188px" width="160px"} |
+| Insulation | TBC |Thermal insulation within wall lining INS-301 50mm, UNO | ![Tag_Wall_Insulation_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_Insulation.svg){:class="img-responsive"}{: height="188px" width="160px"} | TBC |
+| Riser | TBC | Acoustic rated hydraulic stack (refer partition details) | TBC |![Tag_Wall_Riser_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Riser_Sample.svg){:class="img-responsive"}{: height="48px" width="194px"}  |
+| Direct Stick | TBC | Line all masonry walls within room with 9mm fibrous cement sheet 'direct stick' to wall. All cavities and voids to be filled to prevent vermin etc. Refer masonry package for substrate types. | ![Tag_Wall_DirectStick_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_DirectStickFC.svg){:class="img-responsive"}{: height="188px" width="160px"} | TBC |
+| Interior Finish | TBC | Interior finish applied over specifc part of wall (refer interiors package) | ![Tag_Wall_InteriorFinish_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_InteriorFinish.svg){:class="img-responsive"}{: height="188px" width="160px"} | TBC |
+| Low Height | TBC | Low ht wall - Height in mm AFFL | ![Tag_Wall_LowHeight_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_LowHeight.svg){:class="img-responsive"}{: height="188px" width="160px"} | ![Tag_Wall_LowHeight_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_LowHeight_Sample.svg){:class="img-responsive"}{: height="180px" width="257px"} |
+| Radiation Shielding | TBC | Radiation Shielding required on all walls of room. Refer to Radiation Shielding Report for shielding scope and details. | ![Tag_Wall_Radiation_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_RadiationShielding.svg){:class="img-responsive"}{: height="188px" width="160px"} | ![Tag_Wall_Radiation_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Radiation_Sample.svg){:class="img-responsive"}{: height="275px" width="256px"} |
+| Wet Area Lining (all walls) | TBC | Wet area lining on all walls of room. - outermost lining to be moisture resistant plasterboard (IL-102). Substitue or add in accordance with the specification. | ![Tag_Wall_WetAreaAllWalls_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_WetAreaLining.svg){:class="img-responsive"}{: height="188px" width="160px"} | ![Tag_Wall_WetAreaGen_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_WetArea_Sample.svg){:class="img-responsive"}{: height="103px" width="127px"} |
+| Wet Area Lining (specific walls) | TBC | Wet area lining on specific part of wall. See above note and details. | ![Tag_Wall_WetAreaSpecificWall_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_WetAreaLining_Specific.svg){:class="img-responsive"}{: height="188px" width="160px"} | TBC |
 
 # <a id="DoorStuff"></a> Doors
 
