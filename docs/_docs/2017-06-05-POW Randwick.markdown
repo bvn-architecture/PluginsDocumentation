@@ -417,7 +417,7 @@ There are 3 types available:
 * 2700mm High Ceiling
 * 3000mm High Ceiling
 
-## FFE Library (Unifi)
+## <a id="Unifi"></a> Unifi
 
  BVN is using [Unifi](http://unifilabs.com/) in order to avoid having to maintain multiple revit family libraries in their respective project folders.
  The following process is proposed to work with unifi:
@@ -533,6 +533,26 @@ The following tags are used to indicate location of fire fighting equipment as w
 | Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 | Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 
+# <a id="PartitioStuff"></a> Partitions
+
+## Partition types
+
+Partition types are distributed via [unifi] (#Unifi).
+
+## Tags
+
+| Tag Family | Tag Type | Usage | Graphics | Sample |
+|-----------|-----|----|----|----|
+| Impact | TBC | Used to indicate impact resistant plasterboard lining to walls. | ![Tag_Wall_HighImpact_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Tag_Wall_HighImpact.svg){:class="img-responsive"}{: height="188px" width="160px"} | ![Tag_Wall_HighImpact_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Impact_Sample.svg){:class="img-responsive"}{: height="188px" width="160px"} |
+| Insulation | TBC | TBC | TBC | TBC |
+| Riser | TBC | TBC | TBC |![Tag_Wall_Riser_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Riser_Sample.svg){:class="img-responsive"}{: height="48px" width="194px"}  |
+| Direct Stick | TBC | TBC | TBC | TBC |
+| Interior Finish | TBC | TBC | TBC | TBC |
+| Low Height | TBC | TBC | TBC | ![Tag_Wall_LowHeight_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_LowHeight_Sample.svg){:class="img-responsive"}{: height="180px" width="257px"} |
+| Radiation Shielding | TBC | TBC | TBC | ![Tag_Wall_Radiation_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_Radiation_Sample.svg){:class="img-responsive"}{: height="275px" width="256px"} |
+| Wet Area Lining (all walls) | TBC | TBC | TBC | ![Tag_Wall_WetAreaGen_Sample]({{ site.baseurl }}/assets/s160x00x_common/Tag_WetArea_Sample.svg){:class="img-responsive"}{: height="103px" width="127px"} |
+| Wet Area Lining (specific walls) | TBC | TBC | TBC | TBC |
+
 # <a id="DoorStuff"></a> Doors
 
 ## Door Types and Sizes
@@ -598,11 +618,11 @@ The door family (single leaf) has approach clearances as per AS 1428 build in. T
 ## Door Tags
 
 | Tag Family | Tag Type | Usage | Graphics |
-|-----------|-----|----|----|
+|-----------|-----|----|----|----|
 | Door Tag_ANN.rfa | Internal | For internal doors. Shows door room reference and door instance number. | ![DoorTagInternal]({{ site.baseurl }}/assets/s160x00x_common/Tag_Doors_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 | Door Tag_ANN.rfa | External | For external doors, usually covered in a separate schedule. Shows door room reference and door instance number. | ![DoorTagExternal]({{ site.baseurl }}/assets/s160x00x_common/Tag_Doors_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
-| Door Finish External Tag_ANN | Colour | Is used to display the external door finish code. | ![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
-| Door Finish Internal Tag_ANN | Colour | Is used to display the internal door finish code. | ![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| Door Finish External Tag_ANN | Colour | Is used to display the external door finish code. | ![DoorTagFinishExternal]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| Door Finish Internal Tag_ANN | Colour | Is used to display the internal door finish code. | ![DoorTagFinishInternal]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 
 ### Defining door paint scope in refurb
 
