@@ -535,7 +535,17 @@ The following tags are used to indicate location of fire fighting equipment as w
 
 # <a id="PartitioStuff"></a> Partitions
 
-## Partition types
+## Partition and wall types
+
+Partition and wall types are sub divided into:
+
+| Type | Pre - fix |
+|------|-----------|
+| Accoustic Rated Partitions | P |
+| Fire and Smoke rated partitions | F - Fire, S - Smoke |
+| Wall Linings | L |
+| Blockwork | BLK-1xx |
+| Panel System | BLK-2xx |
 
 Partition types are distributed via [unifi] (#Unifi).
 
