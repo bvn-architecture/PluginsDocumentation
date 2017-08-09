@@ -344,10 +344,20 @@ A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibra
 
 ![Unifi_workflow]({{ site.baseurl }}/assets/s160x00x_common/Unifi_process.svg){:class="img-responsive"}{: height="644px" width="1394px"}
 
+Before uploading content to unifi please ensure that:
+
+* Purge unused (multiple times untill nothing is left to purge)
+* Ensure thumbnail preview is displaying properly 
+	* 2D families: all reference planes are minimised to the extent of the tag
+	* 3D families: dimensions are switched off
+
 ## dRofus
 
 ### Team structure
 
+The current team structure is as follows:
+
+![drofus_TeamStructure]({{ site.baseurl }}/assets/s160x00x_common/dRofusTeamStructure.svg){:class="img-responsive"}{: height="830px" width="1249px"}
 
 ### Technical issues
 In the moment there is technical limitations to dRofus:
@@ -357,6 +367,12 @@ To make our work as easy as possible, BVN uses what is called Items with sub ite
 
 Where blue belongs to architecture and orange to services in terms of responsibility. The catch is that dRofus currently does not allow a split like the above without some work around. They are working on it to fix it but have not committed to a time frame.
 
+Another issue is the way Health Infrastructure has set up the actual function structure of their database. Whilst the structure itself is 3 levels deep, the actual room function number only reflects the first two of those levels and Functional Group has been excluded:
+
+![drofus_FunctionStructure]({{ site.baseurl }}/assets/s160x00x_common/dRofusFunctionStructure.svg){:class="img-responsive"}{: height="259px" width="482px"}
+
+Unfortunately this default Health infrastructure seetting can not be changed by BVN. We can, however inforce the use of two digits to identify a level.
+
 ### dRofus - New Build workflow
 
 Nepean and Randwick SD phase (new builds -> generic rooms only)
@@ -364,7 +380,7 @@ Nepean and Randwick SD phase (new builds -> generic rooms only)
 * BVN will take control and therefore responsibility of all items (including services). 
 * Services consultants however will be asked to export Services to Excel and furnish BVN with the completed Excel document which we will import back into dRofus. As per the below diagram. Again blue is BVN and orange the consultants.
 
-![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="328px" width="1387px"}
+![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="217px" width="925px"}
 
 # Fire Compartment Drawings
 
@@ -477,9 +493,13 @@ Revit door properties used to number a door:
 | Door Finish External | 3210bfb2-7735-4be7-bdbc-3f27cf6fe618 | Finish of door opening to side. |
 | Door Finish Internal | c72ee8d5-5681-43f5-9bb8-dddd9773f26b | Finish of door opening from side. |
 
-The two door finish properties are used (tagged) on the wall protection series of drawings. The default field (when the same finsih is to be used on both sides) is Door Finish External.
+### Defining door paint scope in refurb
 
-There has also an additional filter been added to the F2 Wall Finishes template which will colour all doors red if there is a value in the Door Finish External field.
+The wall finishes drawings contain a filter which will colour all doors red which have the ''Door Finish External'' property set. Or in other words: all doors coloured red are within the paint scope of the refurb project. 
+
+Default paint colour of doors can be defined through a cover note: All doors shown red are to be painted with PT-XXX unless noted otherwise.
+
+If a door has the same finish applied to both sides use the ''Door Finish External'' property to show (tag) that finish only. In any other case use the ''Door Finish External'' and ''Door Finish Internal'' property and tag as required. 
 
 ## AS 1428
 
@@ -506,14 +526,6 @@ The door family (single leaf) has approach clearances as per AS 1428 build in. T
 | Door Tag_ANN.rfa | External | For external doors, usually covered in a separate schedule. Shows door room reference and door instance number. | ![DoorTagExternal]({{ site.baseurl }}/assets/s160x00x_common/Tag_Doors_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 | Door Finish External Tag_ANN | Colour | Is used to display the external door finish code. | ![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 | Door Finish Internal Tag_ANN | Colour | Is used to display the internal door finish code. | ![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
-
-## Existing Door Family Properties
-
-The existing door families have some extra properties to allow to indicate that they
-
-* Require painting
-* Require to be re-hang
-* Require additional door protection
 
 # Internal Windows
 

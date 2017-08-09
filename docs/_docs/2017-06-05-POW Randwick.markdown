@@ -426,6 +426,13 @@ A single library on I drive : ''I:\BIM\2.0 Project_Revit Library\__ClinicalLibra
 
 ![Unifi_workflow]({{ site.baseurl }}/assets/s160x00x_common/Unifi_process.svg){:class="img-responsive"}{: height="644px" width="1394px"}
 
+Before uploading content to unifi please ensure that:
+
+* Purge unused (multiple times untill nothing is left to purge)
+* Ensure thumbnail preview is displaying properly 
+	* 2D families: all reference planes are minimised to the extent of the tag
+	* 3D families: dimensions are switched off
+
 ## dRofus
 
 ### Team structure
@@ -456,7 +463,7 @@ Nepean and Randwick SD phase (new builds -> generic rooms only)
 * BVN will take control and therefore responsibility of all items (including services). 
 * Services consultants however will be asked to export Services to Excel and furnish BVN with the completed Excel document which we will import back into dRofus. As per the below diagram. Again blue is BVN and orange the consultants.
 
-![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="328px" width="1387px"}
+![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="217px" width="925px"}
 
 # <a id="Fire Compartments"></a> Fire Compartment Drawings
 
@@ -597,13 +604,13 @@ The door family (single leaf) has approach clearances as per AS 1428 build in. T
 | Door Finish External Tag_ANN | Colour | Is used to display the external door finish code. | ![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 | Door Finish Internal Tag_ANN | Colour | Is used to display the internal door finish code. | ![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 
-## Existing Door Family Properties
+### Defining door paint scope in refurb
 
-The existing door families have some extra properties to allow to indicate that they
+The wall finishes drawings contain a filter which will colour all doors red which have the ''Door Finish External'' property set. Or in other words: all doors coloured red are within the paint scope of the refurb project. 
 
-* Require painting
-* Require to be re-hang
-* Require additional door protection
+Default paint colour of doors can be defined through a cover note: All doors shown red are to be painted with PT-XXX unless noted otherwise.
+
+If a door has the same finish applied to both sides use the ''Door Finish External'' property to show (tag) that finish only. In any other case use the ''Door Finish External'' and ''Door Finish Internal'' property and tag as required. 
 
 # Internal Windows
 
