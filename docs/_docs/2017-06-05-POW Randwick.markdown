@@ -592,8 +592,8 @@ The door family (single leaf) has approach clearances as per AS 1428 build in. T
 
 | Tag Family | Tag Type | Usage | Graphics |
 |-----------|-----|----|----|
-| Door Tag_ANN.rfa | Internal | For internal doors. Shows door room reference and door instance number. | ![DoorTagInternal]({{ site.baseurl }}/assets/s160x00x_common/Doors_Tag_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
-| Door Tag_ANN.rfa | External | For external doors, usually covered in a separate schedule. Shows door room reference and door instance number. | ![DoorTagExternal]({{ site.baseurl }}/assets/s160x00x_common/Doors_Tag_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| Door Tag_ANN.rfa | Internal | For internal doors. Shows door room reference and door instance number. | ![DoorTagInternal]({{ site.baseurl }}/assets/s160x00x_common/Tag_Doors_Internal.svg){:class="img-responsive"}{: height="200px" width="200px"} |
+| Door Tag_ANN.rfa | External | For external doors, usually covered in a separate schedule. Shows door room reference and door instance number. | ![DoorTagExternal]({{ site.baseurl }}/assets/s160x00x_common/Tag_Doors_External.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 | Door Finish External Tag_ANN | Colour | Is used to display the external door finish code. | ![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 | Door Finish Internal Tag_ANN | Colour | Is used to display the internal door finish code. | ![DoorTagFinish]({{ site.baseurl }}/assets/s160x00x_common/Tag_Door Finish.svg){:class="img-responsive"}{: height="200px" width="200px"} |
 
