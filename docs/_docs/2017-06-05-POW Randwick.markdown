@@ -465,6 +465,26 @@ Nepean and Randwick SD phase (new builds -> generic rooms only)
 
 ![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="217px" width="925px"}
 
+### Logging changes
+
+In the moment drofus allows to log changes in individual rooms against change lists. Changes to room templates however are only logged into a single log. This is a limitation dRofus is adressing in the moment.
+Logging changes needs to be activated manually. All changes will be logged against the same change list until the user chooses another change list or stops logging changes alltogether. 
+
+Change lists are named as follows: 
+ 
+| Project Stage | _ | Date | _ | Changelist type |
+
+|Changelist type | where to use |
+|----------------|--------------|
+| XX User Group Meeting No. XX | New change list to be created for each user group meeting. |
+| Client Requested Change | Used when making changes resulting from client requested changes. Unless directed otherwise by BVN a single change list is to be used for all of these type of changes. |
+| Consultant Advice Change | Used when making changes which result from specialist advice from disciplines. A single change list is created for all disciplines. |
+| QA Check | Used to track changes made during checking processes. |
+
+To enable us to associate a change in a template to a change list, we use the work around of starting the change log note in the room template with the change list name:
+
+> SD_20170823_QA Check The item was deleted because of XYZ >
+
 # <a id="Fire Compartments"></a> Fire Compartment Drawings
 
 Fire Compartment drawings show smoke and fire compartmentation of a building floor by floor. They inform:
