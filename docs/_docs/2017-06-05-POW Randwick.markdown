@@ -485,6 +485,41 @@ To enable us to associate a change in a template to a change list, we use the wo
 
 > SD_20170823_QA Check The item was deleted because of XYZ >
 
+### dRofus coding
+
+Joinery:
+
+* Suffixes like .01 describe different sizes (depth, width, height) of an item 
+
+Benches:
+
+* Suffixes describe different mounting height only since drofus codes prescribe the bench depth, and length is variable most of the time
+
+Equipment:
+
+* Should not be using suffixes to describe a different item size since this will be a different product to be purchased (unlike joinery where every piece will be made according to our detail drawings)
+* Different size = different product = different code
+* This means that new items (not already in drofus database) will get a different code on Randwick compared to Nepean. To avoid accidental cross use of families, we will add a suffix to the family name to delineate between Randwick (RAN) and Nepean( NEP) (i.e. Basin_Handwash_TypeB_RAN_HYBA_010 vs Basin_Handwash_TypeB_NEP_HYBA_010). These will also get tagged with their project name to support better searching within unifi.
+
+Left and right version of the same item i.e. wash hand basin
+
+* For now stays the same code for left hand and right hand product
+
+Request for items process:
+
+When requesting a new family please state:
+
+* Whether this is: 
+    * a new item ( and drofus needs to generate a code)
+        * Please provide a general description of the item to be added to drofus 
+		* Please provide the item group
+		* Provide a screenshot of how that thing is meant to look like ( a picture says more than a 1000 words somebody famous once said )
+    * An existing item: Please provide the drofus code the existing item
+
+
+As a side note: drofus does only support suffixes in code when describing parent – child relationships…Lets not go there just yet.
+
+
 # <a id="Fire Compartments"></a> Fire Compartment Drawings
 
 Fire Compartment drawings show smoke and fire compartmentation of a building floor by floor. They inform:
