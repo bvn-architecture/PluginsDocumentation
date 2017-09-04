@@ -505,6 +505,16 @@ Left and right version of the same item i.e. wash hand basin
 
 * For now stays the same code for left hand and right hand product
 
+#### Transfer Items
+
+Transfer items will require a new code and therfore a new Revit family. DRofus will assign to the transfer items the next number avaialble in the system. That means that a standard group 1 to 3 item code might vastly differ to the code of the same item when it is a transfer item.
+For example standard code: FRIDGE: drugs, large code is MMGE-034. The transfer item will get a code in the 500+ range: i.e. MMGE-501. 
+
+Family setup: 
+
+* item code as well as family type name will show a 'T' for transfer: i.e. 'MMGE-501T' since we not always schedule out the item group which will also get a T appended i.e. '3T'
+* Keynote will just point to the dRofus code :i.e. MMGE-501 (without the 'T')
+
 Request for items process:
 
 When requesting a new family please state:
