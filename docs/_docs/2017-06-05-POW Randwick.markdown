@@ -505,6 +505,15 @@ Left and right version of the same item i.e. wash hand basin
 
 * For now stays the same code for left hand and right hand product
 
+#### Family Parameters
+
+| Parameter name | Parameter description | Comments|
+|----------------|-----------------------|---------|
+| ItemCode | The actual drofus item code plus an optional suffix describing mounting height or sizes | Shown on Room Layout sheets |
+| ItemDescription | Human readable short description of the item | I.e. CUPBOARD,full height, lockable |
+| ItemGroup | Purchasing group | Transfer items are described as at item group + 'T' |
+| Keynote | Built in Revit family parameter. | Needs to have a value set in the family file when using text catalogue files. Otherwise Revit will display an error message: "Family XYZ Keynote does not exist in Family"
+
 #### Transfer Items
 
 Transfer items will require a new code and therfore a new Revit family. DRofus will assign to the transfer items the next number avaialble in the system. That means that a standard group 1 to 3 item code might vastly differ to the code of the same item when it is a transfer item.
@@ -515,7 +524,12 @@ Family setup:
 * item code as well as family type name will show a 'T' for transfer: i.e. 'MMGE-501T' since we not always schedule out the item group which will also get a T appended i.e. '3T'
 * Keynote will just point to the dRofus code :i.e. MMGE-501 (without the 'T')
 
-Request for items process:
+#### Items outside of room
+
+Sometimes there will be the need to place an item outside the perimeter of a room but have it showing up in the FFE schedule for a particular room. i.e. Alcohol rub dispensers mounted in the corridor adjacent to the entry door to a room.
+In this case we need to create a new family where the room calculation point property is enabled and the room calculation point is placed appropriately. Families created for this type of use will have a suffix "_OutSideRoom_" in their file name i.e.: Dispenser_Soap_AlcoholRub_OutSideRoom_FIDI_001. The ItemDescription should also include "outside room".
+
+#### Request for items process:
 
 When requesting a new family please state:
 
