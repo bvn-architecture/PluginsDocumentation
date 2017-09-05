@@ -20,6 +20,7 @@ The documentation packages are set up by building. Below is a map showing the ex
 |--------------|---------------|
 | A | Block A |
 | B | Block B |
+| B2 | IPU block above car park |
 | C | Block C |
 | D | Block D |
 | E | Block E |
