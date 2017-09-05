@@ -499,7 +499,7 @@ Equipment:
 
 * Should not be using suffixes to describe a different item size since this will be a different product to be purchased (unlike joinery where every piece will be made according to our detail drawings)
 * Different size = different product = different code
-* This means that new items (not already in drofus database) will get a different code on Randwick compared to Nepean. To avoid accidental cross use of families, we will add a suffix to the family name to delineate between Randwick (RAN_ASB, RAN_ED) and Nepean(NEP_NEW, NEP_CAN) (i.e. Basin_Handwash_TypeB_RAN_HYBA_010 vs Basin_Handwash_TypeB_NEP_HYBA_010). These will also get tagged with their project name to support better searching within unifi.
+* This means that new items (not already in drofus database) will get a different code on Randwick compared to Nepean. To avoid accidental cross use of families, we will add a suffix to the family name to delineate between Randwick (RCR_ASB, RCR_ED) and Nepean(NHR_NEW, NHR_CAN) (i.e. Basin_Handwash_TypeB_RAN_HYBA_010 vs Basin_Handwash_TypeB_NEP_HYBA_010). These will also get tagged with their project name to support better searching within unifi.
 
 Left and right version of the same item i.e. wash hand basin
 
