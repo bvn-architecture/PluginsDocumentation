@@ -40,7 +40,7 @@ In the moment Reporter will create all of the following reports every time it ru
 | Log File | Properties |
 |---------|------------|
 | [FamilyCategory Log](#FamCategoryLog) | Reports the Revit Category of a family |
-| [FamilyDefault Log](#FamDefaultLog) | Reports: Revit Version number, Edited last time stamp, and whether a family uses a catalogue file |
+| [FamilyDefault Log](#FamDefaultLog) | Reports: Revit Version number, Edited last time stamp, whether a family uses a catalogue file and whether it is a shared family. |
 | [FamilySubCategory Log](#FamSubCatLog) | Reports Revit subcategories present in a family. |
 | [Family Types Log](#FamTypesLog) | Reports all family types defined in a family file and, if present, in its associated catalogue file. |
 | [Host Families Log](#FamHostLog) | Reports all families which contain nested families |
@@ -55,6 +55,7 @@ In the moment Reporter will create all of the following reports every time it ru
 ## Log File Formats
 
 Log files are available in MS Excel and .txt format.
+Reports also include data on any nested families. These are identified in the file path with a '::' i.e. 'C:\temp\hostfamily.rfa::nestedFamily.rfa'. The depth of nesting is not limited.
 
 ### MS Excel
 
@@ -79,9 +80,9 @@ For a detailed list of categories refer to [Family Updater app]({{ site.baseurl 
 
 ### <a id="FamDefaultLog"></a> Family Default Log
 
-| FamilyFilePath | FamilyName | Family Edited Last | Revit Version | Uses Catalogue File |
-|----------------|------------|--------------------|---------------|---------------------|
-| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The OS generated time stamp indicating when a file was edited last. | The Revit version this file is in. | 'TRUE' if there is a catalogue file or 'FALSE' if there isn't |
+| FamilyFilePath | FamilyName | Family Edited Last | Revit Version | Uses Catalogue File | Is Shared |
+|----------------|------------|--------------------|---------------|---------------------|-----------|
+| The fully qualified file path of a family file | The file name, including file extension, of a family file. | The OS generated time stamp indicating when a file was edited last. | The Revit version this file is in. | 'TRUE' if there is a catalogue file or 'FALSE' if there isn't | 'TRUE' if the family is shared, 'FALSE' if not. |
 
 None of the reported properties in this report can be used to update Revit family files.
 

@@ -49,8 +49,9 @@ The user interface comprises of a single window with 2 tabs:
 | 2 – Selection Options | These are the standard selection options aiming to help to manage larger family lists. |
 | 3 - Purge Unused | See [here](#PurgeUnused) |
 | 3 - Force Change | See [here](#ForceChange) |
-| 4 - Cancel | Cancels any user input and returns to Revit. |
-| 5 – Process Families (x) | Will start to process all highlighted families. The number of families to be processed is shown in brackets. After completion a ‘Finished’ Message will be displayed. |
+| 4 - Save Nested | Saves out all nested families |
+| 5 - Cancel | Cancels any user input and returns to Revit. |
+| 6 – Process Families (x) | Will start to process all highlighted families. The number of families to be processed is shown in brackets. After completion a ‘Finished’ Message will be displayed. |
 
 ## Type of updates available
 
@@ -80,6 +81,7 @@ The following common updates are available:
 
 | Update | Action |
 |---------|------------|
+| Save Nested | Will save out all nested families to a specified location. If multiple families with the same name are found, a counter will appended to the file name in format '[[x]]' |
 | Purge Unused <a id="PurgeUnused"></a> | Attempts to purge all unused nested families or nested family types within a family |
 | Force Change <a id="ForceChange"></a> | Internally this action creates a new family type, saves the family, deletes the dummy type and finally, saves the family again. From a user point of view the family will appear unchanged. However Revit will consider this family as changed and force an update when reloading it. This can be use full when e.g. a typical details file gets migrated from one project to another. In this situation, the families loaded in the project file in the new project location still remember their file origin in the old project folder location. A simple re-load of the families from their new location at this point will not re-path the families since Revit considers them identical and will not update to the new origin. Running a 'Force Change' update prior to re-loading the families will trick Revit into updating the families and therefore their internally stored origin. Note: this will only work on a family which has as a minimum at least one family type set-up already. Otherwise it will report an exception. |
 
