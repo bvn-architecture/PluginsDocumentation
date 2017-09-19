@@ -765,3 +765,18 @@ Below is a table of our default dimension styles:
 | Spot Elevation_BVN | Spot Elevation | Text size 2mm | Default spot elevation |
 | Spot Coordinate_BVN | Spot Coordinate | Text size 2mm | Default spot coordinate |
 | Spot Slope_BVN | Spot Slope Text size 2mm | Default slope dimension |
+
+# Colours
+
+## Standard Department Colours
+
+There are usually two shades, a light and and a dark, of each colour available. The light shades is usually meant to colour circulation meanwhile the darker shade is for briefed elements.
+
+| Light | RGB | Dark | RGB |
+|------|------|-------------|----------|
+| ![LightGreen]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Green.svg){:class="img-responsive"}{: height="200px" width="200px"} | 217,231,203 | ![DarkGreen]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Green.svg){:class="img-responsive"}{: height="200px" width="200px"} | 198,211,180 |
+| ![LightBlue]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Blue.svg){:class="img-responsive"}{: height="200px" width="200px"} | 227,237,244 | ![DarkBlue]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Blue.svg){:class="img-responsive"}{: height="200px" width="200px"} | 198,217,232 |
+| ![LightRed]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Red.svg){:class="img-responsive"}{: height="200px" width="200px"} | 240,221,221 | ![DarkRed]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Blue.svg){:class="img-responsive"}{: height="200px" width="200px"} | 226,197,184 |
+| ![LightMagenta]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Magenta.svg){:class="img-responsive"}{: height="200px" width="200px"} | 236,224,243 | ![DarkMagenta]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Magenta.svg){:class="img-responsive"}{: height="200px" width="200px"} | 215,204,230 |
+| ![LightGold]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Gold.svg){:class="img-responsive"}{: height="200px" width="200px"} | 241,226,186 | ![DarkGold]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Gold.svg){:class="img-responsive"}{: height="200px" width="200px"} | 241,203,118 |
+| ![LightYellow]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Yellow.svg){:class="img-responsive"}{: height="200px" width="200px"} |250,250,210 | n/a | n/a |
