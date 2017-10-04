@@ -543,6 +543,23 @@ When requesting a new family please state:
 
 As a side note: drofus does only support suffixes in code when describing parent - child relationships. Lets not go there just yet.
 
+### dRofus to PushIt
+
+#### Filing of SOA push it files
+
+In the moment we are still receiving some Excel files in addition to dRofus. These excel files as well as the Excel files used to create Push it files are stored in their relevant Department folder. 
+However Push it files themselves are located at: 
+
+> \Admin\01.0 Proj. Management\1.06 Design Data & Brief\_SOA PushIt >
+
+This location may contain the push it file for the entire SOA as well as specific department push it files. The latter is to be named as follows:
+
+| Department Push it file | <Date><Department> PushIt.txt | 20170910 ED PushIt.txt |
+| Entire SOA Push it file | <Date> PushIt <Version>.txt | 20170910 PushIt v0_8.txt |
+
+Outdated Push It files are to be moved into the superseded folder:
+
+> \Admin\01.0 Proj. Management\1.06 Design Data & Brief\_SOA PushIt\Superseded >
 
 # <a id="Fire Compartments"></a> Fire Compartment Drawings
 
