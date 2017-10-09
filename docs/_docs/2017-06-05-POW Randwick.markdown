@@ -561,6 +561,43 @@ Outdated Push It files are to be moved into the superseded folder:
 
 > \Admin\01.0 Proj. Management\1.06 Design Data & Brief\_SOA PushIt\Superseded >
 
+#### Exporting dRofus to Push It!
+
+The dRofus to Push It export process consists of the following steps:
+
+* Supersede the old Push It txt file (move it into the supersede folder)
+* Export the current dRofus database to Excel using a custom export
+* Convert the dRofus Excel report into a Push It text file
+
+Each dRofus database has a custom report set up which is used to export to Push It:
+
+![dRofus Schedule Export Interface]({{ site.baseurl }}/assets/s160x00x_common/dRofus_Export_01.png){:class="img-responsive"}{: height="541px" width="811px"}
+
+Save the file as:
+'drofusExport.xlsx' .
+to:
+'\Admin\01.0 Proj. Management\1.06 Design Data & Brief\_SOA PushIt''
+
+Open the Excel conversion file named: 
+"dRofus to PushIt.xlsx"
+
+![dRofus Excel conversion]({{ site.baseurl }}/assets/s160x00x_common/dRofus_Export_02.png){:class="img-responsive"}{: height="713px" width="963px"}
+
+Make sure data gets refreshed (Enable editing and press 'Refresh All' in the Excel DATA tab )
+
+Save As Push It file to:
+'\Admin\01.0 Proj. Management\1.06 Design Data & Brief\_SOA PushIt''
+
+![dRofus Excel conversion]({{ site.baseurl }}/assets/s160x00x_common/dRofus_Export_03.png){:class="img-responsive"}{: height="719px" width="975px"}
+
+Select OK when Excel asks about multiple sheets:
+
+![dRofus Excel conversion]({{ site.baseurl }}/assets/s160x00x_common/dRofus_Export_04.png){:class="img-responsive"}{: height="153px" width="770px"}
+
+Close the Exel file (Click NO when Excel asks about keeping file type)
+
+Reload the new SOA file into Push It.
+
 # <a id="Fire Compartments"></a> Fire Compartment Drawings
 
 Fire Compartment drawings show smoke and fire compartmentation of a building floor by floor. They inform:
@@ -793,7 +830,7 @@ There are usually two shades, a light and and a dark, of each colour available. 
 |------|------|-------------|----------|
 | ![LightGreen]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Green.svg){:class="img-responsive"}{: height="200px" width="200px"} | 217,231,203 | ![DarkGreen]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Green.svg){:class="img-responsive"}{: height="200px" width="200px"} | 198,211,180 |
 | ![LightBlue]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Blue.svg){:class="img-responsive"}{: height="200px" width="200px"} | 227,237,244 | ![DarkBlue]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Blue.svg){:class="img-responsive"}{: height="200px" width="200px"} | 198,217,232 |
-| ![LightRed]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Red.svg){:class="img-responsive"}{: height="200px" width="200px"} | 240,221,221 | ![DarkRed]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Blue.svg){:class="img-responsive"}{: height="200px" width="200px"} | 226,197,184 |
+| ![LightRed]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Red.svg){:class="img-responsive"}{: height="200px" width="200px"} | 240,221,221 | ![DarkRed]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Red.svg){:class="img-responsive"}{: height="200px" width="200px"} | 226,197,184 |
 | ![LightMagenta]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Magenta.svg){:class="img-responsive"}{: height="200px" width="200px"} | 236,224,243 | ![DarkMagenta]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Magenta.svg){:class="img-responsive"}{: height="200px" width="200px"} | 215,204,230 |
 | ![LightGold]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Gold.svg){:class="img-responsive"}{: height="200px" width="200px"} | 241,226,186 | ![DarkGold]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Gold.svg){:class="img-responsive"}{: height="200px" width="200px"} | 241,203,118 |
 | ![LightYellow]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Yellow.svg){:class="img-responsive"}{: height="200px" width="200px"} |250,250,210 | n/a | n/a |
