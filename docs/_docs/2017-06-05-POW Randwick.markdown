@@ -398,13 +398,17 @@ Tagged in floor plan:
 
 * Floor Finish
 * Loose furniture & Joinery
-* Assemblies (Bed heads or wash hand basins)
+* Unions (i.e. Bed heads or wash hand basins, WC's, showers) show the union code only
+* MSP's show the union code only
 * Corner Guards (but not crash rails)
+
 
 Tagged in Elevations:
 
 * Services items placed on walls
 * Same items as floor plans
+* Unions (i.e. Bed heads or wash hand basins, WC's, showers) show the nested item codes only but not the union code
+* MSP's show the union code only
 * Wall finishes if modelled
 * Wall protection
 
