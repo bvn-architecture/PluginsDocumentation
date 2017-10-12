@@ -390,6 +390,15 @@ Room layout sheets show the arrangement of equipment and fixtures within a room.
 
 All plans and elevations are in scale 1 to 50. Ideally all room layout sheets are on the same size sheets (A3). This might require 2 or more sheets for larger rooms.
 
+### Room Layout Sheet - Schedules
+
+Schedules are sorte by the 'DetailedCategory' field.
+
+* All unions will need to have the an empty 'DetailedCategory' field to avoid the actually union code showing up in the schedule.
+* All items nested into a union will need their 'DetailedCategory' field linked to the 'ItemCode' field of the union itself so they schedule under the respective union code.
+	* This also applies to moveable items like chairs or bins within a union!
+		* Some of these nested items have 'DetailedCategory' field as type driven rathern then instance driven. In that case a switch will need to be introduced to allow selecting an instance based value.
+
 ### Tagging
 
 Tag family to be used: FF&E Tag_ANN.rfa
