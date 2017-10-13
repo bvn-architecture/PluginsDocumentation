@@ -478,6 +478,27 @@ Nepean and Randwick SD phase (new builds -> generic rooms only)
 
 ![drofus_workflow_new]({{ site.baseurl }}/assets/s160x00x_common/Drofus_NewBuild_Works.svg){:class="img-responsive"}{: height="217px" width="925px"}
 
+To implement changes into made during the desing process into dRofus the leader of each Department will notify Jess D and Jan who will update dRofus accordingly. Department leaders are as per below table:
+
+| Department | Health lead |
+|----------|-----|
+| 01 Emergency Department | Kim |
+| 02 EDSSU | Kim |
+| 03 Helipad | Joseph |
+| 04 Psychiatric Emergency Care Centre (PECC) | Kim |
+| 05 Front of House | Conor |
+| 06 Front of House - Retail | Conor |
+| 07 Front of House - ETR | Conor |
+| 08 IPU P4 | Jess D |
+| 09 IPU P5 | Jess D |
+| 10 IPU P6 | Jess D |
+| 11 IPU P7 | Jess D |
+| 12 IPU P8 | Jess D |
+| 13 MAU | Jess D |
+| 14 ICU | Kim |
+| 15 Perioperative | Kirstie |
+| 16 CSSD | Kirstie |
+
 ### Logging changes
 
 In the moment drofus allows to log changes in individual rooms against change lists. Changes to room templates however are only logged into a single log. This is a limitation dRofus is adressing in the moment.
