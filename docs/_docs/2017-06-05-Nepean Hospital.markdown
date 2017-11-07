@@ -36,6 +36,7 @@ Each individual zone is than broken up in documentation packages as follows:
 
 | Package Number | Package Description | Links |
 |--------------|---------------|---|
+| A0 - DA	| DA drawing package | |
 | A1 - INTRODUCTORY | Introductory documents. ie. drawing lists, cover page | |
 | A2 - SITE | Anything site related including site works | |
 | A3 - STAGING | Anything related to staging of works |  |
@@ -120,6 +121,19 @@ List of sample document numbers:
 | NHR-BVN-AR-K-DWG-A1-XX-01-DWG | Autocad DWG file of NHR-BVN-AR-K-DWG-A1-00-01 pdf file |
 | NHR-BVN-AR-K-SCH-J2-00-01-XLS | Original Excel file of NHR-BVN-AR-K-SCH-J2-00-01 pdf file containing door schedule|
 | NHR-BVN-AR-K-SPC-Z1-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555| 
+
+## Development Application (DA) Doc's
+
+| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Category / Package | - | Sequential Number |
+| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| NHR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | [refer here](#DocType) | - | A0 | - | XXX |
+
+| Sample number | Document description |
+|---------------|------------|
+| NHR-BVN-AR-K-DWG-A0-100 | New Acute Services Building : DA drwaing : introductory drawings. |
+| NHR-BVN-AR-K-DWG-A0-200 | New Acute Services Building : DA drwaing : floor plan drawings. |
+| NHR-BVN-AR-K-DWG-A0-300 | New Acute Services Building : DA drwaing : elevation, section, 3D drawings. |
+| NHR-BVN-AR-K-DWG-A0-400 | New Acute Services Building : DA drwaing : facade system drawings. |
 
 ## Sketches
 
