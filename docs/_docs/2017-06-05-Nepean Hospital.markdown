@@ -274,6 +274,7 @@ Proposal is to number rooms as follows:
 |-----------------------------------------------------------------| ---|-----|
 | 01 - 90 as per dRofus | . | 01-90 as per dRofus | . | 000-999 as per dRofus | standard rooms | 01.02.099 |
 | 01 - 90 as per dRofus | . | 99 | . | 000-999 as required | corridors within a department | 01.99.001 |
+| 97 | - | 01 - 05 | 000-999 as required | plant rooms | 97.01.001 - Mechanical plant, 97.02.001 Electrical plant, 97.03.01 Hydraulic plant | 
 | 98 | . | level e.g. 07 | . | 600-699 as required | EDB's in and outside a department| 98.07.601 |
 | 98 | . | level e.g. 06 | . | 700-799 as required | FHR's in and outside a department| 98.06.701 |
 | 99 | . | level e.g. 05 | . | 000-799 as required | corridors outside a department | 99.05.001 |
