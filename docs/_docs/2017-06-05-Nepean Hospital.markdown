@@ -88,6 +88,12 @@ Overview of current models and their Aconex document number:
 
 ![RevitFilesMap]({{ site.baseurl }}/assets/s1607004_inh/REVIT MODELS BY ZONE_Nepean.svg){:class="img-responsive"}{: height="397px" width="1638px"}
 
+### Model Notes
+
+| Model | Note |
+|-----|----|
+| NHR-BVN-AR-ZX-RVT-0001 - Template | Contains: line of height, kit of parts documentation of the cancer centre |
+
 ## Standard Doc's
 
 | Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Category / Package | - | Level | - | Sequential Number |
