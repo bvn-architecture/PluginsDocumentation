@@ -869,3 +869,24 @@ There are usually two shades, a light and and a dark, of each colour available. 
 | ![LightMagenta]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Magenta.svg){:class="img-responsive"}{: height="200px" width="200px"} | 236,224,243 | ![DarkMagenta]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Magenta.svg){:class="img-responsive"}{: height="200px" width="200px"} | 215,204,230 |
 | ![LightGold]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Gold.svg){:class="img-responsive"}{: height="200px" width="200px"} | 241,226,186 | ![DarkGold]({{ site.baseurl }}/assets/s160x00x_common/Colour_Dark_Gold.svg){:class="img-responsive"}{: height="200px" width="200px"} | 241,203,118 |
 | ![LightYellow]({{ site.baseurl }}/assets/s160x00x_common/Colour_Light_Yellow.svg){:class="img-responsive"}{: height="200px" width="200px"} |250,250,210 | n/a | n/a |
+
+## Area Briefed vs Area Designed Colours
+
+The SP families internally computate the diversion of the desinged area to the briefed as a precentage figure
+
+Families are coloured in percentage steps as shown in the table below.
+
+| Sample | Description |
+|------|--------|
+
+| ![Colour_Area_Under]({{ site.baseurl }}/assets/s160x00x_common/Colour_Area_EqualToUnder.svg){:class="img-responsive"}{: height="400px" width="400px"}  | Green tones are on area within 20 percent of the briefed area (dark green 0 to +-10 percent, light green + 10 to + 20 percent) |
+| | Red tones are under area by more then 20 percent (20-50 percent, 50 percent and above) |
+| | Blue tones are above briefed area by more then 20 percent (20-50 percent, 50 percent and above) |
+
+| Colour | RGB |
+|---|---|
+| dark Green | 26,150,65 |
+| Light Green | 166,217,106 |
+| Orange | 253,174,97 |
+| Red | 215,25,28 |
+
