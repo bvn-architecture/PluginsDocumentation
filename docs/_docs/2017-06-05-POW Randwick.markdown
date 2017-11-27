@@ -878,10 +878,9 @@ Families are coloured in percentage steps as shown in the table below.
 
 | Sample | Description |
 |------|--------|
-
 | ![Colour_Area_Under]({{ site.baseurl }}/assets/s160x00x_common/Colour_Area_EqualToUnder.svg){:class="img-responsive"}{: height="400px" width="400px"}  | Green tones are on area within 20 percent of the briefed area (dark green 0 to +-10 percent, light green + 10 to + 20 percent) |
 | | Red tones are under area by more then 20 percent (20-50 percent, 50 percent and above) |
-| | Blue tones are above briefed area by more then 20 percent (20-50 percent, 50 percent and above) |
+| ![Colour_Area_Over]({{ site.baseurl }}/assets/s160x00x_common/Colour_Area_UnderToOver.svg){:class="img-responsive"}{: height="400px" width="400px"} | Blue tones are above briefed area by more then 20 percent (20-50 percent, 50 percent and above) |
 
 | Colour | RGB |
 |---|---|
@@ -889,4 +888,5 @@ Families are coloured in percentage steps as shown in the table below.
 | Light Green | 166,217,106 |
 | Orange | 253,174,97 |
 | Red | 215,25,28 |
-
+| Light Blue | 171,217,233 |
+| Dark Blue | 44,123,182 |
