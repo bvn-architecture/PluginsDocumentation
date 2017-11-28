@@ -878,13 +878,13 @@ Families are coloured in percentage steps as shown in the table below.
 
 | Sample | Description |
 |------|--------|
-| ![Colour_Area_Under]({{ site.baseurl }}/assets/s160x00x_common/Colour_Area_EqualToUnder.svg){:class="img-responsive"}{: height="400px" width="400px"}  | Green tones are on area within 20 percent of the briefed area (dark green 0 to +-10 percent, light green + 10 to + 20 percent) |
-| | Red tones are under area by more then 20 percent (20-50 percent, 50 percent and above) |
-| ![Colour_Area_Over]({{ site.baseurl }}/assets/s160x00x_common/Colour_Area_UnderToOver.svg){:class="img-responsive"}{: height="400px" width="400px"} | Blue tones are above briefed area by more then 20 percent (20-50 percent, 50 percent and above) |
+| ![Colour_Area_Equal]({{ site.baseurl }}/assets/s160x00x_common/Colour_Area_Equal.svg){:class="img-responsive"}{: height="400px" width="400px"}  | Green tones are on area within 20 percent of the briefed area (dark green 0 to +-10 percent, light green + 10 to + 20 percent) |
+| ![Colour_Area_Under]({{ site.baseurl }}/assets/s160x00x_common/Colour_Area_Under.svg){:class="img-responsive"}{: height="400px" width="400px"} | Red tones are under area by more then 20 percent (20-50 percent, 50 percent and above) |
+| ![Colour_Area_Over]({{ site.baseurl }}/assets/s160x00x_common/Colour_Area_Over.svg){:class="img-responsive"}{: height="400px" width="400px"} | Blue tones are above briefed area by more then 20 percent (20-50 percent, 50 percent and above) |
 
 | Colour | RGB |
 |---|---|
-| dark Green | 26,150,65 |
+| Dark Green | 26,150,65 |
 | Light Green | 166,217,106 |
 | Orange | 253,174,97 |
 | Red | 215,25,28 |
