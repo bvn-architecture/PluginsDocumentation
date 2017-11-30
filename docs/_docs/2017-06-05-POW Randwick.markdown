@@ -538,7 +538,12 @@ Equipment:
 
 Left and right version of the same item i.e. wash hand basin
 
-* For now stays the same code for left hand and right hand product
+* For now stays the same code for left hand and right hand product but have different Revit Families
+
+MSP's'
+Where the same items are included and it is only the physical setout that varies we would have one MMSP code in dRofus (to brief the content to the room) then Children of that Parent code to cover the different layouts in our Revit model. For example: MMSP-001 with three different setouts of the same content would be documented as MMSP-001.01, MMSP-001.02 and MMSP-001.03.
+
+As soon as there is different content/quantities of items, it is a new MMSP code.
 
 #### Family Parameters
 
