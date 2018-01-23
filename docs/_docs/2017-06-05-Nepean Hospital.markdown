@@ -12,11 +12,13 @@ categories: Revit
 
 ## Document Number Overview
 
-| PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
+| PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | - | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
 |+------------+|+-+|+------------+|---|--------------------|---|------------|---|------|--------------------|------------------------------|---|--------|------|------------|---|----------|
 | NHR | - | BVN | [doc type](#Drawing_DocType) | - | AR | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
 
 ## <a id="Drawing_DocType"></a> Document and Drawing Types
+
+List of document types:
 
 | Document Type | Description |
 |--------------|---------------|
@@ -28,6 +30,8 @@ categories: Revit
 | MOD | MODEL |
 
 ## <a id="Drawing_AreaList"></a> Area List
+
+List of areas:
 
 | Area | Area Description |
 |--------------|---------------|
@@ -49,6 +53,8 @@ categories: Revit
 | WBL | West Block |
 
 ## <a id="Drawing_Elements"></a> Elements and Packages
+
+List of elements and packages
 
 | Element and Packages | Description |
 |--------------|---------------|
@@ -94,6 +100,8 @@ categories: Revit
 
 ## <a id="Drawing_Series"></a> Drawing and Information Series
 
+List of types:
+
 | Information Series | Description |
 |--------------|---------------|
 | A | INTRODUCTORY  DRAWINGS |
@@ -118,6 +126,8 @@ categories: Revit
 
 ## <a id="Drawing_Level"></a> Level Acronyms
 
+List of level acronyms:
+
 | Level | Description |
 |--------------|---------------|
 | NL | NON- LEVEL SPECIFIC  - ELEVATION / SECTION / GLOBAL DETAILS |
@@ -128,6 +138,8 @@ categories: Revit
 
 ## <a id="Drawing_Zone"></a> Zone List
 
+List of drawing zones:
+
 | Zone | Description |
 |--------------|---------------|
 | 01, 02, 03, 04… | FLOOR DIVISION ZONES |
@@ -136,6 +148,12 @@ categories: Revit
 
 ## <a id="Drawing_Revision"></a> Revision
 
+Revision methodology 
+
+| Zone | Description |
+|--------------|---------------|
+| A, B, C, …. | PRE-CONSTRUCTION ISSUE |
+| 1, 2, 3, 4… | CONSTRUCTION ISSUE |
 
 # Document Numbering - Refurb (Cancer Care only)
 
