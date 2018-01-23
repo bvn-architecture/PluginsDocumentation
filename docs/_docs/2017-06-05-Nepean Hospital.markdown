@@ -8,7 +8,45 @@ layout: "sample"
 categories: Revit
 ---
 
-# Document Numbering
+# Document Numbering - New build including car park
+
+Document number:
+| PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
+|+------------+|+-+|+------------+|---|--------------------|---|------------|---|------|--------------------|------------------------------|---|--------|------|------------|---|----------|
+| NHR | - | BVN | [doc type](#Drawing_DocType) | - | AR | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#"Drawing_Zone") |
+
+## <a id="Drawing_DocType"></a> Document and Drawing Types
+
+## <a id="Drawing_AreaList"></a> Area List
+
+| Area | Area Description |
+|--------------|---------------|
+| CHC | Child Care Centre |
+| CMW | Construction works Management |
+| COM | Commercial |
+| DOC | Doctors Accomodation |
+| EBL | East Block |
+| GEN | General (all areas) |
+| HOP | Hope Cottage |
+| MSC | Multistorey Car Park |
+| NBL | North Block |
+| PCT | Precinct |
+| REF | Refurbishment |
+| SBL | South Block |
+| STM | St Mary's |
+| STE | STES |
+| TB1 | Tower Building 1 |
+| WBL | West Block |
+
+## <a id="Drawing_Elements"></a> Elements and Packages
+
+## <a id="Drawing_Series"></a> Drawing and Information Series
+
+## <a id="Drawing_Level"></a> Level Acronyms
+
+## <a id="Drawing_Zone"></a> Zone List
+
+# Document Numbering - Refurb (Cancer Care only)
 
 ## <a id="ZoneIdentifier"></a> ZONE / BUILDING
 
