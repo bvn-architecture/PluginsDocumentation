@@ -8,7 +8,9 @@ layout: "sample"
 categories: Revit
 ---
 
-# Document Numbering - New build including car park
+# Document Numbering - New build, including the car park
+
+![KeyMap_NewNumbers]({{ site.baseurl }}/assets/s1607004_inh/KeyPlan_CPB_Numbers.svg){:class="img-responsive"}{: height="609px" width="529px"}
 
 ## Document Number Overview
 
@@ -146,6 +148,8 @@ List of drawing zones:
 
 ## <a id="Drawing_Sequence"></a> Sequence List
 
+This is a three digits field. First number should always be 001.
+
 ## <a id="Drawing_Revision"></a> Revision
 
 Revision methodology 
@@ -154,6 +158,7 @@ Revision methodology
 |--------------|---------------|
 | A, B, C, ... | PRE-CONSTRUCTION ISSUE |
 | 1, 2, 3, 4 ... | CONSTRUCTION ISSUE |
+
 
 # Document Numbering - Refurb (Cancer Care only)
 
