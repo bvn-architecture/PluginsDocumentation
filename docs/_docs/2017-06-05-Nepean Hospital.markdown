@@ -142,7 +142,7 @@ List of drawing zones:
 
 | Zone | Description |
 |--------------|---------------|
-| 01, 02, 03, 04… | FLOOR DIVISION ZONES |
+| 01, 02, 03, 04 ... | FLOOR DIVISION ZONES |
 
 ## <a id="Drawing_Sequence"></a> Sequence List
 
@@ -152,8 +152,8 @@ Revision methodology
 
 | Zone | Description |
 |--------------|---------------|
-| A, B, C, …. | PRE-CONSTRUCTION ISSUE |
-| 1, 2, 3, 4… | CONSTRUCTION ISSUE |
+| A, B, C, ... | PRE-CONSTRUCTION ISSUE |
+| 1, 2, 3, 4 ... | CONSTRUCTION ISSUE |
 
 # Document Numbering - Refurb (Cancer Care only)
 
