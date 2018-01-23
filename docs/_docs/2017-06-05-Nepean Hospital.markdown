@@ -18,6 +18,15 @@ categories: Revit
 
 ## <a id="Drawing_DocType"></a> Document and Drawing Types
 
+| Document Type | Description |
+|--------------|---------------|
+| DRW | DRAWING |
+| REP | REPORT |
+| SKT | SKETCH |
+| SCH | SCHEDULE |
+| SPE | SPECIFICATION |
+| MOD | MODEL |
+
 ## <a id="Drawing_AreaList"></a> Area List
 
 | Area | Area Description |
@@ -41,11 +50,87 @@ categories: Revit
 
 ## <a id="Drawing_Elements"></a> Elements and Packages
 
+| Element and Packages | Description |
+|--------------|---------------|
+| 10 | GENERAL ARRANGEMENT OR OVERALL DRAWING - 1:200 |
+| 15 | GENERAL ARRANGEMENT OR OVERALL DRAWING - 1:100 |
+| 20 | SITE COMBINED |
+| 21 | DEMOLITION |
+| 22 | PREPARATION AND GROUNDWORK |
+| 23 | SPARE |
+| 24 | LANDSCAPE  STRUCTURES |
+| 25 | LANDSCAPE CULTIVATION |
+| 26 | LANDSCAPE FINISHES (COMBINED) |
+| 30 | STRUCTURE COMBINED |
+| 31 | CONCRETE |
+| 32 | EARTH |
+| 33 | MASONRY |
+| 34 | STEEL |
+| 38 | TIMBER |
+| 40 | ENCLOSURE COMBINED |
+| 41 | TANKING AND WATERPROOFING |
+| 42 | ROOFING COMBINED |
+| 43 | FAÇADE, EXTERNAL WALLS AND CLADDING |
+| 44 | SPARE |
+| 45 | DOORS AND DOOR HARDWARE |
+| 46 | WINDOWS, LOUVRES AND GLAZING |
+| 47 | INSULATION |
+| 48 | STAIRS, RAMPS, BALUSTRADES AND HANDRAILS |
+| 49 | EXTERNAL PAINT FINISHES & LINE MARKINGS |
+| 50 | INTERIORS COMBINED |
+| 51 | SPARE |
+| 52 | INTERIOR WALLS / PARTITIONS |
+| 53 | CEILINGS |
+| 54 | ACCESS FLOORS |
+| 55 | FABRICATED METALWORK |
+| 56 | JOINERY |
+| 57 | LOOSE FURNITURE, FIXTURES, FITTINGS AND EQUIPMENT |
+| 58 | SIGNAGE |
+| 60 | INTERNAL FINISHES COMBINED |
+| 64 | APPLIED WALL FINISHES COMBINED |
+| 65 | APPLIED FLOOR FINISHES COMBINED |
+| 66 | SPARE |
+| 67 | PAINTING |
+
 ## <a id="Drawing_Series"></a> Drawing and Information Series
+
+| Information Series | Description |
+|--------------|---------------|
+| A | INTRODUCTORY  DRAWINGS |
+| B | 1:500 / 1:200 / 1:100 FLOOR PLANS |
+| C | 1:1500 / 1:200 / 1:100 ELEVATIONS |
+| D | 1: 200 / 1:100 SECTIONS |
+| E | 1:50 / 1:20 ASSEMBLY DRAWINGS ( DETAIL PLANS /SECTIONS / ELEVATIONS) |
+| F | 1: 10 / 1:5 CONSTRUCTION DETAILS |
+| G | CIRCULATION DRAWINGS (STAIRS, RAMPS, LIFTS, ESCALATORS, HANDRAILS & BALUSTRADES) |
+| H | 1:50 / 1:20 INTERIOR LAYOUT AND DETAILS DRAWINGS |
+| J | 1:10/1:5 INTERIOR DETAILS |
+| K | DRAWN SCHEDULES |
+| L | AREA PLAN AND ANALYSIS DIAGRAMS |
+| M | MODEL |
+| P | PRESENTATION |
+| R | REPORT |
+| S | SKETCH |
+| W | ROOM DATA SHEET |
+| X | SCHEDULE OF ACCOMMODATION |
+| Y | SCHEDULES |
+| Z | SPECIFICATIONS |
 
 ## <a id="Drawing_Level"></a> Level Acronyms
 
+| Level | Description |
+|--------------|---------------|
+| NL | NON- LEVEL SPECIFIC  - ELEVATION / SECTION / GLOBAL DETAILS |
+| 00 | GROUND FLOOR |
+| 01 | FIRST FLOOR |
+| 0x | LEVEL x (SINGLE DIGITS) |
+| B1 | BASEMENT LEVEL 1 |
+
 ## <a id="Drawing_Zone"></a> Zone List
+
+| Zone | Description |
+|--------------|---------------|
+| 01, 02, 03, 04… | FLOOR DIVISION ZONES |
 
 ## <a id="Drawing_Sequence"></a> Sequence List
 
