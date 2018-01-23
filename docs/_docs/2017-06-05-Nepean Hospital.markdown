@@ -10,10 +10,11 @@ categories: Revit
 
 # Document Numbering - New build including car park
 
-Document number:
+## Document Number Overview
+
 | PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
 |+------------+|+-+|+------------+|---|--------------------|---|------------|---|------|--------------------|------------------------------|---|--------|------|------------|---|----------|
-| NHR | - | BVN | [doc type](#Drawing_DocType) | - | AR | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#"Drawing_Zone") |
+| NHR | - | BVN | [doc type](#Drawing_DocType) | - | AR | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
 
 ## <a id="Drawing_DocType"></a> Document and Drawing Types
 
@@ -45,6 +46,11 @@ Document number:
 ## <a id="Drawing_Level"></a> Level Acronyms
 
 ## <a id="Drawing_Zone"></a> Zone List
+
+## <a id="Drawing_Sequence"></a> Sequence List
+
+## <a id="Drawing_Revision"></a> Revision
+
 
 # Document Numbering - Refurb (Cancer Care only)
 
