@@ -16,7 +16,7 @@ categories: Revit
 
 | PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | - | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
 |+------------+|+-+|+------------+|---|--------------------|---|------------|---|------|--------------------|------------------------------|---|--------|------|------------|---|----------|
-| NHR | - | BVN | - | [doc type](#Drawing_DocType) | - | AR | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
+| NHR | - | BVN | - | [doc type](#Drawing_DocType) | - | ARC | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
 
 ## <a id="Drawing_DocType"></a> Document and Drawing Types
 
