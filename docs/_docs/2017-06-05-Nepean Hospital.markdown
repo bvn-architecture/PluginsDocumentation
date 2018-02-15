@@ -172,7 +172,7 @@ Revision methodology
 
 The documentation packages are set up by building. Below is a map showing the existing campus with building number.
 
-![KeyMap]({{ site.baseurl }}/assets/s1607004_inh/KeyPlan.svg){:class="img-responsive"}{: height="1261px" width="1944px"}
+![KeyMap]({{ site.baseurl }}/assets/s1607004_inh/KeyPlan.svg){:class="img-responsive"}{: height="609px" width="529px"}
 
 | Building Number | Building Description |
 |--------------|---------------|
@@ -244,7 +244,7 @@ Sample model number: NHR-BVN-AR-K-RVT-0001 : New Building - Stage 1 - Revit Mode
 
 Overview of current models and their Aconex document number:
 
-![RevitFilesMap]({{ site.baseurl }}/assets/s1607004_inh/REVIT MODELS BY ZONE_Nepean.svg){:class="img-responsive"}{: height="397px" width="1638px"}
+![RevitFilesMap]({{ site.baseurl }}/assets/s1607004_inh/REVIT MODELS BY ZONE_Nepean.svg){:class="img-responsive"}{: height="1261px" width="1944px"}
 
 ### Model Notes
 
