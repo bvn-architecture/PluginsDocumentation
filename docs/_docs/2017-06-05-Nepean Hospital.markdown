@@ -172,7 +172,7 @@ Revision methodology
 
 The documentation packages are set up by building. Below is a map showing the existing campus with building number.
 
-![KeyMap]({{ site.baseurl }}/assets/s1607004_inh/KeyPlan.svg){:class="img-responsive"}{: height="609px" width="529px"}
+![KeyMap]({{ site.baseurl }}/assets/s1607004_inh/KeyPlan.svg){:class="img-responsive"}{: height="1261px" width="1944px"}
 
 | Building Number | Building Description |
 |--------------|---------------|
