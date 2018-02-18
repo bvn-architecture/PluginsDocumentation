@@ -464,6 +464,23 @@ To make our work as easy as possible, BVN uses what is called Items with sub ite
 
 Where blue belongs to architecture and orange to services in terms of responsibility. The catch is that dRofus currently does not allow a split like the above without some work around. They are working on it to fix it but have not committed to a time frame.
 
+* Packages in dRofus are to be referred to as Unions in Revit. 
+	* A Union is a generic model ‘holder’ for a number of nested elements (e.g. MSP or HWB)
+* A sub-item in dRofus is referred to as a nested item in Revit.
+	* The main family will have another family nested into it (e.g. Refrigerator with GPO)
+
+* Generally the list Kate printed of Packages used on NBH was acceptable with a few additions as below: 
+	* MSP’s 
+	* Services Provisions for computers and monitors etc.
+	* Computers and Monitors themselves (with the services provision packages nested in) – this way we have more flexibility in documentation. 
+
+* No longer want to nest sub-items without an alphabetic suffix (for example on NBH we nested the GPOs into a computer family without a suffix which were attached to an instance based mounting height reference plane which we could amend). Allows room for error and also isn’t ideal on the FFF&E list on the RLS as lists separately. 
+* Some concerns about us doing a lot of the services consultants work in the early stages (esp. electrical) as now dRofus will show logs of BVN users making changes and potentially mistakes. However we decided this was most efficient as past experience has shown us that the consultants don’t have great experience with dRofus and are not involved in early user group consultation. 
+* Package numbering system to be established.
+* Discussions around items which can be difficult to quantify (i.e. curtain tracks along multiple bed bays). Suggestion of changing these to responsibility INDES was not ideal as could lead to conflicting approaches with other items. Possible solution could be to make quantity always ‘1’ in dRofus.
+* Child items need to be reflected in dRofus at some stage (possibly at beginning of DD) so bi-directional syncing will work.
+
+
 Another issue is the way Health Infrastructure has set up the actual function structure of their database. Whilst the structure itself is 3 levels deep, the actual room function number only reflects the first two of those levels and Functional Group has been excluded:
 
 ![drofus_FunctionStructure]({{ site.baseurl }}/assets/s160x00x_common/dRofusFunctionStructure.svg){:class="img-responsive"}{: height="259px" width="482px"}
