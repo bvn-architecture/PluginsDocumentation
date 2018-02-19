@@ -194,15 +194,15 @@ Families can be coloured in percentage bands as shown in the table below. This i
 
 Colouring filter samples
 
-| Band             | Revit 'Filter by' | Filter condition | Filter value                       |
+| Band             | Revit Filter by | Filter condition | Filter value                       |
 |------------------|--------------------|-------------------|-------------------------------|
-| Designed Area is 50% or more above briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to | 0.5 |
-| Designed Area is between 25% to 50% above briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to AND is less then | 0.25 AND 0.5|
-| Designed Area is between 10% to 25% above briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to AND is less then | 0.1 AND 0.25|
-| Designed Area is between 10% above briefed area and up to 10% below briefed area | SP_Area_Comparison_CentreWall | is greater then to AND is less then | -0.1 AND 0.1|
-| Designed Area is between 10% to 25% below briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to AND is greater then | -0.1 AND 0.25|
-| Designed Area is between 25% to 50% below briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to AND is greater then | -0.25 AND -0.5|
-| Designed Area is 50% or more below briefed area | SP_Area_Comparison_CentreWall | is less then or equal to | -0.5 |
+| Designed Area is 50 or more above briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to | 0.5 |
+| Designed Area is between 25 to 50 above briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to AND is less then | 0.25 AND 0.5|
+| Designed Area is between 10 to 25 above briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to AND is less then | 0.1 AND 0.25|
+| Designed Area is between 10 above briefed area and up to 10% below briefed area | SP_Area_Comparison_CentreWall | is greater then to AND is less then | -0.1 AND 0.1|
+| Designed Area is between 10 to 25 below briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to AND is greater then | -0.1 AND 0.25|
+| Designed Area is between 25 to 50 below briefed area | SP_Area_Comparison_CentreWall | is greater then or equal to AND is greater then | -0.25 AND -0.5|
+| Designed Area is 50 or more below briefed area | SP_Area_Comparison_CentreWall | is less then or equal to | -0.5 |
 
 The family instance property SP_Area_Designed_Centre shows the area of the 'room' to centre line of wall. 
 The family instance property SP_Area_Designed_insideFace shows the area of the 'room' calculated to inside face of wall. Their values are calculated on the fly.
