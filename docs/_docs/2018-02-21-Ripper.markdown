@@ -10,11 +10,11 @@ categories: Revit
 
 # Ripper - Preface
 
-The ‘Ripper' app is meant to enable users to create new Revit central files in a batch process. This can be usefull where:
+The ‘Ripper' app is meant to enable users to create new Revit central files in a batch process. This can be usefull when:
 
 * Any number of consultant files has been downloaded and then need to be updated in our file system on a reoccurring basis
 * Any number of Revit files need to be archived
-* Any nubmer of Revit files need to be prepared for Issue which may require:
+* Any number of Revit files need to be prepared for Issue which may require:
 	* Certain views require deleting, 
 	* NavisWorks, IFC, DWG, or DWFx files need to be created from the Revit models issued
 	* Some clean up python scripts are required to be executed once the Revit models have been detached
@@ -25,11 +25,11 @@ The ‘Ripper' app is meant to enable users to create new Revit central files in
 ## User Interface
 
 Ripper is located within the BVN Tab on the Utilities Panel:
+
 ![RipperIcon]({{ site.baseurl }}/assets/Ripper/Icon-Ripper_BVN_ToolBar.png){:class="img-responsive"}{: height="128px" width="619px"}
 
 This app is meant to be run without any other Revit file open. In fact, Revit may crash if a file which is currently open is being detached using Ripper. 
-
-The user interface comprises of a multiple window:
+The user interface comprises of multiple windows:
 
 ### Detach Tab
 
@@ -42,12 +42,12 @@ This is the main tab controlling which files are to be detached and whether any 
 |------|----------|
 | 1 | Determines whether any Revit files located in subdirectories in the source folder path are to be displayed in the file list below. |
 | 2 | Shows the workset [dialogue](#WorksetDialogue) where the user can choose which workset to keep closed during the detach process. |
-| 3 | Source folder path containing the Revit files you want to detach. |
+| 3 | Source folder path containing the Revit files you want to detach. (red font indicates an invalid folder path)|
 | 4 | Switches between file server (FS) or Revit server (RS) file location. Default is file server i.e. P:\ drive |
-| 5 | Folder path to where the detached files will be saved to. This can be the same as the source folder path if files just need to be overwritten. |
-| 6 | When checked Ripper will attempt to purge out all unused loadable families. No system families are affected by this process. |
-| 7 | When checked Ripper will purge all views (that includes sheets, schedules and legends) which are not marked as excluded in the views [dialogue](#ViewsDialogue). |
-| 8 | When checked Ripper will attempt to remove any other links from a file. See [here](#LinksDialogue) for further information. |
+| 5 | Folder path to where the detached files will be saved to. This can be the same as the source folder path if files just need to be overwritten. (red font indicates an invalid folder path) |
+| 6 | When checked, Ripper will attempt to purge out all unused loadable families. No system families are affected by this process. |
+| 7 | When checked, Ripper will purge all views (that includes sheets, schedules and legends) which are not marked as excluded in the views [dialogue](#ViewsDialogue). |
+| 8 | When checked, Ripper will attempt to remove any other links from a file. See [here](#LinksDialogue) for further information. |
 | 9 | List of Revit files available to be detached. Multiple files can be selected at once for processing |
 | 10 | Settings can be imported from a text file or exported to a text file. Since settings are stored by user this could be used to distribute them quickly amongst team members. |
 | 11 | Quits the app |
@@ -97,7 +97,7 @@ NOTE: This is beta only and may cause the detached file to become corrupt due to
 
 ### Export Tab
 
-![RipperMainExport]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Export-doc.png){:class="img-responsive"}{: height="630px" width="470px"}
+![RipperMainExport]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Export-doc.png){:class="img-responsive"}{: height="470px" width="630px"}
 
 When issuing a Revit model to the consultant team, we may also have to provide the same model in a different file format i.e. NavisWorks cache (.nwc). This tab provides the option to export the model or parts there of to the following formats:
 
@@ -126,15 +126,27 @@ When issuing a Revit model to the consultant team, we may also have to provide t
 
 | Item | Function |
 |------|----------|
+| 1 | Toggle setting whether the entire model will be exported or just specific views |
+| 2 | This defines which views will be exported to NavisWorks.  Note that the .nwc file name will be the derived from the view name: the first 5 characters of the view name will be removed to allow the view named 'ETN - YOUR FILE NAME'. Where ETN is used to identify views which are Exported To Navis. |
+| Condition | Contains: the view name needs to contain a given value (case sensitive), Begins with: the view name need to begin with a given value. |
+| Value | The actual value the condition needs to meet. Can be characters or numbers or both. |
+| 3 | Toggles between shared or project Internal coordinate system |
+| 4 | Varies other Navisworks export options.Some [help](#https://knowledge.autodesk.com/support/navisworks-products/learn-explore/caas/CloudHelp/cloudhelp/2018/ENU/Navisworks/files/GUID-38E592D6-4EE1-462F-BC80-68890AA2597E-htm.html) can be found online.
 
 #### <a id="ExportDWG"></a> Export to AutoCAD
 
-![RipperMainExport_DWG]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Export-DWG-doc.png){:class="img-responsive"}{: height="455px" width="385px"}
+![RipperMainExport_DWG]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Export-DWG-doc.png){:class="img-responsive"}{: height="540px" width="385px"}
 
 
 | Item | Function |
 |------|----------|
-
+| 1 | Toggle setting whether views placed on a sheet be exported as separate Xrefs or be bound into a single file. This setting does not effect how single views are exported. |
+| 2 | This defines which views will be exported to AutoCAD.  Note that the .dwg file name will be the derived from the view name: the first 5 characters of the view name will be removed to allow the view named 'ETN - YOUR FILE NAME'. Where ETN is used to identify views which are Exported. |
+| Condition | Contains: the view name needs to contain a given value (case sensitive), Begins with: the view name need to begin with a given value. |
+| Value | The actual value the condition needs to meet. Can be characters or numbers or both. |
+| 3 | The AutoCAD file format version. |
+| 4 | The units the new file be using. |
+| 5 | Toggles between shared or project Internal coordinate system |
 
 #### <a id="ExportIFC"></a> Export to Industry Foundation Class
 
@@ -143,15 +155,37 @@ When issuing a Revit model to the consultant team, we may also have to provide t
 
 | Item | Function |
 |------|----------|
+| 1 | Toggle setting whether the entire model will be exported or just specific views |
+| 2 | This defines which views will be exported to IFC.  Note that the .ifc file name will be the derived from the view name: the first 5 characters of the view name will be removed to allow the view named 'ETN - YOUR FILE NAME'. Where ETN is used to identify views which are Exported. |
+| Condition | Contains: the view name needs to contain a given value (case sensitive), Begins with: the view name need to begin with a given value. |
+| Value | The actual value the condition needs to meet. Can be characters or numbers or both. |
+| 3 | Varies IFC export settings. Refer to AutoDesk [help](#https://knowledge.autodesk.com/support/revit-products/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Revit-DocumentPresent/files/GUID-14037C31-EBAD-41A8-9099-E6DD65BB626E-htm.html). |
 
 
 #### <a id="ExportDWFx"></a> Export to Design Web Format
 
-![RipperMainExport_DWFx]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Export-DWFx-doc.png){:class="img-responsive"}{: height="455px" width="385px"}
+![RipperMainExport_DWFx]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Export-DWFx-doc.png){:class="img-responsive"}{: height="540px" width="385px"}
 
 
 | Item | Function |
 |------|----------|
+| 1 | Toggles whether varies views will be export in one model or a single model per views |
+| 2 | This defines which views will be exported to DWFx.  Note that the .dwfx file name will be the derived from the view name: the first 5 characters of the view name will be removed to allow the view named 'ETN - YOUR FILE NAME'. Where ETN is used to identify views which are Exported. |
+| Condition | Contains: the view name needs to contain a given value (case sensitive), Begins with: the view name need to begin with a given value. |
+| Value | The actual value the condition needs to meet. Can be characters or numbers or both. |
+| 4 | Varies DWFx export settings. Refer to AutoDesk [help](#http://help.autodesk.com/view/RVT/2016/ENU/?guid=GUID-F057A79A-5E06-42EF-94C6-70549DC37880) |
+
+
+
+### Detach Tab
+
+![RipperMainPython]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Python-doc.png){:class="img-responsive"}{: height="800px" width="630px"}
+
+
+Through this tab varies Python scripts can be loaded which will be executed on the detached file.
+
+(Need to add sample base code)
+
 
 Notes:
 
