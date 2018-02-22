@@ -27,44 +27,131 @@ The ‘Ripper' app is meant to enable users to create new Revit central files in
 Ripper is located within the BVN Tab on the Utilities Panel:
 ![RipperIcon]({{ site.baseurl }}/assets/Ripper/Icon-Ripper_BVN_ToolBar.png){:class="img-responsive"}{: height="128px" width="619px"}
 
+This app is meant to be run without any other Revit file open. In fact, Revit may crash if a file which is currently open is being detached using Ripper. 
+
 The user interface comprises of a multiple window:
 
 ### Detach Tab
 
 ![RipperMainDetach]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Detach-doc.png){:class="img-responsive"}{: height="800px" width="630px"}
 
+
+This is the main tab controlling which files are to be detached and whether any additional conditions apply to the detach process.
+
 | Item | Function |
 |------|----------|
+| 1 | Determines whether any Revit files located in subdirectories in the source folder path are to be displayed in the file list below. |
+| 2 | Shows the workset [dialogue](#WorksetDialogue) where the user can choose which workset to keep closed during the detach process. |
+| 3 | Source folder path containing the Revit files you want to detach. |
+| 4 | Switches between file server (FS) or Revit server (RS) file location. Default is file server i.e. P:\ drive |
+| 5 | Folder path to where the detached files will be saved to. This can be the same as the source folder path if files just need to be overwritten. |
+| 6 | When checked Ripper will attempt to purge out all unused loadable families. No system families are affected by this process. |
+| 7 | When checked Ripper will purge all views (that includes sheets, schedules and legends) which are not marked as excluded in the views [dialogue](#ViewsDialogue). |
+| 8 | When checked Ripper will attempt to remove any other links from a file. See [here](#LinksDialogue) for further information. |
+| 9 | List of Revit files available to be detached. Multiple files can be selected at once for processing |
+| 10 | Settings can be imported from a text file or exported to a text file. Since settings are stored by user this could be used to distribute them quickly amongst team members. |
+| 11 | Quits the app |
+| 12 | Starts the detach process |
 
-#### Detach Tab - Worksets
+#### <a id="WorksetDialogue"></a> Detach Tab - Worksets
 
 ![RipperMainDetach_Workset]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Detach-Workset-doc.png){:class="img-responsive"}{: height="300px" width="600px"}
 
+This dialogue can be used to define which worksets are not opened during the detach process.i.e all worksets known to contain Revit links could be closed to considerable speed up the process. 
+
 | Item | Function |
 |------|----------|
+| Condition | Contains: the workset name needs to contain a given value (case sensitive), Begins with: the workset name need to begin with a given value. |
+| Value | The actual value the condition needs to meet. Can be characters or numbers or both. |
 
-#### Detach Tab - Views
+
+#### <a id="ViewsDialogue"></a> Detach Tab - Views
 
 ![RipperMainDetach_Views]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Detach-Views-doc.png){:class="img-responsive"}{: height="300px" width="600px"}
 
+As stated above, ripper considers the following items as 'views':
+
+* Legends
+* Sheets (the filter will apply to the sheet number!)
+* Schedules
+* All kind of plans, sections, elevations, camera and 3D views
+
 | Item | Function |
 |------|----------|
+| Condition | Contains: the view name needs to contain a given value (case sensitive), Begins with: the view name need to begin with a given value. |
+| Value | The actual value the condition needs to meet. Can be characters or numbers or both. |
 
-#### Detach Tab - Links
+
+#### <a id="LinksDialogue"></a> Detach Tab - Links
 
 ![RipperMainDetach_Links]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Detach-PurgeLinks-doc.png){:class="img-responsive"}{: height="195px" width="445px"}
 
+NOTE: This is beta only and may cause the detached file to become corrupt due to 'To many elements missing' error. This error occurs when tags or other elements associated with elements in linked files loose their host i.e. the link they refer to has been removed. 
+
 | Item | Function |
 |------|----------|
-
+| 1 | When checked Ripper will attempt to either unload or delete all Revit links. |
+| 2 | Choose whether to unload or completely remove any Revit links |
+| 3 | When checked Ripper will attempt to either unload or delete all CAD links. |
+| 4 | Choose whether to unload or completely remove any CAD links |
 
 ### Export Tab
 
 ![RipperMainExport]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Export-doc.png){:class="img-responsive"}{: height="630px" width="470px"}
+
+When issuing a Revit model to the consultant team, we may also have to provide the same model in a different file format i.e. NavisWorks cache (.nwc). This tab provides the option to export the model or parts there of to the following formats:
+
+* NavisWorks Cache (.nwc)
+* AutoCad (.dwg)
+* Industry Foundation Class (.ifc)
+* Design Web Format (.dwfx)
+
+
+| Item | Function |
+|------|----------|
+| 1 | When checked Ripper will export the model as specified in the [settings](#ExportNavisWorks) to NavisWorks (.nwc) format |
+| 2 | Folder location where .nwc exports will be saved. |
+| 3 | When checked Ripper will export the model as specified in the [settings](#ExportDWG) to AutoCAD (.dwg) format |
+| 4 | Folder location where .dwg exports will be saved. |
+| 5 | When checked Ripper will export the model as specified in the [settings](#ExportIFC) to Industry Foundation Class (.ifc) format |
+| 6 | Folder location where .ifc exports will be saved. |
+| 7 | When checked Ripper will export the model as specified in the settings to Design Web Format (.dwfx) format |
+| 8 | Folder location where .dwfx exports will be saved. |
+  
+
+#### <a id="ExportNavisWorks"></a> Export to NavisWorks
+
+![RipperMainExport_NWC]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Export-NWC-doc.png){:class="img-responsive"}{: height="455px" width="385px"}
+
+
+| Item | Function |
+|------|----------|
+
+#### <a id="ExportDWG"></a> Export to AutoCAD
+
+![RipperMainExport_DWG]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Export-DWG-doc.png){:class="img-responsive"}{: height="455px" width="385px"}
+
+
+| Item | Function |
+|------|----------|
+
+
+#### <a id="ExportIFC"></a> Export to Industry Foundation Class
+
+![RipperMainExport_IFC]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Export-IFC-doc.png){:class="img-responsive"}{: height="455px" width="385px"}
+
+
+| Item | Function |
+|------|----------|
+
+
+#### <a id="ExportDWFx"></a> Export to Design Web Format
+
+![RipperMainExport_DWFx]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Export-DWFx-doc.png){:class="img-responsive"}{: height="455px" width="385px"}
+
 
 | Item | Function |
 |------|----------|
 
 Notes:
 
-* Do not place any superseded family files into your Revit library. The family re-loader will not be able to differentiate between your current family XYZ and your superseded family XYZ with the same name and might reload the family from the wrong file.
