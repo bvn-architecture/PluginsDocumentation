@@ -28,7 +28,11 @@ Ripper is located within the BVN Tab on the Utilities Panel:
 
 ![RipperIcon]({{ site.baseurl }}/assets/Ripper/Icon-Ripper_BVN_ToolBar.png){:class="img-responsive"}{: height="128px" width="619px"}
 
-This app is meant to be run without any other Revit file open. In fact, Revit may crash if a file which is currently open is being detached using Ripper. 
+Before using Ripper, all Revit files will need to be closed on that computer only. Revit may crash if a file, which is currently open, is being detached using Ripper on the same computer. It is ok to have the same Revit file open on any other computer. 
+
+![RipperInRevit]({{ site.baseurl }}/assets/Ripper/Revit_Sample_AllClosed.png){:class="img-responsive"}{: height="1040px" width="960px"}
+
+
 The user interface comprises of multiple windows:
 
 ### Detach Tab
@@ -57,7 +61,7 @@ This is the main tab controlling which files are to be detached and whether any 
 
 ![RipperMainDetach_Workset]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Detach-Workset-doc.png){:class="img-responsive"}{: height="300px" width="600px"}
 
-This dialogue can be used to define which worksets are not opened during the detach process.i.e all worksets known to contain Revit links could be closed to considerable speed up the process. 
+This dialogue can be used to define which worksets are not opened during the detach process.i.e all worksets known to contain Revit links could be closed to considerably speed up the process. 
 
 | Item | Function |
 |------|----------|
@@ -69,6 +73,8 @@ This dialogue can be used to define which worksets are not opened during the det
 
 ![RipperMainDetach_Views]({{ site.baseurl }}/assets/Ripper/GUI-Ripper-Main-Detach-Views-doc.png){:class="img-responsive"}{: height="300px" width="600px"}
 
+
+If you want to purge some but not all views from the Revit file(s) then tick 'Purge Views' and use the Purge View Settings interface to specify which views you would like to exclude from being purged (aka which views you would like to keep).
 As stated above, ripper considers the following items as 'views':
 
 * Legends
