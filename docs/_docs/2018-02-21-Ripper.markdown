@@ -87,6 +87,13 @@ As stated above, ripper considers the following items as 'views':
 | Condition | Contains: the view name needs to contain a given value (case sensitive), Begins with: the view name need to begin with a given value. |
 | Value | The actual value the condition needs to meet. Can be characters or numbers or both. |
 
+##### Sample View Naming
+
+The below demonstrates how, by applying the same prefix to all view names, the entire content of a sheet can be preserved when using Ripper's 'Purge Views' functionality. 
+This could be used to i.e. preserve General Arrangement drawings in a detached model only.
+
+![RipperMainDetach_Views_Sample]({{ site.baseurl }}/assets/Ripper/Revit_Sample_ViewNaming.png){:class="img-responsive"}{: height="853px" width="468px"}
+
 
 #### <a id="LinksDialogue"></a> Detach Tab - Links
 
