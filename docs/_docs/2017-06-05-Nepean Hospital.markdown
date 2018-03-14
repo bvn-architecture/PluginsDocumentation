@@ -54,6 +54,18 @@ List of areas:
 | TB1 | Tower Building 1 |
 | WBL | West Block |
 
+keep a little space
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+
+
 
 ## <a id="Drawing_Elements"></a> Elements and Packages
 
