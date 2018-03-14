@@ -55,16 +55,6 @@ List of areas:
 | WBL | West Block |
 
 
-<div markdown=1>
-
-*test* here
-
-</div>
-
-<div id="svg"
-
-</div>
-
 ## <a id="Drawing_Elements"></a> Elements and Packages
 
 List of elements and packages
