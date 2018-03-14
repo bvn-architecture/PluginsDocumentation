@@ -912,3 +912,17 @@ Families are coloured in percentage steps as shown in the table below.
 | Red | 215,25,28 |
 | Light Blue | 171,217,233 |
 | Dark Blue | 44,123,182 |
+
+## Floor Finishes Colours
+
+| Colour Sample | RGB | Code | Colour Sample | RGB | Code |
+|------|------|-------|------|------|------|------|
+| ![FL-101a]({{ site.baseurl }}/assets/s160x00x_common/FL-101a.svg){:class="img-responsive"}{: height="200px" width="200px"} | 166, 189, 219 | FL-101a |![FL-301]({{ site.baseurl }}/assets/s160x00x_common/FL-301.svg){:class="img-responsive"}{: height="200px" width="200px"} | 199, 233, 192 | FL-301 |
+| ![FL-101b]({{ site.baseurl }}/assets/s160x00x_common/FL-101b.svg){:class="img-responsive"}{: height="200px" width="200px"} | 158, 202, 225 | FL-101b |![FL-302]({{ site.baseurl }}/assets/s160x00x_common/FL-302_Series.svg){:class="img-responsive"}{: height="200px" width="200px"} | 233, 239, 209 | FL-302 |
+| ![FL-101c]({{ site.baseurl }}/assets/s160x00x_common/FL-101c.svg){:class="img-responsive"}{: height="200px" width="200px"} | 222, 235, 247 | FL-101c |![FL-302a]({{ site.baseurl }}/assets/s160x00x_common/FL-302a.svg){:class="img-responsive"}{: height="200px" width="200px"} | 211, 239, 234 | FL-302a |
+| ![FL-102]({{ site.baseurl }}/assets/s160x00x_common/FL-102_Series.svg){:class="img-responsive"}{: height="200px" width="200px"} | 191, 206, 213 | FL-102 |![FL-302b]({{ site.baseurl }}/assets/s160x00x_common/FL-302b.svg){:class="img-responsive"}{: height="200px" width="200px"} | 179, 225, 214 | FL-302b |
+| ![FL-104]({{ site.baseurl }}/assets/s160x00x_common/FL-104.svg){:class="img-responsive"}{: height="200px" width="200px"} | 218, 218, 235 | FL-104 |![FL-303]({{ site.baseurl }}/assets/s160x00x_common/FL-303_Series.svg){:class="img-responsive"}{: height="200px" width="200px"} | 206, 223, 215 | FL-303 |
+| ![FL-105]({{ site.baseurl }}/assets/s160x00x_common/FL-105_Series.svg){:class="img-responsive"}{: height="200px" width="200px"} | 236, 226, 240 | FL-105 |![FL-305]({{ site.baseurl }}/assets/s160x00x_common/FL-305.svg){:class="img-responsive"}{: height="200px" width="200px"} | 226, 243, 186 | FL-305 |
+| ![FL-106]({{ site.baseurl }}/assets/s160x00x_common/FL-106_Series.svg){:class="img-responsive"}{: height="200px" width="200px"} | 180, 177, 214 | FL-106 |![FL-501]({{ site.baseurl }}/assets/s160x00x_common/FL-501.svg){:class="img-responsive"}{: height="200px" width="200px"} | 253, 212, 158 | FL-501 |
+| ![FL-201]({{ site.baseurl }}/assets/s160x00x_common/FL-201.svg){:class="img-responsive"}{: height="200px" width="200px"} | 252, 187, 161 | FL-201 |![FL-502]({{ site.baseurl }}/assets/s160x00x_common/FL-502_Series.svg){:class="img-responsive"}{: height="200px" width="200px"} | 254, 230, 206 | FL-502 |
+| ![FL-701]({{ site.baseurl }}/assets/s160x00x_common/FL-701_Series.svg){:class="img-responsive"}{: height="200px" width="200px"} | 229, 216, 189 | FL-701 | | | |
