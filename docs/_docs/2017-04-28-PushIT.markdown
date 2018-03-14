@@ -501,8 +501,8 @@ Auditing can be therefore be used to identify rooms which need to be deleted in 
 
 ### Step by Step
 
-| Step | Image | Description | 
-|---|---|---|
+| Step |                 Image | Description | 
+|---|------------------------------------------|---|
 | 1 | ![Audit_PushITMain]({{ site.baseurl }}\assets\Pushit\Audit_PushITMain.png){:class="img-responsive"}{: height="300px" width="500px"} | In the Push iT interface press the <Audit> button as highlighted below. |
 | 2 | ![Audit_PushITSaveTextFile]({{ site.baseurl }}\assets\Pushit\Audit_PushITSaveTextFile.png){:class="img-responsive"}{: height="199px" width="454px"} | Push it will analyse the model and will offer to save a text file if it found any inconsistencies |
 | 3 | ![Audit_PushITSaveTextFileAsDialogue]({{ site.baseurl }}\assets\Pushit\Audit_PushITSaveTextFileAsDialogue.png){:class="img-responsive"}{: height="380px" width="640px"} | Select a location where to save the audit text file to. |
