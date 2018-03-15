@@ -95,19 +95,22 @@ Multiple rectangle families are available to reduce number of formulas otherwise
 		* SP-Room-Bed-Bay-flex
 		* SP-Room-Bed-Bay_10
 		* SP-Room-Dialysis Chair_10
-	* Bed Rooms
-		* SP-Room-Bed-CutOut_10
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-STANDARD WITH CUTOUT.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed-CutOut_Ens_Square_10
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-WITH RECTANGLE ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed-Rectangle_10
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed-Two_ENS_10
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-TWO ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
+    * Bed Rooms
+		* SP-Room-Bed-CutOut
+		![SP-ROOM-BED-CUTOUT]({{ site.baseurl }}/assets/Pushit/SP-ROOM-BED-CUTOUT.svg){:class="img-responsive"}{: height="400px" width="600px"}
+            * Samples
+            |---|---|
+            | ![SP-ROOM-BED-CUTOUT_SAMPLE_1]({{ site.baseurl }}/assets/Pushit/SP-ROOM-BED-CUTOUT_SAMPLE_1.svg){:class="img-responsive"}{: height="400px" width="600px"} | ![SP-ROOM-BED-CUTOUT_SAMPLE_2]({{ site.baseurl }}/assets/Pushit/SP-ROOM-BED-CUTOUT_SAMPLE_2.svg){:class="img-responsive"}{: height="400px" width="600px"} |
+		* SP-Room-Bed_Ens_Square
+		![SP-ROOM-BED_ENS_SQUARE]({{ site.baseurl }}/assets/Pushit/SP-ROOM-BED_ENS_SQUARE.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		* SP-Room-Bed-Rectangle
+		![SP-ROOM-BED-RECTANGLE]({{ site.baseurl }}/assets/Pushit/SP-ROOM-BED-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		* SP-Room-Bed-Two_ENS
+		![SP-ROOM-BED-TWO_ENS]({{ site.baseurl }}/assets/Pushit/SP-ROOM-BED-TWO_ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
 		* SP-Room-Bed_10
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-STANDARD.svg){:class="img-responsive"}{: height="400px" width="600px"}
-		* SP-Room-Bed_Ens_Square_10
-		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOM-BED-WITH RECTANGLE ENS.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		![SP-ROOM-BED]({{ site.baseurl }}/assets/Pushit/SP-ROOM-BED.svg){:class="img-responsive"}{: height="400px" width="600px"}
+		* SP-Room-Bed_Cutout_Ens_Square
+		![SP-ROOM-BED-CUTOUT_ENS_SQUARE]({{ site.baseurl }}/assets/Pushit/SP-ROOM-BED-CUTOUT_ENS_SQUARE.svg){:class="img-responsive"}{: height="400px" width="600px"}
 	* En Suites
 		* SP-Room-ENS-Square_10
 		![SP-Room-Bed-Rectangle_7]({{ site.baseurl }}/assets/Pushit/ROOMS-ENS-RECTANGLE.svg){:class="img-responsive"}{: height="400px" width="600px"}
