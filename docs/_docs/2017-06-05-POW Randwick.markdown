@@ -162,6 +162,41 @@ Sample Specific Room Layout sheet number: RCR-BVN-AR-50-DWG-G1-TBC :
 
 Sample number : AR-50-SK-UG-01-000
 
+## Drawing List
+
+The diagram belows shows all current documents in hierarchical form.
+
+<div id="container">
+<div id="main_diagram">
+	<div id="sequence"></div>
+	<div id="chart">
+		<div id="explanation" style="visibility: hidden;">
+    		<span id="percentage"></span><br/>
+          	of documents
+    	</div>
+	</div>
+
+
+<div id="sidebar">
+	<input type="checkbox" id="togglelegend"> Legend<br/>
+	<div id="legend" style="visibility: hidden;"></div>
+</div>
+
+</div>
+
+</div>
+
+<script src="//d3js.org/d3.v4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+<link rel="stylesheet" type="text/css" href="/PluginsDocumentation/assets/s1606008_rcr/sequences.css"/>
+<script type="text/javascript" src="/PluginsDocumentation/assets/s1606008_rcr/sequences.js"></script>
+<script type="text/javascript">
+	// Hack to make this example display correctly in an iframe on bl.ocks.org
+	d3.select(self.frameElement).style("height", "700px");
+</script> 
+
+End of diagram.
+
 ## Revisions
 
 File names show the revisions right behind the document number in square brackets to allow for [supersede candidate](https://protect-eu.mimecast.com/s/zM1FB7zDRiZ) function to work in Aconex.
@@ -170,7 +205,6 @@ RCR-BVN-AR-50-DWG-A1-XX-01[01] - Document Name.pdf
 Revisions are alphanumeric up until a document gets issued for construction. After that the revision changes to numerics.
 
 Drawings are only clouded once they have been issued for construction.
-
 
 ## Title blocks - Room Layout sheets
 

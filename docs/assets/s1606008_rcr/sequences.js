@@ -47,7 +47,7 @@ var arc = d3.arc()
 // row, and can receive the csv as an array of arrays.
 
 //method creating the sunburst diagram
-d3.json("../Data/flare_4.json", function (error, root) {
+d3.json("/PluginsDocumentation/assets/s1606008_rcr/flare_4.json", function (error, root) {
     if (error) throw error;
 	createVisualization(root);
 });
