@@ -47,6 +47,7 @@ var arc = d3.arc()
 //method creating the sunburst diagram
 d3.json("/PluginsDocumentation/assets/s1606008_rcr/flare_4.json", function (error, root) {
     if (error) throw error;
+    test = root.children.filter(function(d) { return d.name == "Models"; })
 	createVisualization(root);
 });
 

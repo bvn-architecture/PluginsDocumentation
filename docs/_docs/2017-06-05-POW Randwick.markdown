@@ -92,6 +92,14 @@ Sample model number: RCR-BVN-AR-RVT-15-0001:ED Transitional Works
 
 Overview of current models and their Aconex document number:
 
+### Visualization Options 
+
+non collapsible tree
+https://bl.ocks.org/mbostock/4063550
+
+collapsible tree
+http://jsfiddle.net/Nivaldo/CbGh2/
+
 ![RevitFilesMap]({{ site.baseurl }}/assets/s1606008_rcr/REVIT MODELS BY ZONE.svg){:class="img-responsive"}{: height="476px" width="821px"}
 
 ## Standard Doc's
