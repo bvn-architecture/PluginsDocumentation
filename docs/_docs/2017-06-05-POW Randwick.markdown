@@ -8,13 +8,24 @@ layout: "sample"
 categories: Revit
 ---
 
-# Document Numbering
+# Document Numbering - Proposed
+
+## Document Number Overview
+
+| PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | - | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
+|+------------+|+-+|+------------+|---|--------------------|---|------------|---|------|--------------------|------------------------------|---|--------|------|------------|---|----------|
+| RCR | - | BVN | - | [doc type](#Drawing_DocType) | - | ARC | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
+
 
 ## <a id="ZoneIdentifier"></a> ZONE / BUILDING
 
 The documentation packages are set up by building. Below is a map showing the existing campus with building number.
 
 ![KeyMap]({{ site.baseurl }}/assets/s1606008_rcr/KeyPlan.svg){:class="img-responsive"}{: height="546px" width="309px"}
+
+## <a id="Drawing_AreaList"></a> Area List
+
+List of buildings:
 
 | Building Number | Building Description |
 |--------------|---------------|
@@ -28,69 +39,145 @@ The documentation packages are set up by building. Below is a map showing the ex
 | 51 | CAR PARK |
 | 52 | TEMPORARY BUILDING |
 
-## <a id="PackageIdentifier"></a> CATEGORY / PACKAGES AVAILABLE
+## <a id="Drawing_DocType"></a> Document and Drawing Types
 
-Each individual zone is than broken up in documentation packages as follows:
+List of document types:
 
-| Package Number | Package Description | Links |
-|--------------|---------------|---|
-| A1 - INTRODUCTORY | Introductory documents. ie. drawing lists, cover page | |
-| A2 - SITE | Anything site related including site works | |
-| A3 - STAGING | Anything related to staging of works |  |
-| B1 - EXISTING | Plans describing the existing conditions | |
-| B2 - PROPOSED | Plans describing the proposed conditions | |
-| B3 - FIRE COMPARTMENT | Fire compartment drawings as required | [Fire](#Fire Compartments) |
-| B4 - PARTITIONS | Partition plans | |
-| B5 - WALL PROTECTION | Wall protection plans | |
-| C1 - EXTERNAL ELEVATIONS | External elevations overall | |
-| C2 - FACADE DETAILS | All details relating to the building envelope | |
-| D1 - BUILDING SECTIONS | Overall building sections | |
-| E1 - REFLECTED CEILING PLANS | Ceiling plans | |
-| F1 - FLOOR FINISHES | Floor finishes plans | |
-| F2 - WALL FINISHES | Wall finishes plans | |
-| G0 - ROOM LAYOUT SHEETS - GENERIC | The required generic room layout sheets |[RLS Sheet numbering](#RLSGenericNumbering), Refer also Nepean Hospital Documentation: [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent) |
-| G1 - ROOM LAYOUT SHEETS - SPECIFIC | Room layout sheets of all rooms not matching a generic room | |
-| G2 - LINE OF HEIGHTS | Typical line of heights drawings | |
-| J1 - INTERNAL DOORS AND WINDOWS | Plans showing internal doors and windows codes and location |[Doors](#DoorStuff) |
-| J2 - DOOR AND WINDOW SCHEDULE | Schedules of internal doors and windows | |
-| K1 - INTERFACE DETAILS PARTITIONS | Typical internal partition details | |
-| K2 - INTERFACE DETAILS - CEILINGS | Typical internal ceiling details | |
-| M1 - JOINERY | Joinery scoping plans | |
-| M2 - JOINERY DETAILS | Joinery details | |
-| M3 - METALWORKS DETAILS | Metal works details | |
-| S1 - SIGNAGE | Signage plans | |
-| T1 - LANDSCAPE | Landscape plans | |
-| Q1 - MEMBRANE DRAWINGS | Membrane scoping plans | |
-| U1 - DEMOLITION DRAWINGS | Demolition scoping plans | |
-| V1 - CONCRETE SETOUT DRAWINGS | Concrete setout plans | |
-| Z1 - SPECIFICATION | Specification sections , T-Sheet | |
+| Document Type | Description |
+|--------------|---------------|
+| DRW | DRAWING |
+| REP | REPORT |
+| SKT | SKETCH |
+| SCH | SCHEDULE |
+| SPE | SPECIFICATION |
+| MOD | MODEL |
 
-## Model Numbering - Acute Service Building
+## <a id="Drawing_Elements"></a> Elements and Packages
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Sequential Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | [Model Type](#ModelType) | - | XXXX |
+List of elements and packages
 
- <a id="ModelTtpe"></a> Model Type:
+| Element and Packages | Description | Proposed Series |
+|--------------|---------------|-----|
+| 00 | COVER SHEETS / LEGEND | 00M - SERIES - MODELS |
+| 01 | INTRODUCTORY I.E. LOCATION PLANS, SITE PLANS EXISTING AND PROPOSED | 01A - SERIES - INTRODUCTORY |
+| 10 | GENERAL ARRANGEMENT OR OVERALL DRAWING - 1:200 (AT CAR PARK) 1:500 OR BIGGER AT HOSPITAL TOWER | 10B - SERIES - DEPARTMENT PLANS 1 TO 500 |
+| 11 | GENERAL ARRANGEMENT DRAWING - 1:200 AT HOSPITAL TOWER | 11B - SERIES - GA PLANS 1 TO 200, 11L - SERIES - FIRE COMPARTMENT PLANS ([Fire](#Fire Compartments))|
+| 12 | GENERAL ARRANGEMENT OR OVERALL DRAWING - 1:100 | 12A - SERIES - GA PLANS INTRODUCTORY, 12B - SERIES - GA PLANS 1 to 100, 12C - SERIES - ELEVATIONS, 12D - SERIES - SECTIONS |
+| 13 | SPARE | |
+| 14 | SPARE | |
+| 15 | SPARE | |
+| 16 | SPARE | |
+| 17 | TRANSMITTALS / DOCUMENT REGISTERS | |
+| 18 | REGISTERS | |
+| 19 | MINUTES | ANY TYPE OF MEETING MINUTES |
+| 20 | SITE COMBINED | |
+| 21 | DEMOLITION | |
+| 22 | PREPARATION AND GROUNDWORK | |
+| 23 | SPARE | |
+| 24 | LANDSCAPE  STRUCTURES | |
+| 25 | LANDSCAPE CULTIVATION | |
+| 26 | LANDSCAPE FINISHES (COMBINED) | |
+| 30 | STRUCTURE COMBINED | |
+| 31 | CONCRETE | 31A - SERIES - CONCRETE INTRODUCTORY, 31B - SERIES - CONCRETE SETOUT PLANS, 31E - SERIES - CONCRETE SETOUT ASSEMBLY DRAWINGS, 31F - SERIES - CONCRETE SETOUT DETAILS |
+| 32 | EARTH |
+| 33 | MASONRY | 33B - SERIES - MASONRY SETOUT PLANS, 33C - SERIES - MASONRY SETOUT ELEVATIONS, 33D - SERIES - MASONRY SETOUT SECTIONS, 33F - SERIES - MASONRY DETAILS |
+| 34 | STEEL |
+| 38 | TIMBER |
+| 40 | ENCLOSURE COMBINED | 40A - SERIES - FACADE INTRODUCTORY, 40B - SERIES - FACADE SETOUT PLANS, 40C - SERIES - FACADE ELEVATIONS, 40D - SERIES - FACADE SECTIONS, 40E- SERIES - FACADE SYSTEMS ASSEMBLY DRAWINGS, 40F - SERIES - COURTYARDS, 40H - SERIES - HELIPAD SETOUT, 40Y - SERIES - FACADE SCHEDULES |
+| 41 | TANKING AND WATERPROOFING |
+| 42 | ROOFING COMBINED | 42B - SERIES - ROOF PLAN, 42F - SERIES - ROOF DETAILS |
+| 43 | FACADE, EXTERNAL WALLS AND CLADDING | 43B - SERIES - FACADE RCP, 43F - SERIES - FACADE DETAILS |
+| 44 | SPARE |
+| 45 | EXTERNAL DOORS |
+| 46 | WINDOWS, LOUVRES AND GLAZING |
+| 47 | INSULATION | 47A - SERIES - INSULATION INTRODUCTORY, 47B - SERIES - INSULATION SETOUT PLANS |
+| 48 | STAIRS, RAMPS, BALUSTRADES AND HANDRAILS | 48G - SERIES - STAIR, RAMPS, LIFTS, ESCALATORS, HANDRAILS AND BALUSTRADE ASSEMBLY DRAWINGS, 48H - SERIES - INTERIOR LAYOUTS AND DETAILS, 48J - SERIES - BALUSTRADE DETAILS |
+| 49 | EXTERNAL PAINT FINISHES & LINE MARKINGS |
+| 50 | INTERIORS COMBINED | 50H - SERIES - GENERIC ROOM LAYOUT SHEETS, 50H - SERIES - INTERIOR LAYOUTS, 50H - SERIES - INTERIOR LIFT DETAILS, 50H - SERIES - SPECIFIC ROOM LAYOUT SHEETS, 50H - SERIES - TYPICAL SETOUT DRAWINGS, [RLS Sheet numbering](#RLSGenericNumbering), [RLS Generic Sheet](#RLSGenerics), [RLS Sheet content](#RLSSheetContent) |
+| 51 | PARTITIONS | 51A - SERIES - PARTITION INTRODUCTORY, 51B - SERIES - PARTITION SET OUT PLANS, 51E - SERIES - PARTITION ASSEMBLY DRAWINGS, 51J - SERIES - PARTITION DETAILS, 51Y - SERIES - PARTITION RELATED SCHEDULES |
+| 52 | INTERIOR WALLS / PARTITIONS | 52A - SERIES - BLOCKWORK INTRODUCTORY, 52B - SERIES - BLOCKWORK SET OUT PLANS, 52J - SERIES - BLOCKWORK DETAILS |
+| 53 | CEILINGS | 53A - SERIES - REFLECTED CEILING INTRODUCTORY, 53B - SERIES - REFLECTED CEILING SETOUT PLANS, 53H - SERIES - REFLECTED CEILING ASSEMBLY DRAWINGS, 53J - SERIES - REFLECTED CEILING DETAILS |
+| 54 | ACCESS FLOORS |
+| 55 | FABRICATED METALWORK | 55A - SERIES - ARCHITECTURAL METALWORK INTRODUCTORY, 55B - SERIES - ARCHITECTURAL METALWORK SET OUT PLANS, 55F - SERIES - ARCHITECTURAL METALWORK DETAILS, 55Y - SERIES - ARCHITECTURAL METALWORK SCHEDULES |
+| 56 | JOINERY | 56A - SERIES - JOINERY INTRODUCTORY, 56B - SERIES - JOINERY PLANS, 56H - SERIES - JOINERY ASSEMBLY DRAWINGS, 56J - SERIES - JOINERY DETAILS, 56Y - SERIES - JOINERY SCHEDULES |
+| 57 | LOOSE FURNITURE, FIXTURES, FITTINGS AND EQUIPMENT | 57A - SERIES - FFE INTRODUCTORY, 57B - SERIES - FFE PLANS |
+| 58 | SIGNAGE |
+| 59 | DOORS AND DOOR HARDWARE | 59A - SERIES - DOORS INTRODUCTORY, 59B - SERIES - DOORS / DOOR FRAMES / HARDWARE 1 to 100, 59J - SERIES - DOORS DETAILS, 59Y - SERIES - DOOR SCHEDULES ([Doors](#DoorStuff))|
+| 60 | INTERNAL FINISHES COMBINED | 60J - SERIES - FINISHES COMBINED DETAILS, 60Y - SERIES - INTERIOR COLOUR SCHEDULES |
+| 64 | APPLIED WALL FINISHES COMBINED | 64A - SERIES - WALL FINISHES INTRODUCTORY, 64B - SERIES - WALL FINISHES PLANS, 64H - SERIES - WALL FINISHES ASSEMBLY DRAWINGS, 64J - SERIES - WALL FINISHES DETAILS |
+| 65 | APPLIED FLOOR FINISHES COMBINED | 65A - SERIES - FLOOR FINISHES INTRODUCTORY, 65B - SERIES - FLOOR FINISHES PLANS, 65J - SERIES - FLOOR FINISHES DETAILS |
+| 66 | WATERPROOFING AND SCREED | 66A - SERIES - WATERPROOFING AND SCREEDS INTRODUCTORY, 66B - SERIES - WATERPROOFING AND SCREEDS PLANS, 66H - SERIES - WATERPROOFING AND SCREENS ASSEMBLY DRAWINGS |
+| 67 | PAINTING |
+| 68 | WALL PROTECTION | 68A - SERIES - WALL PROTECTION INTRODUCTORY, 68B - SERIES - WALL PROTECTION PLANS |
+| 99 | PREMISES | 99L - SERIES - PREMISES PLANS |
+| xxZ | SPECIFICATIONS | i.e. NHR-BVN-SPE-ARC-50-31Z-NL00001 - CONCRETE FINISHES SPECIFICATION |
 
-| Code | Model Type |
-|------|----------|
-| RVT | Revit model |
-| NWC | NavisWorks NWC file |
-| IFC | Industry Foundation Class file |
 
-Sample model number: RCR-BVN-AR-50-RVT-0001 : New Acute Services Building - Revit Model
+## <a id="Drawing_Series"></a> Drawing and Information Series
 
-## Model Numbering - ED Transitional Works
+List of types:
 
-| Project Code | - | Organization Code | - | Discipline Code | - | Document Type | - | Zone / Building | - | Sequential Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | [Model Type](#ModelType) | - | [refer here](#ZoneIdentifier)| - | XXXX |
+| Information Series | Description |
+|--------------|---------------|
+| A | INTRODUCTORY  DRAWINGS |
+| B | 1:500 / 1:200 / 1:100 FLOOR PLANS |
+| C | 1:1500 / 1:200 / 1:100 ELEVATIONS |
+| D | 1: 200 / 1:100 SECTIONS |
+| E | 1:50 / 1:20 ASSEMBLY DRAWINGS ( DETAIL PLANS /SECTIONS / ELEVATIONS) |
+| F | 1: 10 / 1:5 CONSTRUCTION DETAILS |
+| G | CIRCULATION DRAWINGS (STAIRS, RAMPS, LIFTS, ESCALATORS, HANDRAILS & BALUSTRADES) |
+| H | 1:50 / 1:20 INTERIOR LAYOUT AND DETAILS DRAWINGS |
+| J | 1:10/1:5 INTERIOR DETAILS |
+| K | DRAWN SCHEDULES |
+| L | PERFORMANCE DRAWINGS AND DIAGRAMS|
+| M | MODEL |
+| P | PRESENTATION |
+| Q | PROJECT ADMINISTRATION DOCUMENTS |
+| R | REPORT |
+| S | SKETCH |
+| T | COMPLIANCE DRAWINGS AND DIAGRAMS|
+| U | AREA DRAWINGS AND DIAGRAMS|
+| V | SPARE |
+| W | ROOM DATA SHEET |
+| X | SCHEDULE OF ACCOMMODATION |
+| Y | SCHEDULES |
+| Z | SPECIFICATIONS |
 
-These model differ in numbering since they where issued prior to implementing a consultant wide numbering scheme. Once the that scheme was approved it was to late to go back and renumber the documents on Aconex.
-Sample model number: RCR-BVN-AR-RVT-15-0001:ED Transitional Works
+## <a id="Drawing_Level"></a> Level Acronyms
 
-Overview of current models and their Aconex document number:
+List of level acronyms:
+
+| Level | Description |
+|--------------|---------------|
+| NL | NON- LEVEL SPECIFIC  - ELEVATION / SECTION / GLOBAL DETAILS |
+| 00 | GROUND FLOOR |
+| 01 | FIRST FLOOR |
+| 0x | LEVEL x (SINGLE DIGITS) |
+| B1 | BASEMENT LEVEL 1 |
+
+## <a id="Drawing_Zone"></a> Zone List
+
+List of drawing zones:
+
+| Zone | Description |
+|--------------|---------------|
+| 00 | ENTIRE FLOOR |
+| 10, 20, 30, 40 ... | FLOOR DIVISION ZONES SCALE 1 TO 100 |
+| 11, 21, 31, 41 ... | FLOOR DIVISION ZONES SCALE 1 TO 50 |
+
+## <a id="Drawing_Sequence"></a> Sequence List
+
+This is a three digits field. First number should always be 001.
+
+## <a id="Drawing_Revision"></a> Revision
+
+Revision methodology 
+
+| Revision | Description |
+|--------------|---------------|
+| A, B, C, ... | PRE-CONSTRUCTION ISSUE |
+| 1, 2, 3, 4 ... | CONSTRUCTION ISSUE |
+
 
 ### Visualization Options 
 
@@ -102,41 +189,17 @@ http://jsfiddle.net/Nivaldo/CbGh2/
 
 ![RevitFilesMap]({{ site.baseurl }}/assets/s1606008_rcr/REVIT MODELS BY ZONE.svg){:class="img-responsive"}{: height="476px" width="821px"}
 
-## Standard Doc's
-
-| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Category / Package | - | Level | - | Sequential Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | [refer here](#DocType) | - | [refer here](#PackageIdentifier) | - | [refer here](#LevelList) | - | 01 |
-
-### <a id="DocType"></a> DOCUMENT TYPE
-
-| Code | Type |
-|------|----------|
-| DWG | Drawing |
-| SCH | Schedule |
-| SPC | Specification |
-| RPT | Report |
-
-For further Document type codes refer to POW Redevelopment [Project Configuration Manual](https://au1.aconex.com/FileDownload?_action=downloadFile&projectId=1476398068&controlledDocumentId=949133621552704703&accessReason=IMPORTANT_DOCUMENT) on Aconex Task page.
-
-### <a id="LevelList"></a> LEVEL
-
-| Level | Number |
-|------|------|
-| Basement X | Bx |
-| Ground Floor | 00 |
-| Levels 1 to 9 above ground | 01-09 |
-| Levels 10 and above | 10 - |
-| Non Level | XX |
 
 List of sample document numbers:
 
 | Sample number | Document description |
 |---------------|------------|
-| RCR-BVN-AR-50-DWG-A1-XX-01 | New Acute Services Building : Introductory document : Multi Level : drawing no 1. |
+| RCR-BVN-ARC-50-DWG-A1-XX-01 | New Acute Services Building : Introductory document : Multi Level : drawing no 1. |
 | RCR-BVN-AR-50-DWG-A1-XX-01-DWG | Autocad DWG file of RCR-BVN-AR-50-DWG-A1-00-01 pdf file |
 | RCR-BVN-AR-50-SCH-J2-00-01-XLS | Original Excel file of RCR-BVN-AR-50-SCH-J2-00-01 pdf file containing door schedule|
-| RCR-BVN-AR-50-SPC-Z1-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555| 
+| RCR-BVN-AR-50-SPC-Z1-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555|
+| RCR-BVN-AR-50-SKT-A0-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555|
+ 
 
 ## Sketches
 
@@ -145,22 +208,6 @@ List of sample document numbers:
 | RCR | - | AR | - | SK | - | 001 |
 
 Sample Sketch number: RCR-AR-SK-001
-
-## <a id="RLSGenericNumbering"></a> Room Layout Sheets - Generics
-
-| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type| - | Category / Package | - | Sequential Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | DWG | - | G0 | - | 001 |
-
-Sample Generic Room Layout sheet number: RCR-BVN-AR-50-DWG-G0-001 :
-
-## Room Layout Sheets - Specifics
-
-| Project Code | - | Organization Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | Category / Package | - | Room Number |
-| -----------------|---------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| RCR | - | BVN | - | AR | - | [refer here](#ZoneIdentifier) | - | DWG | - | G1 | - | as per dRofus |
-
-Sample Specific Room Layout sheet number: RCR-BVN-AR-50-DWG-G1-TBC :
 
 ## User Group related drawings
 
