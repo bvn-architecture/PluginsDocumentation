@@ -124,7 +124,7 @@ Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leav
 * Detail E
 ![Typical Door Jamb Detail_E]({{ site.baseurl }}/assets/Doors/TypicalDoorEJambDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
 
-### Typical Door Meeting Style Details
+### Typical Door Meeting Stile Details
 
 * Detail 1
 ![Typical Door Meeting Style Detail_01]({{ site.baseurl }}/assets/Doors/TypicalDoor01MeetingStyleDetail.svg){:class="img-responsive"}{: height="400px" width="600px"}
@@ -200,7 +200,7 @@ Different door hts are coded with suffixes eg D230a_24 would indicate 2340h leav
 {:.NoHorizontalLines}
 | Application | Doorset ie overall frame(actual in brackets) | Leaf Widths | Min clear opening | Complies with | Non- compliances | Remarks |
 |---------------------------------|
-| Double door (min. 1400 clear)| 1605 nom | 990 + 520 | 1335 transom closer pivot, (904 primary opening) | BCA cl. D1.6 (f)( i )(A) re 1200 clear for doorway in patient care area through which patients would normally be transported in beds off corridor less than 2200 clear. Primary opening to be min. 800 clear. | HFG RDS/ RLS for rms requiring 1400 clear. Non-compliance if transom closer configuration which is unlikely in these contexts. | RNSH: NB. Bariatric bed is 1130 wide (add 100 for side rails ie 1230 wide) – check corridor width needed to suit turning circle. See email 10:27am on 24.11.08 JW to NL 1.07 – is a 1601 clear opening needed? |
+| Double door (min. 1400 clear)| 1605 nom | 955 + 540 | 1335 transom closer pivot, (904 primary opening) | BCA cl. D1.6 (f)( i )(A) re 1200 clear for doorway in patient care area through which patients would normally be transported in beds off corridor less than 2200 clear. Primary opening to be min. 800 clear. | HFG RDS/ RLS for rms requiring 1400 clear. Non-compliance if transom closer configuration which is unlikely in these contexts. | RNSH: NB. Bariatric bed is 1130 wide (add 100 for side rails ie 1230 wide) – check corridor width needed to suit turning circle. See email 10:27am on 24.11.08 JW to NL 1.07 – is a 1601 clear opening needed? |
 | Horizontal exit  in a patient care area under BCA min. 1250 clear | (1595 hinged/ 1603  FR pivot actual) | | 1403 hinged FD, (934 primary opening) | BCA cl. D1.6 (f)(ii) re min. 1250 clear horizontal exit | | Min. 450 secondary leaf required for slide arm closers. Wider leaf may be required for concealed closers that would probably be used in Mental Health for anti-ligature (540 for Dorma ITS 69) – check closer constraints for various types incl. RTS, ITS and TS and auto incl. sequencers. |
 | access for hoists and shower trolleys | | | 1419 NFR hinged, (946 primary opening) | BCA cl.D3.2(e) re min.850 primary opening | | Min. 720w leaf to fit transom closer, shear lock and reed switch (though achieved 620w on RNSH for door 07/1064) |
 | access for stretchers, large trolleys, large equipment, beds but check std and bariatric beds esp. if off 1800 clear corr | | | | HFG cl. 710.25.00 re min. 1200 clear to inpatient bed rooms | | Min. 725w leaves to fit auto swing door operator but may need to add additional width for EMLs. |
