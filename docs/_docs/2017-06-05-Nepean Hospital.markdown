@@ -10,26 +10,13 @@ categories: Revit
 
 # Document Numbering - New build, including the car park
 
-![KeyMap_NewNumbers]({{ site.baseurl }}/assets/s1607004_inh/KeyPlan_CPB_Numbers.svg){:class="img-responsive"}{: height="609px" width="529px"}
-
 ## Document Number Overview
 
 | PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | - | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
 |+------------+|+-+|+------------+|---|--------------------|---|------------|---|------|--------------------|------------------------------|---|--------|------|------------|---|----------|
 | NHR | - | BVN | - | [doc type](#Drawing_DocType) | - | ARC | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
 
-## <a id="Drawing_DocType"></a> Document and Drawing Types
-
-List of document types:
-
-| Document Type | Description |
-|--------------|---------------|
-| DRW | DRAWING |
-| REP | REPORT |
-| SKT | SKETCH |
-| SCH | SCHEDULE |
-| SPE | SPECIFICATION |
-| MOD | MODEL |
+![KeyMap_NewNumbers]({{ site.baseurl }}/assets/s1607004_inh/KeyPlan_CPB_Numbers.svg){:class="img-responsive"}{: height="609px" width="529px"}
 
 ## <a id="Drawing_AreaList"></a> Area List
 
@@ -54,25 +41,25 @@ List of areas:
 | TB1 | Tower Building 1 |
 | WBL | West Block |
 
-keep a little space
+## <a id="Drawing_DocType"></a> Document and Drawing Types
 
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+List of document types:
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-
-
+| Document Type | Description |
+|--------------|---------------|
+| DRW | DRAWING |
+| REP | REPORT |
+| SKT | SKETCH |
+| SCH | SCHEDULE |
+| SPE | SPECIFICATION |
+| MOD | MODEL |
 
 ## <a id="Drawing_Elements"></a> Elements and Packages
 
 List of elements and packages
 
 | Element and Packages | Description | Proposed Series |
-|--------------|---------------|
+|--------------|---------------|-----|
 | 00 | COVER SHEETS / LEGEND | 00M - SERIES - MODELS |
 | 01 | INTRODUCTORY I.E. LOCATION PLANS, SITE PLANS EXISTING AND PROPOSED | 01A - SERIES - INTRODUCTORY |
 | 10 | GENERAL ARRANGEMENT OR OVERALL DRAWING - 1:200 (AT CAR PARK) 1:500 OR BIGGER AT HOSPITAL TOWER | 10B - SERIES - DEPARTMENT PLANS 1 TO 500 |
