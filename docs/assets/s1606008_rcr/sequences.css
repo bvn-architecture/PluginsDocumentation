@@ -1,15 +1,9 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  background-color: #fff;
-  width: 960px;
-  height: 700px;
-  margin-top: 10px;
-}
+/*
+sunburst related
+*/
 
-#main {
-  float: left;
+#main_diagram {
+  display: inline-block;
   width: 750px;
 }
 
@@ -19,6 +13,8 @@ body {
 }
 
 #sequence {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
   width: 600px;
   height: 70px;
 }
@@ -32,11 +28,11 @@ body {
   fill: #fff;
 }
 
-#chart {
+#chart_sunburst{
   position: relative;
 }
 
-#chart path {
+#chart_sunburst path {
   stroke: #fff;
 }
 
@@ -52,4 +48,36 @@ body {
 
 #percentage {
   font-size: 2.5em;
+}
+
+/*
+tree related
+*/
+
+#tree_diagram {
+  display: inline-block;
+  width: 960px;
+}
+
+.node circle {
+  fill: #999;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.node--internal circle {
+  fill: #555;
+}
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
 }

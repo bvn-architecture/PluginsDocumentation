@@ -3,6 +3,9 @@ var width = 750;
 var height = 600;
 var radius = Math.min(width, height) / 2;
 
+var widthTree=960;
+var heightTree=1060;
+
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
   w: 75, h: 30, s: 3, t: 10
@@ -28,7 +31,7 @@ var colors = {
 // Total size of all segments; we set this later, after loading the data.
 var totalSize = 0; 
 
-var vis = d3.select("#chart").append("svg:svg")
+var vis = d3.select("#chart_sunburst").append("svg:svg")
     .attr("width", width)
     .attr("height", height)
     .append("svg:g")
@@ -44,12 +47,93 @@ var arc = d3.arc()
     .outerRadius(function(d) { return Math.max(0, y(d.y1)); });
 
 
+//tree related ----------------------------------------------
+
+var svg = d3.select("#chart_tree").append("svg:svg")
+    .attr("width", widthTree)
+    .attr("height", heightTree)
+    g = svg.append("g").attr("transform", "translate(" + (width / 2 + 40) + "," + (height / 2 + 90) + ")");
+
+var tree = d3.tree()
+    .size([2 * Math.PI, 300])
+    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
+
+
+
+
+// end tree related -------------------------------------------
+
+
+
 //method creating the sunburst diagram
 d3.json("/PluginsDocumentation/assets/s1606008_rcr/flare_4.json", function (error, root) {
     if (error) throw error;
-    test = root.children.filter(function(d) { return d.name == "Models"; })
-	createVisualization(root);
+    var test = getModelNode(root.children)
+    //create sunburst visualization
+    createVisualization(root);
+    //create tree visualization
+    createVisualizationTree(test);
 });
+
+
+// tree related ------------------------------------------
+
+function radialPoint(x, y) {
+    return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
+}
+
+function getModelNode(arr) {
+    match = false;
+    for (var i = 0; i < arr.length; i++)
+    {
+        if  (arr[i].Id === "MOD")
+        {
+            return arr[i];
+        }
+    }
+    if (match==false)
+    {
+        for (var i = 0; i < arr.length; i++)
+        {
+            if (Array.isArray(arr[i].children))
+            {
+                return getModelNode(arr[i].children);
+            }
+        }
+    }
+}
+
+function createVisualizationTree(json) {
+
+    var root = tree(d3.hierarchy(json));
+
+    var link = g.selectAll(".link")
+    .data(root.links())
+    .enter().append("path")
+      .attr("class", "link")
+      .attr("d", d3.linkRadial()
+          .angle(function(d) { return d.x; })
+          .radius(function(d) { return d.y; }));
+
+  var node = g.selectAll(".node")
+    .data(root.descendants())
+    .enter().append("g")
+      .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+      .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")"; });
+
+  node.append("circle")
+      .attr("r", 2.5);
+
+  node.append("text")
+      .attr("dy", "0.31em")
+      .attr("x", function(d) { return d.x < Math.PI === !d.children ? 6 : -6; })
+      .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
+      .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
+      .text(function(d) { return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; });
+
+}
+
+// end tree related
 
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
@@ -68,7 +152,7 @@ function createVisualization(json) {
 
     //returns 1000 if this is a leaf node (no children) ...means i do not need 
     // a size property in my json data
-    root.sum(function (d) { return (d.children ? 0 : 1000); });
+    root.sum(function (d) { return (d.children ? 0 : d.size); });
  
     // For efficiency, filter nodes to keep only those large enough to see.
     var nodes = partition(root).descendants();
@@ -97,7 +181,7 @@ function createVisualization(json) {
 function mouseover(d) {
 
   var percentage = (100 * d.value / totalSize).toPrecision(3);
-  var percentageString = (d.value/1000)+"("+ percentage + "%)";
+  var percentageString = (d.value)+"("+ percentage + "%)";
   if (percentage < 0.1) {
     percentageString = "< 0.1%";
   }
