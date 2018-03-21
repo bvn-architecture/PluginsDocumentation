@@ -68,7 +68,7 @@ List of elements and packages
 | 16 | SPARE | |
 | 17 | TRANSMITTALS / DOCUMENT REGISTERS | |
 | 18 | REGISTERS | |
-| 19 | MINUTES | ANY TYPE OF MEETING MINUTES |
+| 19 | MINUTES | 19Q - ANY TYPE OF MEETING MINUTES |
 | 20 | SITE COMBINED | |
 | 21 | DEMOLITION | |
 | 22 | PREPARATION AND GROUNDWORK | |
@@ -108,9 +108,7 @@ List of elements and packages
 | 66 | WATERPROOFING AND SCREED | 66A - SERIES - WATERPROOFING AND SCREEDS INTRODUCTORY, 66B - SERIES - WATERPROOFING AND SCREEDS PLANS, 66H - SERIES - WATERPROOFING AND SCREENS ASSEMBLY DRAWINGS |
 | 67 | PAINTING |
 | 68 | WALL PROTECTION | 68A - SERIES - WALL PROTECTION INTRODUCTORY, 68B - SERIES - WALL PROTECTION PLANS |
-| 99 | PREMISES | 99L - SERIES - PREMISES PLANS |
 | xxZ | SPECIFICATIONS | i.e. NHR-BVN-SPE-ARC-50-31Z-NL00001 - CONCRETE FINISHES SPECIFICATION |
-
 
 ## <a id="Drawing_Series"></a> Drawing and Information Series
 
@@ -177,8 +175,7 @@ Revision methodology
 | A, B, C, ... | PRE-CONSTRUCTION ISSUE |
 | 1, 2, 3, 4 ... | CONSTRUCTION ISSUE |
 
-
-### Visualization Options 
+### Visualization Options
 
 non collapsible tree
 https://bl.ocks.org/mbostock/4063550
@@ -188,6 +185,10 @@ http://jsfiddle.net/Nivaldo/CbGh2/
 
 ![RevitFilesMap]({{ site.baseurl }}/assets/s1606008_rcr/REVIT MODELS BY ZONE.svg){:class="img-responsive"}{: height="476px" width="821px"}
 
+<div id="tree_diagram">
+	<div id="chart_tree">
+	</div>
+</div>
 
 List of sample document numbers:
 
@@ -198,7 +199,6 @@ List of sample document numbers:
 | RCR-BVN-AR-50-SCH-J2-00-01-XLS | Original Excel file of RCR-BVN-AR-50-SCH-J2-00-01 pdf file containing door schedule|
 | RCR-BVN-AR-50-SPC-Z1-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555|
 | RCR-BVN-AR-50-SKT-A0-0555 | ARCHITECTURAL SPECIFICATION - SANITARY APPLIANCES/FITTINGS which is NatSpec section 0555|
- 
 
 ## Sketches
 
@@ -218,28 +218,17 @@ Sample number : AR-50-SK-UG-01-000
 
 ## Drawing List
 
-The diagram belows shows all current documents in hierarchical form.
+The diagram belows shows all current documents in hierarchical form. Hover over the path segments to find out more.
 
-<div id="container">
 <div id="main_diagram">
 	<div id="sequence"></div>
-	<div id="chart">
+	<div id="chart_sunburst">
 		<div id="explanation" style="visibility: hidden;">
     		<span id="percentage"></span><br/>
           	of documents
     	</div>
 	</div>
-
-
-<div id="sidebar">
-	<input type="checkbox" id="togglelegend"> Legend<br/>
-	<div id="legend" style="visibility: hidden;"></div>
 </div>
-
-</div>
-
-</div>
-
 <script src="//d3js.org/d3.v4.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
 <link rel="stylesheet" type="text/css" href="/PluginsDocumentation/assets/s1606008_rcr/sequences.css"/>
@@ -247,9 +236,7 @@ The diagram belows shows all current documents in hierarchical form.
 <script type="text/javascript">
 	// Hack to make this example display correctly in an iframe on bl.ocks.org
 	d3.select(self.frameElement).style("height", "700px");
-</script> 
-
-End of diagram.
+</script>
 
 ## Revisions
 
