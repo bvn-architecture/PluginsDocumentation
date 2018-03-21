@@ -189,6 +189,12 @@ http://jsfiddle.net/Nivaldo/CbGh2/
 	<div id="chart_tree">
 	</div>
 </div>
+<script src="//d3js.org/d3.v4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+<link rel="stylesheet" type="text/css" href="/PluginsDocumentation/assets/s1606008_rcr/sequences.css"/>
+<script type="text/javascript" 
+src="/PluginsDocumentation/assets/s1606008_rcr/Viz_Tree_Models.js"></script>
+
 
 List of sample document numbers:
 
@@ -222,21 +228,10 @@ The diagram belows shows all current documents in hierarchical form. Hover over 
 
 <div id="main_diagram">
 	<div id="sequence"></div>
-	<div id="chart_sunburst">
-		<div id="explanation" style="visibility: hidden;">
-    		<span id="percentage"></span><br/>
-          	of documents
-    	</div>
-	</div>
+	<div id="chart_sunburst"></div>
 </div>
-<script src="//d3js.org/d3.v4.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
-<link rel="stylesheet" type="text/css" href="/PluginsDocumentation/assets/s1606008_rcr/sequences.css"/>
-<script type="text/javascript" src="/PluginsDocumentation/assets/s1606008_rcr/sequences.js"></script>
-<script type="text/javascript">
-	// Hack to make this example display correctly in an iframe on bl.ocks.org
-	d3.select(self.frameElement).style("height", "700px");
-</script>
+
+<script type="text/javascript" src="/PluginsDocumentation/assets/s1606008_rcr/Viz_Sunburst_All_Docs.js"></script>
 
 ## Revisions
 
