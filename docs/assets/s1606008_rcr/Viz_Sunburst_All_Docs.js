@@ -31,6 +31,7 @@ var totalSize = 0;
 var vis = d3.select("#chart_sunburst").append("svg:svg")
     .attr("width", width)
     .attr("height", height)
+    .attr("id", "sunBurst_AllDocs")
     .append("svg:g")
     .attr("id", "container")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
@@ -73,7 +74,7 @@ function createVisualization(json) {
     // For efficiency, filter nodes to keep only those large enough to see.
     var nodes = partition(root).descendants();
   
-    var path = vis.data([json]).selectAll("path")
+    var path = vis.data([json]).selectAll("#sunBurst_AllDocs svg path")
         .data(nodes)
         .enter().append("svg:path")
         .attr("display", function(d) { return d.depth ? null : "none"; })
@@ -107,15 +108,20 @@ function mouseover(d) {
   updateBreadcrumbs(sequenceArray, percentageString);
 
   // Fade all the segments.
-  d3.selectAll("path")
-      .style("opacity", 0.3);
+  //d3.selectAll("#sunBurst_AllDocs svg path")
+  //  .style("opacity", 0.3);
+
+  // Fade all the segments.
+  d3.select("svg#sunBurst_AllDocs")
+    .selectAll("path")
+    .style("opacity", 0.3);
 
   // Then highlight only those that are an ancestor of the current segment.
   vis.selectAll("path")
-      .filter(function(node) {
-                return (sequenceArray.indexOf(node) >= 0);
-              })
-      .style("opacity", 1);
+    .filter(function(node) {
+        return (sequenceArray.indexOf(node) >= 0);
+    })
+    .style("opacity", 1);
 }
 
 //zoom in or out when clicking
@@ -140,19 +146,19 @@ function mouseleave(d) {
       .style("visibility", "hidden");
 
   // Deactivate all segments during transition.
-  d3.selectAll("path").on("mouseover", null);
+  d3.select("svg#sunBurst_AllDocs")
+    .selectAll("path")
+    .on("mouseover", null);
 
   // Transition each segment to full opacity and then reactivate it.
-  d3.selectAll("path")
+  d3.select("svg#sunBurst_AllDocs")
+    .selectAll("path")
       .transition()
       .duration(1000)
       .style("opacity", 1)
       .on("end", function() {
               d3.select(this).on("mouseover", mouseover);
             });
-
-  d3.select("#explanation")
-      .style("visibility", "hidden");
 }
 
 function initializeBreadcrumbTrail() {

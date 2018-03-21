@@ -7,6 +7,7 @@ function main_tree() {
     var svg = d3.select("#chart_tree").append("svg:svg")
         .attr("width", widthTree)
         .attr("height", heightTree)
+        .attr("id", "radialTree_Models")
         g = svg.append("g").attr("transform", "translate(" + (widthTree / 2 + 40) + "," + (heightTree / 2 + 90) + ")");
 
     var tree = d3.tree()
