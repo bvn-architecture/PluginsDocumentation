@@ -42,18 +42,35 @@ function createVisualizationTree(json, tree, g) {
         .enter().append("g")
             .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
             .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")"; });
+            
+    //add data
+    node.append("title")
+        .text(function (d) { return d.data.name; });
+    node.append("id")
+        .text(function (d) { return d.data.Id; });
 
+    //bigger node circle for internal nodes
     node.append("circle")
-        .attr("r", 2.5);
+        .attr("r", function(d) { return (d.children ? 3.5 :2.5); })
 
     node.append("text")
-        .attr("dy", "0.31em")
+        .attr("dy", "-0.5em")//offset to make space for name only
         .attr("x", function(d) { return d.x < Math.PI === !d.children ? 6 : -6; })
         .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
         .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
         .text(function(d) { 
             //return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; 
             return d.data.Id;
+        });
+
+    node.append("text")
+        .attr("dy", "0.5em")
+        .attr("x", function(d) { return d.x < Math.PI === !d.children ? 6 : -6; })
+        .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
+        .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
+        .text(function(d) { 
+            //return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; 
+            return d.data.name;
         });
 }
 
