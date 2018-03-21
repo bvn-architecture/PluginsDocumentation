@@ -82,10 +82,15 @@ function createVisualization(json) {
         .style("fill", function (d) { return color((d.children ? d : d.parent).data.Id); })
         .style("opacity", 1)
         .on("click", click)
-        .on("mouseover", mouseover)
-        .append("title")
-            .text(function(d) { return d.data.name + "\n" + formatNumber(d.value); });
-
+        .on("mouseover", mouseover);
+    
+    //add data
+    path.append("title")
+        .text(function(d) { return d.data.name; });
+    path.append("id")
+        .text(function (d) { return d.data.Id; });
+    path.append("NumberOfDocs")
+        .text(function (d) { return d.data.size; });
 
     // Add the mouseleave handler to the bounding circle.
     d3.select("#container").on("mouseleave", mouseleave);
