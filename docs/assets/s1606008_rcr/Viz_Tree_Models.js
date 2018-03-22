@@ -52,9 +52,10 @@ function createVisualizationTree(json, tree, g) {
     //bigger node circle for internal nodes
     node.append("circle")
         .attr("r", function(d) { return (d.children ? 3.5 :2.5); })
-
-    node.append("text")
-        .attr("dy", "-0.5em")//offset to make space for name only
+    //text for nodes with children
+    node.filter(function(d) { return d.children; })
+        .append("text")
+        .attr("dy", "0.4em")//offset to make space for name only
         .attr("x", function(d) { return d.x < Math.PI === !d.children ? 6 : -6; })
         .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
         .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
@@ -62,15 +63,29 @@ function createVisualizationTree(json, tree, g) {
             //return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; 
             return d.data.Id;
         });
-
-    node.append("text")
-        .attr("dy", "0.5em")
+    //text for leave nodes
+    node.filter(function(d) { return !d.children; })
+        .append("text")
+        .attr("dy", "0.45em")//offset to make space for name only
         .attr("x", function(d) { return d.x < Math.PI === !d.children ? 6 : -6; })
+        .style("stroke", function(d){ return getColourByModelType(d.data.name)} )
         .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
         .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
         .text(function(d) { 
             //return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; 
             return d.data.name;
+        });
+
+        node.filter(function(d) { return !d.children; })
+        .append("text")
+        .attr("dy", "-0.45em")//offset to make space for name only
+        .attr("x", function(d) { return d.x < Math.PI === !d.children ? 6 : -6; })
+        .style("stroke", function(d){ return getColourByModelType(d.data.name)} )
+        .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
+        .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
+        .text(function(d) { 
+            //return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; 
+            return d.data.Id;
         });
 }
 
@@ -100,6 +115,32 @@ function getModelNode(arr) {
                 return getModelNode(arr[i].children);
             }
         }
+    }
+}
+
+function getColourByModelType(name)
+{
+    var colors = {
+        "other": "#bbbbbb",
+        "Revit": "#2c7fb8",
+        "NavisWorks" : "#2ca25f"
+    };
+    return colors[getModelTypeByName(name)];
+}
+
+function getModelTypeByName (name)
+{
+    if (name.toLowerCase().indexOf("revit")>=0)
+    {
+        return ("Revit");
+    }
+    else if(name.toLowerCase().indexOf("nwd")>=0 || name.toLowerCase().indexOf("nwc")>=0 || name.toLowerCase().indexOf("nwf")>=0)
+    {
+        return "NavisWorks";
+    }
+    else  
+    {
+        return "other";
     }
 }
 
