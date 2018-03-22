@@ -175,15 +175,10 @@ Revision methodology
 | A, B, C, ... | PRE-CONSTRUCTION ISSUE |
 | 1, 2, 3, 4 ... | CONSTRUCTION ISSUE |
 
-### Visualization Options
+## Model Structure
 
-non collapsible tree
-https://bl.ocks.org/mbostock/4063550
-
-collapsible tree
-http://jsfiddle.net/Nivaldo/CbGh2/
-
-![RevitFilesMap]({{ site.baseurl }}/assets/s1606008_rcr/REVIT MODELS BY ZONE.svg){:class="img-responsive"}{: height="476px" width="821px"}
+* Blue: Revit models
+* Green: NavisWorks models
 
 <div id="tree_diagram">
 	<div id="chart_tree">
@@ -194,7 +189,6 @@ http://jsfiddle.net/Nivaldo/CbGh2/
 <link rel="stylesheet" type="text/css" href="/PluginsDocumentation/assets/s1606008_rcr/sequences.css"/>
 <script type="text/javascript" 
 src="/PluginsDocumentation/assets/s1606008_rcr/Viz_Tree_Models.js"></script>
-
 
 List of sample document numbers:
 
