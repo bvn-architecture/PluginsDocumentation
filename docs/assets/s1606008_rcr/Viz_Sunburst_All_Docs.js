@@ -103,18 +103,13 @@ function createVisualization(json) {
 function mouseover(d) {
 
   var percentage = (100 * d.value / totalSize).toPrecision(3);
-  var percentageString = (d.value)+"("+ percentage + "%)";
-  if (percentage < 0.1) {
-    percentageString = "< 0.1%";
-  }
-
+  //add doc name to last if we are on a leaf node
+  var percentageString = d.data.children? (d.value)+"("+ percentage + "%)" 
+  : d.data.Id + " " + d.data.name +"("+ percentage + "%)";
+  
   var sequenceArray = d.ancestors().reverse();
   sequenceArray.shift(); // remove root node from the array
   updateBreadcrumbs(sequenceArray, percentageString);
-
-  // Fade all the segments.
-  //d3.selectAll("#sunBurst_AllDocs svg path")
-  //  .style("opacity", 0.3);
 
   // Fade all the segments.
   d3.select("svg#sunBurst_AllDocs")
@@ -208,7 +203,13 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   entering.append("svg:polygon")
       .attr("points", breadcrumbPoints)
-      .style("fill", function(d) { return colors[d.data.size]; });
+      .attr("style", function (d) {
+        return vis.selectAll("path") //select all path elements in svg container
+        .filter(function (node) {   //iterate over each path element (node)
+            return (node.data.Id === d.data.Id); //and check whether its data id is matching current node (d) data id
+        })
+        .attr("style");
+    })
 
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
@@ -224,10 +225,10 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   // Now move and update the percentage at the end.
   d3.select("#trail").select("#endlabel")
-      .attr("x", (nodeArray.length + 0.5) * (b.w + b.s))
+      .attr("x", (nodeArray.length + percentageString.length * .01) * (b.w + b.s))
       .attr("y", b.h / 2)
       .attr("dy", "0.35em")
-      .attr("text-anchor", "middle")
+      .attr("text-anchor", "left")
       .text(percentageString);
 
   // Make the breadcrumb trail visible, if it's hidden.
