@@ -3,9 +3,6 @@ var width = 750;
 var height = 600;
 var radius = Math.min(width, height) / 2;
 
-var widthTree=960;
-var heightTree=1060;
-
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
   w: 75, h: 30, s: 3, t: 10
@@ -34,6 +31,7 @@ var totalSize = 0;
 var vis = d3.select("#chart_sunburst").append("svg:svg")
     .attr("width", width)
     .attr("height", height)
+    .attr("id", "sunBurst_AllDocs")
     .append("svg:g")
     .attr("id", "container")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
@@ -46,94 +44,13 @@ var arc = d3.arc()
     .innerRadius(function(d) { return Math.max(0, y(d.y0)); })
     .outerRadius(function(d) { return Math.max(0, y(d.y1)); });
 
-
-//tree related ----------------------------------------------
-
-var svg = d3.select("#chart_tree").append("svg:svg")
-    .attr("width", widthTree)
-    .attr("height", heightTree)
-    g = svg.append("g").attr("transform", "translate(" + (width / 2 + 40) + "," + (height / 2 + 90) + ")");
-
-var tree = d3.tree()
-    .size([2 * Math.PI, 300])
-    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
-
-
-
-
-// end tree related -------------------------------------------
-
-
-
 //method creating the sunburst diagram
 d3.json("/PluginsDocumentation/assets/s1606008_rcr/flare_4.json", function (error, root) {
     if (error) throw error;
     var test = getModelNode(root.children)
     //create sunburst visualization
     createVisualization(root);
-    //create tree visualization
-    createVisualizationTree(test);
 });
-
-
-// tree related ------------------------------------------
-
-function radialPoint(x, y) {
-    return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
-}
-
-function getModelNode(arr) {
-    match = false;
-    for (var i = 0; i < arr.length; i++)
-    {
-        if  (arr[i].Id === "MOD")
-        {
-            return arr[i];
-        }
-    }
-    if (match==false)
-    {
-        for (var i = 0; i < arr.length; i++)
-        {
-            if (Array.isArray(arr[i].children))
-            {
-                return getModelNode(arr[i].children);
-            }
-        }
-    }
-}
-
-function createVisualizationTree(json) {
-
-    var root = tree(d3.hierarchy(json));
-
-    var link = g.selectAll(".link")
-    .data(root.links())
-    .enter().append("path")
-      .attr("class", "link")
-      .attr("d", d3.linkRadial()
-          .angle(function(d) { return d.x; })
-          .radius(function(d) { return d.y; }));
-
-  var node = g.selectAll(".node")
-    .data(root.descendants())
-    .enter().append("g")
-      .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
-      .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")"; });
-
-  node.append("circle")
-      .attr("r", 2.5);
-
-  node.append("text")
-      .attr("dy", "0.31em")
-      .attr("x", function(d) { return d.x < Math.PI === !d.children ? 6 : -6; })
-      .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
-      .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
-      .text(function(d) { return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; });
-
-}
-
-// end tree related
 
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
@@ -157,7 +74,7 @@ function createVisualization(json) {
     // For efficiency, filter nodes to keep only those large enough to see.
     var nodes = partition(root).descendants();
   
-    var path = vis.data([json]).selectAll("path")
+    var path = vis.data([json]).selectAll("#sunBurst_AllDocs svg path")
         .data(nodes)
         .enter().append("svg:path")
         .attr("display", function(d) { return d.depth ? null : "none"; })
@@ -165,10 +82,15 @@ function createVisualization(json) {
         .style("fill", function (d) { return color((d.children ? d : d.parent).data.Id); })
         .style("opacity", 1)
         .on("click", click)
-        .on("mouseover", mouseover)
-        .append("title")
-            .text(function(d) { return d.data.name + "\n" + formatNumber(d.value); });
-
+        .on("mouseover", mouseover);
+    
+    //add data
+    path.append("title")
+        .text(function(d) { return d.data.name; });
+    path.append("id")
+        .text(function (d) { return d.data.Id; });
+    path.append("NumberOfDocs")
+        .text(function (d) { return d.data.size; });
 
     // Add the mouseleave handler to the bounding circle.
     d3.select("#container").on("mouseleave", mouseleave);
@@ -181,31 +103,25 @@ function createVisualization(json) {
 function mouseover(d) {
 
   var percentage = (100 * d.value / totalSize).toPrecision(3);
-  var percentageString = (d.value)+"("+ percentage + "%)";
-  if (percentage < 0.1) {
-    percentageString = "< 0.1%";
-  }
-
-  d3.select("#percentage")
-      .text(percentageString);
-
-  d3.select("#explanation")
-      .style("visibility", "");
-
+  //add doc name to last if we are on a leaf node
+  var percentageString = d.data.children? (d.value)+"("+ percentage + "%)" 
+  : d.data.Id + " " + d.data.name +"("+ percentage + "%)";
+  
   var sequenceArray = d.ancestors().reverse();
   sequenceArray.shift(); // remove root node from the array
   updateBreadcrumbs(sequenceArray, percentageString);
 
   // Fade all the segments.
-  d3.selectAll("path")
-      .style("opacity", 0.3);
+  d3.select("svg#sunBurst_AllDocs")
+    .selectAll("path")
+    .style("opacity", 0.3);
 
   // Then highlight only those that are an ancestor of the current segment.
   vis.selectAll("path")
-      .filter(function(node) {
-                return (sequenceArray.indexOf(node) >= 0);
-              })
-      .style("opacity", 1);
+    .filter(function(node) {
+        return (sequenceArray.indexOf(node) >= 0);
+    })
+    .style("opacity", 1);
 }
 
 //zoom in or out when clicking
@@ -230,19 +146,19 @@ function mouseleave(d) {
       .style("visibility", "hidden");
 
   // Deactivate all segments during transition.
-  d3.selectAll("path").on("mouseover", null);
+  d3.select("svg#sunBurst_AllDocs")
+    .selectAll("path")
+    .on("mouseover", null);
 
   // Transition each segment to full opacity and then reactivate it.
-  d3.selectAll("path")
+  d3.select("svg#sunBurst_AllDocs")
+    .selectAll("path")
       .transition()
       .duration(1000)
       .style("opacity", 1)
       .on("end", function() {
               d3.select(this).on("mouseover", mouseover);
             });
-
-  d3.select("#explanation")
-      .style("visibility", "hidden");
 }
 
 function initializeBreadcrumbTrail() {
@@ -287,7 +203,13 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   entering.append("svg:polygon")
       .attr("points", breadcrumbPoints)
-      .style("fill", function(d) { return colors[d.data.size]; });
+      .attr("style", function (d) {
+        return vis.selectAll("path") //select all path elements in svg container
+        .filter(function (node) {   //iterate over each path element (node)
+            return (node.data.Id === d.data.Id); //and check whether its data id is matching current node (d) data id
+        })
+        .attr("style");
+    })
 
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
@@ -303,10 +225,10 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   // Now move and update the percentage at the end.
   d3.select("#trail").select("#endlabel")
-      .attr("x", (nodeArray.length + 0.5) * (b.w + b.s))
+      .attr("x", (nodeArray.length + percentageString.length * .01) * (b.w + b.s))
       .attr("y", b.h / 2)
       .attr("dy", "0.35em")
-      .attr("text-anchor", "middle")
+      .attr("text-anchor", "left")
       .text(percentageString);
 
   // Make the breadcrumb trail visible, if it's hidden.
