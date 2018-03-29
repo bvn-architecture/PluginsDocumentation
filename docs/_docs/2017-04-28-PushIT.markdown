@@ -23,7 +23,7 @@ Revit has issues with:
     * Enforcing consistent naming and numbering schemes for rooms
     * Enforcing a consistent data structure
 
-## Moving rooms 
+## Moving rooms
 
 The first couple of issues stem from the way rooms are created and there extent is defined in Revit. Rooms require walls or room bounding lines to define their extent. Any change in room location will require changes to those elements which is quite time consuming. 
 
@@ -57,7 +57,6 @@ Push it! aims at addressing the above issues in a two pronged approach:
   * Populating given room properties with data
   * Updating room data during the development cycle 
 
-
 ## Custom 'Room' families
 
 The approach outlined below has been successfully implemented on:
@@ -65,7 +64,6 @@ The approach outlined below has been successfully implemented on:
 * Northern Beaches Hospital - Competition with approx 2970 rooms in single Revit model placed
 * Uni of South Australia Health Innovation Building - approx 750 rooms in single Revit model placed 
 * Kai Tak Hospital Hong Kong - SD stage with a total of approx 8900 rooms modelled (distributed across 3 separate building models: 1265/1255/6380 )
-
 
 ### Shapes
 
@@ -280,7 +278,6 @@ The following shared parameters are used:
 | 5002fb59-c053-49bf-801e-bbc7dfd8ab23 | SP_Width                    | LENGTH   | The width of a room |
 | c94fb6a3-ccf7-4ff0-a3df-40112ce36506 | SP_Zone                     | TEXT     | Location (Building / campus) of a room.|
 
-
 ### Family manipulation
 
 The size of a room can be manipulated by either:
@@ -318,10 +315,9 @@ When using custom rooms families only briefed rooms will be placed. There are (a
 * mass floors by department
 * area plans by department
 
-Each option requires an element to be modelled, and updated with any layout changes, which covers the extent of an entire department or sub department. The circulation area of a specific department is than the gross area minus the net area retrieved from the room families of this department. 
+Each option requires an element to be modelled, and updated with any layout changes, which covers the extent of an entire department or sub department. The circulation area of a specific department is than the gross area minus the net area retrieved from the room families of this department.
 
 Area calculations themselves can done in Excel in form of data links to schedules exported from Revit.
-
 
 ## Push It (Real Good)! (Revit Add-in)
 
@@ -491,7 +487,6 @@ Push It will detect and compare model elements to the SOA given they exist in ei
 
 *NOTE: Ideally Push It would compare against the active Design Option from each Design Option Set, however this information does not appear to be available via the Revit API.*
 
-
 ## ADVANCED - Auditing the model
 
 Auditing is used to identify rooms in the model which are:
@@ -598,3 +593,41 @@ Ideally you'd only need to draw one loop to define the Room family boundary and 
     - Replacing with another instance (and repopulating with the original's SOA data.)
 - Settings dialogs
 
+## Converting Push It elements to Revit rooms
+
+Once the layout is developed far enough and major changes to it are unlikely, Push It elements will need to be converted to native Revit elements of types: walls, doors and rooms.
+
+Quite often this might be in form of a completely new model containing native Revit walls, doors and rooms.
+
+### Walls and Doors
+
+Walls and doors are created by tracing manually the current Push It layout using Revit native walls and doors. Depending on the size of the project this may take anything from a day to approximately a week.
+Whilst this appears to be a step back at first, having this manual process offers up the opportunity to check, for instance, whether minimum width of corridors has been achieved or walls in general are set out to round dimensions of the nearest grid.
+
+### Rooms
+
+Native Revit rooms can be placed with the help of a Python script.
+A sample script for Revit 2017 can be downloaded [here]({{ site.baseurl }}\assets\Pushit\place_rooms_for_push_it_2018.py). Please note that the script will need to be amended to suit your project requirements and / or version of Revit.
+
+The Python script will place a room in the model at the centroid of every Push It element instance in the same Revit model and transfers, in this specific sample case, the SP_Room_Function_Number parameter value from the Push It element to the Revit room.
+
+#### Rooms - Prep work
+
+In order for the above script to work properly, the following conditions need to be met:
+
+* All Push It elements will need to report a placement level.
+* The shared parameter SP_Room_Function_Number needs to be attached to columns (Push It elements) and rooms.
+* Any design options containing Push It elements should be removed from the model.
+
+Note: Rooms will be created in the phase of the currently active view.
+
+#### Rooms - Script errors
+
+Since not all Push It elements are actually room bounding, ie. any spaces without walls are not, the following errors may occur as the script runs and places rooms in the model:
+
+* 'Room is not in a properly enclosed region'
+* 'Multiple Rooms are in the same enclosed region'
+
+This can be addressed by placing room separation lines or walls in the new model as required.
+
+There is also the slim chance that a room is actually placed by the script outside the bounds of the Push It element. This happens when the centroid of the Push It element is actually outside the perimeter of the element ( picture a u-shape).
