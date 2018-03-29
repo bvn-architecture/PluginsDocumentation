@@ -26,6 +26,8 @@ function main_tree() {
 //setting up d3 Tree
 function createVisualizationTree(json, tree, g) {
 
+    //hook up revit only checkbox
+    d3.select("#togglelegend").on("click", toggleNavisWorks);
     //only select the first child node () the first 
     var root = tree(d3.hierarchy(json.children[0]));
 
@@ -90,6 +92,16 @@ function createVisualizationTree(json, tree, g) {
             //return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; 
             return d.data.Id;
         });
+}
+
+function toggleNavisWorks() {
+    //get the navisworks check box
+    var checkBox = document.getElementById("togglelegend");
+    if (checkBox.checked == true){
+        //remove navisworks nodes ...
+      } else {
+        //show navisworks nodes ...
+      }
 }
 
 //-----------------------------------------
