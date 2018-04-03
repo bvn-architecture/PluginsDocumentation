@@ -586,11 +586,16 @@ These custom-shaped Room families are not resizable in any dimension. This is be
 
 Ideally you'd only need to draw one loop to define the Room family boundary and the other loop could be computed based on a pre-configured wall width. However, the Revit API's built-in offsetting computation does not always work for whatever reason. Additionally, computing the offset boundary for an arbitrary shape is non-trivial to code manually without a third-party geometry library (primarily due to the potential for an offset boundary to produce self-overlapping geometry).
 
+### Changing shapes of custom rooms
+
+To do this simply select the existing room family to be replaced and a filled region that describes the new shape.
+
+![ReplaceCustomRooms]({{ site.baseurl }}\assets\Pushit\GetARoom_Replace.jpg){:class="img-responsive"}{: height="610px" width="529px"}
+
+Note that because this operation transfers SOA information you need to have the Push It tool running and loaded SOA prior to using Get A Room. Also note that a new tag will need to be placed manually on the newly created family if there was one previously.
+
 ### Room for improvement
 
-- Room family / shape 'editing':
-    - Maintain filled region shape geometry and its association with a Room family so that the shape can be edited and the associated instance recreated and repopulated with the original's SOA data.
-    - Replacing with another instance (and repopulating with the original's SOA data.)
 - Settings dialogs
 
 ## Converting Push It elements to Revit rooms
