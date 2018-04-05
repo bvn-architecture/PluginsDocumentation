@@ -476,7 +476,7 @@ Example config file ('*SOA\_export\_config.json*'):
 
 Example of a complex Excel SOA spreadsheet format:
 
-![Advanced sample SOA Excel file for Push It]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Excel-File-Sample-Advanced.png){:class="img-responsive"}{: height="639px" width="1577px"}
+![Advanced sample SOA Excel file for Push It]({{ site.baseurl }}\assets\Pushit\PushIt-SOA-Excel-File-Sample-Advanced.png){:class="img-responsive"}{: height="320px" width="790px"}
 
 ### Push It behaviour and Design Options / Sets
 
@@ -499,15 +499,15 @@ Auditing can be therefore be used to identify rooms which need to be deleted in 
 
 ### Step by Step
 
-| Step |                 Image | Description | 
-|---|------------------------------------------|------|
-| 1 | ![Audit_PushITMain]({{ site.baseurl }}\assets\Pushit\Audit_PushITMain.png){:class="img-responsive"}{: height="300px" width="500px"} | In the Push iT interface press the <Audit> button as highlighted below. |
-| 2 | ![Audit_PushITSaveTextFile]({{ site.baseurl }}\assets\Pushit\Audit_PushITSaveTextFile.png){:class="img-responsive"}{: height="199px" width="454px"} | Push it will analyse the model and will offer to save a text file if it found any inconsistencies |
-| 3 | ![Audit_PushITSaveTextFileAsDialogue]({{ site.baseurl }}\assets\Pushit\Audit_PushITSaveTextFileAsDialogue.png){:class="img-responsive"}{: height="380px" width="640px"} | Select a location where to save the audit text file to. |
-| 4 | ![Audit_ExcelOpenTextFile]({{ site.baseurl }}\assets\Pushit\Audit_ExcelOpenTextFile.png){:class="img-responsive"}{: height="390px" width="640px"} | In Excel open the text file via File Open Dialogue. (Make sure the file filter is to 'All files' or 'Text Files') |
-| 5 | ![Audit_ExcelImportDelimited]({{ site.baseurl }}\assets\Pushit\Audit_ExcelImportDelimited.png){:class="img-responsive"}{: height="434px" width="579px"} | When opening a text file, Excel will want to know some bits of information about it. In the first window select 'Delimited' |
-| 6 | ![Audit_ExcelImportDelimitedTab]({{ site.baseurl }}\assets\Pushit\Audit_ExcelImportDelimitedTab.png){:class="img-responsive"}{: height="434px" width="579px"} | In the following window select the delimeter type : 'Tab' and press 'Finish' |
-| 7 | ![Audit_Excel_ApplyFilter]({{ site.baseurl }}\assets\Pushit\Audit_Excel_ApplyFilter.png){:class="img-responsive"}{: height="411px" width="640px"} | Once Excel has imported the file press the little triangle top left corner to select all cells. With all cells selected apply a filter (under 'Sort & Filter') |
+| Step |                 Image | Description |
+| --- | ------------------------------------------ | ------ |
+| 1 | ![Audit_PushITMain]({{ site.baseurl }}\assets\Pushit\Audit_PushITMain.png){:class="img-responsive"}{: height="133px" width="333px"} | In the Push iT interface press the <Audit> button as highlighted below. |
+| 2 | ![Audit_PushITSaveTextFile]({{ site.baseurl }}\assets\Pushit\Audit_PushITSaveTextFile.png){:class="img-responsive"}{: height="133px" width="302px"} | Push it will analyse the model and will offer to save a text file if it found any inconsistencies |
+| 3 | ![Audit_PushITSaveTextFileAsDialogue]({{ site.baseurl }}\assets\Pushit\Audit_PushITSaveTextFileAsDialogue.png){:class="img-responsive"}{: height="253px" width="426px"} | Select a location where to save the audit text file to. |
+| 4 | ![Audit_ExcelOpenTextFile]({{ site.baseurl }}\assets\Pushit\Audit_ExcelOpenTextFile.png){:class="img-responsive"}{: height="260px" width="426px"} | In Excel open the text file via File Open Dialogue. (Make sure the file filter is to 'All files' or 'Text Files') |
+| 5 | ![Audit_ExcelImportDelimited]({{ site.baseurl }}\assets\Pushit\Audit_ExcelImportDelimited.png){:class="img-responsive"}{: height="289px" width="386px"} | When opening a text file, Excel will want to know some bits of information about it. In the first window select 'Delimited' |
+| 6 | ![Audit_ExcelImportDelimitedTab]({{ site.baseurl }}\assets\Pushit\Audit_ExcelImportDelimitedTab.png){:class="img-responsive"}{: height="289px" width="386px"} | In the following window select the delimeter type : 'Tab' and press 'Finish' |
+| 7 | ![Audit_Excel_ApplyFilter]({{ site.baseurl }}\assets\Pushit\Audit_Excel_ApplyFilter.png){:class="img-responsive"}{: height="274px" width="426px"} | Once Excel has imported the file press the little triangle top left corner to select all cells. With all cells selected apply a filter (under 'Sort & Filter') |
 | - |  | The following filters are applied in no particular order |
 | 8 | ![Audit_Excel_ApplyFilter_DesignOptions]({{ site.baseurl }}\assets\Pushit\Audit_Excel_ApplyFilter_DesignOptions.png){:class="img-responsive"}{: height="390px" width="481px"} | In the Design Option column click the filter icon and deselect all. Then select any option with the word '(primary)' at the end and 'Main Model' if present. This will remove all rooms from the list which are not in the primary desing option of a set or in the main model. |
 | 9 | ![Audit_Excel_ApplyFilter_Families]({{ site.baseurl }}\assets\Pushit\Audit_Excel_ApplyFilter_Families.png){:class="img-responsive"}{: height="313px" width="438px"} | In the Family column click the filter icomn and remove any families with 'Lift', 'Stair' or 'Riser' in the name. Data in those families is most likely manually entered. |
