@@ -11,11 +11,14 @@
 	  <div id="containerSample">
 		  
 		<main>
-
-			{{ content }}
-
+        <nav class="toc toc-right js-toc relative z-1 transition--300 absolute pa4 is-position-fixed"></nav>
+        <div class="content js-toc-content pa2">
+			    {{ content }}
+        </div>
 	  </main>
-		
+    
+    
+    
 		  <!-- Pagination links -->
       {% if paginator.total_pages > 1 %}
         <div class="pagination">
