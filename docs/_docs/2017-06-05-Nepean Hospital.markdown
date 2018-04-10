@@ -664,6 +664,23 @@ The following tags are used to indicate location of fire fighting equipment as w
 | Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 | Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 
+# <a id="FFE_Families"></a> FFE Families
+
+## <a id="FFE_Families_Categories"></a> Categories
+
+In order to allow filtering in dRofus when it comes to check items in rooms we use Categories as follows:
+
+| Categroy | Use Case |
+|----------|----------|
+| Generic Model | Finishes which are briefed in dRofus as items but we can not easily check qunatities.i.e finishes , corner guards. Unions which themselves are not scheduled in dRofsu but all their nested items are. |
+| Casework, Specialty Equipment, Plumbing Fixtures, Lighting Fixtures,Lighting Equipment, Electrical Equipment,Electrical Fixtures, Furniture, Furniture Systems | |
+
+## <a id="FFE_Families_SubCategories"></a> Subcategories
+
+All extrusion or similar elements making up a family which will be ceiling mounted and therefore be shown dashed on floor plan need to be assigned to the category: **CEILING MOUNTED**.
+All extrusion or similar elements making up a family which will be ceiling mounted and not to be shown on floor plan need to be assigned to the category **CEILING ONLY**.
+All extrusion or similar elements making up a family which will be floor mounted and not to be shown on RCP need to be assigned to the category **FLOOR ONLY**.
+
 # Doors
 
 ## Door Types and Sizes
