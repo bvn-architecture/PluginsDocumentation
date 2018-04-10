@@ -792,6 +792,16 @@ All extrusion or similar elements making up a family which will be ceiling mount
 All extrusion or similar elements making up a family which will be ceiling mounted and not to be shown on floor plan need to be assigned to the category **CEILING ONLY**.
 All extrusion or similar elements making up a family which will be floor mounted and not to be shown on RCP need to be assigned to the category **FLOOR ONLY**.
 
+### <a id="FFE_Families_Linking"></a> Linking of Parameters to dRofus
+
+Revit ItemCode = dRofus BIM ID
+Revit Assembly Code = dRofus Item Number 
+
+For the Revit Keynote, this field is populated depending on whether the item is a child or not.
+
+* If it is a child, then the Keynote = dRofus Parent Item Number. 
+* If no children, then Keynote = dRofus Item Number.
+
 ## Tags
 
 The following tags are used to indicate location of fire fighting equipment as well as required fire egress and egress direction.
