@@ -777,6 +777,12 @@ The schedule name contains the area type e.g. 'Patient Care and Treatment'. This
 
 ## <a id="FFE_Families"></a> FFE Families
 
+### <a id="FFE_Families_Templates"></a> Templates
+
+A set of templates which hs the standard parameters and subcategories set up can be found here:
+
+('*I:\BIM\5.0 Project Resources\04_Fam_Templates*')
+
 ### <a id="FFE_Families_Categories"></a> Categories
 
 In order to allow filtering in dRofus when it comes to check items in rooms we use Categories as follows:
@@ -788,9 +794,9 @@ In order to allow filtering in dRofus when it comes to check items in rooms we u
 
 ### <a id="FFE_Families_SubCategories"></a> Subcategories
 
-All extrusion or similar elements making up a family which will be ceiling mounted and therefore be shown dashed on floor plan need to be assigned to the category: **CEILING MOUNTED**.
-All extrusion or similar elements making up a family which will be ceiling mounted and not to be shown on floor plan need to be assigned to the category **CEILING ONLY**.
-All extrusion or similar elements making up a family which will be floor mounted and not to be shown on RCP need to be assigned to the category **FLOOR ONLY**.
+* All extrusion or similar elements making up a family which will be ceiling mounted and therefore be shown dashed on floor plan need to be assigned to the category: **CEILING MOUNTED**.
+* All extrusion or similar elements making up a family which will be ceiling mounted and not to be shown on floor plan need to be assigned to the category **CEILING ONLY**.
+* All extrusion or similar elements making up a family which will be floor mounted and not to be shown on RCP need to be assigned to the category **FLOOR ONLY**.
 
 ### <a id="FFE_Families_Linking"></a> Linking of Parameters to dRofus
 
