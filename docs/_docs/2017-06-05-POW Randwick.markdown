@@ -162,6 +162,14 @@ List of drawing zones:
 | 10, 20, 30, 40 ... | FLOOR DIVISION ZONES SCALE 1 TO 100 |
 | 11, 21, 31, 41 ... | FLOOR DIVISION ZONES SCALE 1 TO 50 |
 
+Zones Level B1 and B2 
+
+![Zones_B1_b2]({{ site.baseurl }}/assets/s1606008_rcr/Building_Zones_LB2_B1.svg){:class="img-responsive"}{: height="800px" width="1200px"}
+
+Zones Level 00 and above
+
+![Zones_00_Over]({{ site.baseurl }}/assets/s1606008_rcr/Building_Zones_L00_Above){:class="img-responsive"}{: height="800px" width="1200px"}
+
 ## <a id="Drawing_Sequence"></a> Sequence List
 
 This is a three digits field. First number should always be 001.
