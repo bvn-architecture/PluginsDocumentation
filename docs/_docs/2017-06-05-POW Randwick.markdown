@@ -164,11 +164,11 @@ List of drawing zones:
 
 Zones Level B1 and B2 
 
-![Zones_B1_b2]({{ site.baseurl }}/assets/s1606008_rcr/Building_Zones_LB2_B1.svg){:class="img-responsive"}{: height="800px" width="1200px"}
+![Zones_B1_b2]({{ site.baseurl }}/assets/s1606008_rcr/Building_Zones_LB2_B1.svg){:class="img-responsive"}{: height="400px" width="600px"}
 
 Zones Level 00 and above
 
-![Zones_00_Over]({{ site.baseurl }}/assets/s1606008_rcr/Building_Zones_L00_Above){:class="img-responsive"}{: height="800px" width="1200px"}
+![Zones_00_Over]({{ site.baseurl }}/assets/s1606008_rcr/Building_Zones_L00_Above.svg){:class="img-responsive"}{: height="400px" width="600px"}
 
 ## <a id="Drawing_Sequence"></a> Sequence List
 
