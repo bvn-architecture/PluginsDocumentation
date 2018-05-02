@@ -15,11 +15,11 @@ function main_tree() {
         .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
 
     //method creating the sunburst diagram
-    d3.json("/PluginsDocumentation/assets/s1606008_rcr/flare_4.json", function (error, root) {
+    d3.json("/PluginsDocumentation/assets/s1606008_rcr/flare_5.json", function (error, root) {
         if (error) throw error;
-        var jsonNodes = getModelNode(root.children)
+        //var jsonNodes = getModelNode(root.children)
         //create tree visualization
-        createVisualizationTree(jsonNodes, tree, g);
+        createVisualizationTree(root, tree, g);
 });
 }
 
@@ -28,7 +28,7 @@ function createVisualizationTree(json, tree, g) {
 
     //hook up revit only checkbox
     d3.select("#togglelegend").on("click", toggleNavisWorks);
-    //only select the first child node () the first 
+    //only select the first child node
     var root = tree(d3.hierarchy(json.children[0]));
 
     var link = g.selectAll(".link")
