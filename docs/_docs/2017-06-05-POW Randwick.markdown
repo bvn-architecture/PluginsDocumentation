@@ -12,9 +12,9 @@ categories: Revit
 
 ## Document Number Overview
 
-| PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | - | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
-|+------------+|+-+|+------------+|---|--------------------|---|------------|---|------|--------------------|------------------------------|---|--------|------|------------|---|----------|
-| RCR | - | BVN | - | ARC |  - | [Area List](#Drawing_AreaList) | [doc type](#Drawing_DocType) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
+| PROJECT NAME | - | ORGANISATION | - | DISCIPLINE | - | AREA | - | DOC / DRAWING TYPE | - | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL | ZONE | SEQUENCE   | - | REVISION |
+|+------------+|+-+|+------------+|---|------------|---|------|---|--------------------|---|--------------------|------------------------------|---|--------|------|------------|---|----------|
+| RCR | - | BVN | - | ARC |  - | [Area List](#Drawing_AreaList) | - | [doc type](#Drawing_DocType) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
 
 ## <a id="ZoneIdentifier"></a> ZONE / BUILDING
 
