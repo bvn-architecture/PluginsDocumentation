@@ -12,9 +12,9 @@ categories: Revit
 
 ## Document Number Overview
 
-| PROJECT NAME | - | ORGANISATION | - | DOC / DRAWING TYPE | - | DISCIPLINE | - | AREA | - | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL* | ZONE | SEQUENCE   | - | REVISION |
-|+------------+|+-+|+------------+|---|--------------------|---|------------|---|------|--------------------|------------------------------|---|--------|------|------------|---|----------|
-| RCR | - | BVN | - | [doc type](#Drawing_DocType) | - | ARC | - | [Area List](#Drawing_AreaList) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
+| PROJECT NAME | - | ORGANISATION | - | DISCIPLINE | - | AREA | - | DOC / DRAWING TYPE | - | ELEMENTS / PACKAGE | DRAWING / INFORMATION SERIES | - | LEVEL | ZONE | SEQUENCE   | - | REVISION |
+|+------------+|+-+|+------------+|---|------------|---|------|---|--------------------|---|--------------------|------------------------------|---|--------|------|------------|---|----------|
+| RCR | - | BVN | - | ARC |  - | [Area List](#Drawing_AreaList) | - | [doc type](#Drawing_DocType) | - | [Element List](#Drawing_Elements) | [Series List](#Drawing_Series) | - | [Level List](#Drawing_Level) | [Zone List](#Drawing_Zone) | [Sequence List](#Drawing_Sequence) | - | [Revision](#Drawing_Revision) |
 
 ## <a id="ZoneIdentifier"></a> ZONE / BUILDING
 
@@ -204,26 +204,26 @@ List of sample document numbers:
 
 | Sample number | Document description |
 |---------------|------------|
-| RCR-BVN-DRW-ARC-50-01A-NL00010 | New Acute Services Building : Introductory document : Multi Level : drawing no 1. |
-| RCR-BVN-DRW-ARC-50-01A-NL00010-DWG | Autocad DWG file of RCR-BVN-AR-50-DWG-A1-00-01 pdf file |
-| RCR-BVN-SCH-ARC-50-56Y-NL00001-XLS | Original Excel file of RCR-BVN-AR-50-SCH-J2-00-01 pdf file containing door schedule|
-| RCR-BVN-SPE-ARC-50-40Z-NL00001 | ARCHITECTURAL SPECIFICATION - FACADE / ROOF ACCESS AND SAFETY SPECIFICATION|
+| RCR-BVN-ARC-50-DRW-01A-NL00010 | New Acute Services Building : Introductory document : Multi Level : drawing no 1. |
+| RCR-BVN-ARC-50-DRW-01A-NL00010-DWG | Autocad DWG file of RCR-BVN-AR-50-DWG-A1-00-01 pdf file |
+| RCR-BVN-ARC-50-DRW-56Y-NL00001-XLS | Original Excel file of RCR-BVN-AR-50-SCH-J2-00-01 pdf file containing door schedule|
+| RCR-BVN-ARC-50-DRW-40Z-NL00001 | ARCHITECTURAL SPECIFICATION - FACADE / ROOF ACCESS AND SAFETY SPECIFICATION|
 
 ## Sketches
 
-| Project Code | - | Discipline Code | - | Document Type| - | Sequential Number |
-| -------------|---|-----------------|---|--------------|---|-------------------|
-| RCR | - | AR | - | SK | - | 001 |
+| Project Code | - | Discipline Code | - | Zone / Building | - | Document Type| - | Sequential Number |
+| -------------|---|-----------------|---|---|---------|-------------|---|-------------------|
+| RCR | - | ARC | - | [refer here](#ZoneIdentifier) | SK | - | 001 |
 
-Sample Sketch number: RCR-AR-SK-001
+Sample Sketch number: RCR-ARC-50-SK-001
 
 ## User Group related drawings
 
-| Discipline Code | - | Zone / Building | - | Document Type | - | User group | - | Level | - | Number |
-| ----------------|---|---------------|---|-----------------|---|------------|---|-------|---|--------|
-| AR | - | [refer here](#ZoneIdentifier) | - | SK | - | UG | - | 01 | - | 000 |
+| Project Code | - | Discipline Code | - | Zone / Building | - | Document Type | - | User group | - | Level | - | Number |
+| ----|---|------------|---|---------------|---|-----------------|---|------------|---|-------|---|--------|
+| RCR | - | ARC | - | [refer here](#ZoneIdentifier) | - | SK | - | UG | - | 01 | - | 000 |
 
-Sample number : AR-50-SK-UG-01-000
+Sample number : RCR-ARC-50-SK-UG-01-000
 
 ## Drawing List
 
@@ -239,7 +239,7 @@ The diagram belows shows all current documents in hierarchical form. Hover over 
 ## Revisions
 
 File names show the revisions right behind the document number in square brackets to allow for [supersede candidate](https://protect-eu.mimecast.com/s/zM1FB7zDRiZ) function to work in Aconex.
-RCR-BVN-AR-50-DWG-A1-XX-01[01] - Document Name.pdf
+RCR-BVN-ARC-50-DRW-01A-NL00010[A] - Document Name.pdf
 
 Revisions are alphanumeric up until a document gets issued for construction. After that the revision changes to numerics.
 
@@ -247,7 +247,7 @@ Drawings are only clouded once they have been issued for construction.
 
 ## Title blocks - Room Layout sheets
 
-These title blocks come in A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both title blocks have properties adjusting the sign off bar as follows:
+These title blocks come in B1, A1, A2 and A3 sizes and have a sign off bar for SD and one for DD incorporated. Both title blocks have properties adjusting the sign off bar as follows:
 
 | Property | use |
 |----------|-----|
@@ -259,7 +259,7 @@ Families used:
 
 * Titleblock_C_SHEET_A3_ANN_RCR
 * Titleblock_C_SHEET_A2_ANN_RCR
-* Titleblock_Landscape_Vertical_A1_ANN_RCR
+* Titleblock_C_SHEET_A1_ANN_RCR
 * Titleblock_Landscape_Vertical_B1_ANN_RCR
 
 Note: These families use catalogue files to handle the different options available.
@@ -309,13 +309,21 @@ The closest grid intersection is located relative to the above point as per imag
 
 ## Revit File linking
 
-Consultants are to link the RCR-BVN-AR-50-RVT-0001 - New Acute Services Building.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
+Consultants are to link the RCR-BVN-ARC-50-RVT-00M-NL00101 - ASB - CORE - REVIT MODEL.rvt Revit file using the 'Auto - Origin to Origin' option and acquire shared coordinates from it. This will enable linking of the following files via 'Auto - By Shared Coordinates' option.
 
-* RCR-BVN-AR-50-RVT-0002 - Facade.rvt
-* RCR-BVN-AR-50-RVT-0021 - Existing Buildings.rvt
-* RCR-BVN-AR-50-RVT-0022 - CAD Links.rvt
+* ASB - LINK BRIDGES - REVIT MODEL
+* ASB - LEVEL 01 - REVIT MODEL
+* ASB - LEVEL 02 - REVIT MODEL
+* ASB - LEVEL 03 - REVIT MODEL
+* ASB - LEVEL 04 05 AND 06  - REVIT MODEL
+* ASB - LEVEL 07 08 09 AND 10 - REVIT MODEL
+* ASB - LEVEL B1 AND 00 - REVIT MODEL
+* ASB - LEVEL B2 - REVIT MODEL
+* ASB - CAD LINKS - REVIT MODEL
+* ASB - CORE - REVIT MODEL
+* ASB - FACADE - REVIT MODEL
 
-Consultants are also to 'Copy Monitor' levels and grids from RCR-BVN-AR-50-RVT-0001 - New Acute Services Building.rvt Revit file.
+Consultants are also to 'Copy Monitor' levels and grids from RCR-BVN-ARC-50-RVT-00M-NL00101 - ASB - CORE - REVIT MODEL.rvt Revit file.
 
 ### Facade Rhino Linking
 

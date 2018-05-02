@@ -52,7 +52,7 @@ List of document types:
 | SKT | SKETCH |
 | SCH | SCHEDULE |
 | SPE | SPECIFICATION |
-| MOD | MODEL |
+| RVT, NWC, NWF, NWD | REVIT MODEL, NAVISWORKS CACHE, NAVISWORKS FILE, NAVISWORKS DOCUMENT |
 
 ## <a id="Drawing_Elements"></a> Elements and Packages
 
