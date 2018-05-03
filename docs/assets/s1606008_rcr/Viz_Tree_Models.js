@@ -149,7 +149,7 @@ function getModelTypeByName (name)
     {
         return ("Revit");
     }
-    else if(name.toLowerCase().indexOf("nwd")>=0 || name.toLowerCase().indexOf("nwc")>=0 || name.toLowerCase().indexOf("nwf")>=0)
+    else if(name.toLowerCase().indexOf("navismodel")>=0)
     {
         return "NavisWorks";
     }
