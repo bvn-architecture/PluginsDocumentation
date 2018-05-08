@@ -77,21 +77,10 @@ function createVisualizationTree(json, tree, g) {
         .attr("class", "node_leaf_name")
         .text(function(d) { 
             //return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; 
-            return d.data.name;
+            //return d.data.name;
+            return d.data.number ? d.data.number + " " + d.data.name : d.data.name;
         });
 
-        node.filter(function(d) { return !d.children; })
-        .append("text")
-        .attr("dy", "-0.45em")//offset to make space for name only
-        .attr("x", function(d) { return d.x < Math.PI === !d.children ? 6 : -6; })
-        .style("stroke", function(d){ return getColourByModelType(d.data.name)} )
-        .attr("text-anchor", function(d) { return d.x < Math.PI === !d.children ? "start" : "end"; })
-        .attr("transform", function(d) { return "rotate(" + (d.x < Math.PI ? d.x - Math.PI / 2 : d.x + Math.PI / 2) * 180 / Math.PI + ")"; })
-        .attr("class", "node_leaf_id")
-        .text(function(d) { 
-            //return d.data.name ? d.data.name + " " + d.data.Id : d.data.Id; 
-            return d.data.Id;
-        });
 }
 
 function toggleNavisWorks() {
