@@ -899,12 +899,49 @@ The following Revit door families are used:
 
 | Door family name | Use | Graphic |
 |---------------------------|
-| 045_SINGLELEAF_GENERIC | single leaf internal door | ![DoorSingle_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
-| 045_DOUBLELEAF_GENERIC | double leaf (equal and un-equal size) | ![DoorDouble_Equal]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_Double.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorDouble_UnEqual]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_DoorHalf.svg){:class="img-responsive"}{: height="90px" width="90px"} |
+| Door_Leaf_Single_Generic_045_DOR | single leaf internal door | ![DoorSingle_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
+| Door_Leaf_Single_Opposite_Generic_045_DOR | single leaf internal door, reporting room into property as the room opposite to the swing direction | |
+| Door_Leaf_Double_Generic_045_DOR | double leaf (equal and un-equal size) | ![DoorDouble_Equal]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_Double.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorDouble_UnEqual]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_DoorHalf.svg){:class="img-responsive"}{: height="90px" width="90px"} |
+| Door_Leaf_Double_Opposite_Generic_045_DOR | double leaf (equal and un-equal size) internal door, reporting room into property as the room opposite to the swing direction | |
 | DOR-SINGLE EXISTING-L300-BVN | single leaf existing door | ![DoorExistingSingle_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
 | DOR-DOUBLE EXISTING-L300-BVN | double leaf existing door | ![DoorExistingDoubleEq_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_DoubleEqual.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorExistingDoubleUnEq_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_Double_unequal.svg){:class="img-responsive"}{: height="90px" width="90px"}|
 
 Revit door properties used to number a door:
+
+### Door leaf types
+
+The property **VisionPanelType** defines the type of vision panel shown in the door leaf.
+
+| Type Number | Type Description |
+|-------------|------------------|
+| 0 | solid door, no observation panel |
+| 1 | small observation panel (SOBS) |
+| 2 | large observation panel (LOBS) |
+| 3 | fire observation panel (FOBS) | 
+| 4 | mental health compliant obersvation panel (MOBS) | 
+| 5 | high observation panel (HOBS) |
+
+
+### Door swing types
+
+The property **SwingType** defines the type of door swing:
+
+| Type Number | Type Description |
+|-------------|------------------|
+| 1 | Single Swing |
+| 2 | DoubleSwing |
+| 3 | Single Pivot |
+| 4 | Double Pivot |
+| 5 | Sliding |
+
+### Special vision panel options
+
+| Parameter Name | Usage |
+|---------------|------|
+| Vis_VisionPanel_Cover | shows a graphic indicating a vision panel cover i.e. slider or blind |
+| Vis_DGIV | shows horizontal lines in the vision panel indicating integral venetion blinds |
+
+### Door Shared Parameters
 
 | Property | GUID | Use |
 |----------------------|
