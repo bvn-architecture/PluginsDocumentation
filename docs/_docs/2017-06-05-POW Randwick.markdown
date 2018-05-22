@@ -888,6 +888,8 @@ In general a door belongs to the room it opens into. There are however a few exc
 * Doors to EDB's or similar in corridors
 * Doors to en-suites opening into the bed room
 
+The door families in the table below with the identifier **Opposite** in tehir name cater for the above exceptions in Revit.
+
 One questions raised from time to time is: why do we show the room number in a big space consuming door tag if there is a room tag showing the same information adjacent? Two reasons:
 
 * To avoid ambiguity in situations like doors opening into corridors (refer to door numbering exceptions above)
@@ -912,34 +914,35 @@ Revit door properties used to number a door:
 
 The property **VisionPanelType** defines the type of vision panel shown in the door leaf.
 
-| Type Number | Type Description |
-|-------------|------------------|
-| 0 | solid door, no observation panel |
-| 1 | small observation panel (SOBS) |
-| 2 | large observation panel (LOBS) |
-| 3 | fire observation panel (FOBS) | 
-| 4 | mental health compliant obersvation panel (MOBS) | 
-| 5 | high observation panel (HOBS) |
+| Type Number | Type Description | Sample |
+|-------------|------------------|--------|
+| 0 | solid door, no observation panel | ![DoorLeaf_Graphic_Solid]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_Solid.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 1 | small observation panel (SOBS) | ![DoorLeaf_Graphic_SOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_SOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 2 | large observation panel (LOBS) | ![DoorLeaf_Graphic_LOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_LOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 3 | fire observation panel (FOBS) | ![DoorLeaf_Graphic_FOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_FOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 4 | mental health compliant obersvation panel (MOBS) | ![DoorLeaf_Graphic_MOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_MOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 5 | high observation panel (HOBS) | ![DoorLeaf_Graphic_HOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_HOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 6 | Peep hole | ![DoorLeaf_Graphic_Peep]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_Peep.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 
 
 ### Door swing types
 
 The property **SwingType** defines the type of door swing:
 
-| Type Number | Type Description |
-|-------------|------------------|
-| 1 | Single Swing |
-| 2 | DoubleSwing |
-| 3 | Single Pivot |
-| 4 | Double Pivot |
-| 5 | Sliding |
+| Type Number | Type Description | Sample |
+|-------------|------------------|--------|
+| 1 | Single Swing | TBC |
+| 2 | DoubleSwing | TBC |
+| 3 | Single Pivot | TBC |
+| 4 | Double Pivot | TBC |
+| 5 | Sliding | TBC |
 
 ### Special vision panel options
 
-| Parameter Name | Usage |
-|---------------|------|
-| Vis_VisionPanel_Cover | shows a graphic indicating a vision panel cover i.e. slider or blind |
-| Vis_DGIV | shows horizontal lines in the vision panel indicating integral venetion blinds |
+| Parameter Name | Usage | Sample |
+|---------------|------|-----------|
+| Vis_VisionPanel_Cover | shows a graphic indicating a vision panel cover i.e. slider or blind | ![DoorLeaf_Graphic_Slider]({{ site.baseurl }}/assets/s160x00x_common/Door_Elevation_VPSlider_Sample.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| Vis_DGIV | shows horizontal lines in the vision panel indicating integral venetion blinds |  ![DoorLeaf_Graphic_DGIV]({{ site.baseurl }}/assets/s160x00x_common/Door_Elevation_BlindVP_Sample.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 
 ### Door Shared Parameters
 
