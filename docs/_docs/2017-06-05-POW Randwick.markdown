@@ -901,10 +901,10 @@ The following Revit door families are used:
 
 | Door family name | Use | Graphic |
 |---------------------------|
-| Door_Leaf_Single_Generic_045_DOR | single leaf internal door | ![DoorSingle_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
-| Door_Leaf_Single_Opposite_Generic_045_DOR | single leaf internal door, reporting room into property as the room opposite to the swing direction | |
-| Door_Leaf_Double_Generic_045_DOR | double leaf (equal and un-equal size) | ![DoorDouble_Equal]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_Double.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorDouble_UnEqual]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoor_DoorHalf.svg){:class="img-responsive"}{: height="90px" width="90px"} |
-| Door_Leaf_Double_Opposite_Generic_045_DOR | double leaf (equal and un-equal size) internal door, reporting room into property as the room opposite to the swing direction | |
+| Door_Leaf_Single_Generic_045_DOR | single leaf internal door | ![DoorSingle_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Door_Single_Generic.svg){:class="img-responsive"}{: height="90px" width="180px"} |
+| Door_Leaf_Single_Opposite_Generic_045_DOR | single leaf internal door, reporting room into property as the room opposite to the swing direction | ![DoorSingleOpposite_Graphic]({{ site.baseurl }}/assets/s160x00x_common/Door_Single_Generic_Opposite.svg){:class="img-responsive"}{: height="90px" width="180px"} |
+| Door_Leaf_Double_Generic_045_DOR | double leaf (equal and un-equal size) | ![DoorDouble_Equal]({{ site.baseurl }}/assets/s160x00x_common/Door_Double_Generic.svg){:class="img-responsive"}{: height="90px" width="270px"} |
+| Door_Leaf_Double_Opposite_Generic_045_DOR | double leaf (equal and un-equal size) internal door, reporting room into property as the room opposite to the swing direction | ![DoorDoubleOpposite_Equal]({{ site.baseurl }}/assets/s160x00x_common/Door_Double_Generic_Opposite.svg){:class="img-responsive"}{: height="90px" width="270px"} |
 | DOR-SINGLE EXISTING-L300-BVN | single leaf existing door | ![DoorExistingSingle_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_Single.svg){:class="img-responsive"}{: height="90px" width="90px"} |
 | DOR-DOUBLE EXISTING-L300-BVN | double leaf existing door | ![DoorExistingDoubleEq_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_DoubleEqual.svg){:class="img-responsive"}{: height="90px" width="90px"} ![DoorExistingDoubleUnEq_Graphic]({{ site.baseurl }}/assets/s160x00x_common/TypicalDoorsExisting_Double_unequal.svg){:class="img-responsive"}{: height="90px" width="90px"}|
 
@@ -931,11 +931,12 @@ The property **SwingType** defines the type of door swing:
 
 | Type Number | Type Description | Sample |
 |-------------|------------------|--------|
-| 1 | Single Swing | TBC |
-| 2 | DoubleSwing | TBC |
-| 3 | Single Pivot | TBC |
-| 4 | Double Pivot | TBC |
-| 5 | Sliding | TBC |
+| 1 | Single Swing | ![DoorLeaf_Swing_Single]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 2 | DoubleSwing | ![DoorLeaf_Swing_Double]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Opposing.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 3 | Single Pivot | ![DoorLeaf_Swing_Pivot]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Pivot.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 4 | Double Pivot | ![DoorLeaf_Swing_Pivot_Double]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Pivot_Opposing.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 5 | Sliding | ![DoorLeaf_Slider]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Slider.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+
 
 ### Special vision panel options
 
@@ -943,6 +944,7 @@ The property **SwingType** defines the type of door swing:
 |---------------|------|-----------|
 | Vis_VisionPanel_Cover | shows a graphic indicating a vision panel cover i.e. slider or blind | ![DoorLeaf_Graphic_Slider]({{ site.baseurl }}/assets/s160x00x_common/Door_Elevation_VPSlider_Sample.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 | Vis_DGIV | shows horizontal lines in the vision panel indicating integral venetion blinds |  ![DoorLeaf_Graphic_DGIV]({{ site.baseurl }}/assets/s160x00x_common/Door_Elevation_BlindVP_Sample.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+
 
 ### Door Shared Parameters
 
