@@ -392,7 +392,7 @@ There is a 3D view setup in the Facade file: EXPORT TO MAX which displays the li
 
 ## <a id="RLSGenerics"></a> Generic Rooms
 
-Generic Rooms for the Schematic Design stage are located in s1607004-AR-INH-GENRIC.rvt Revit file.
+Generic Rooms for the Schematic Design stage are located in RCR-BVN-ARC-50-RVT-00M-NL00040 - ASB - GENERIC ROOMS.rvt Revit file.
 
 The following rooms will be captured:
 
@@ -836,7 +836,7 @@ The following tags are used to indicate location of fire fighting equipment as w
 | FH/ FHR Existing | 0831 - FHR FH Tag - EX.rfa | ![FH FHR EX]({{ site.baseurl }}/assets/s160x00x_common/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 | FH Existing | 0831 - FH Tag - EX.rfa |  ![FH FHR NEW]({{ site.baseurl }}/assets/s160x00x_common/083_FH_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 | FHR Existing | 0832 - FHR Tag - EX.rfa | ![FH FHR NEW]({{ site.baseurl }}/assets/s160x00x_common/083_FH_FHR_EX.svg){:class="img-responsive"}{: height="70px" width="70px"} |
-| Required Fire Egress Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Egress]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
+| Required Fire Exit Tag | 083 - Required Fire Exit Tag.rfa | ![Required Fire Exit]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredExit.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 | Required door swing direction | 083 - Required Direction Tag.rfa | ![Required Swing Direction]({{ site.baseurl }}/assets/s160x00x_common/083_RequiredSwingDirection.svg){:class="img-responsive"}{: height="70px" width="70px"} |
 
 # <a id="PartitioStuff"></a> Partitions
@@ -920,7 +920,7 @@ The property **VisionPanelType** defines the type of vision panel shown in the d
 | 1 | small observation panel (SOBS) | ![DoorLeaf_Graphic_SOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_SOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 | 2 | large observation panel (LOBS) | ![DoorLeaf_Graphic_LOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_LOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 | 3 | fire observation panel (FOBS) | ![DoorLeaf_Graphic_FOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_FOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| 4 | mental health compliant obersvation panel (MOBS) | ![DoorLeaf_Graphic_MOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_MOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 4 | medium observation panel (MOBS). Wider then SOBS, to provide a wider view in mental health context. | ![DoorLeaf_Graphic_MOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_MOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 | 5 | high observation panel (HOBS) | ![DoorLeaf_Graphic_HOBS]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_HOBS.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 | 6 | Peep hole | ![DoorLeaf_Graphic_Peep]({{ site.baseurl }}/assets/s160x00x_common/Door_Leaf_Peep.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 
@@ -931,19 +931,19 @@ The property **SwingType** defines the type of door swing:
 
 | Type Number | Type Description | Sample |
 |-------------|------------------|--------|
-| 1 | Single Swing | ![DoorLeaf_Swing_Single]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| 2 | DoubleSwing | ![DoorLeaf_Swing_Double]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Opposing.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| 3 | Single Pivot | ![DoorLeaf_Swing_Pivot]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Pivot.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 1 | Single hinged | ![DoorLeaf_Swing_Single]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 2 | Double hinged i.e. 2 leaves (not pivot) | ![DoorLeaf_Swing_Double]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Opposing.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| 3 | Single Pivot (NB solid line indicates preferred direction eg for door to swing eg into WC and for door to be held open if this is applicable.) | ![DoorLeaf_Swing_Pivot]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Pivot.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 | 4 | Double Pivot | ![DoorLeaf_Swing_Pivot_Double]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Pivot_Opposing.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 | 5 | Sliding | ![DoorLeaf_Slider]({{ site.baseurl }}/assets/s160x00x_common/Door_Swing_Slider.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 
 
-### Special vision panel options
+### Special observation panel options
 
 | Parameter Name | Usage | Sample |
 |---------------|------|-----------|
-| Vis_VisionPanel_Cover | shows a graphic indicating a vision panel cover i.e. slider or blind | ![DoorLeaf_Graphic_Slider]({{ site.baseurl }}/assets/s160x00x_common/Door_Elevation_VPSlider_Sample.svg){:class="img-responsive"}{: height="100px" width="100px"} |
-| Vis_DGIV | shows horizontal lines in the vision panel indicating integral venetion blinds |  ![DoorLeaf_Graphic_DGIV]({{ site.baseurl }}/assets/s160x00x_common/Door_Elevation_BlindVP_Sample.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| Vis_VisionPanel_Cover | shows a graphic indicating a sliding cover over the observation panel | ![DoorLeaf_Graphic_Slider]({{ site.baseurl }}/assets/s160x00x_common/Door_Elevation_VPSlider_Sample.svg){:class="img-responsive"}{: height="100px" width="100px"} |
+| Vis_DGIV | shows horizontal lines in the vision panel indicating integral venetian blinds |  ![DoorLeaf_Graphic_DGIV]({{ site.baseurl }}/assets/s160x00x_common/Door_Elevation_BlindVP_Sample.svg){:class="img-responsive"}{: height="100px" width="100px"} |
 
 
 ### Door Shared Parameters
@@ -1017,6 +1017,7 @@ In summary:
 
 * default text size for dimensions is 2.0mm
 * default font is Arial Narrow
+* all text should be in **CAPS**
 
 Below is a table of our default dimension styles:
 
